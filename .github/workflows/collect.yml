@@ -1,7 +1,7 @@
 name: Collect availability
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "5 * * * *"
   workflow_dispatch: {}
 concurrency:
   group: collect
@@ -9,7 +9,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,8 +17,15 @@ jobs:
           node-version: 22
       - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
-      - name: Collect and push to WordPress
+      - name: Collect all locations (6 groups, 10 min apart) and push to WordPress
         env:
           WP_URL: ${{ secrets.WP_URL }}
           WP_TOKEN: ${{ secrets.WP_TOKEN }}
-        run: node collect.js --push
+        run: |
+          for b in 0 1 2 3 4 5; do
+            start=$(date +%s)
+            node collect.js --push --batch $b || echo "group $b did not push"
+            if [ $b -lt 5 ]; then
+              wait=$(( 600 - ($(date +%s) - start) )); [ $wait -gt 0 ] && sleep $wait
+            fi
+          done
