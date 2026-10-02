@@ -1,10 +1,11 @@
 name: Collect availability
 on:
   schedule:
-    - cron: "5 * * * *" # backup trigger; a running job keeps going for ~6 hours
+    - cron: "17 */3 * * *" # backup only: each run re-starts itself when it ends
   workflow_dispatch: {}
 permissions:
-  contents: write
+  contents: write # push the data branch
+  actions: write  # re-dispatch this workflow
 concurrency:
   group: collect
   cancel-in-progress: false
@@ -19,21 +20,21 @@ jobs:
           node-version: 22
       - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
-      - name: Collect locations in 6 rotating groups, one group every 10 minutes, for ~5.5 hours
+      - name: Collect for 5.5 hours (about 6 Jane calls a minute), publish to the data branch every 2 minutes
+        id: collect
+        timeout-minutes: 340
         run: |
-          git config user.name "availability-bot"
-          git config user.email "availability-bot@users.noreply.github.com"
-          end=$(( $(date +%s) + 330*60 ))
-          n=0
-          while [ $(date +%s) -lt $end ]; do
-            start=$(date +%s)
-            b=$(( n % 6 ))
-            node collect.js --batch $b --merge data/availability.json || echo "group $b had a problem"
-            if [ -f data/availability.json ]; then
-              git add data/availability.json
-              git commit -q -m "availability group $b" && (git pull -q --rebase && git push -q) || echo "nothing to save"
-            fi
-            n=$(( n + 1 ))
-            wait=$(( 600 - ($(date +%s) - start) ))
-            if [ $wait -gt 0 ]; then sleep $wait; fi
-          done
+          echo "start=$(date +%s)" >> "$GITHUB_OUTPUT"
+          node collect.js --minutes 330
+      - name: Start the next run (skipped if cancelled by hand, or if the collector stopped within 20 minutes)
+        if: success() || failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          START: ${{ steps.collect.outputs.start }}
+        run: |
+          ran=$(( ($(date +%s) - ${START:-$(date +%s)}) / 60 ))
+          if [ "$ran" -lt 20 ]; then
+            echo "Collector ran only $ran min. Not restarting, so a startup crash cannot loop. The backup schedule retries within 3 hours."
+            exit 0
+          fi
+          gh workflow run collect.yml --ref main --repo "$GITHUB_REPOSITORY"
