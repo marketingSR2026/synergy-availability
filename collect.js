@@ -57,26 +57,31 @@ class Blocked extends Error {}
           const tabs = [...document.querySelectorAll('a[href^="#/"]')].filter((a) => /^#\/[a-z-]+$/.test(a.getAttribute('href')) && !/team|staff/.test(a.getAttribute('href'))).map((a) => ({ name: a.textContent.trim(), href: a.getAttribute('href') }));
           return { name: h ? h[1].trim() : null, staff, tabs };
         });
-        // All treatments are on the page at once, each link carries its discipline id. Group by id, name by tab order.
-        const links = await page.$$eval('a[href*="#/discipline/"]', (as) => as.map((a) => ({ href: a.getAttribute('href'), text: a.innerText.replace(/\s+/g, ' ').trim() })));
+        // Each treatment list sits inside its service's own section (section#<tab-slug> > ul#treatment_list_discipline_<id>).
+        // Name each discipline from that section's tab, so pages with extra empty tabs (e.g. Orthopaedic Surgeon) still map correctly.
+        const links = await page.$$eval('a[href*="#/discipline/"]', (as) => as.map((a) => {
+          const sec = a.closest('section[id]'); const tab = sec && document.querySelector(`a[href="#/${sec.id}"]`);
+          return { href: a.getAttribute('href'), text: a.innerText.replace(/\s+/g, ' ').trim(), section: tab ? tab.textContent.trim() : '' };
+        }));
         const groups = new Map();
         for (const t of links) {
           const m = t.href.match(/discipline\/(\d+)\/treatment\/(\d+)/); if (!m) continue;
           const dm = t.text.match(/(\d+)\s*minutes?/i);
           if (!groups.has(m[1])) groups.set(m[1], []);
-          groups.get(m[1]).push({ d: m[1], t: m[2], name: t.text.split('Offered by')[0].trim(), minutes: dm ? +dm[1] : 0 });
+          groups.get(m[1]).push({ d: m[1], t: m[2], name: t.text.split('Offered by')[0].trim(), minutes: dm ? +dm[1] : 0, section: t.section });
         }
         const ids = [...groups.keys()];
-        if (ids.length !== meta.tabs.length) { errors.push(`${slug}: discipline/tab count mismatch (${ids.length} vs ${meta.tabs.length}), skipped`); continue; }
-        const disciplines = ids.map((id, i) => ({ id, name: meta.tabs[i].name, treatments: groups.get(id) }));
+        const disciplines = ids.map((id) => ({ id, name: groups.get(id)[0].section, treatments: groups.get(id) })).filter((d) => d.name);
+        if (disciplines.length !== ids.length) errors.push(`${slug}: ${ids.length - disciplines.length} service(s) had no section name, skipped`);
         for (const dsc of disciplines) {
           if (blocked) throw new Blocked(blocked);
           const rep = dsc.treatments.find((t) => !PREFER_AVOID.test(t.name)) || dsc.treatments[0];
-          await jitter(2500, 4500);
+          await jitter(4000, 7000);
           const wait = page.waitForResponse((r) => r.url().includes('/api/v2/openings/for_discipline') && r.url().includes('treatment_id=' + rep.t), { timeout: 15000 }).catch(() => null);
           await page.evaluate((h) => { location.hash = h; }, `#/discipline/${dsc.id}/treatment/${rep.t}`); requests++;
           const resp = await wait; if (!resp) { errors.push(`${slug}/${dsc.name}: no openings response`); continue; }
           if (resp.status() !== 200) { errors.push(`${slug}/${dsc.name}: HTTP ${resp.status()}`); continue; }
+          const checkedAt = new Date().toISOString();
           let list; try { list = await resp.json(); } catch (e) { errors.push(`${slug}/${dsc.name}: malformed JSON`); continue; }
           if (!Array.isArray(list)) { errors.push(`${slug}/${dsc.name}: unexpected shape`); continue; }
           for (const o of list) {
@@ -84,7 +89,7 @@ class Blocked extends Error {}
             rows.push({ // whitelist fields only: never copy booked_patient_ids or anything else
               location: meta.name || slug, location_slug: slug, service: dsc.name, treatment: rep.name,
               practitioner: meta.staff[o.staff_member_id] || '', duration: rep.minutes || Math.round((o.duration || 0) / 60),
-              datetime: o.start_at, booking_url: `${BASE}/locations/${slug}/book#/discipline/${dsc.id}/treatment/${rep.t}`, source: 'jane',
+              datetime: o.start_at, booking_url: `${BASE}/locations/${slug}/book#/discipline/${dsc.id}/treatment/${rep.t}`, source: 'jane', checked_at: checkedAt,
             });
           }
         }
