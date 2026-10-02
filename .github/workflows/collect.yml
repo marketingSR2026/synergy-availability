@@ -3,6 +3,8 @@ on:
   schedule:
     - cron: "5 * * * *"
   workflow_dispatch: {}
+permissions:
+  contents: write
 concurrency:
   group: collect
   cancel-in-progress: false
@@ -17,14 +19,17 @@ jobs:
           node-version: 22
       - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
-      - name: Collect all locations (6 groups, 10 min apart) and push to WordPress
-        env:
-          WP_URL: ${{ secrets.WP_URL }}
-          WP_TOKEN: ${{ secrets.WP_TOKEN }}
+      - name: Collect all locations (6 groups, 10 min apart) and save data file
         run: |
+          git config user.name "availability-bot"
+          git config user.email "availability-bot@users.noreply.github.com"
           for b in 0 1 2 3 4 5; do
             start=$(date +%s)
-            node collect.js --push --batch $b || echo "group $b did not push"
+            node collect.js --batch $b --merge data/availability.json || echo "group $b had a problem"
+            if [ -f data/availability.json ]; then
+              git add data/availability.json
+              git commit -q -m "availability group $b" && (git pull -q --rebase && git push -q) || echo "nothing to save"
+            fi
             if [ $b -lt 5 ]; then
               wait=$(( 600 - ($(date +%s) - start) )); [ $wait -gt 0 ] && sleep $wait
             fi
