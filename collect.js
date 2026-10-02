@@ -40,7 +40,7 @@ class Blocked extends Error {}
     if (!slugs.length) throw new Error('No locations found on Jane home page');
     // Respect Jane's rate limit: each run covers one slice of locations, rotating every 10 minutes.
     const BATCHES = Math.max(1, +arg('batches', only ? 1 : 6));
-    const slot = Math.floor(Date.now() / 600000) % BATCHES;
+    const slot = (arg('batch', null) !== null ? +arg('batch') : Math.floor(Date.now() / 600000)) % BATCHES;
     slugs = slugs.filter((_, i) => i % BATCHES === slot);
     console.log(`batch ${slot + 1}/${BATCHES}: ${slugs.join(', ')}`);
 
