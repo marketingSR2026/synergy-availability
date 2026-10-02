@@ -1,7 +1,7 @@
 name: Collect availability
 on:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "5 * * * *" # backup trigger; a running job keeps going for ~6 hours
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -11,7 +11,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -19,18 +19,21 @@ jobs:
           node-version: 22
       - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
-      - name: Collect all locations (6 groups, 10 min apart) and save data file
+      - name: Collect locations in 6 rotating groups, one group every 10 minutes, for ~5.5 hours
         run: |
           git config user.name "availability-bot"
           git config user.email "availability-bot@users.noreply.github.com"
-          for b in 0 1 2 3 4 5; do
+          end=$(( $(date +%s) + 330*60 ))
+          n=0
+          while [ $(date +%s) -lt $end ]; do
             start=$(date +%s)
+            b=$(( n % 6 ))
             node collect.js --batch $b --merge data/availability.json || echo "group $b had a problem"
             if [ -f data/availability.json ]; then
               git add data/availability.json
               git commit -q -m "availability group $b" && (git pull -q --rebase && git push -q) || echo "nothing to save"
             fi
-            if [ $b -lt 5 ]; then
-              wait=$(( 600 - ($(date +%s) - start) )); [ $wait -gt 0 ] && sleep $wait
-            fi
+            n=$(( n + 1 ))
+            wait=$(( 600 - ($(date +%s) - start) ))
+            if [ $wait -gt 0 ]; then sleep $wait; fi
           done
