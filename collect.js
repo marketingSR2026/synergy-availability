@@ -98,6 +98,17 @@ class Blocked extends Error {}
   fs.writeFileSync(OUT, JSON.stringify(rows));
   console.log(JSON.stringify({ rows: rows.length, requests, errors, blocked: !!blocked }));
 
+  // --merge FILE: replace only finished locations in the shared data file, keep the rest, drop past slots.
+  const MERGE = arg('merge', null);
+  if (MERGE && done.size) {
+    let old = []; try { old = JSON.parse(fs.readFileSync(MERGE, 'utf8')); } catch (e) { old = []; }
+    const now = Date.now();
+    const merged = old.filter((r) => !done.has(r.location_slug) && Date.parse(r.datetime) > now).concat(rows.filter((r) => done.has(r.location_slug)));
+    fs.mkdirSync(require('path').dirname(MERGE), { recursive: true });
+    fs.writeFileSync(MERGE, JSON.stringify(merged));
+    console.log(`merged ${done.size} locations into ${MERGE}: ${merged.length} rows total`);
+  }
+
   // Push only fully finished locations. WordPress merges by location, so other locations keep their last good data.
   if (arg('push', false)) {
     const out = rows.filter((r) => done.has(r.location_slug));
