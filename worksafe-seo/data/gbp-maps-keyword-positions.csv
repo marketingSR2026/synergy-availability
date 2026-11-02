@@ -1,0 +1,53 @@
+clinic,seranking_location_id,check_date,keyword,worksafe_intent,grid_points,ranked_points_top20,not_ranked_points,avg_pos_when_ranked,best,worst,top3_points,top10_points,position_at_clinic_point,source
+Abbotsford,44167,2026-10-30,chiropractor abbotsford,no,49,49,0,2.22,1,10,42,49,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,icbc physiotherapy abbotsford,no,49,49,0,2.53,1,11,44,48,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,kinesiology abbotsford,no,49,48,1,1.65,1,8,43,48,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,massage therapy abbotsford,no,49,49,0,3.65,1,16,30,46,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,physio near me,no,49,48,1,6.15,2,19,16,41,3,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,physiotherapist abbotsford,no,49,49,0,5.69,1,20,19,43,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,physiotherapy abbotsford,no,49,49,0,5.14,2,19,24,42,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Abbotsford,44167,2026-10-30,rmt abbotsford,no,49,49,0,4.49,1,17,20,46,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Acupuncture,no,25,1,24,2,2,2,1,1,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,auto accident,no,25,0,25,n/a,n/a,n/a,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,car accident,no,25,1,24,7,7,7,0,1,7,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Chiropractor,no,25,18,7,9.72,1,19,4,10,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Chiropractor near me,no,25,22,3,9.41,1,20,5,12,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Chiropractor Newton,no,25,16,9,2.88,2,6,13,16,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Compression Stockings,no,25,0,25,n/a,n/a,n/a,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Custom Orthotics,no,25,0,25,n/a,n/a,n/a,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,headache relief,no,25,11,14,10.45,2,19,1,6,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,ICBC physiotherapy,no,25,23,2,9.43,1,17,4,12,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,knee pain,no,25,17,8,11.53,1,19,2,7,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,laser treatment,no,25,0,25,n/a,n/a,n/a,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Massage Therapy,no,25,17,8,8.88,1,17,5,9,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Massage Therapy near me,no,25,24,1,9.25,1,20,5,12,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Massage Therapy Newton,no,25,24,1,8.46,1,19,4,18,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Orthotics,no,25,1,24,20,20,20,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Physiotherapy,no,25,22,3,8.09,1,20,6,15,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Physiotherapy near me,no,25,23,2,8.7,1,18,5,14,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Physiotherapy Newton,no,25,25,0,7,1,18,6,21,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Shockwave,no,25,24,1,10.58,2,18,2,13,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Shockwave treatment,no,25,22,3,9.27,1,17,4,12,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,shoulder pain,no,25,16,9,12.38,1,20,1,6,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,WCB INJURY,yes,25,0,25,n/a,n/a,n/a,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Work Injury,yes,25,9,16,11.33,1,20,1,5,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Worksafe injury,yes,25,0,25,n/a,n/a,n/a,0,0,not in top 20,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+Newton 72 Ave,42289,2026-10-30,Worksafe physiotherapy,yes,25,25,0,8.64,3,13,1,18,3,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Acupuncture,no,25,4,21,14.25,5,20,0,1,5,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,car accident,no,25,1,24,5,5,5,0,1,5,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Chiropractor,no,25,10,15,11.3,4,19,0,5,4,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Chiropractor near me,no,25,9,16,11.78,4,19,0,3,4,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Chiropractor New Westminster,no,25,25,0,8.12,2,20,1,22,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,ICBC physiotherapy,no,25,25,0,5.52,1,14,10,20,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,ICBC physiotherapy New Westminster,no,25,25,0,3.16,1,11,17,24,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Kinesiology New Westminster,no,25,25,0,4.16,2,14,18,23,3,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Massage Therapy,no,25,10,15,7.9,1,19,3,7,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Massage Therapy near me,no,25,10,15,7.8,1,18,2,6,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Massage Therapy New Westminster,no,25,22,3,5.23,1,11,2,21,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Physio near me,no,25,19,6,8.79,2,20,6,12,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Physiotherapist New Westminster,no,25,24,1,5.92,1,19,4,22,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Physiotherapy,no,25,15,10,8.33,2,19,4,11,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Physiotherapy near me,no,25,17,8,9.29,2,20,5,9,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Physiotherapy New Westminster,no,25,24,1,5.5,1,19,7,22,1,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,RMT New Westminster,no,25,24,1,6.21,2,16,7,22,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id
+New Westminster,42283,2026-10-30,Worksafe physiotherapy,yes,25,25,0,3.36,2,9,17,25,2,SE Ranking LOCAL_getRankingPositions (2026-10-26..2026-11-02) joined to LOCAL_listRankingKeywords on key_to_geopoint_id

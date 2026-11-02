@@ -1,0 +1,7124 @@
+{
+ "wcb physiotherapy": {
+  "kw": "wcb physiotherapy",
+  "vol": 210,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 210",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "worksafebc physiotherapy": {
+  "kw": "worksafebc physiotherapy",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 21,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc physiotherapy near me": {
+  "kw": "worksafebc physiotherapy near me",
+  "vol": 40,
+  "cpc": 1.17,
+  "kd": 11,
+  "comp": 0.89,
+  "intents": "L,C",
+  "trend": "50->40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, video, people_also_ask, related_searches",
+  "nd": false
+ },
+ "worksafebc approved physiotherapist": {
+  "kw": "worksafebc approved physiotherapist",
+  "vol": 10,
+  "cpc": 1.7,
+  "kd": 12,
+  "comp": 0.44,
+  "intents": "I,N",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, video, sge, related_searches",
+  "nd": false
+ },
+ "worksafe physiotherapy": {
+  "kw": "worksafe physiotherapy",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, related_searches",
+  "nd": false
+ },
+ "workplace injury physiotherapy": {
+  "kw": "workplace injury physiotherapy",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 11,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work injury physiotherapy": {
+  "kw": "work injury physiotherapy",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, video, people_also_ask, images, related_searches",
+  "nd": false
+ },
+ "worksafe physio": {
+  "kw": "worksafe physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio near me": {
+  "kw": "wcb physio near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio": {
+  "kw": "wcb physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc": {
+  "kw": "worksafebc",
+  "vol": 110000,
+  "cpc": 0.48,
+  "kd": 95,
+  "comp": 0.08,
+  "intents": "I,N",
+  "trend": "flat 110000",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work injury": {
+  "kw": "work injury",
+  "vol": 590,
+  "cpc": 2.31,
+  "kd": 40,
+  "comp": 0.13,
+  "intents": "I",
+  "trend": "390..590",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "injured at work": {
+  "kw": "injured at work",
+  "vol": 590,
+  "cpc": 2.31,
+  "kd": 44,
+  "comp": 0.13,
+  "intents": "I",
+  "trend": "20..590 (spike Aug-Nov 2026)",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work hardening": {
+  "kw": "work hardening",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 20,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc physio": {
+  "kw": "worksafebc physio",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 21,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "worksafe bc physio": {
+  "kw": "worksafe bc physio",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 21,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb physiotherapy near me": {
+  "kw": "wcb physiotherapy near me",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 19,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, people_also_ask, related_searches",
+  "nd": false
+ },
+ "return to work program": {
+  "kw": "return to work program",
+  "vol": 70,
+  "cpc": 1.32,
+  "kd": 17,
+  "comp": 0.07,
+  "intents": "I",
+  "trend": "110->70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc injury": {
+  "kw": "worksafebc injury",
+  "vol": 40,
+  "cpc": 0.64,
+  "kd": 27,
+  "comp": 0.07,
+  "intents": "I",
+  "trend": "20->40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational rehabilitation": {
+  "kw": "occupational rehabilitation",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "injured at work bc": {
+  "kw": "injured at work bc",
+  "vol": 40,
+  "cpc": 0.15,
+  "kd": 31,
+  "comp": 0.23,
+  "intents": "I",
+  "trend": "70->40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "hurt at work": {
+  "kw": "hurt at work",
+  "vol": 40,
+  "cpc": 2.97,
+  "kd": 35,
+  "comp": 0.26,
+  "intents": "I",
+  "trend": "flat 40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "functional capacity evaluation": {
+  "kw": "functional capacity evaluation",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 26,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "40..270 volatile",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc massage therapy": {
+  "kw": "worksafebc massage therapy",
+  "vol": 20,
+  "cpc": 0.82,
+  "kd": 13,
+  "comp": 0.78,
+  "intents": "I,N",
+  "trend": "flat 20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "work conditioning": {
+  "kw": "work conditioning",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 6,
+  "comp": 0.07,
+  "intents": "L,C",
+  "trend": "flat 20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb chiropractor": {
+  "kw": "wcb chiropractor",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 7,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational rehab": {
+  "kw": "occupational rehab",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 11,
+  "comp": 0.09,
+  "intents": "L,C",
+  "trend": "0->20 from 2026-08",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workplace injury clinic": {
+  "kw": "workplace injury clinic",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 16,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb massage": {
+  "kw": "wcb massage",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc rehabilitation": {
+  "kw": "worksafebc rehabilitation",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc rehab": {
+  "kw": "worksafebc rehab",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy no referral": {
+  "kw": "worksafebc physiotherapy no referral",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapist": {
+  "kw": "worksafebc physiotherapist",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physio near me": {
+  "kw": "worksafebc physio near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physical therapy": {
+  "kw": "worksafebc physical therapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc kinesiology": {
+  "kw": "worksafebc kinesiology",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc functional capacity evaluation": {
+  "kw": "worksafebc functional capacity evaluation",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc direct billing physiotherapy": {
+  "kw": "worksafebc direct billing physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc clinic": {
+  "kw": "worksafebc clinic",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc claim physiotherapy": {
+  "kw": "worksafebc claim physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc chiropractor": {
+  "kw": "worksafebc chiropractor",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc approved physiotherapy clinic": {
+  "kw": "worksafebc approved physiotherapy clinic",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy near me": {
+  "kw": "worksafe physiotherapy near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapist": {
+  "kw": "worksafe physiotherapist",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio near me": {
+  "kw": "worksafe physio near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe bc physiotherapy": {
+  "kw": "worksafe bc physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "workplace injury rehabilitation": {
+  "kw": "workplace injury rehabilitation",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "workplace injury physio": {
+  "kw": "workplace injury physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work safe bc physiotherapy": {
+  "kw": "work safe bc physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work related injury physiotherapy": {
+  "kw": "work related injury physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury rehab": {
+  "kw": "work injury rehab",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury physio": {
+  "kw": "work injury physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury clinic": {
+  "kw": "work injury clinic",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb rehab": {
+  "kw": "wcb rehab",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy surrey": {
+  "kw": "wcb physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy bc": {
+  "kw": "wcb physiotherapy bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapist": {
+  "kw": "wcb physiotherapist",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio bc": {
+  "kw": "wcb physio bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physical therapy": {
+  "kw": "wcb physical therapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb kinesiology": {
+  "kw": "wcb kinesiology",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb clinic near me": {
+  "kw": "wcb clinic near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb clinic": {
+  "kw": "wcb clinic",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "return to work physiotherapy": {
+  "kw": "return to work physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy worksafebc": {
+  "kw": "physiotherapy worksafebc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy wcb": {
+  "kw": "physiotherapy wcb",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy for workplace injury": {
+  "kw": "physiotherapy for workplace injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy direct billing worksafebc": {
+  "kw": "physiotherapy direct billing worksafebc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio wcb": {
+  "kw": "physio wcb",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "occupational injury rehabilitation": {
+  "kw": "occupational injury rehabilitation",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "functional capacity evaluation bc": {
+  "kw": "functional capacity evaluation bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy vancouver": {
+  "kw": "physiotherapy vancouver",
+  "vol": 3200,
+  "cpc": 0.0,
+  "kd": 52,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "2400..3600",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy surrey": {
+  "kw": "physiotherapy surrey",
+  "vol": 1800,
+  "cpc": 2.16,
+  "kd": 50,
+  "comp": 0.59,
+  "intents": "L,C",
+  "trend": "220..1800 (Nov 2026 1800)",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy delta": {
+  "kw": "physiotherapy delta",
+  "vol": 590,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 590",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy south surrey": {
+  "kw": "physiotherapy south surrey",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 20,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy abbotsford": {
+  "kw": "physiotherapy abbotsford",
+  "vol": 150,
+  "cpc": 0.0,
+  "kd": 19,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "30..180",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy fleetwood": {
+  "kw": "physiotherapy fleetwood",
+  "vol": 110,
+  "cpc": 0.0,
+  "kd": 15,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 110",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy north delta": {
+  "kw": "physiotherapy north delta",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 10,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 50",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy langley": {
+  "kw": "physiotherapy langley",
+  "vol": 50,
+  "cpc": 1.59,
+  "kd": 12,
+  "comp": 0.6,
+  "intents": "L,C",
+  "trend": "30..80",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy richmond": {
+  "kw": "physiotherapy richmond",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "20..150",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy new westminster": {
+  "kw": "physiotherapy new westminster",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy cloverdale": {
+  "kw": "physiotherapy cloverdale",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 20,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physiotherapy vancouver": {
+  "kw": "icbc physiotherapy vancouver",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy burnaby": {
+  "kw": "physiotherapy burnaby",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 24,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physiotherapy surrey": {
+  "kw": "icbc physiotherapy surrey",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 4,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physiotherapy new westminster": {
+  "kw": "icbc physiotherapy new westminster",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 7,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physiotherapy burnaby": {
+  "kw": "icbc physiotherapy burnaby",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 3,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafe bc": {
+  "kw": "worksafe bc",
+  "vol": 110000,
+  "cpc": 0.48,
+  "kd": 95,
+  "comp": 0.08,
+  "intents": "I,N",
+  "trend": "reported 110000 but 12-mo trend 40500..47500 (inconsistent)",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb bc": {
+  "kw": "wcb bc",
+  "vol": 96200,
+  "cpc": 0.48,
+  "kd": 93,
+  "comp": 0.08,
+  "intents": "I,N",
+  "trend": "90500..96200",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb claim": {
+  "kw": "wcb claim",
+  "vol": 1100,
+  "cpc": 1.14,
+  "kd": 91,
+  "comp": 0.04,
+  "intents": "I",
+  "trend": "880..1300 (national, multi-province)",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio vancouver": {
+  "kw": "physio vancouver",
+  "vol": 720,
+  "cpc": 0.0,
+  "kd": 35,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "590..1300",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workplace injury": {
+  "kw": "workplace injury",
+  "vol": 590,
+  "cpc": 2.31,
+  "kd": 40,
+  "comp": 0.13,
+  "intents": "I",
+  "trend": "480..660",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "delta physiotherapy": {
+  "kw": "delta physiotherapy",
+  "vol": 590,
+  "cpc": 0.0,
+  "kd": 22,
+  "comp": 0.0,
+  "intents": "L,N",
+  "trend": "flat 590",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc form 7": {
+  "kw": "worksafebc form 7",
+  "vol": 480,
+  "cpc": 1.01,
+  "kd": 32,
+  "comp": 0.08,
+  "intents": "I",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "surrey physiotherapy": {
+  "kw": "surrey physiotherapy",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy surrey bc": {
+  "kw": "physiotherapy surrey bc",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy langley bc": {
+  "kw": "physiotherapy langley bc",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "langley physiotherapy": {
+  "kw": "langley physiotherapy",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 10,
+  "comp": 0.0,
+  "intents": "L,N",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "concussion physiotherapy": {
+  "kw": "concussion physiotherapy",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy richmond bc": {
+  "kw": "physiotherapy richmond bc",
+  "vol": 320,
+  "cpc": 0.0,
+  "kd": 23,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 320",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physiotherapy": {
+  "kw": "icbc physiotherapy",
+  "vol": 320,
+  "cpc": 1.82,
+  "kd": 25,
+  "comp": 0.37,
+  "intents": "L,C",
+  "trend": "flat 320",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc form 6": {
+  "kw": "worksafebc form 6",
+  "vol": 210,
+  "cpc": 0.0,
+  "kd": 30,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": "170..210",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "vancouver physiotherapy": {
+  "kw": "vancouver physiotherapy",
+  "vol": 210,
+  "cpc": 0.0,
+  "kd": 38,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "70..440",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "ankle sprain physiotherapy": {
+  "kw": "ankle sprain physiotherapy",
+  "vol": 210,
+  "cpc": 0.0,
+  "kd": 40,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 210",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "repetitive strain injury": {
+  "kw": "repetitive strain injury",
+  "vol": 180,
+  "cpc": 0.01,
+  "kd": 62,
+  "comp": 0.13,
+  "intents": "I",
+  "trend": "100..180",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc form 6a": {
+  "kw": "worksafebc form 6a",
+  "vol": 170,
+  "cpc": 0.0,
+  "kd": 30,
+  "comp": 0.02,
+  "intents": "I",
+  "trend": "flat 170",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio abbotsford": {
+  "kw": "physio abbotsford",
+  "vol": 150,
+  "cpc": 0.0,
+  "kd": 16,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "30..180",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wsbc physiotherapy": {
+  "kw": "wsbc physiotherapy",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 21,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "physio new west": {
+  "kw": "physio new west",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "modified duties": {
+  "kw": "modified duties",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 13,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "gradual return to work": {
+  "kw": "gradual return to work",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "140..170",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc online services": {
+  "kw": "worksafebc online services",
+  "vol": 110,
+  "cpc": 0.67,
+  "kd": 49,
+  "comp": 0.07,
+  "intents": "I,N",
+  "trend": "50->110 rising",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc claim number": {
+  "kw": "worksafebc claim number",
+  "vol": 110,
+  "cpc": 0.0,
+  "kd": 40,
+  "comp": 0.02,
+  "intents": "I",
+  "trend": "flat 110",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc case manager": {
+  "kw": "worksafebc case manager",
+  "vol": 110,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": "170->110 falling",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "fleetwood physiotherapy": {
+  "kw": "fleetwood physiotherapy",
+  "vol": 110,
+  "cpc": 0.0,
+  "kd": 11,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 110",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc review division": {
+  "kw": "worksafebc review division",
+  "vol": 90,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": "flat 90",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workers comp bc": {
+  "kw": "workers comp bc",
+  "vol": 90,
+  "cpc": 0.62,
+  "kd": 43,
+  "comp": 0.12,
+  "intents": "I,N",
+  "trend": "flat 90",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb claim number": {
+  "kw": "wcb claim number",
+  "vol": 90,
+  "cpc": 0.0,
+  "kd": 22,
+  "comp": 0.02,
+  "intents": "I",
+  "trend": "110->90",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "repetitive strain injury treatment": {
+  "kw": "repetitive strain injury treatment",
+  "vol": 90,
+  "cpc": 0.0,
+  "kd": 33,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 90",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc wage loss benefits": {
+  "kw": "worksafebc wage loss benefits",
+  "vol": 70,
+  "cpc": 0.0,
+  "kd": 27,
+  "comp": 0.03,
+  "intents": "I,N",
+  "trend": "flat 70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational injury": {
+  "kw": "occupational injury",
+  "vol": 70,
+  "cpc": 0.0,
+  "kd": 32,
+  "comp": 0.02,
+  "intents": "I",
+  "trend": "90->70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc return to work": {
+  "kw": "worksafebc return to work",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 45,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": "flat 50",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workplace injury bc": {
+  "kw": "workplace injury bc",
+  "vol": 50,
+  "cpc": 1.78,
+  "kd": 27,
+  "comp": 0.2,
+  "intents": "I",
+  "trend": "70->50",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb injury": {
+  "kw": "wcb injury",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 40,
+  "comp": 0.03,
+  "intents": "I",
+  "trend": "110->50 falling",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio langley": {
+  "kw": "physio langley",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 10,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "30..80",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "north delta physiotherapy": {
+  "kw": "north delta physiotherapy",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 50",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physiotherapy near me": {
+  "kw": "icbc physiotherapy near me",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 15,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 50",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "ergonomic assessment": {
+  "kw": "ergonomic assessment",
+  "vol": 50,
+  "cpc": 2.46,
+  "kd": 44,
+  "comp": 0.31,
+  "intents": "L,C",
+  "trend": "10..590 spike Mar-Jul 2026",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio surrey": {
+  "kw": "physio surrey",
+  "vol": 40,
+  "cpc": 2.16,
+  "kd": 18,
+  "comp": 0.59,
+  "intents": "L,C",
+  "trend": "10..140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc form 8": {
+  "kw": "worksafebc form 8",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 22,
+  "comp": 0.02,
+  "intents": "I,N",
+  "trend": "20->30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc ergonomics": {
+  "kw": "worksafebc ergonomics",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 23,
+  "comp": 0.07,
+  "intents": "I,N",
+  "trend": "40->30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc benefits": {
+  "kw": "worksafebc benefits",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 30,
+  "comp": 0.01,
+  "intents": "I,N",
+  "trend": "40->30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc appeal": {
+  "kw": "worksafebc appeal",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 8,
+  "comp": 0.05,
+  "intents": "I,N",
+  "trend": "40->30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workers compensation bc": {
+  "kw": "workers compensation bc",
+  "vol": 30,
+  "cpc": 0.48,
+  "kd": 44,
+  "comp": 0.08,
+  "intents": "I",
+  "trend": "30..1800 volatile",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work injury lawyer bc": {
+  "kw": "work injury lawyer bc",
+  "vol": 30,
+  "cpc": 3.71,
+  "kd": 19,
+  "comp": 0.56,
+  "intents": "L,N",
+  "trend": "flat 30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb massage therapy": {
+  "kw": "wcb massage therapy",
+  "vol": 30,
+  "cpc": 0.78,
+  "kd": 12,
+  "comp": 0.71,
+  "intents": "L,C",
+  "trend": "30..40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "on the job injury": {
+  "kw": "on the job injury",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 24,
+  "comp": 0.04,
+  "intents": "I",
+  "trend": "30..40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc teleclaim": {
+  "kw": "worksafebc teleclaim",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 50,
+  "comp": 0.02,
+  "intents": "I",
+  "trend": "40->20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc injury claim": {
+  "kw": "worksafebc injury claim",
+  "vol": 20,
+  "cpc": 1.63,
+  "kd": 0,
+  "comp": 0.11,
+  "intents": "I",
+  "trend": "10..20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc claim": {
+  "kw": "worksafebc claim",
+  "vol": 20,
+  "cpc": 1.42,
+  "kd": 19,
+  "comp": 0.04,
+  "intents": "I,N",
+  "trend": "10..20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafe bc claim": {
+  "kw": "worksafe bc claim",
+  "vol": 20,
+  "cpc": 1.42,
+  "kd": 45,
+  "comp": 0.04,
+  "intents": "I,N",
+  "trend": "10..20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "wcb claim bc": {
+  "kw": "wcb claim bc",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 32,
+  "comp": 0.05,
+  "intents": "I",
+  "trend": "flat 20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "concussion at work": {
+  "kw": "concussion at work",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 34,
+  "comp": 0.03,
+  "intents": "I",
+  "trend": "10..20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc phone number": {
+  "kw": "worksafebc phone number",
+  "vol": 10,
+  "cpc": 1.74,
+  "kd": 44,
+  "comp": 0.1,
+  "intents": "I,N",
+  "trend": "10..30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc counselling": {
+  "kw": "worksafebc counselling",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc claim status": {
+  "kw": "worksafebc claim status",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 32,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "slip and fall at work": {
+  "kw": "slip and fall at work",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 5,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "richmond physiotherapy": {
+  "kw": "richmond physiotherapy",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 13,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy abbotsford bc": {
+  "kw": "physiotherapy abbotsford bc",
+  "vol": 10,
+  "cpc": 2.15,
+  "kd": 22,
+  "comp": 0.61,
+  "intents": "I",
+  "trend": "0->10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio richmond": {
+  "kw": "physio richmond",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio new westminster": {
+  "kw": "physio new westminster",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 24,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "new westminster physiotherapy": {
+  "kw": "new westminster physiotherapy",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "lifting injury": {
+  "kw": "lifting injury",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 36,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": "30->10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "cloverdale physiotherapy": {
+  "kw": "cloverdale physiotherapy",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "burnaby physiotherapy": {
+  "kw": "burnaby physiotherapy",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 22,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "abbotsford physiotherapy": {
+  "kw": "abbotsford physiotherapy",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "10..30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc chiropractic": {
+  "kw": "worksafebc chiropractic",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 19,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work related injury": {
+  "kw": "work related injury",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 36,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "tennis elbow physiotherapy": {
+  "kw": "tennis elbow physiotherapy",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 54,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy near me": {
+  "kw": "physiotherapy near me",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 30,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0 (implausible; DB gap)",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy burnaby bc": {
+  "kw": "physiotherapy burnaby bc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 27,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio burnaby": {
+  "kw": "physio burnaby",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 29,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational therapy surrey": {
+  "kw": "occupational therapy surrey",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 6,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "icbc physio": {
+  "kw": "icbc physio",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 25,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "carpal tunnel physiotherapy": {
+  "kw": "carpal tunnel physiotherapy",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 63,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "newton physiotherapy": {
+  "kw": "newton physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "south surrey physiotherapy": {
+  "kw": "south surrey physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy new west": {
+  "kw": "physiotherapy new west",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physio surrey": {
+  "kw": "icbc physio surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physio burnaby": {
+  "kw": "icbc physio burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "surrey icbc physiotherapy": {
+  "kw": "surrey icbc physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "surrey wcb physiotherapy": {
+  "kw": "surrey wcb physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "burnaby wcb physio": {
+  "kw": "burnaby wcb physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy new west": {
+  "kw": "wcb physiotherapy new west",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wsbc physiotherapy surrey": {
+  "kw": "wsbc physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wsbc physio": {
+  "kw": "wsbc physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy bc": {
+  "kw": "worksafebc physiotherapy bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy bc": {
+  "kw": "worksafe physiotherapy bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapist near me": {
+  "kw": "worksafebc physiotherapist near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapist near me": {
+  "kw": "wcb physiotherapist near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb approved physiotherapy near me": {
+  "kw": "wcb approved physiotherapy near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc approved physiotherapy": {
+  "kw": "worksafebc approved physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc approved physio": {
+  "kw": "worksafebc approved physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb approved physio": {
+  "kw": "wcb approved physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio clinic": {
+  "kw": "wcb physio clinic",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy clinic": {
+  "kw": "worksafebc physiotherapy clinic",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy clinic near me": {
+  "kw": "wcb physiotherapy clinic near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc massage": {
+  "kw": "worksafebc massage",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb massage near me": {
+  "kw": "wcb massage near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb massage therapy near me": {
+  "kw": "wcb massage therapy near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb rmt": {
+  "kw": "wcb rmt",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc rmt": {
+  "kw": "worksafebc rmt",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc acupuncture": {
+  "kw": "worksafebc acupuncture",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb acupuncture": {
+  "kw": "wcb acupuncture",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb chiropractor near me": {
+  "kw": "wcb chiropractor near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb active rehab": {
+  "kw": "wcb active rehab",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc active rehab": {
+  "kw": "worksafebc active rehab",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc occupational therapy": {
+  "kw": "worksafebc occupational therapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "occupational therapy burnaby": {
+  "kw": "occupational therapy burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc concussion": {
+  "kw": "worksafebc concussion",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "how to file a worksafebc claim": {
+  "kw": "how to file a worksafebc claim",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc report injury": {
+  "kw": "worksafebc report injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "report injury worksafebc": {
+  "kw": "report injury worksafebc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc form 11": {
+  "kw": "worksafebc form 11",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc wage loss": {
+  "kw": "worksafebc wage loss",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc stay at work": {
+  "kw": "worksafebc stay at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy coverage": {
+  "kw": "worksafebc physiotherapy coverage",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "does worksafebc cover physiotherapy": {
+  "kw": "does worksafebc cover physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "does wcb cover physiotherapy": {
+  "kw": "does wcb cover physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "do i need a referral for worksafebc physiotherapy": {
+  "kw": "do i need a referral for worksafebc physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "do i need a referral for physiotherapy bc": {
+  "kw": "do i need a referral for physiotherapy bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy sessions": {
+  "kw": "worksafebc physiotherapy sessions",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy cost": {
+  "kw": "worksafebc physiotherapy cost",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc user fee": {
+  "kw": "worksafebc user fee",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe injury": {
+  "kw": "worksafe injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work safe bc": {
+  "kw": "work safe bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "how to make a wcb claim": {
+  "kw": "how to make a wcb claim",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "workers compensation physiotherapy": {
+  "kw": "workers compensation physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "workers comp physiotherapy": {
+  "kw": "workers comp physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc doctor": {
+  "kw": "worksafebc doctor",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc doctor near me": {
+  "kw": "worksafebc doctor near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc approved doctor": {
+  "kw": "worksafebc approved doctor",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "construction injury physiotherapy": {
+  "kw": "construction injury physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "back injury at work": {
+  "kw": "back injury at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "back injury at work physio": {
+  "kw": "back injury at work physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "back injury at work bc": {
+  "kw": "back injury at work bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "lower back injury at work": {
+  "kw": "lower back injury at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "shoulder injury at work": {
+  "kw": "shoulder injury at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "knee injury at work": {
+  "kw": "knee injury at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "repetitive strain injury physiotherapy": {
+  "kw": "repetitive strain injury physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "rsi physiotherapy": {
+  "kw": "rsi physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "workplace back injury": {
+  "kw": "workplace back injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work related back pain": {
+  "kw": "work related back pain",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "neck injury at work": {
+  "kw": "neck injury at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wrist injury at work": {
+  "kw": "wrist injury at work",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "construction injury": {
+  "kw": "construction injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "warehouse injury": {
+  "kw": "warehouse injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "rotator cuff injury physiotherapy": {
+  "kw": "rotator cuff injury physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "musculoskeletal injury physiotherapy": {
+  "kw": "musculoskeletal injury physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb injury claim": {
+  "kw": "wcb injury claim",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "injured at work what to do": {
+  "kw": "injured at work what to do",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "what to do if injured at work bc": {
+  "kw": "what to do if injured at work bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "first aid at work injury": {
+  "kw": "first aid at work injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy forms": {
+  "kw": "worksafebc physiotherapy forms",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physio initial report": {
+  "kw": "worksafebc physio initial report",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio delta": {
+  "kw": "physio delta",
+  "vol": 590,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 590",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "knee physiotherapy": {
+  "kw": "knee physiotherapy",
+  "vol": 590,
+  "cpc": 0.0,
+  "kd": 16,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 590",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "back pain physiotherapy": {
+  "kw": "back pain physiotherapy",
+  "vol": 590,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 590",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy ladner": {
+  "kw": "physiotherapy ladner",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy guildford": {
+  "kw": "physiotherapy guildford",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 13,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio south surrey": {
+  "kw": "physio south surrey",
+  "vol": 480,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 480",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy white rock": {
+  "kw": "physiotherapy white rock",
+  "vol": 390,
+  "cpc": 0.0,
+  "kd": 15,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 390",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "office ergonomics": {
+  "kw": "office ergonomics",
+  "vol": 320,
+  "cpc": 1.55,
+  "kd": 37,
+  "comp": 0.61,
+  "intents": "I",
+  "trend": "260..320",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "active rehab": {
+  "kw": "active rehab",
+  "vol": 320,
+  "cpc": 0.0,
+  "kd": 19,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 320",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "shoulder pain physiotherapy": {
+  "kw": "shoulder pain physiotherapy",
+  "vol": 260,
+  "cpc": 0.0,
+  "kd": 16,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 260",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy walnut grove": {
+  "kw": "physiotherapy walnut grove",
+  "vol": 210,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 210",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy kitsilano": {
+  "kw": "physiotherapy kitsilano",
+  "vol": 210,
+  "cpc": 2.67,
+  "kd": 22,
+  "comp": 0.86,
+  "intents": "L,C",
+  "trend": "260->210",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "sciatica physiotherapy": {
+  "kw": "sciatica physiotherapy",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 36,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 140",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "kinesiology surrey": {
+  "kw": "kinesiology surrey",
+  "vol": 110,
+  "cpc": 1.05,
+  "kd": 3,
+  "comp": 0.7,
+  "intents": "L,C",
+  "trend": "170->110",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "active rehab near me": {
+  "kw": "active rehab near me",
+  "vol": 110,
+  "cpc": 0.0,
+  "kd": 14,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 110",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work hardening program": {
+  "kw": "work hardening program",
+  "vol": 90,
+  "cpc": 0.0,
+  "kd": 5,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": "110->90",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy steveston": {
+  "kw": "physiotherapy steveston",
+  "vol": 90,
+  "cpc": 0.0,
+  "kd": 26,
+  "comp": 0.0,
+  "intents": "L,N",
+  "trend": "flat 90",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "worksafebc injury report": {
+  "kw": "worksafebc injury report",
+  "vol": 70,
+  "cpc": 0.0,
+  "kd": 36,
+  "comp": 0.03,
+  "intents": "I,N",
+  "trend": "50->70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workplace injury report": {
+  "kw": "workplace injury report",
+  "vol": 70,
+  "cpc": 2.45,
+  "kd": 44,
+  "comp": 0.12,
+  "intents": "I",
+  "trend": "70..110",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "active rehabilitation": {
+  "kw": "active rehabilitation",
+  "vol": 70,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 70",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physio newton": {
+  "kw": "physio newton",
+  "vol": 50,
+  "cpc": 0.0,
+  "kd": 21,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 50",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy clayton heights": {
+  "kw": "physiotherapy clayton heights",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 29,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 40",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy surrey central": {
+  "kw": "physiotherapy surrey central",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 17,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "active rehab surrey": {
+  "kw": "active rehab surrey",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 4,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "70->30",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how long does a wcb claim take": {
+  "kw": "how long does a wcb claim take",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 22,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": "flat 20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work rehabilitation": {
+  "kw": "work rehabilitation",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 35,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work injury clinic near me": {
+  "kw": "work injury clinic near me",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 12,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy metrotown": {
+  "kw": "physiotherapy metrotown",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 16,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "physiotherapy guildford surrey bc": {
+  "kw": "physiotherapy guildford surrey bc",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 13,
+  "comp": 1.0,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational rehabilitation program": {
+  "kw": "occupational rehabilitation program",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 17,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "kinesiologist near me": {
+  "kw": "kinesiologist near me",
+  "vol": 10,
+  "cpc": 0.68,
+  "kd": 9,
+  "comp": 0.37,
+  "intents": "L,C",
+  "trend": "10..20",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "desk job back pain": {
+  "kw": "desk job back pain",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 33,
+  "comp": 0.41,
+  "intents": "I",
+  "trend": "flat 10",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "workplace injury physio near me": {
+  "kw": "workplace injury physio near me",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 19,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational rehabilitation new westminster": {
+  "kw": "occupational rehabilitation new westminster",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 16,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "occupational rehabilitation burnaby": {
+  "kw": "occupational rehabilitation burnaby",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 8,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": "flat 0",
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "work injury physiotherapy near me": {
+  "kw": "work injury physiotherapy near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury physio near me": {
+  "kw": "work injury physio near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury doctor near me": {
+  "kw": "work injury doctor near me",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio for work injury": {
+  "kw": "physio for work injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy newton surrey": {
+  "kw": "physiotherapy newton surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy fleetwood surrey": {
+  "kw": "physiotherapy fleetwood surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy cloverdale surrey": {
+  "kw": "physiotherapy cloverdale surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy guildford surrey": {
+  "kw": "physiotherapy guildford surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy sullivan surrey": {
+  "kw": "physiotherapy sullivan surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy whalley": {
+  "kw": "physiotherapy whalley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio fleetwood": {
+  "kw": "physio fleetwood",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio cloverdale": {
+  "kw": "physio cloverdale",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio north delta": {
+  "kw": "physio north delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy tsawwassen": {
+  "kw": "physiotherapy tsawwassen",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy willowbrook": {
+  "kw": "physiotherapy willowbrook",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy dunbar": {
+  "kw": "physiotherapy dunbar",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy point grey": {
+  "kw": "physiotherapy point grey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy langley city": {
+  "kw": "physiotherapy langley city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy willoughby": {
+  "kw": "physiotherapy willoughby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "construction worker physiotherapy": {
+  "kw": "construction worker physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "truck driver back pain": {
+  "kw": "truck driver back pain",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "nurse back injury": {
+  "kw": "nurse back injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "healthcare worker injury": {
+  "kw": "healthcare worker injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "what does worksafebc cover for physiotherapy": {
+  "kw": "what does worksafebc cover for physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "can i choose my own physiotherapist worksafebc": {
+  "kw": "can i choose my own physiotherapist worksafebc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "how long does worksafebc cover physiotherapy": {
+  "kw": "how long does worksafebc cover physiotherapy",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc direct billing": {
+  "kw": "worksafebc direct billing",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc direct billing physio": {
+  "kw": "worksafebc direct billing physio",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "do i have to pay for physio with worksafebc": {
+  "kw": "do i have to pay for physio with worksafebc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc claim denied": {
+  "kw": "worksafebc claim denied",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc claim accepted": {
+  "kw": "worksafebc claim accepted",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "what is a worksafebc claim number": {
+  "kw": "what is a worksafebc claim number",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "how to get a worksafebc claim number": {
+  "kw": "how to get a worksafebc claim number",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc report of injury": {
+  "kw": "worksafebc report of injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc form 6 online": {
+  "kw": "worksafebc form 6 online",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "report a workplace injury bc": {
+  "kw": "report a workplace injury bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "report workplace injury": {
+  "kw": "report workplace injury",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "teleclaim": {
+  "kw": "teleclaim",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc claim line": {
+  "kw": "worksafebc claim line",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc claims call centre": {
+  "kw": "worksafebc claims call centre",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "functional restoration program": {
+  "kw": "functional restoration program",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work rehab": {
+  "kw": "work rehab",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc occupational rehabilitation": {
+  "kw": "worksafebc occupational rehabilitation",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "or1 program worksafebc": {
+  "kw": "or1 program worksafebc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "activity based rehabilitation": {
+  "kw": "activity based rehabilitation",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy no referral bc": {
+  "kw": "physiotherapy no referral bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "do i need a referral for physio in bc": {
+  "kw": "do i need a referral for physio in bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physio without referral": {
+  "kw": "physio without referral",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy coquitlam": {
+  "kw": "wcb physiotherapy coquitlam",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy calgary": {
+  "kw": "wcb physiotherapy calgary",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy winnipeg": {
+  "kw": "wcb physiotherapy winnipeg",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy coquitlam": {
+  "kw": "worksafebc physiotherapy coquitlam",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physio surrey": {
+  "kw": "worksafebc physio surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physio vancouver": {
+  "kw": "worksafebc physio vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physio burnaby": {
+  "kw": "worksafebc physio burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio near me surrey": {
+  "kw": "wcb physio near me surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb approved physiotherapy surrey": {
+  "kw": "wcb approved physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb approved physiotherapy vancouver": {
+  "kw": "wcb approved physiotherapy vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy guildford": {
+  "kw": "wcb physiotherapy guildford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy whalley": {
+  "kw": "wcb physiotherapy whalley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy white rock": {
+  "kw": "wcb physiotherapy white rock",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury physiotherapy surrey": {
+  "kw": "work injury physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury physiotherapy vancouver": {
+  "kw": "work injury physiotherapy vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work injury physiotherapy burnaby": {
+  "kw": "work injury physiotherapy burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "workplace injury physiotherapy surrey": {
+  "kw": "workplace injury physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "return to work physiotherapy surrey": {
+  "kw": "return to work physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "occupational rehabilitation surrey": {
+  "kw": "occupational rehabilitation surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "occupational rehabilitation vancouver": {
+  "kw": "occupational rehabilitation vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work conditioning program": {
+  "kw": "work conditioning program",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "work hardening bc": {
+  "kw": "work hardening bc",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "functional capacity evaluation surrey": {
+  "kw": "functional capacity evaluation surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "functional capacity evaluation vancouver": {
+  "kw": "functional capacity evaluation vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy vancouver": {
+  "kw": "wcb physiotherapy vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy burnaby": {
+  "kw": "wcb physiotherapy burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy new westminster": {
+  "kw": "wcb physiotherapy new westminster",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy richmond": {
+  "kw": "wcb physiotherapy richmond",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy delta": {
+  "kw": "wcb physiotherapy delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy north delta": {
+  "kw": "wcb physiotherapy north delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy nordel": {
+  "kw": "wcb physiotherapy nordel",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy langley": {
+  "kw": "wcb physiotherapy langley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy abbotsford": {
+  "kw": "wcb physiotherapy abbotsford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy cloverdale": {
+  "kw": "wcb physiotherapy cloverdale",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy fleetwood": {
+  "kw": "wcb physiotherapy fleetwood",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy newton": {
+  "kw": "wcb physiotherapy newton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy king george": {
+  "kw": "wcb physiotherapy king george",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy central city": {
+  "kw": "wcb physiotherapy central city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy cedar hills": {
+  "kw": "wcb physiotherapy cedar hills",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy strawberry hill": {
+  "kw": "wcb physiotherapy strawberry hill",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy sullivan heights": {
+  "kw": "wcb physiotherapy sullivan heights",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy clayton": {
+  "kw": "wcb physiotherapy clayton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy south surrey": {
+  "kw": "wcb physiotherapy south surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy surrey": {
+  "kw": "worksafebc physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy vancouver": {
+  "kw": "worksafebc physiotherapy vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy burnaby": {
+  "kw": "worksafebc physiotherapy burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy new westminster": {
+  "kw": "worksafebc physiotherapy new westminster",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy richmond": {
+  "kw": "worksafebc physiotherapy richmond",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy delta": {
+  "kw": "worksafebc physiotherapy delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy north delta": {
+  "kw": "worksafebc physiotherapy north delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy nordel": {
+  "kw": "worksafebc physiotherapy nordel",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy langley": {
+  "kw": "worksafebc physiotherapy langley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy abbotsford": {
+  "kw": "worksafebc physiotherapy abbotsford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy cloverdale": {
+  "kw": "worksafebc physiotherapy cloverdale",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy fleetwood": {
+  "kw": "worksafebc physiotherapy fleetwood",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy newton": {
+  "kw": "worksafebc physiotherapy newton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy king george": {
+  "kw": "worksafebc physiotherapy king george",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy central city": {
+  "kw": "worksafebc physiotherapy central city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy cedar hills": {
+  "kw": "worksafebc physiotherapy cedar hills",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy strawberry hill": {
+  "kw": "worksafebc physiotherapy strawberry hill",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy sullivan heights": {
+  "kw": "worksafebc physiotherapy sullivan heights",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy clayton": {
+  "kw": "worksafebc physiotherapy clayton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafebc physiotherapy south surrey": {
+  "kw": "worksafebc physiotherapy south surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy surrey": {
+  "kw": "worksafe physiotherapy surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy vancouver": {
+  "kw": "worksafe physiotherapy vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy burnaby": {
+  "kw": "worksafe physiotherapy burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy new westminster": {
+  "kw": "worksafe physiotherapy new westminster",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy richmond": {
+  "kw": "worksafe physiotherapy richmond",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy delta": {
+  "kw": "worksafe physiotherapy delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy north delta": {
+  "kw": "worksafe physiotherapy north delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy nordel": {
+  "kw": "worksafe physiotherapy nordel",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy langley": {
+  "kw": "worksafe physiotherapy langley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy abbotsford": {
+  "kw": "worksafe physiotherapy abbotsford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy cloverdale": {
+  "kw": "worksafe physiotherapy cloverdale",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy fleetwood": {
+  "kw": "worksafe physiotherapy fleetwood",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy newton": {
+  "kw": "worksafe physiotherapy newton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy king george": {
+  "kw": "worksafe physiotherapy king george",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy central city": {
+  "kw": "worksafe physiotherapy central city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy cedar hills": {
+  "kw": "worksafe physiotherapy cedar hills",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy strawberry hill": {
+  "kw": "worksafe physiotherapy strawberry hill",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy sullivan heights": {
+  "kw": "worksafe physiotherapy sullivan heights",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy clayton": {
+  "kw": "worksafe physiotherapy clayton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physiotherapy south surrey": {
+  "kw": "worksafe physiotherapy south surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio surrey": {
+  "kw": "wcb physio surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio vancouver": {
+  "kw": "wcb physio vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio burnaby": {
+  "kw": "wcb physio burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio new westminster": {
+  "kw": "wcb physio new westminster",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio richmond": {
+  "kw": "wcb physio richmond",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio delta": {
+  "kw": "wcb physio delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio north delta": {
+  "kw": "wcb physio north delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio nordel": {
+  "kw": "wcb physio nordel",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio langley": {
+  "kw": "wcb physio langley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio abbotsford": {
+  "kw": "wcb physio abbotsford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio cloverdale": {
+  "kw": "wcb physio cloverdale",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio fleetwood": {
+  "kw": "wcb physio fleetwood",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio newton": {
+  "kw": "wcb physio newton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio king george": {
+  "kw": "wcb physio king george",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio central city": {
+  "kw": "wcb physio central city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio cedar hills": {
+  "kw": "wcb physio cedar hills",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio strawberry hill": {
+  "kw": "wcb physio strawberry hill",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio sullivan heights": {
+  "kw": "wcb physio sullivan heights",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio clayton": {
+  "kw": "wcb physio clayton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physio south surrey": {
+  "kw": "wcb physio south surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy nordel": {
+  "kw": "physiotherapy nordel",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy newton": {
+  "kw": "physiotherapy newton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy king george": {
+  "kw": "physiotherapy king george",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy central city": {
+  "kw": "physiotherapy central city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy cedar hills": {
+  "kw": "physiotherapy cedar hills",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy strawberry hill": {
+  "kw": "physiotherapy strawberry hill",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy sullivan heights": {
+  "kw": "physiotherapy sullivan heights",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "physiotherapy clayton": {
+  "kw": "physiotherapy clayton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy richmond": {
+  "kw": "icbc physiotherapy richmond",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy delta": {
+  "kw": "icbc physiotherapy delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy north delta": {
+  "kw": "icbc physiotherapy north delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy nordel": {
+  "kw": "icbc physiotherapy nordel",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy langley": {
+  "kw": "icbc physiotherapy langley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy abbotsford": {
+  "kw": "icbc physiotherapy abbotsford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy cloverdale": {
+  "kw": "icbc physiotherapy cloverdale",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy fleetwood": {
+  "kw": "icbc physiotherapy fleetwood",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy newton": {
+  "kw": "icbc physiotherapy newton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy king george": {
+  "kw": "icbc physiotherapy king george",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy central city": {
+  "kw": "icbc physiotherapy central city",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy cedar hills": {
+  "kw": "icbc physiotherapy cedar hills",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy strawberry hill": {
+  "kw": "icbc physiotherapy strawberry hill",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy sullivan heights": {
+  "kw": "icbc physiotherapy sullivan heights",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy clayton": {
+  "kw": "icbc physiotherapy clayton",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "icbc physiotherapy south surrey": {
+  "kw": "icbc physiotherapy south surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio surrey": {
+  "kw": "worksafe physio surrey",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio vancouver": {
+  "kw": "worksafe physio vancouver",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio burnaby": {
+  "kw": "worksafe physio burnaby",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio new westminster": {
+  "kw": "worksafe physio new westminster",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio richmond": {
+  "kw": "worksafe physio richmond",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio delta": {
+  "kw": "worksafe physio delta",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio langley": {
+  "kw": "worksafe physio langley",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "worksafe physio abbotsford": {
+  "kw": "worksafe physio abbotsford",
+  "vol": null,
+  "cpc": null,
+  "kd": null,
+  "comp": null,
+  "intents": null,
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordsMetrics (source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": true
+ },
+ "wcb physiotherapy edmonton": {
+  "kw": "wcb physiotherapy edmonton",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 10,
+  "comp": 0.18,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "wcb approved physiotherapy": {
+  "kw": "wcb approved physiotherapy",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, video, people_also_ask, related_searches",
+  "nd": false
+ },
+ "wcb physiotherapy reports": {
+  "kw": "wcb physiotherapy reports",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 8,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, people_also_ask, images, related_searches",
+  "nd": false
+ },
+ "wcb physiotherapy contract": {
+  "kw": "wcb physiotherapy contract",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)",
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, video, people_also_ask, related_searches",
+  "nd": false
+ },
+ "wcb physiotherapy fee schedule": {
+  "kw": "wcb physiotherapy fee schedule",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, images, sge, related_searches",
+  "nd": false
+ },
+ "wcb approved physiotherapy edmonton": {
+  "kw": "wcb approved physiotherapy edmonton",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 17,
+  "comp": 0.0,
+  "intents": "L,C",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getSimilarKeywords (seed=wcb physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, sge, related_searches",
+  "nd": false
+ },
+ "wsbc extension report": {
+  "kw": "wsbc extension report",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 17,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "wsbc initial report": {
+  "kw": "wsbc initial report",
+  "vol": 140,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, sge, related_searches",
+  "nd": false
+ },
+ "wsbc discharge report": {
+  "kw": "wsbc discharge report",
+  "vol": 110,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sge, related_searches",
+  "nd": false
+ },
+ "wcb initial report": {
+  "kw": "wcb initial report",
+  "vol": 90,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "worksafebc physiotherapy fee schedule": {
+  "kw": "worksafebc physiotherapy fee schedule",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 10,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, video, people_also_ask, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy fee schedule": {
+  "kw": "wsbc physiotherapy fee schedule",
+  "vol": 40,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, video, related_searches",
+  "nd": false
+ },
+ "workplace physiotherapy": {
+  "kw": "workplace physiotherapy",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 8,
+  "comp": 0.0,
+  "intents": "L,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, sitelinks, video, people_also_ask, related_searches",
+  "nd": false
+ },
+ "worksafebc physiotherapy initial report": {
+  "kw": "worksafebc physiotherapy initial report",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "related_searches",
+  "nd": false
+ },
+ "wcb approved massage therapy": {
+  "kw": "wcb approved massage therapy",
+  "vol": 20,
+  "cpc": 0.59,
+  "kd": 14,
+  "comp": 0.81,
+  "intents": "L,C",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "local_pack, reviews, video, people_also_ask, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy initial report": {
+  "kw": "wsbc physiotherapy initial report",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 8,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy extension report": {
+  "kw": "wsbc physiotherapy extension report",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "related_searches",
+  "nd": false
+ },
+ "worksafebc initial report": {
+  "kw": "worksafebc initial report",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 18,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, sitelinks, related_searches",
+  "nd": false
+ },
+ "wsbc fee schedule": {
+  "kw": "wsbc fee schedule",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, related_searches",
+  "nd": false
+ },
+ "worksafebc physiotherapy contract": {
+  "kw": "worksafebc physiotherapy contract",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 13,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, images, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy discharge report": {
+  "kw": "wsbc physiotherapy discharge report",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "images, related_searches",
+  "nd": false
+ },
+ "worksafe physiotherapy initial report": {
+  "kw": "worksafe physiotherapy initial report",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, images, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy burnaby": {
+  "kw": "wsbc physiotherapy burnaby",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 11,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy new westminster": {
+  "kw": "wsbc physiotherapy new westminster",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 10,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "wsbc physiotherapy new west": {
+  "kw": "wsbc physiotherapy new west",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 9,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getRelatedKeywords (seed=worksafebc physiotherapy, source=ca, 2026-11-02)"
+  ],
+  "serp": "video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "what is worksafebc": {
+  "kw": "what is worksafebc",
+  "vol": 260,
+  "cpc": 0.0,
+  "kd": 50,
+  "comp": 0.01,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "how long does worksafebc pay": {
+  "kw": "how long does worksafebc pay",
+  "vol": 30,
+  "cpc": 0.0,
+  "kd": 27,
+  "comp": 0.01,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": "sitelinks, video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "can you sue worksafebc": {
+  "kw": "can you sue worksafebc",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 17,
+  "comp": 0.03,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": "reviews, video, people_also_ask, sge, related_searches, places_sites_products",
+  "nd": false
+ },
+ "how does worksafebc work": {
+  "kw": "how does worksafebc work",
+  "vol": 20,
+  "cpc": 0.0,
+  "kd": 36,
+  "comp": 0.07,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": "video, people_also_ask, sge, related_searches",
+  "nd": false
+ },
+ "what does worksafebc cover": {
+  "kw": "what does worksafebc cover",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 34,
+  "comp": 0.0,
+  "intents": "I,N",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": "featured_snippets, sitelinks, people_also_ask, images, related_searches, places_sites_products",
+  "nd": false
+ },
+ "how to fight worksafebc": {
+  "kw": "how to fight worksafebc",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 21,
+  "comp": 0.0,
+  "intents": "I",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": "video, people_also_ask, sge, related_searches, places_sites_products",
+  "nd": false
+ },
+ "is wcb and worksafebc the same thing": {
+  "kw": "is wcb and worksafebc the same thing",
+  "vol": 10,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how does a worksafebc claim work": {
+  "kw": "how does a worksafebc claim work",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how long does a worksafebc claim take": {
+  "kw": "how long does a worksafebc claim take",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how do i claim worksafebc": {
+  "kw": "how do i claim worksafebc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "what will worksafebc pay for": {
+  "kw": "what will worksafebc pay for",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "who is eligible for worksafebc": {
+  "kw": "who is eligible for worksafebc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "what three forms will start a worksafebc claim for compensation": {
+  "kw": "what three forms will start a worksafebc claim for compensation",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "what is the difference between wcb and worksafebc": {
+  "kw": "what is the difference between wcb and worksafebc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "does worksafebc cover mental health": {
+  "kw": "does worksafebc cover mental health",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "what is vocational rehab at worksafebc": {
+  "kw": "what is vocational rehab at worksafebc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how do i check my worksafebc status": {
+  "kw": "how do i check my worksafebc status",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how to fill out worksafebc form 7": {
+  "kw": "how to fill out worksafebc form 7",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how do i review division decisions on worksafebc": {
+  "kw": "how do i review division decisions on worksafebc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "who is not covered by worksafebc": {
+  "kw": "who is not covered by worksafebc",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ },
+ "how long does it take for worksafebc to pay": {
+  "kw": "how long does it take for worksafebc to pay",
+  "vol": 0,
+  "cpc": 0.0,
+  "kd": 0,
+  "comp": 0.0,
+  "intents": "",
+  "trend": null,
+  "endpoints": [
+   "SE Ranking DATA_getKeywordQuestions (seed=worksafebc, source=ca, 2026-11-02)"
+  ],
+  "serp": null,
+  "nd": false
+ }
+}

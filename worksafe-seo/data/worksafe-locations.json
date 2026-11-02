@@ -1,0 +1,2150 @@
+[
+ {
+  "page_slug": "vancouver",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/vancouver/",
+  "name": "Vancouver",
+  "brand_name": "Synergy Rehab Vancouver",
+  "area_label": "Vancouver's West Side",
+  "address": {
+   "street": "3609 W 16th Ave",
+   "unit": "",
+   "city": "Vancouver",
+   "region": "BC",
+   "postal": "V6R 3C3",
+   "country": "CA"
+  },
+  "phone": "(604) 416-2600",
+  "phone_e164": "+16044162600",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "8AM-8PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-8PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-1PM"
+   }
+  ],
+  "jane": {
+   "slug": "vancouver",
+   "location_id": "24",
+   "book_url": "https://synergyrehab.janeapp.com/locations/vancouver/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/vancouver/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 2,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Burnaby",
+    "km": 14.0,
+    "slug": "burnaby"
+   },
+   {
+    "name": "Richmond",
+    "km": 16.0,
+    "slug": "richmond"
+   },
+   {
+    "name": "New Westminster",
+    "km": 21.0,
+    "slug": "new-westminster"
+   },
+   {
+    "name": "- 301 East Columbia Street, New Westminster ; 04 Delta",
+    "km": 22.0,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/vancouver/",
+   "clinic": "https://synergyrehabilitation.ca/vancouver-physio/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Phone conflicts across 3 site pages (LIKELY). Smallest physio team in Jane openings (2 physiotherapists, KNOWN). Jane also lists a \"No Direct Billing Physiotherapy\" discipline here (KNOWN, run log).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "LOW: cached list phone 236.885.8280 differs",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "burnaby",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/",
+  "name": "Burnaby",
+  "brand_name": "Synergy Rehab Burnaby",
+  "area_label": "Burnaby",
+  "address": {
+   "street": "4695 Canada Way",
+   "unit": "Unit 201",
+   "city": "Burnaby",
+   "region": "BC",
+   "postal": "V5G 1K8",
+   "country": "CA"
+  },
+  "phone": "(604) 558-8873",
+  "phone_e164": "+16045588873",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-5PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-3PM"
+   }
+  ],
+  "jane": {
+   "slug": "burnaby",
+   "location_id": "7",
+   "book_url": "https://synergyrehab.janeapp.com/locations/burnaby/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/burnaby/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 2,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "New Westminster",
+    "km": 7.7,
+    "slug": "new-westminster"
+   },
+   {
+    "name": "- 301 East Columbia Street, New Westminster ; 02 Delta",
+    "km": 12.0,
+    "slug": null
+   },
+   {
+    "name": "Cedar Hills",
+    "km": 12.0,
+    "slug": "cedar-hills-surrey"
+   },
+   {
+    "name": "Nordel",
+    "km": 13.0,
+    "slug": "nordel-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/burnaby/",
+   "clinic": "https://synergyrehabilitation.ca/burnaby-physiotherapy-treatment-services/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Site homepage <title> appears as \"Physiotherapy Clinic in Burnaby, BC\" in WebSearch titles, and several non-Burnaby location pages (Newton/amson, Cloverdale, King George) reuse that Burnaby title (KNOWN from crawl 2026-09-25).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "new-westminster",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/",
+  "name": "New Westminster",
+  "brand_name": "Synergy Rehab New Westminster",
+  "area_label": "New Westminster",
+  "address": {
+   "street": "301 East Columbia St",
+   "unit": "Unit 405",
+   "city": "New Westminster",
+   "region": "BC",
+   "postal": "V3L 3W5",
+   "country": "CA"
+  },
+  "phone": "(604) 553-3303",
+  "phone_e164": "+16045533303",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "9AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "new-westminster",
+   "location_id": "5",
+   "book_url": "https://synergyrehab.janeapp.com/locations/new-westminster/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/new-westminster/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 4,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Cedar Hills",
+    "km": 5.9,
+    "slug": "cedar-hills-surrey"
+   },
+   {
+    "name": "Central City",
+    "km": 6.2,
+    "slug": "central-city-surrey"
+   },
+   {
+    "name": "Nordel",
+    "km": 7.0,
+    "slug": "nordel-surrey"
+   },
+   {
+    "name": "Burnaby",
+    "km": 7.7,
+    "slug": "burnaby"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/new-westminster/",
+   "clinic": "https://synergyrehabilitation.ca/physiotherapy-new-westminster/"
+  },
+  "gbp": {
+   "rating": "4.88",
+   "reviews": "546",
+   "lat": "49.22582",
+   "lng": "-122.89324"
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "GBP website points to the HOMEPAGE, not the New Westminster location page (KNOWN). Address format differs: GBP \"405 - 301 East Columbia Street\" vs repo \"301 E Columbia Street, #405\" (KNOWN); SE audit flags postal-address mismatch on Google Maps, Yelp, Waze, WhereTo. Second phone (604) 239-3210 on one site page (LIKELY). No GBP service area set; 0 GBP attributes; 5 negative reviews without reply (audit).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "LOW: on cached list but unit 202 vs 405",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "richmond",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/richmond/",
+  "name": "Richmond",
+  "brand_name": "Synergy Rehab Richmond",
+  "area_label": "Richmond",
+  "address": {
+   "street": "11688 Steveston Hwy",
+   "unit": "Unit 8060",
+   "city": "Richmond",
+   "region": "BC",
+   "postal": "V7A 5J3",
+   "country": "CA"
+  },
+  "phone": "(604) 284-5113",
+  "phone_e164": "+16042845113",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "9AM-5PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-3PM"
+   }
+  ],
+  "jane": {
+   "slug": "richmond",
+   "location_id": "3",
+   "book_url": "https://synergyrehab.janeapp.com/locations/richmond/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/richmond/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Initial Session (40 mins)",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 4,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Delta",
+    "km": 12.0,
+    "slug": "delta"
+   },
+   {
+    "name": "Burnaby",
+    "km": 16.0,
+    "slug": "burnaby"
+   },
+   {
+    "name": "Vancouver",
+    "km": 16.0,
+    "slug": "vancouver"
+   },
+   {
+    "name": "W 16th Ave, Vancouver ; 04 Strawberry Hill",
+    "km": 16.0,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/richmond/",
+   "clinic": "https://synergyrehabilitation.ca/richmond-physiotherapy/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Postal code conflict V7A 1N6 vs V7A 5J3 across site pages (LIKELY). Duplicate general pages /richmond-physiotherapy/ and /richmond-physiotherapy-2/ (KNOWN, crawl).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "delta",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/",
+  "name": "Delta",
+  "brand_name": "Synergy Rehab Delta",
+  "area_label": "North Delta",
+  "address": {
+   "street": "10757 Delsom Crescent",
+   "unit": "Unit 103",
+   "city": "Delta",
+   "region": "BC",
+   "postal": "V4C 0A8",
+   "country": "CA"
+  },
+  "phone": "(604) 516-8505",
+  "phone_e164": "+16045168505",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "delta",
+   "location_id": "12",
+   "book_url": "https://synergyrehab.janeapp.com/locations/delta/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/delta/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 8,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Nordel",
+    "km": 4.2,
+    "slug": "nordel-surrey"
+   },
+   {
+    "name": "Strawberry Hill",
+    "km": 4.3,
+    "slug": "strawberry-hill-surrey"
+   },
+   {
+    "name": "Cedar Hills",
+    "km": 5.4,
+    "slug": "cedar-hills-surrey"
+   },
+   {
+    "name": "King George",
+    "km": 6.2,
+    "slug": "king-george-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/delta/",
+   "clinic": "https://synergyrehabilitation.ca/physiotherapy-delta-chiropractor/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "WORKSAFE FLAG RESOLVED TO SERVICE LEVEL: the \"not covered by extended health, ICBC or WorkSafe BC\" text on the Delta Jane page refers to the Non-Registered Massage (Bodyworker) service, not the clinic (LIKELY, WebSearch x3). Postal V4C 0A5 (site) vs V4C 0A8 (Medimap). Medimap also lists \"Salius Rehab Inc.\" at #103-10757 Delsom Cres (UNKNOWN, possibly stale). Site labels it \"North Delta\" (ICBC H1) while repo city = \"Delta\". Sun Life directory lists only chiro/massage services here (LIKELY stale).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "MEDIUM: Medimap lists another entity (Salius Rehab Inc.) at this unit; older EAPP row carries King George phone",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "nordel-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/",
+  "name": "Nordel",
+  "brand_name": "Synergy Rehab Nordel",
+  "area_label": "Nordel, Surrey",
+  "address": {
+   "street": "12565 88 Avenue",
+   "unit": "Unit 116",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3W 3J7",
+   "country": "CA"
+  },
+  "phone": "(604) 503-1688",
+  "phone_e164": "+16045031688",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-5PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "nordel-88-ave",
+   "location_id": "1",
+   "book_url": "https://synergyrehab.janeapp.com/locations/nordel-88-ave/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/nordel-88-ave/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Acupuncture Initial Session (45 mins)",
+   "WCB Acupuncture Subsequent Session (30 mins)",
+   "WCB Acupuncture Subsequent Session (45 mins)",
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": true,
+  "wcb_physios_with_openings": 8,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Cedar Hills",
+    "km": 1.5,
+    "slug": "cedar-hills-surrey"
+   },
+   {
+    "name": "King George",
+    "km": 2.8,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 03 Central City",
+    "km": 3.0,
+    "slug": null
+   },
+   {
+    "name": "Strawberry Hill",
+    "km": 3.4,
+    "slug": "strawberry-hill-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/nordel-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/surrey-nordel-physio/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Clinic phone equals the corporate main line +1-604-503-1688 (LIKELY). City ambiguity: repo/ICBC = Surrey, site taxonomy \"Nordel (North Delta)\" (KNOWN, crawl).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "cedar-hills-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cedar-hills-surrey/",
+  "name": "Cedar Hills",
+  "brand_name": "Synergy Rehab Cedar Hills",
+  "area_label": "Cedar Hills, Surrey",
+  "address": {
+   "street": "12852 96 Ave",
+   "unit": "Unit 120",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3V 6A8",
+   "country": "CA"
+  },
+  "phone": "(604) 498-0877",
+  "phone_e164": "+16044980877",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-5PM"
+   }
+  ],
+  "jane": {
+   "slug": "cedar-hills",
+   "location_id": "4",
+   "book_url": "https://synergyrehab.janeapp.com/locations/cedar-hills/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/cedar-hills/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 6,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Nordel",
+    "km": 1.5,
+    "slug": "nordel-surrey"
+   },
+   {
+    "name": "Central City",
+    "km": 1.7,
+    "slug": "central-city-surrey"
+   },
+   {
+    "name": "King George",
+    "km": 3.4,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 04 Strawberry Hill",
+    "km": 4.8,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/cedar-hills-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/cedar-hills-surrey-physiotherapy-clinic/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "None found beyond missing GBP data.",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "HIGH: not found on cached WorkSafeBC MSK physio list; Medimap lists private pay only (SYN-16)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "central-city-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/central-city-surrey/",
+  "name": "Central City",
+  "brand_name": "Synergy Rehab Central City",
+  "area_label": "Surrey City Centre",
+  "address": {
+   "street": "13655 Fraser Hwy",
+   "unit": "Unit 120",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3T 0P8",
+   "country": "CA"
+  },
+  "phone": "(604) 954-1475",
+  "phone_e164": "+16049541475",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "central-city",
+   "location_id": "16",
+   "book_url": "https://synergyrehab.janeapp.com/locations/central-city/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/central-city/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 5,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Cedar Hills",
+    "km": 1.7,
+    "slug": "cedar-hills-surrey"
+   },
+   {
+    "name": "Nordel",
+    "km": 3.0,
+    "slug": "nordel-surrey"
+   },
+   {
+    "name": "King George",
+    "km": 3.5,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 04 Fleetwood",
+    "km": 5.3,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/central-city-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/city-central-surrey-physio/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Postal code and phone conflicts across site pages (LIKELY). Name variants City Central / Central City / Surrey City Centre (KNOWN).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "LOW: cached list names it King George Hub with a different phone",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "king-george-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/king-george-surrey/",
+  "name": "King George",
+  "brand_name": "Synergy Rehab King George",
+  "area_label": "King George Blvd, Surrey",
+  "address": {
+   "street": "8056 King George Blvd",
+   "unit": "Unit 101",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3W 5B5",
+   "country": "CA"
+  },
+  "phone": "(604) 503-9033",
+  "phone_e164": "+16045039033",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-3PM"
+   }
+  ],
+  "jane": {
+   "slug": "king-george",
+   "location_id": "9",
+   "book_url": "https://synergyrehab.janeapp.com/locations/king-george/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/king-george/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 8,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Newton",
+    "km": 2.4,
+    "slug": "newton-surrey"
+   },
+   {
+    "name": "Nordel",
+    "km": 2.8,
+    "slug": "nordel-surrey"
+   },
+   {
+    "name": "Strawberry Hill",
+    "km": 3.0,
+    "slug": "strawberry-hill-surrey"
+   },
+   {
+    "name": "Cedar Hills",
+    "km": 3.4,
+    "slug": "cedar-hills-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/king-george-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/physiotherapy-king-george-chiropractor/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "General page <title> \"Physiotherapy Clinic in Burnaby, BC\" on a King George page (KNOWN, crawl 2026-09-25). WebSearch summary says the King George postal code also appears on a Clayton Corners listing (UNKNOWN; verify).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "strawberry-hill-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/",
+  "name": "Strawberry Hill",
+  "brand_name": "Synergy Rehab Strawberry Hill",
+  "area_label": "Strawberry Hill, Surrey",
+  "address": {
+   "street": "12422 72 Ave",
+   "unit": "Unit 206",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3W 2M5",
+   "country": "CA"
+  },
+  "phone": "(604) 547-0670",
+  "phone_e164": "+16045470670",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "strawberry-hill-72nd",
+   "location_id": "21",
+   "book_url": "https://synergyrehab.janeapp.com/locations/strawberry-hill-72nd/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/strawberry-hill-72nd/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 7,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "King George",
+    "km": 3.0,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 02 Nordel",
+    "km": 3.4,
+    "slug": null
+   },
+   {
+    "name": "Newton",
+    "km": 4.1,
+    "slug": "newton-surrey"
+   },
+   {
+    "name": "Delta",
+    "km": 4.3,
+    "slug": "delta"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/strawberry-hill-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/strawberry-hill-physio/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Newton GBP search terms include \"synergy rehab strawberry hill ...\" strings (0 reported impressions), i.e. some Strawberry Hill searches surface the Newton profile (KNOWN, low volume).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "newton-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/",
+  "name": "Newton",
+  "brand_name": "Synergy Rehab Newton",
+  "area_label": "Newton, Surrey",
+  "address": {
+   "street": "14468 72 Ave",
+   "unit": "Unit 101",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3S 2E6",
+   "country": "CA"
+  },
+  "phone": "(604) 547-3761",
+  "phone_e164": "+16045473761",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-7PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "newton-72nd",
+   "location_id": "15",
+   "book_url": "https://synergyrehab.janeapp.com/locations/newton-72nd/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/newton-72nd/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 10,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "King George",
+    "km": 2.4,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 02 Sullivan Heights",
+    "km": 3.6,
+    "slug": null
+   },
+   {
+    "name": "- 15325 56 Avenue (Highway 10), Surrey ; 03 Strawberry Hill",
+    "km": 4.1,
+    "slug": null
+   },
+   {
+    "name": "Fleetwood",
+    "km": 4.2,
+    "slug": "fleetwood-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/newton-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/physiotherapy-amson-chiropractor/"
+  },
+  "gbp": {
+   "rating": "4.83",
+   "reviews": "634",
+   "lat": "49.13351",
+   "lng": "-122.82191"
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "GBP website clicks collapsed: 212-357/month Nov 2025-Jul 2026 -> 100 (Aug), 14 (Sep), 89 (Oct 2026) while calls stayed 645-758/month (KNOWN, getGbpMetrics). Audit 2026-10-23 flags website errors on google_maps, waze, where_to, hotfrog (KNOWN); cause UNKNOWN. GBP landing page /physiotherapy-amson-chiropractor/ had <title> \"Physiotherapy Clinic in Burnaby, BC\" with Newton H1 at crawl 2026-09-25 (KNOWN). Legacy \"Amson 72nd\" Jane slug still indexed (LIKELY). GBP description mentions ICBC but not WCB/WorkSafe (KNOWN). GBP service area lists 15 places incl. Delta, Langley, New Westminster, Fleetwood, Cloverdale, South Surrey that overlap other Synergy clinics (KNOWN). Search-term strings show postal variants V3S 2E6 / V3S 0B6 (UNKNOWN significance).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "fleetwood-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/fleetwood-surrey/",
+  "name": "Fleetwood",
+  "brand_name": "Synergy Rehab Fleetwood",
+  "area_label": "Fleetwood, Surrey",
+  "address": {
+   "street": "8585 160th St",
+   "unit": "Unit 103",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V4N 1G4",
+   "country": "CA"
+  },
+  "phone": "(604) 503-4799",
+  "phone_e164": "+16045034799",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-7PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "fleetwood",
+   "location_id": "2",
+   "book_url": "https://synergyrehab.janeapp.com/locations/fleetwood/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/fleetwood/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 6,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Newton",
+    "km": 4.2,
+    "slug": "newton-surrey"
+   },
+   {
+    "name": "King George",
+    "km": 4.9,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 03 Central City",
+    "km": 5.3,
+    "slug": null
+   },
+   {
+    "name": "Sullivan Heights",
+    "km": 6.1,
+    "slug": "sullivan-heights-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/fleetwood-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/fleetwood-physiotherapy-treatment-clinic/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Kinesiology/Active Rehab discipline is bookable (run log) but had no openings 2026-11-02..08 (KNOWN). Jane also offers Non-Registered Massage (Bodyworker) here (KNOWN, run log).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "sullivan-heights-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/sullivan-heights-surrey/",
+  "name": "Sullivan Heights",
+  "brand_name": "Synergy Rehab Sullivan Heights",
+  "area_label": "Sullivan Heights, Surrey",
+  "address": {
+   "street": "15325 56th Ave",
+   "unit": "Unit 106",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3S 0X9",
+   "country": "CA"
+  },
+  "phone": "(604) 566-8773",
+  "phone_e164": "+16045668773",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "10AM-6PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-5PM"
+   }
+  ],
+  "jane": {
+   "slug": "sullivan-heights-hwy-10",
+   "location_id": "6",
+   "book_url": "https://synergyrehab.janeapp.com/locations/sullivan-heights-hwy-10/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/sullivan-heights-hwy-10/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Massage Subsequent Session - 30 minutes",
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": true,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 8,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Newton",
+    "km": 3.6,
+    "slug": "newton-surrey"
+   },
+   {
+    "name": "Cloverdale",
+    "km": 4.9,
+    "slug": "cloverdale-surrey"
+   },
+   {
+    "name": "King George",
+    "km": 5.9,
+    "slug": "king-george-surrey"
+   },
+   {
+    "name": "8056 King George Blvd, Surrey ; 04 Fleetwood",
+    "km": 6.1,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/sullivan-heights-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/surrey-sullivan-physio/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Jane page header \"WorkSafeBC Accepted\" and bodyworker-not-covered note (LIKELY, WebSearch). Jane also lists an \"Orthopaedic Surgeon\" discipline and no Chiropractor here (KNOWN, run log). Repo main-branch data/availability.json (2026-10-02) still shows a \"Kinesiology/Active Rehab (Mobile)\" discipline that current collect.js skips, i.e. the main-branch file is stale (KNOWN).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "south-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/south-surrey/",
+  "name": "South Surrey",
+  "brand_name": "Synergy Rehab South Surrey",
+  "area_label": "South Surrey",
+  "address": {
+   "street": "2388 156 St",
+   "unit": "Unit 106",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V4A 4V4",
+   "country": "CA"
+  },
+  "phone": "(604) 385-5855",
+  "phone_e164": "+16043855855",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "9AM-5PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-5PM"
+   }
+  ],
+  "jane": {
+   "slug": "south-surrey",
+   "location_id": "17",
+   "book_url": "https://synergyrehab.janeapp.com/locations/south-surrey/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/south-surrey/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 5,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Sullivan Heights",
+    "km": 6.7,
+    "slug": "sullivan-heights-surrey"
+   },
+   {
+    "name": "- 15325 56 Avenue (Highway 10), Surrey ; 02 Cloverdale",
+    "km": 7.9,
+    "slug": null
+   },
+   {
+    "name": "Newton",
+    "km": 10.0,
+    "slug": "newton-surrey"
+   },
+   {
+    "name": "Clayton Heights",
+    "km": 11.0,
+    "slug": "clayton-heights-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/south-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/south-surrey-chiropractic-care/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Only general location page found is chiropractic-titled (\"South Surrey Chiropractic Care\") (KNOWN, crawl).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "cloverdale-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cloverdale-surrey/",
+  "name": "Cloverdale",
+  "brand_name": "Synergy Rehab Cloverdale",
+  "area_label": "Cloverdale, Surrey",
+  "address": {
+   "street": "5645 177b St",
+   "unit": "Unit 102",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3S 4H9",
+   "country": "CA"
+  },
+  "phone": "(604) 579-1367",
+  "phone_e164": "+16045791367",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "cloverdale-hwy-10",
+   "location_id": "13",
+   "book_url": "https://synergyrehab.janeapp.com/locations/cloverdale-hwy-10/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/cloverdale-hwy-10/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 9,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Clayton Heights",
+    "km": 3.3,
+    "slug": "clayton-heights-surrey"
+   },
+   {
+    "name": "Clayton Corners",
+    "km": 3.9,
+    "slug": "clayton-corners-surrey"
+   },
+   {
+    "name": "Sullivan Heights",
+    "km": 4.9,
+    "slug": "sullivan-heights-surrey"
+   },
+   {
+    "name": "- 15325 56 Avenue (Highway 10), Surrey ; 04 Fleetwood",
+    "km": 7.0,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/cloverdale-surrey/",
+   "clinic": "https://synergyrehabilitation.ca/physiotherapy-cloverdale-chiropractor/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Phone conflict (LIKELY). General page <title> \"Physiotherapy Clinic in Burnaby, BC\" (KNOWN, crawl 2026-09-25). ICBC meta description gives only \"Unit 102\" with no street (KNOWN).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "clayton-heights-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/",
+  "name": "Clayton Heights",
+  "brand_name": "Synergy Rehab Clayton Heights",
+  "area_label": "Clayton Heights, Surrey",
+  "address": {
+   "street": "19161 Fraser Hwy",
+   "unit": "Unit 105B",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V3S 8E7",
+   "country": "CA"
+  },
+  "phone": "(604) 547-2860",
+  "phone_e164": "+16045472860",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "7:30AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "8AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-5PM"
+   }
+  ],
+  "jane": {
+   "slug": "clayton-heights",
+   "location_id": "11",
+   "book_url": "https://synergyrehab.janeapp.com/locations/clayton-heights/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/clayton-heights/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 7,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Clayton Corners",
+    "km": 1.8,
+    "slug": "clayton-corners-surrey"
+   },
+   {
+    "name": "Cloverdale",
+    "km": 3.3,
+    "slug": "cloverdale-surrey"
+   },
+   {
+    "name": "Langley",
+    "km": 4.1,
+    "slug": "langley"
+   },
+   {
+    "name": "Street, Unit A130, Langley Twp ; 04 Fleetwood",
+    "km": 7.7,
+    "slug": null
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/clayton-heights-surrey/",
+   "clinic": null
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "/clayton-heights-thank-you/ H1 reads \"South Surrey Facility\" (KNOWN, crawl). /extp-location/clayton-heights-synergy-rehab/ returns 404 (KNOWN, crawl).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "clayton-corners-surrey",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/",
+  "name": "Clayton Corners",
+  "brand_name": "Synergy Rehab Clayton Corners",
+  "area_label": "East Clayton, Surrey",
+  "address": {
+   "street": "18811 72 Ave",
+   "unit": "Suite 110",
+   "city": "Surrey",
+   "region": "BC",
+   "postal": "V4N 6W7",
+   "country": "CA"
+  },
+  "phone": "(604) 416-0580",
+  "phone_e164": "+16044160580",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "12PM-8PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "12PM-8PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "12PM-8PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "clayton-corners-188-st",
+   "location_id": "22",
+   "book_url": "https://synergyrehab.janeapp.com/locations/clayton-corners-188-st/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/clayton-corners-188-st/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 2,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Clayton Heights",
+    "km": 1.8,
+    "slug": "clayton-heights-surrey"
+   },
+   {
+    "name": "Langley",
+    "km": 3.6,
+    "slug": "langley"
+   },
+   {
+    "name": "Street, Unit A130, Langley Twp ; 03 Cloverdale",
+    "km": 3.9,
+    "slug": null
+   },
+   {
+    "name": "Fleetwood",
+    "km": 6.3,
+    "slug": "fleetwood-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/clayton-corners-surrey/",
+   "clinic": null
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Site pages mix Clayton Corners (18811 72 Ave) and Clayton Heights (19161 Fraser Hwy) under \"Clayton\" (LIKELY). Legacy Jane slug \"clayton-corners\" still indexed (LIKELY). ICBC H1 calls it \"East Clayton\". Narrowest Jane service mix: no Kinesiology/Active Rehab discipline at all; Jane lists \"No Direct Billing Physiotherapy\" (KNOWN, run log).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "HIGH: not found on any cached WorkSafeBC list",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "langley",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/",
+  "name": "Langley",
+  "brand_name": "Synergy Rehab Langley",
+  "area_label": "Langley",
+  "address": {
+   "street": "8045 204 St",
+   "unit": "Unit A130",
+   "city": "Langley",
+   "region": "BC",
+   "postal": "V2Y 5K1",
+   "country": "CA"
+  },
+  "phone": "(604) 371-1988",
+  "phone_e164": "+16043711988",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "9AM-4PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "8AM-4PM"
+   }
+  ],
+  "jane": {
+   "slug": "langley",
+   "location_id": "20",
+   "book_url": "https://synergyrehab.janeapp.com/locations/langley/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/langley/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 5,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Clayton Corners",
+    "km": 3.6,
+    "slug": "clayton-corners-surrey"
+   },
+   {
+    "name": "Clayton Heights",
+    "km": 4.1,
+    "slug": "clayton-heights-surrey"
+   },
+   {
+    "name": "Cloverdale",
+    "km": 7.2,
+    "slug": "cloverdale-surrey"
+   },
+   {
+    "name": "Fleetwood",
+    "km": 8.9,
+    "slug": "fleetwood-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/langley/",
+   "clinic": "https://synergyrehabilitation.ca/langley-physio/"
+  },
+  "gbp": {
+   "rating": null,
+   "reviews": null,
+   "lat": null,
+   "lng": null
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "Site locations page labels it \"Yorkson Village\" (LIKELY); repo city \"Langley Township\" vs GBP-style \"Langley\" UNKNOWN.",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ },
+ {
+  "page_slug": "abbotsford",
+  "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/abbotsford/",
+  "name": "Abbotsford",
+  "brand_name": "Synergy Rehab Abbotsford",
+  "area_label": "Abbotsford",
+  "address": {
+   "street": "3720 Townline Rd",
+   "unit": "Suite 100",
+   "city": "Abbotsford",
+   "region": "BC",
+   "postal": "V2T 0G6",
+   "country": "CA"
+  },
+  "phone": "(604) 776-5700",
+  "phone_e164": "+16047765700",
+  "hours": [
+   {
+    "day": "Mon",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Tue",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Wed",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Thu",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Fri",
+    "hours": "8AM-8:30PM"
+   },
+   {
+    "day": "Sat",
+    "hours": "9AM-5PM"
+   },
+   {
+    "day": "Sun",
+    "hours": "9AM-2PM"
+   }
+  ],
+  "jane": {
+   "slug": "abbotsford",
+   "location_id": "18",
+   "book_url": "https://synergyrehab.janeapp.com/locations/abbotsford/book",
+   "wcb_initial_url": "https://synergyrehab.janeapp.com/locations/abbotsford/book#/discipline/3/treatment/442"
+  },
+  "wcb_services_in_jane": [
+   "WCB Physio Initial Session",
+   "WCB Physio Subsequent Session"
+  ],
+  "wcb_massage_bookable": false,
+  "wcb_acupuncture_bookable": false,
+  "wcb_physios_with_openings": 4,
+  "wcb_data_checked_at": "2026-11-02T07:31:36.458Z",
+  "nearby": [
+   {
+    "name": "Langley",
+    "km": 24.0,
+    "slug": "langley"
+   },
+   {
+    "name": "Street, Unit A130, Langley Twp ; 02 Clayton Heights",
+    "km": 25.0,
+    "slug": null
+   },
+   {
+    "name": "Clayton Corners",
+    "km": 26.0,
+    "slug": "clayton-corners-surrey"
+   },
+   {
+    "name": "Cloverdale",
+    "km": 27.0,
+    "slug": "cloverdale-surrey"
+   }
+  ],
+  "existing_pages": {
+   "icbc": "https://synergyrehabilitation.ca/icbc-treatments/abbotsford/",
+   "clinic": "https://synergyrehabilitation.ca/physiotherapy-abbotsford-chiropractor/"
+  },
+  "gbp": {
+   "rating": "4.9",
+   "reviews": "325",
+   "lat": "49.0695354",
+   "lng": "-122.3588299"
+  },
+  "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
+  "nap_conflicts": "No WorkSafe/WCB keyword in Maps rank tracking (KNOWN). Audit 2026-10-30: name + postal-address errors on HERE and TomTom, website error on HERE; not listed on Yelp, Facebook, Apple Maps (KNOWN). GBP search-term strings show postal variant V2T 0G6 (UNKNOWN significance). GBP attribute \"Appointment required\" = false while Newton = true (KNOWN).",
+  "contract_2026": "UNVERIFIED",
+  "eligibility_risk": "NORMAL: on cached WorkSafeBC list (pre-April 2026)",
+  "staff_facts": {
+   "getting_here": null,
+   "parking": null,
+   "accessibility": null,
+   "languages": null,
+   "wcb_team_with_consent": null,
+   "photo_with_consent": null,
+   "nearby_workplaces": null
+  },
+  "publish_gates": {
+   "G1_contract": false,
+   "G2_nap_signed_off": false,
+   "G3_distinct_facts": false,
+   "G4_url_plan": true,
+   "G5_tracking": false
+  }
+ }
+]

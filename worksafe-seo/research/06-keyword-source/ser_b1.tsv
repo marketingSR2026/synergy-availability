@@ -1,0 +1,71 @@
+# SE Ranking DATA_getKeywordsMetrics source=ca, called 2026-11-02. cols: keyword vol cpc kd comp intents trend(2025-12..2026-11)
+wcb physiotherapy	210	0	14	0	L,C	flat 210
+worksafebc physiotherapy	140	0	21	0	I	flat 140
+worksafebc physiotherapy near me	40	1.17	11	0.89	L,C	50->40
+worksafebc approved physiotherapist	10	1.7	12	0.44	I,N	flat 10
+worksafe physiotherapy	0	0	12	0	I	flat 0
+workplace injury physiotherapy	0	0	11	0	L,C	flat 0
+work injury physiotherapy	0	0	12	0	L,C	flat 0
+worksafe physio	ND
+wcb physio near me	ND
+wcb physio	ND
+worksafebc	110000	0.48	95	0.08	I,N	flat 110000
+work injury	590	2.31	40	0.13	I	390..590
+injured at work	590	2.31	44	0.13	I	20..590 (spike Aug-Nov 2026)
+work hardening	480	0	20	0	I	flat 480
+worksafebc physio	140	0	21	0	I	flat 140
+worksafe bc physio	140	0	21	0	I	flat 140
+wcb physiotherapy near me	140	0	19	0	L,C	flat 140
+return to work program	70	1.32	17	0.07	I	110->70
+worksafebc injury	40	0.64	27	0.07	I	20->40
+occupational rehabilitation	40	0	12	0	L,C	flat 40
+injured at work bc	40	0.15	31	0.23	I	70->40
+hurt at work	40	2.97	35	0.26	I	flat 40
+functional capacity evaluation	40	0	26	0	I	40..270 volatile
+worksafebc massage therapy	20	0.82	13	0.78	I,N	flat 20
+work conditioning	20	0	6	0.07	L,C	flat 20
+wcb chiropractor	20	0	7	0	I	flat 20
+occupational rehab	20	0	11	0.09	L,C	0->20 from 2026-08
+workplace injury clinic	0	0	16	0	I	flat 0
+wcb massage	0	0	12	0	I	flat 0
+worksafebc rehabilitation	ND
+worksafebc rehab	ND
+worksafebc physiotherapy no referral	ND
+worksafebc physiotherapist	ND
+worksafebc physio near me	ND
+worksafebc physical therapy	ND
+worksafebc kinesiology	ND
+worksafebc functional capacity evaluation	ND
+worksafebc direct billing physiotherapy	ND
+worksafebc clinic	ND
+worksafebc claim physiotherapy	ND
+worksafebc chiropractor	ND
+worksafebc approved physiotherapy clinic	ND
+worksafe physiotherapy near me	ND
+worksafe physiotherapist	ND
+worksafe physio near me	ND
+worksafe bc physiotherapy	ND
+workplace injury rehabilitation	ND
+workplace injury physio	ND
+work safe bc physiotherapy	ND
+work related injury physiotherapy	ND
+work injury rehab	ND
+work injury physio	ND
+work injury clinic	ND
+wcb rehab	ND
+wcb physiotherapy surrey	ND
+wcb physiotherapy bc	ND
+wcb physiotherapist	ND
+wcb physio bc	ND
+wcb physical therapy	ND
+wcb kinesiology	ND
+wcb clinic near me	ND
+wcb clinic	ND
+return to work physiotherapy	ND
+physiotherapy worksafebc	ND
+physiotherapy wcb	ND
+physiotherapy for workplace injury	ND
+physiotherapy direct billing worksafebc	ND
+physio wcb	ND
+occupational injury rehabilitation	ND
+functional capacity evaluation bc	ND

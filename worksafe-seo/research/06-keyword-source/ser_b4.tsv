@@ -1,0 +1,158 @@
+worksafe bc	110000	0.48	95	0.08	I,N	reported 110000 but 12-mo trend 40500..47500 (inconsistent)
+wcb bc	96200	0.48	93	0.08	I,N	90500..96200
+wcb claim	1100	1.14	91	0.04	I	880..1300 (national, multi-province)
+physio vancouver	720	0	35	0	L,C	590..1300
+workplace injury	590	2.31	40	0.13	I	480..660
+delta physiotherapy	590	0	22	0	L,N	flat 590
+worksafebc form 7	480	1.01	32	0.08	I	flat 480
+surrey physiotherapy	480	0	14	0	L,C	flat 480
+physiotherapy surrey bc	480	0	14	0	L,C	flat 480
+physiotherapy langley bc	480	0	14	0	L,C	flat 480
+langley physiotherapy	480	0	10	0	L,N	flat 480
+concussion physiotherapy	480	0	12	0	L,C	flat 480
+physiotherapy richmond bc	320	0	23	0	L,C	flat 320
+icbc physiotherapy	320	1.82	25	0.37	L,C	flat 320
+worksafebc form 6	210	0	30	0.01	I	170..210
+vancouver physiotherapy	210	0	38	0	L,C	70..440
+ankle sprain physiotherapy	210	0	40	0	I	flat 210
+repetitive strain injury	180	0.01	62	0.13	I	100..180
+worksafebc form 6a	170	0	30	0.02	I	flat 170
+physio abbotsford	150	0	16	0	L,C	30..180
+wsbc physiotherapy	140	0	21	0	I	flat 140
+physio new west	140	0	14	0	L,C	flat 140
+modified duties	140	0	13	0.01	I	flat 140
+gradual return to work	140	0	18	0	I	140..170
+worksafebc online services	110	0.67	49	0.07	I,N	50->110 rising
+worksafebc claim number	110	0	40	0.02	I	flat 110
+worksafebc case manager	110	0	14	0	I,N	170->110 falling
+fleetwood physiotherapy	110	0	11	0	L,C	flat 110
+worksafebc review division	90	0	9	0.01	I	flat 90
+workers comp bc	90	0.62	43	0.12	I,N	flat 90
+wcb claim number	90	0	22	0.02	I	110->90
+repetitive strain injury treatment	90	0	33	0	I	flat 90
+worksafebc wage loss benefits	70	0	27	0.03	I,N	flat 70
+occupational injury	70	0	32	0.02	I	90->70
+worksafebc return to work	50	0	45	0	I,N	flat 50
+workplace injury bc	50	1.78	27	0.2	I	70->50
+wcb injury	50	0	40	0.03	I	110->50 falling
+physio langley	50	0	10	0	L,C	30..80
+north delta physiotherapy	50	0	14	0	L,C	flat 50
+icbc physiotherapy near me	50	0	15	0	L,C	flat 50
+ergonomic assessment	50	2.46	44	0.31	L,C	10..590 spike Mar-Jul 2026
+physio surrey	40	2.16	18	0.59	L,C	10..140
+worksafebc form 8	30	0	22	0.02	I,N	20->30
+worksafebc ergonomics	30	0	23	0.07	I,N	40->30
+worksafebc benefits	30	0	30	0.01	I,N	40->30
+worksafebc appeal	30	0	8	0.05	I,N	40->30
+workers compensation bc	30	0.48	44	0.08	I	30..1800 volatile
+work injury lawyer bc	30	3.71	19	0.56	L,N	flat 30
+wcb massage therapy	30	0.78	12	0.71	L,C	30..40
+on the job injury	30	0	24	0.04	I	30..40
+worksafebc teleclaim	20	0	50	0.02	I	40->20
+worksafebc injury claim	20	1.63	0	0.11	I	10..20
+worksafebc claim	20	1.42	19	0.04	I,N	10..20
+worksafe bc claim	20	1.42	45	0.04	I,N	10..20
+wcb claim bc	20	0	32	0.05	I	flat 20
+concussion at work	20	0	34	0.03	I	10..20
+worksafebc phone number	10	1.74	44	0.1	I,N	10..30
+worksafebc counselling	10	0	18	0	I	flat 10
+worksafebc claim status	10	0	32	0	I	flat 10
+slip and fall at work	10	0	5	0	I	flat 10
+richmond physiotherapy	10	0	13	0	L,C	10..70
+physiotherapy abbotsford bc	10	2.15	22	0.61	I	0->10
+physio richmond	10	0	14	0	L,C	10..40
+physio new westminster	10	0	24	0	I	flat 10
+new westminster physiotherapy	10	0	12	0	L,C	10..40
+lifting injury	10	0	36	0.01	I	30->10
+cloverdale physiotherapy	10	0	14	0	L,C	flat 10
+burnaby physiotherapy	10	0	22	0	L,C	10..70
+abbotsford physiotherapy	10	0	18	0	L,C	10..30
+worksafebc chiropractic	0	0	19	0	I	flat 0
+work related injury	0	0	36	0	I	flat 0
+tennis elbow physiotherapy	0	0	54	0	I	flat 0
+physiotherapy near me	0	0	30	0	I	flat 0 (implausible; DB gap)
+physiotherapy burnaby bc	0	0	27	0	I	flat 0
+physio burnaby	0	0	29	0	I	flat 0
+occupational therapy surrey	0	0	6	0	I	flat 0
+icbc physio	0	0	25	0	I	flat 0
+carpal tunnel physiotherapy	0	0	63	0	I	flat 0
+newton physiotherapy	ND
+south surrey physiotherapy	ND
+physiotherapy new west	ND
+icbc physio surrey	ND
+icbc physio burnaby	ND
+surrey icbc physiotherapy	ND
+surrey wcb physiotherapy	ND
+burnaby wcb physio	ND
+wcb physiotherapy new west	ND
+wsbc physiotherapy surrey	ND
+wsbc physio	ND
+worksafebc physiotherapy bc	ND
+worksafe physiotherapy bc	ND
+worksafebc physiotherapist near me	ND
+wcb physiotherapist near me	ND
+wcb approved physiotherapy near me	ND
+worksafebc approved physiotherapy	ND
+worksafebc approved physio	ND
+wcb approved physio	ND
+wcb physio clinic	ND
+worksafebc physiotherapy clinic	ND
+wcb physiotherapy clinic near me	ND
+worksafebc massage	ND
+wcb massage near me	ND
+wcb massage therapy near me	ND
+wcb rmt	ND
+worksafebc rmt	ND
+worksafebc acupuncture	ND
+wcb acupuncture	ND
+wcb chiropractor near me	ND
+wcb active rehab	ND
+worksafebc active rehab	ND
+worksafebc occupational therapy	ND
+occupational therapy burnaby	ND
+worksafebc concussion	ND
+how to file a worksafebc claim	ND
+worksafebc report injury	ND
+report injury worksafebc	ND
+worksafebc form 11	ND
+worksafebc wage loss	ND
+worksafebc stay at work	ND
+worksafebc physiotherapy coverage	ND
+does worksafebc cover physiotherapy	ND
+does wcb cover physiotherapy	ND
+do i need a referral for worksafebc physiotherapy	ND
+do i need a referral for physiotherapy bc	ND
+worksafebc physiotherapy sessions	ND
+worksafebc physiotherapy cost	ND
+worksafebc user fee	ND
+worksafe injury	ND
+work safe bc	ND
+how to make a wcb claim	ND
+workers compensation physiotherapy	ND
+workers comp physiotherapy	ND
+worksafebc doctor	ND
+worksafebc doctor near me	ND
+worksafebc approved doctor	ND
+construction injury physiotherapy	ND
+back injury at work	ND
+back injury at work physio	ND
+back injury at work bc	ND
+lower back injury at work	ND
+shoulder injury at work	ND
+knee injury at work	ND
+repetitive strain injury physiotherapy	ND
+rsi physiotherapy	ND
+workplace back injury	ND
+work related back pain	ND
+neck injury at work	ND
+wrist injury at work	ND
+construction injury	ND
+warehouse injury	ND
+rotator cuff injury physiotherapy	ND
+musculoskeletal injury physiotherapy	ND
+wcb injury claim	ND
+injured at work what to do	ND
+what to do if injured at work bc	ND
+first aid at work injury	ND
+worksafebc physiotherapy forms	ND
+worksafebc physio initial report	ND

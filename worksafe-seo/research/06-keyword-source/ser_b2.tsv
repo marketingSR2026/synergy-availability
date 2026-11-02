@@ -1,0 +1,16 @@
+physiotherapy vancouver	3200	0	52	0	L,C	2400..3600
+physiotherapy surrey	1800	2.16	50	0.59	L,C	220..1800 (Nov 2026 1800)
+physiotherapy delta	590	0	18	0	L,C	flat 590
+physiotherapy south surrey	480	0	20	0	I	flat 480
+physiotherapy abbotsford	150	0	19	0	L,C	30..180
+physiotherapy fleetwood	110	0	15	0	L,C	flat 110
+physiotherapy north delta	50	0	10	0	L,C	flat 50
+physiotherapy langley	50	1.59	12	0.6	L,C	30..80
+physiotherapy richmond	40	0	14	0	L,C	20..150
+physiotherapy new westminster	10	0	12	0	L,C	10..40
+physiotherapy cloverdale	10	0	20	0	L,C	10..20
+icbc physiotherapy vancouver	10	0	14	0	I	flat 10
+physiotherapy burnaby	0	0	24	0	I	flat 0
+icbc physiotherapy surrey	0	0	4	0	I	flat 0
+icbc physiotherapy new westminster	0	0	7	0	I	flat 0
+icbc physiotherapy burnaby	0	0	3	0	I	flat 0
