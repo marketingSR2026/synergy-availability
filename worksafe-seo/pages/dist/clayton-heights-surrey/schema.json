@@ -1,0 +1,112 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/",
+   "name": "WCB & WorkSafeBC Physio in Clayton Heights | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Heights, 19161 Fraser Hwy. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "inLanguage": "en-CA",
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/#clinic"
+   },
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   }
+  },
+  {
+   "@type": [
+    "MedicalClinic",
+    "Physiotherapy"
+   ],
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/#clinic",
+   "name": "Synergy Rehab Clayton Heights",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/",
+   "telephone": "+16045472860",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "19161 Fraser Hwy, Unit 105B",
+    "addressLocality": "Surrey",
+    "addressRegion": "BC",
+    "postalCode": "V3S 8E7",
+    "addressCountry": "CA"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Monday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Tuesday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Wednesday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Thursday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Friday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Saturday",
+     "opens": "08:00",
+     "closes": "16:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Sunday",
+     "opens": "09:00",
+     "closes": "17:00"
+    }
+   ],
+   "medicalSpecialty": "https://schema.org/Physiotherapy",
+   "availableService": {
+    "@type": "MedicalTherapy",
+    "name": "WorkSafeBC (WCB) physiotherapy"
+   },
+   "parentOrganization": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Clayton Heights",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/"
+    }
+   ]
+  }
+ ]
+}

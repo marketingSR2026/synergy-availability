@@ -1,0 +1,6 @@
+{
+ "_how_to_use": "Ops/clinical reviewer fills checked_as_of (YYYY-MM-DD, date the official worksafebc.com pages were opened and compared) and reviewer (name, PT). Add each STAFF_CONFIRM claim id to signed with who confirmed it and when. The build refuses publish mode until this is complete for every STAFF_CONFIRM claim used on a page.",
+ "checked_as_of": null,
+ "reviewer": null,
+ "signed": {}
+}

@@ -1,0 +1,117 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/",
+   "name": "WCB & WorkSafeBC Physio in New Westminster | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab New Westminster, 301 East Columbia St. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "inLanguage": "en-CA",
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/#clinic"
+   },
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   }
+  },
+  {
+   "@type": [
+    "MedicalClinic",
+    "Physiotherapy"
+   ],
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/#clinic",
+   "name": "Synergy Rehab New Westminster",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/",
+   "telephone": "+16045533303",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "301 East Columbia St, Unit 405",
+    "addressLocality": "New Westminster",
+    "addressRegion": "BC",
+    "postalCode": "V3L 3W5",
+    "addressCountry": "CA"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Monday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Tuesday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Wednesday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Thursday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Friday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Saturday",
+     "opens": "09:00",
+     "closes": "16:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Sunday",
+     "opens": "08:00",
+     "closes": "16:00"
+    }
+   ],
+   "medicalSpecialty": "https://schema.org/Physiotherapy",
+   "availableService": {
+    "@type": "MedicalTherapy",
+    "name": "WorkSafeBC (WCB) physiotherapy"
+   },
+   "parentOrganization": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 49.22582,
+    "longitude": -122.89324
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "New Westminster",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/"
+    }
+   ]
+  }
+ ]
+}

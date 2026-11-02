@@ -1,0 +1,1651 @@
+{
+ "mode": "preview",
+ "built": [
+  {
+   "page": "pillar",
+   "path": "/worksafe-physiotherapy/",
+   "title": "WorkSafeBC Physiotherapy (WCB) at 19+ Clinics | Synergy Rehab",
+   "title_len": 61,
+   "description_len": 156,
+   "words": 1973,
+   "claims": {
+    "GEN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-13": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "PARTIAL",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-16": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-23": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-28": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-PEND": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-29": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-30": {
+     "rule": "STAFF_CONFIRM",
+     "status": "VERIFIED",
+     "pending": true
+    },
+    "WSBC-14": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-21": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-05": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "PARTIAL",
+     "pending": false
+    },
+    "WSBC-26": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-42": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-45": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-12": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-49": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-36": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    }
+   },
+   "pending_claims": [
+    "GEN-01",
+    "WSBC-16",
+    "SYN-PEND",
+    "WSBC-30",
+    "SYN-08",
+    "WSBC-49",
+    "WSBC-36"
+   ],
+   "missing_staff_facts": [
+    "photo:pillar_hero",
+    "photo:pillar_first_visit"
+   ],
+   "jane_links": 16,
+   "issues": []
+  },
+  {
+   "page": "vancouver",
+   "path": "/worksafe-physiotherapy/vancouver/",
+   "title": "WCB & WorkSafeBC Physio in Vancouver | Synergy Rehab",
+   "title_len": 52,
+   "description_len": 135,
+   "words": 726,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:vancouver_hero",
+    "getting_here",
+    "accessibility",
+    "photo:vancouver_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 5,
+   "issues": [],
+   "max_similarity": 0.427,
+   "most_similar_to": "richmond"
+  },
+  {
+   "page": "burnaby",
+   "path": "/worksafe-physiotherapy/burnaby/",
+   "title": "WCB & WorkSafeBC Physio in Burnaby | Synergy Rehab",
+   "title_len": 50,
+   "description_len": 146,
+   "words": 713,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:burnaby_hero",
+    "getting_here",
+    "accessibility",
+    "photo:burnaby_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 6,
+   "issues": [],
+   "max_similarity": 0.489,
+   "most_similar_to": "king-george-surrey"
+  },
+  {
+   "page": "new-westminster",
+   "path": "/worksafe-physiotherapy/new-westminster/",
+   "title": "WCB & WorkSafeBC Physio in New Westminster | Synergy Rehab",
+   "title_len": 58,
+   "description_len": 156,
+   "words": 748,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:new-westminster_hero",
+    "getting_here",
+    "accessibility",
+    "photo:new-westminster_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 8,
+   "issues": [],
+   "max_similarity": 0.476,
+   "most_similar_to": "richmond"
+  },
+  {
+   "page": "richmond",
+   "path": "/worksafe-physiotherapy/richmond/",
+   "title": "WCB & WorkSafeBC Physio in Richmond | Synergy Rehab",
+   "title_len": 51,
+   "description_len": 148,
+   "words": 696,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:richmond_hero",
+    "getting_here",
+    "accessibility",
+    "photo:richmond_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.481,
+   "most_similar_to": "burnaby"
+  },
+  {
+   "page": "delta",
+   "path": "/worksafe-physiotherapy/delta/",
+   "title": "WCB & WorkSafeBC Physio in Delta | Synergy Rehab",
+   "title_len": 48,
+   "description_len": 150,
+   "words": 707,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:delta_hero",
+    "getting_here",
+    "accessibility",
+    "photo:delta_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 8,
+   "issues": [],
+   "max_similarity": 0.496,
+   "most_similar_to": "nordel-surrey"
+  },
+  {
+   "page": "nordel-surrey",
+   "path": "/worksafe-physiotherapy/nordel-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Nordel, Surrey | Synergy Rehab",
+   "title_len": 57,
+   "description_len": 145,
+   "words": 723,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-36": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08",
+    "WSBC-36"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:nordel-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:nordel-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.503,
+   "most_similar_to": "king-george-surrey"
+  },
+  {
+   "page": "cedar-hills-surrey",
+   "path": "/worksafe-physiotherapy/cedar-hills-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Cedar Hills, Surrey | Synergy Rehab",
+   "title_len": 62,
+   "description_len": 147,
+   "words": 724,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:cedar-hills-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:cedar-hills-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.496,
+   "most_similar_to": "central-city-surrey"
+  },
+  {
+   "page": "central-city-surrey",
+   "path": "/worksafe-physiotherapy/central-city-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Central City | Synergy Rehab",
+   "title_len": 55,
+   "description_len": 149,
+   "words": 725,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:central-city-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:central-city-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.496,
+   "most_similar_to": "cedar-hills-surrey"
+  },
+  {
+   "page": "king-george-surrey",
+   "path": "/worksafe-physiotherapy/king-george-surrey/",
+   "title": "WCB & WorkSafeBC Physio in King George, Surrey | Synergy Rehab",
+   "title_len": 62,
+   "description_len": 156,
+   "words": 744,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:king-george-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:king-george-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 8,
+   "issues": [],
+   "max_similarity": 0.503,
+   "most_similar_to": "nordel-surrey"
+  },
+  {
+   "page": "strawberry-hill-surrey",
+   "path": "/worksafe-physiotherapy/strawberry-hill-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Strawberry Hill | Synergy Rehab",
+   "title_len": 58,
+   "description_len": 148,
+   "words": 714,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:strawberry-hill-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:strawberry-hill-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.508,
+   "most_similar_to": "newton-surrey"
+  },
+  {
+   "page": "newton-surrey",
+   "path": "/worksafe-physiotherapy/newton-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Newton, Surrey | Synergy Rehab",
+   "title_len": 57,
+   "description_len": 142,
+   "words": 685,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:newton-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:newton-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 6,
+   "issues": [],
+   "max_similarity": 0.53,
+   "most_similar_to": "fleetwood-surrey"
+  },
+  {
+   "page": "fleetwood-surrey",
+   "path": "/worksafe-physiotherapy/fleetwood-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Fleetwood, Surrey | Synergy Rehab",
+   "title_len": 60,
+   "description_len": 143,
+   "words": 696,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:fleetwood-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:fleetwood-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.53,
+   "most_similar_to": "newton-surrey"
+  },
+  {
+   "page": "sullivan-heights-surrey",
+   "path": "/worksafe-physiotherapy/sullivan-heights-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Sullivan Heights | Synergy Rehab",
+   "title_len": 59,
+   "description_len": 154,
+   "words": 721,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:sullivan-heights-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:sullivan-heights-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.492,
+   "most_similar_to": "cedar-hills-surrey"
+  },
+  {
+   "page": "south-surrey",
+   "path": "/worksafe-physiotherapy/south-surrey/",
+   "title": "WCB & WorkSafeBC Physio in South Surrey | Synergy Rehab",
+   "title_len": 55,
+   "description_len": 147,
+   "words": 716,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:south-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:south-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.481,
+   "most_similar_to": "cloverdale-surrey"
+  },
+  {
+   "page": "cloverdale-surrey",
+   "path": "/worksafe-physiotherapy/cloverdale-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Cloverdale, Surrey | Synergy Rehab",
+   "title_len": 61,
+   "description_len": 146,
+   "words": 715,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:cloverdale-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:cloverdale-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.484,
+   "most_similar_to": "fleetwood-surrey"
+  },
+  {
+   "page": "clayton-heights-surrey",
+   "path": "/worksafe-physiotherapy/clayton-heights-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Clayton Heights | Synergy Rehab",
+   "title_len": 58,
+   "description_len": 155,
+   "words": 699,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:clayton-heights-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:clayton-heights-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.488,
+   "most_similar_to": "abbotsford"
+  },
+  {
+   "page": "clayton-corners-surrey",
+   "path": "/worksafe-physiotherapy/clayton-corners-surrey/",
+   "title": "WCB & WorkSafeBC Physio in Clayton Corners | Synergy Rehab",
+   "title_len": 58,
+   "description_len": 146,
+   "words": 713,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:clayton-corners-surrey_hero",
+    "getting_here",
+    "accessibility",
+    "photo:clayton-corners-surrey_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.418,
+   "most_similar_to": "clayton-heights-surrey"
+  },
+  {
+   "page": "langley",
+   "path": "/worksafe-physiotherapy/langley/",
+   "title": "WCB & WorkSafeBC Physio in Langley | Synergy Rehab",
+   "title_len": 50,
+   "description_len": 139,
+   "words": 699,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:langley_hero",
+    "getting_here",
+    "accessibility",
+    "photo:langley_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 8,
+   "issues": [],
+   "max_similarity": 0.489,
+   "most_similar_to": "abbotsford"
+  },
+  {
+   "page": "abbotsford",
+   "path": "/worksafe-physiotherapy/abbotsford/",
+   "title": "WCB & WorkSafeBC Physio in Abbotsford | Synergy Rehab",
+   "title_len": 53,
+   "description_len": 147,
+   "words": 684,
+   "claims": {
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "pending": true
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "pending": true
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "pending": false
+    }
+   },
+   "pending_claims": [
+    "SYN-01",
+    "SYN-08"
+   ],
+   "missing_staff_facts": [
+    "parking",
+    "languages",
+    "photo:abbotsford_hero",
+    "getting_here",
+    "accessibility",
+    "photo:abbotsford_inside",
+    "check_in",
+    "wcb_team_with_consent"
+   ],
+   "jane_links": 7,
+   "issues": [],
+   "max_similarity": 0.489,
+   "most_similar_to": "langley"
+  }
+ ],
+ "skipped": [],
+ "errors": [],
+ "generated_note": "run build/build_pages.mjs"
+}

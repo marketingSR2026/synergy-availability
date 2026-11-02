@@ -1,0 +1,112 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/",
+   "name": "WCB & WorkSafeBC Physio in Strawberry Hill | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Strawberry Hill, 12422 72 Ave. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "inLanguage": "en-CA",
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/#clinic"
+   },
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   }
+  },
+  {
+   "@type": [
+    "MedicalClinic",
+    "Physiotherapy"
+   ],
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/#clinic",
+   "name": "Synergy Rehab Strawberry Hill",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/",
+   "telephone": "+16045470670",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12422 72 Ave, Unit 206",
+    "addressLocality": "Surrey",
+    "addressRegion": "BC",
+    "postalCode": "V3W 2M5",
+    "addressCountry": "CA"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Monday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Tuesday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Wednesday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Thursday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Friday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Saturday",
+     "opens": "08:00",
+     "closes": "16:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Sunday",
+     "opens": "08:00",
+     "closes": "16:00"
+    }
+   ],
+   "medicalSpecialty": "https://schema.org/Physiotherapy",
+   "availableService": {
+    "@type": "MedicalTherapy",
+    "name": "WorkSafeBC (WCB) physiotherapy"
+   },
+   "parentOrganization": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Strawberry Hill",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+{
+ "_how_to_use": "Map a photo key to a WordPress media URL once the photo is chosen from the clinic's Drive folder and consent is confirmed. Keys: pillar_hero, pillar_first_visit, <page_slug>_hero, <page_slug>_inside."
+}
