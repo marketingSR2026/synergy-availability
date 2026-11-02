@@ -27,10 +27,19 @@ Build the most useful, trustworthy and measurable WorkSafeBC physiotherapy searc
 - pages/     WordPress-ready page builds
 - previews/  mobile + desktop screenshots
 
-## Status
-- [x] Phase 0 install + capability inventory
-- [ ] Phase 2-6 research (running)
-- [ ] Phase 7 architecture spec
-- [ ] EGM review
-- [ ] Build pillar + pilot pages
-- [ ] QA + previews
+## Status (2026-11-02, end of session 1)
+- [x] Phase 0 install + capability inventory (claude-seo present; EGM installed)
+- [x] Research: 9 specialists + completeness critic (research/01-09)
+- [x] Spec drafted (spec/design_draft.md)
+- [x] EGM Goldfish review stages 5-9 + 5 domain lenses; 14 distinct blockers resolved (egm/goldfish_review_report.md)
+- [x] Gated build, templates, 12 tests, previews (pillar + 19 clinics)
+- [x] Keyword map URL targets, 19-location matrix, RUNBOOK, REPORT
+- [ ] Coverage guide + RTW article modules (pages/src/guide.mjs, rtw.mjs): drafting
+- [ ] Staff sign-offs (clinic-signoff.csv, claim checks, review.json) -> publish mode
+- [ ] WordPress paste + post-publish checks (no WordPress access in this environment)
+
+## How to resume
+1. Read REPORT.md section 5 (next actions) and RUNBOOK.md.
+2. `node build/build_pages.mjs --mode preview` then `node --test build/test/build_pages.test.mjs`.
+3. If machine data needs refreshing: `git show origin/data:availability.json > /tmp/a.json && python3 -I build/merge_locations.py /tmp/a.json` (never touches clinic-signoff.csv), then `python3 -I build/map_keywords.py` and `python3 -I build/location_matrix.py`.
+4. EGM skills are available as /egm:egm-review etc. in new sessions.
