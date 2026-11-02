@@ -1,7 +1,7 @@
 # WorkSafeBC Physiotherapy Search Program: Architecture and Page Specification
 
 *   **Author:** Elephant (Claude Code orchestrator) for Synergy Rehabilitation marketing
-*   **Status:** In Review
+*   **Status:** Revised after Goldfish review (see `egm/goldfish_review_report.md`); awaiting owner approval
 *   **Date:** 2026-11-02
 
 --------------------------------------------------------------------------------
@@ -58,21 +58,24 @@ These need staff answers. Each blocks only the items named.
 *   **Q-7 Clinic facts (gate G3):** Getting here, parking, accessibility, languages, WCB physiotherapists who consent to a profile card, one consented clinic photo.
 *   **Q-8 Tracking (gate G5):** Approve adding the WorkSafe keyword set and AI prompts to SE Ranking project 12903890. The SE Ranking Data API subscription ends 2026-11-06.
 *   **Q-9 Clinical sign-off:** Name of the registered physiotherapist who reviews WorkSafeBC claims for the "Reviewed by" line.
+*   **Q-11 Analytics access (blocks G-3 and day-7/30 checks):** Read access to Search Console (page level) and GA4/GTM, and who pulls weekly Jane counts of "WCB Physio Initial Session" bookings per clinic (aggregate counts only).
+*   **Q-12 Collector and public repo (privacy, outside this build):** The availability collector reads Jane booking pages and the public repo's `data` branch lists practitioners' full names with their open times. Confirm Jane's written permission and make the repo private or remove names.
+*   **Q-13 Booking type per clinic:** Several clinics show more than one "WCB Physio Initial Session" type in Jane (New Westminster 442 and 1013, Newton 442, 1019, 1099, 1111, Langley 442 and 948, South Surrey 442 and 968). Which id should each clinic's button open? Default 442 is set in `clinic-signoff.csv`.
 *   **Q-10 Paid landing pages:** Are `/physiotherapy-in-new-west/` and `/icbc-physiotherapy-abbotsford/` Google Ads landing pages? Affects whether they may be noindexed later.
 
 ## Critical User Journeys (CUJs)
 
 ### CUJ 1: Injured worker searches from a phone near a clinic
 
-*   **Given**: A warehouse worker in New Westminster hurt their back yesterday, has reported it to their employer and has not called WorkSafeBC yet. They search `wcb physio near me` on a phone.
-*   **When**: They tap Synergy's New Westminster WorkSafe page in organic results or reach it from the pillar.
-*   **Then**: Within the first screen they see the clinic name, area, phone and a "Book a WCB initial assessment" button that opens Jane's WCB Physio Initial Session at New Westminster (treatment 442). Within one scroll they see the 3-step path (report to WorkSafeBC, book, bring your claim number) with Teleclaim 1.888.967.5377 (WSBC-44). The `worksafe_book_click` event fires with `clinic_slug=new-westminster`, `placement=hero`.
+*   **Given**: A warehouse worker in New Westminster hurt their back yesterday, has told their employer and has not reported to WorkSafeBC yet. They search `wcb physio near me` on a phone.
+*   **When**: They open Synergy's New Westminster WorkSafe page (published only after the clinic passes G1 to G6).
+*   **Then**: In the first screen (390x664) they see the clinic name, area, "Book a WCB assessment" (Jane WCB Physio Initial Session for that clinic) and "Call". Directly under the buttons: "Not reported yet? Report it to WorkSafeBC online or call Teleclaim at 1.888.967.5377" (WSBC-43, WSBC-44). The lede says the claim can still be pending (WSBC-11). The `worksafe_book_click` event fires with `clinic_slug=new-westminster`, `placement=hero`, and no health data.
 
 ### CUJ 2: Worker with a pending claim asks whether they can start now
 
 *   **Given**: A care aide in Abbotsford reported an injury 10 days ago. The claim is pending.
-*   **When**: They search `can i see a physio before my worksafebc claim is accepted` and land on the pillar FAQ.
-*   **Then**: The answer states that a contracted physiotherapist can do the initial assessment within 60 days of the injury on a pending claim without prior approval, and WorkSafeBC pays for that assessment even if the claim is later denied (WSBC-12, WSBC-29), with the official source link and the "as of" date. The page links to the Abbotsford WorkSafe page in the clinic finder.
+*   **When**: They land on the pillar's claim-stage card or FAQ.
+*   **Then**: They read, each with its source and the as-of line: the initial assessment can happen on a pending claim within 60 days without prior approval, and WorkSafeBC pays for it even if the claim is later denied (WSBC-12, WSBC-29); funded treatment visits start once the claim is accepted (WSBC-17); until then a clinic may ask them to pay and they can ask for a refund if the claim is accepted (WSBC-28); how Synergy handles that period (SYN-PEND, pending Q-5); and that starting more than 60 days after the injury needs WorkSafeBC approval first (WSBC-14). The Abbotsford clinic appears in the finder only if its contract is confirmed (G1).
 
 ### CUJ 3: Worker in a city with many clinics picks the closest one
 
@@ -99,7 +102,7 @@ synergyrehabilitation.ca
  └─ official links out: worksafebc.com claim, Teleclaim, provider lists
 ```
 
-*   **D1 Pillar = `/worksafe-physiotherapy/`.** It already carries the sitewide "Worksafe" menu link (352 in-links, research/01). The head terms `worksafebc physiotherapy` (140/mo) and `wcb physiotherapy` (210/mo) show a local pack (research/06), so the page that owns them must help the searcher pick a clinic. Rebuild in place; same URL; no redirect.
+*   **D1 Pillar = `/worksafe-physiotherapy/`.** It already carries the sitewide "Worksafe" menu link (352 in-links, research/01). `wcb physiotherapy` (210/mo Canada-wide, partly out of province) shows a local pack (research/06); `worksafebc physiotherapy` (140/mo) showed no local pack in the 2026-11-02 Vancouver SERP (research/08). Either way the searcher is choosing where to go, so the owner page carries the clinic finder near the top. Rebuild in place; same URL; no redirect.
 *   **D2 Location URL pattern = `/worksafe-physiotherapy/<clinic-slug>/`.** Slugs mirror the ICBC set (`/icbc-treatments/<clinic-slug>/`), for example `new-westminster`, `richmond`, `abbotsford`, `newton-surrey`. A child URL makes the breadcrumb, the pillar link and the clinic relationship explicit. Full slug list: `data/worksafe-locations.json` `page_slug`.
 *   **D3 Coverage guide stays separate and keeps its URL.** It ranks live in 4 cities and is an AI Overview source (research/08). It owns claim and coverage questions (claim number, forms, costs, pending claims, extensions). Facts are replaced with the claims-register versions; the title keeps the phrase "WorkSafeBC physiotherapy" and adds "what is covered", so it does not drop its current rankings. The pillar summarises and links to it; it links back to the pillar and the clinic finder.
 *   **D4 Return-to-work article is new.** `gradual return to work` (140/mo) and `modified duties` (140/mo) are measurable, distinct intent (research/06 §7.2). It links to the pillar and the finder.
@@ -131,10 +134,11 @@ Rules:
 | `/worksafe-physiotherapy/` | Rebuild as pillar (D1) | Day 7 technical, day 30 rankings |
 | `/worksafebc-physiotherapy-what-is-covered/` | Keep URL; replace facts with claims-register versions; add links to pillar and finder (D3) | Day 30 |
 | `/physiotherapy-in-new-west/` | **Keep unchanged.** It ranks #3, #3, #6 for WorkSafe terms and is cited in 2 AI Overviews (research/08). Add one in-body link to the New Westminster WorkSafe page if the page is not an ads landing page (Q-10) | Day 30: if the new page outranks it for WorkSafe terms, keep both; if both alternate, narrow this page's WorkSafe copy |
-| `/physiotherapy-new-westminster/` and other general clinic pages | Keep. Replace any WorkSafe visit-count or fee sentence with one sentence plus a link to that clinic's WorkSafe page | When each clinic page launches |
+| `/physiotherapy-new-westminster/` and other general clinic pages, including the 5 newer clinic pages with "More About Worksafe" sections (Abbotsford, Newton/Amson, Cloverdale, Delta, King George) | Cut each WorkSafe section to one sentence plus a link to that clinic's WorkSafe page, in the same wave as that page. This is gate G4: one WorkSafe owner page per clinic | With each clinic page |
+| Week-1 site cleanup (all URLs, independent of waves) | Remove every Synergy statement registered as CONFLICT or DO_NOT_PUBLISH: SYN-02, SYN-03, SYN-04, SYN-06, SYN-11, SYN-14 (visit counts, "eligible within 60 days", patient pays the gap, mileage). Narrow exception to the ICBC no-change rule: only WorkSafe sentences on mixed pages change | Before the pillar launches |
 | `/tag/worksafebc/` | Set `noindex, follow` after the Richmond page is live and indexed | Day 14 after Richmond launch |
 | `/icbc-treatments/*`, `/icbc-physiotherapy-*` | **No change** (scope rule, G-5). New WorkSafe pages displace them for WorkSafe queries by relevance | Watch G-5 guardrails |
-| `/icbc-claims/` | Recommend: remove the WorkSafe visit-count sentence (SYN-03) and link to the pillar. Owner approval needed because it is a mixed ICBC page | Owner decision |
+| `/icbc-claims/` | Remove the WorkSafe sentences SYN-03 and SYN-04 in the week-1 cleanup and link to the pillar; ICBC copy unchanged | Week 1 |
 | Homepage WorkSafe module | Replace the "10 sessions" sentence (SYN-02) with a link to the pillar | With pillar launch |
 | WorkSafe blog post with "patient covers the gap" (SYN-11) | Correct the sentence: that rule applies to non-contracted providers (WSBC-26) | With pillar launch |
 
@@ -142,35 +146,41 @@ Rules:
 
 ### 4. Clinic selection: publish gates and waves
 
-A clinic page is published only when all five gates are true in `data/worksafe-locations.json`:
+Gates are computed by the build from `data/clinic-signoff.csv` (human-owned, one row per clinic) and `data/review.json` (site level). Nobody sets a gate to true by hand; filling the evidence fields makes it true.
 
-| Gate | Pass condition | Owner |
+| Gate | Pass condition (all fields need a name and an ISO date where shown) | Owner |
 |---|---|---|
-| G1 Contract | Signed April 1, 2026 agreement and vendor number confirmed for the clinic (SYN-01, Q-1) | Ops / billing |
-| G2 NAP | Manager signs off name, address, unit, postal code, phone and hours (Q-6) | Clinic manager |
-| G3 Distinct facts | At least 4 of these filled with verified clinic-only facts: getting here, parking, accessibility, languages, WCB team with consent, consented clinic photo, nearby workplaces served (Q-7) | Clinic manager |
-| G4 URL plan | This document's §2 and §3 applied to the clinic | Marketing |
-| G5 Tracking | WorkSafe keywords for this clinic tracked in SE Ranking with the target URL (Q-8) | Marketing |
+| G1 Contract | `contract_2026_confirmed=yes`, legal entity, vendor number, confirmed by, confirmed on; and the clinic's entry on WorkSafeBC's current provider list matches the page NAP, or a correction was filed (`worksafebc_list_matches` = yes or correction_filed) | Ops / billing |
+| G2 NAP | Manager signed off name, address, unit, postal code, phone and hours (`nap_signed_by`, `nap_signed_on`) | Clinic manager |
+| G3 Clinic facts | getting_here, accessibility, check_in and parking each at least 8 words; languages filled; a consented team card or a consented clinic photo; at least 120 words of clinic-only facts in total. Plus a measured check: 5-word-shingle similarity to any other location page in the same publish run at most 0.40 | Clinic manager |
+| G4 URL plan | Other pages' WorkSafe sections for this clinic cut to one sentence plus a link (`url_plan_done_on`) | Marketing |
+| G5 Tracking | WorkSafe keywords for this clinic tracked with the target URL (`tracking_added_on`) | Marketing |
+| G6 Privacy (site) | GTM excludes Meta pixels, ad and remarketing tags, session replay and chat on WorkSafe URLs; Google signals off (`review.json`) | Marketing + privacy officer |
+
+**The pillar has its own gate:** G6 confirmed, a clinical reviewer named, every claim on it verified, and at least one clinic with G1. Every WCB mention of a clinic anywhere (finder, nearby cards, local FAQ, service lists) reads that clinic's G1. Unconfirmed clinics are not listed in publish mode. The pillar title and meta carry no clinic count.
+
+**Services:** WCB massage and WCB acupuncture appear for a clinic only after ops confirms the clinic bills WorkSafeBC for that service (`wcb_massage_confirmed_*`, `wcb_acupuncture_confirmed_*`). Jane bookability alone is not enough.
 
 **Wave 1 (pilot): New Westminster, Richmond, Abbotsford.**
-*   New Westminster: strongest existing WorkSafe signal (organic #3/#4, Maps average 3.36), so the pilot tests whether a dedicated page adds to it.
-*   Richmond and Abbotsford: Synergy currently ranks there only with wrong-intent pages (tag archive, ICBC pages), and the SERPs are weak (research/08). These test the "right page" goal G-2.
-*   Abbotsford and New Westminster have GBP data connected in SE Ranking Local, so Maps effects can be measured.
+*   New Westminster: strongest existing WorkSafe signal (organic #3/#4, Maps average 3.36), so the pilot tests whether a dedicated page adds to it. Owner decision before launch: which page owns WorkSafe intent there (Q-10 affects `/physiotherapy-in-new-west/`).
+*   Richmond and Abbotsford: Synergy ranks there only with wrong-intent pages (tag archive, ICBC pages) and the SERPs are weak (research/08). They test goal G-2.
 
-**Wave 2:** Vancouver, Burnaby, Langley, Delta (after Q-2), Central City, Cloverdale, King George, Newton, Fleetwood, Sullivan Heights, Strawberry Hill, South Surrey, Clayton Heights, Nordel.
-**Wave 3 (highest eligibility risk):** Cedar Hills, Clayton Corners. Publish only after Q-1 is answered yes.
+**Wave 1b (close-pair test): Newton and King George** (2.4 km apart), after Wave 1 passes its day-30 review.
+**Wave 2:** remaining clinics in batches of 2 to 3 with a 30-day check each. **Wave 3:** Cedar Hills and Clayton Corners (highest eligibility risk).
 
-Scale rule: Wave 2 starts only after the Wave 1 pages pass the day 30 review (indexed, no G-5 regressions, no cannibalization alarm under §2 rule 4).
+**Pilot hypothesis and stop rule:** if by day 90 the Wave 1 pages are indexed but none ranks in the top 20 for its own `worksafebc/wcb physio <city>` query and Jane WCB initial bookings at those clinics show no rise against the 8 weeks before launch, stop adding location pages and fold their facts into the pillar finder.
 
 ### 5. WorkSafeBC claims policy
 
-*   Every WorkSafeBC fact in page copy carries `data-claim="<claim_id>"` on its element, using ids from `data/claims-register.csv`.
-*   Allowed in drafts: `OK_TO_PUBLISH` rows, and `STAFF_CONFIRM` rows marked as pending sign-off. Never: `DO_NOT_PUBLISH` rows.
-*   Allowed in publish mode: `OK_TO_PUBLISH` rows, and `STAFF_CONFIRM` rows listed in `data/claims-signoff.json` with reviewer name and date.
-*   All register rows were verified from search snippets, not from opened worksafebc.com pages (research/05). Before Wave 1 launch, a staff member opens each cited official URL and records the check date in `claims-signoff.json`.
-*   **No visit counts** on any page until WSBC-18 is signed off. Use WSBC-21 ("your physiotherapist can ask WorkSafeBC for more treatment; WorkSafeBC decides") instead.
-*   **Synergy-specific statements** (direct billing at this clinic, no fees at this clinic) depend on SYN-01 for that clinic. Their elements carry `data-claim="SYN-01"`; the build refuses publish mode if G1 is false.
-*   Every page shows "Facts checked against WorkSafeBC sources as of <date>. Reviewed by <name, PT>." The build fills the date and name from `claims-signoff.json`.
+This section overrides the claim rules in `spec/design-system.md`.
+
+*   Every WorkSafeBC or Synergy fact on a page carries `data-claim="<claim_id>"` and comes from `data/claims-register.csv` (or `claims-additions.csv`).
+*   **Publishable** means: publish_rule is OK_TO_PUBLISH or STAFF_CONFIRM, and a staff member opened the official URL and recorded `checked_by`, `checked_on` (ISO date, not older than 180 days) and `quote_matches=yes`, and `expires_on` (if set) has not passed. DO_NOT_PUBLISH rows never publish. All rows were first verified from search snippets only, so none is publishable yet.
+*   Contract and billing statements about a clinic (SYN-01 contract pill, SYN-08 "we bill WorkSafeBC on accepted claims") need that clinic's G1 plus the row check. Fee statements use WSBC-23 and, if Synergy wording is used, SYN-09.
+*   **No visit counts** until WSBC-18 is confirmed. Use WSBC-21 instead.
+*   **No "approved" wording.** WorkSafeBC contracts providers; it does not approve them. The build rejects "WorkSafeBC-approved" and similar.
+*   The as-of line is computed: "Facts checked against worksafebc.com between <earliest> and <latest check date>. Reviewed by <name, credential>."
+*   Re-check all rows quarterly and whenever WorkSafeBC publishes a physiotherapy bulletin.
 
 ### 6. Page templates
 
@@ -178,54 +188,55 @@ Design tokens, components and band rhythm: `spec/design-system.md` §4 to §9 an
 
 #### 6.1 Pillar `/worksafe-physiotherapy/`
 
-*   **Title:** `WorkSafeBC Physiotherapy at 19+ Clinics | WCB Physio | Synergy Rehab` (title length checked in the build; fallback without "| WCB Physio" if over 65 characters).
+*   **Title:** `WorkSafeBC & WCB Physiotherapy in BC | Synergy Rehab` (52 characters; no clinic count).
 *   **H1:** `WorkSafeBC physiotherapy for work injuries`
-*   **Meta description:** `Hurt at work in BC? Book a WCB physiotherapy assessment at one of 19+ Synergy Rehab clinics from Vancouver to Abbotsford. How claims, visits and costs work.`
+*   **Meta description:** `Hurt at work in BC? See how WorkSafeBC (WCB) physiotherapy works at each claim stage, what you may pay, and book an assessment at a Synergy Rehab clinic.`
 
 | # | Band | Content and claim ids |
 |---|---|---|
-| 1 | Hero | Breadcrumb, H1, one-sentence answer (WSBC-10), "Find your clinic" primary button (anchor to band 8), call button to the main line, trust tiles (19+ clinics, evening and weekend hours, WCB online booking) |
-| 2 | Quick answers | 4 to 5 short answers to the measured questions: WCB vs WorkSafeBC, do I need a claim number, can I start before acceptance, will I pay anything, referral (each tagged) |
-| 3 | Steps | 1 Report to employer and WorkSafeBC (WSBC-42, 43, 44, 45, 46). 2 Book at your nearest clinic. 3 Bring your claim number; we handle WorkSafeBC billing (SYN-07, SYN-08 pending G1) |
-| 4 | Eligibility card | Who this is for: BC workers with a reported workplace injury; pending vs accepted claims (WSBC-11, 12, 14, 17, 29); have-ready checklist (WSBC-49 pending) |
-| 5 | Conditions | Common work injuries we assess and treat: lifting and back strain, shoulder overuse, repetitive strain, sprains, slip-and-fall injuries, neck strain. Clinical wording within physiotherapy scope; no outcome promises |
-| 6 | First visit | What happens at the initial assessment and what to bring |
-| 7 | Return to work | Graded activity, goals tied to job demands, reports to WorkSafeBC (WSBC-21); link to RTW article |
-| 8 | Clinic finder | All 19 clinics grouped: Vancouver and Burnaby, New Westminster, Richmond and Delta, Surrey (12), Langley and Abbotsford. Each card: name, area label, street, phone, "WorkSafe page" link if published, else "Book WCB assessment" Jane link |
-| 9 | Other WorkSafeBC services | WCB massage (WSBC-35; clinics where Jane shows it), WCB acupuncture at Nordel (WSBC-36 pending) |
-| 10 | FAQ | 8 to 10 questions from research/06 §7.6 and research/08 People Also Ask; each answer 40 to 80 words, tagged |
-| 11 | Sources | Official WorkSafeBC links, "as of" line, reviewer line |
-| 12 | Final CTA band | "Find your clinic" + call; sticky bar on phones |
+| 1 | Hero | Breadcrumb, H1, lede (WSBC-11), "Find your clinic" primary (anchor to band 3), "How it works" secondary, area chips that jump to finder groups |
+| 2 | Steps | 1 Report to employer and WorkSafeBC (WSBC-42, 43, 44). 2 Book a WCB Physio Initial Session (WSBC-10). 3 Bring your claim number (WSBC-46); contracted physios bill WorkSafeBC for the assessment (WSBC-11) |
+| 3 | Clinic finder | G1 clinics only, grouped by area; Surrey group headed "WorkSafeBC physiotherapy in Surrey". Card links to the clinic's WorkSafe page if published, otherwise to its Jane WCB booking link |
+| 4 | Claim stages card | Accepted (WSBC-23), pending (WSBC-12, 29, 17, 28), after 60 days (WSBC-14); first-visit checklist; link to WorkSafeBC's own reporting page |
+| 5 | Conditions | Common work injuries; physiotherapy scope; no outcome promises |
+| 6 | First visit | What happens at the assessment |
+| 7 | Return to work | Four phases; WSBC-21; link to the RTW article only when it is live |
+| 8 | Other WorkSafeBC care | Rendered only if some clinic has confirmed WCB massage or acupuncture (WSBC-35, WSBC-36) |
+| 9 | FAQ | 9 questions; cost answer covers accepted, pending (SYN-PEND) and non-claim areas (WSBC-25) |
+| 10 | Sources | Official WorkSafeBC links and the computed as-of line |
+| 11 | Final CTA | "Find your clinic"; phone sticky bar "Find your clinic". No pillar phone button (there is no central WCB line; see Q-13 note in RUNBOOK) |
 
 #### 6.2 Location page `/worksafe-physiotherapy/<clinic-slug>/`
 
-*   **Title:** `WorkSafeBC Physio <Name> | WCB Physiotherapy | Synergy Rehab`, shortened by the build to 65 characters or fewer by dropping "| WCB Physiotherapy".
+*   **Title:** `WCB & WorkSafeBC Physio in <Name> | Synergy Rehab` (48 to 59 characters).
 *   **H1:** `WorkSafeBC physiotherapy in <area_label>` (for example "in Newton, Surrey", "in North Delta").
-*   **Meta description:** `Injured at work? Book a WCB physiotherapy assessment at Synergy Rehab <Name>, <street>. Open <weekday hours summary>. Bring your WorkSafeBC claim number.`
+*   **Meta description:** `Hurt at work? Book a WCB physio assessment at Synergy Rehab <Name>, <street>. <hours summary>.` plus "Your claim can be pending." when it fits in 155 characters. The hours summary covers all 7 days and the latest closing time.
 
-| # | Band | Unique data (source) | Shared content (kept short; links to pillar) |
+| # | Band | Clinic-only content (source) | Shared content |
 |---|---|---|---|
-| 1 | Hero | Name, area label, street, phone, hours today summary, WCB initial Jane link (worksafe-locations.json) | One-sentence answer |
-| 2 | Clinic card and getting here | Address, phone, full hours, directions link, staff facts: getting here, parking, accessibility | None |
-| 3 | WCB services at this clinic | WCB physio initial and follow-up (all clinics), WCB massage if bookable, WCB acupuncture if bookable (Jane data, dated) | Massage referral rule (WSBC-35) |
-| 4 | Your first visit here | Staff facts: check-in, languages, consented photo | 3 compact steps with link to the pillar for detail |
-| 5 | WCB team | Staff-consented practitioner cards (name, credential, languages). Omitted until consent exists | None |
-| 6 | Local FAQ (3 to 5) | Questions answerable only for this clinic: weekend and evening hours (from hours data), WCB massage here (Jane), parking, languages, nearest clinic if this one is full | One link to the pillar FAQ |
-| 7 | Nearby clinics | Distance-sorted 4 nearest (from the ICBC location data) with links to their WorkSafe pages if published | None |
-| 8 | Sources and CTA | "As of" and reviewer line; final CTA band | None |
+| 1 | Hero | Name, area, street, phone, hours summary, contract pill (G1), Jane WCB link for the clinic's confirmed type id | Lede, report-first line (WSBC-43, 44) |
+| 2 | Find us | Address, phone, getting here, accessibility (sign-off sheet), full hours table, directions link | None |
+| 3 | WCB care here | Physio assessment and treatment; massage or acupuncture only if confirmed | Rule line per service |
+| 4 | First visit here | Check-in steps (sign-off sheet), consented clinic photo | 3 booking steps, link to pillar claim stages |
+| 5 | Team | Consented profile cards (name, credential checked on the CHCPBC register, languages). Left out until consent | None |
+| 6 | Local FAQ | Parking, languages, confirmed services, nearest contracted clinics | Link to the pillar FAQ |
+| 7 | Nearby | Up to 4 nearest clinics with G1, distance from the ICBC location data | Link to all locations |
+| 8 | Sources and CTA | As-of line, final CTA, phone sticky bar | None |
 
-Uniqueness test, enforced in review: remove bands 2, 4, 5 and 6. If what remains could describe any other clinic, the page fails G3 and is not published; the clinic stays as a finder card on the pillar.
+Review test (manual, alongside the measured G3): read only bands 2, 4, 5 and 6 with the clinic name and address hidden. If they could describe another clinic, the page fails.
 
 #### 6.3 Coverage guide (refresh) and RTW article
 
 *   Coverage guide: replace the facts with tagged claims; H2s as the measured claim questions; link to pillar and finder. Content draft delivered as a separate file for the content owner.
-*   RTW article: physiotherapy view of graded return, modified duties and communication with employer and WorkSafeBC. No promises about timelines. Clinical sign-off required.
+*   RTW article: physiotherapy view of graded return, modified duties and what to tell your physio about your job. WorkSafeBC's own return-to-work programs (Customized Recovery and Return-to-Work Program, Return to Work Support Services) are separate WorkSafeBC services that Synergy does not claim to deliver (WSBC-40). No timeline promises. Clinical sign-off required.
+*   Both articles go through the same build, claim tags, verification and gates as the pillar, and carry the pillar's "Find your clinic" CTA and sticky bar.
 
 ### 7. Structured data (JSON-LD, one block per page)
 
 *   **All pages:** `WebPage` (name, url, inLanguage en-CA, dateModified, isPartOf the site), `BreadcrumbList`. `Organization` is referenced by `@id` `https://synergyrehabilitation.ca/#organization` and declared once on the pillar with name, url, logo and telephone.
-*   **Location pages:** one clinic entity, `@type` `["MedicalClinic", "Physiotherapy"]`, `@id` `<page url>#clinic`, name `Synergy Rehab <Name>`, address, telephone, `openingHoursSpecification` from hours, `geo` only where coordinates are KNOWN (New Westminster, Newton, Abbotsford), `hasMap` only where the GBP maps URL is KNOWN, `parentOrganization` by `@id`, `medicalSpecialty` `Physiotherapy`, and `availableService` with a `MedicalTherapy` named "WorkSafeBC physiotherapy".
+*   **Location pages:** one clinic entity, `@type` `["MedicalClinic", "Physiotherapy"]`, `@id` `https://synergyrehabilitation.ca/#clinic-<jane-slug>` (stable site-level id that any other page can reuse), `url` = the general clinic page (the GBP target) where known; the WorkSafe page's `MedicalWebPage` is `about` that entity; name `Synergy Rehab <Name>`, address, telephone, `openingHoursSpecification` from hours, `geo` only where coordinates are KNOWN (New Westminster, Newton, Abbotsford), `hasMap` only where the GBP maps URL is KNOWN, `parentOrganization` by `@id`, `medicalSpecialty` `Physiotherapy`, and `availableService` with a `MedicalTherapy` named "WorkSafeBC physiotherapy".
 *   **Not used:** `AggregateRating` and `Review` (self-serving), `FAQPage` on location pages. `FAQPage` on the pillar is optional and never relied on for display.
+*   Before launch: view the source of a drafted page and list every existing ld+json block from the SEO plugins; extend the plugin's `@id`s or disable plugin schema on WorkSafe URLs so entities are not declared twice.
 *   Validation: Schema.org validator and Google Rich Results Test before publish.
 
 ### 8. Internal linking
@@ -247,7 +258,10 @@ Jane links: plain `https://synergyrehab.janeapp.com/locations/<jane-slug>/book#/
 
 *   **Events (GA4 via GTM click trigger on `[data-sr-event]`):** `worksafe_book_click`, `worksafe_phone_click`, `worksafe_directions_click`, `worksafe_location_select`. Parameters: `clinic_slug`, `placement` (hero, card, finder, sticky, final, faq), `page_type` (pillar, location, guide, article). No diagnosis, claim number, PHN or free text is ever sent (BC PIPA). Names will be aligned with the existing GA4 taxonomy once GA4 access exists.
 *   **Bookings:** a click to Jane is not a booking. Confirmed bookings are measured only if Jane's own analytics integration is configured; otherwise the KPI is click-through.
-*   **SE Ranking (after Q-8 approval):** the keyword set from research/07 §7 (about 121 pairs) in project 12903890 under a "WorkSafe" group with target URLs; ICBC and generic guardrail terms unchanged; 10 WorkSafe AI prompts.
+*   **Primary measures:** Search Console page-level clicks and impressions for WorkSafe URLs and WorkSafe queries (Q-11), and weekly Jane counts of "WCB Physio Initial Session" bookings per clinic, comparing pilot clinics with the 8 weeks before launch (aggregate counts only, no patient detail).
+*   **Guardrails (G-5):** compare the 14-day median position before launch with the 14-day median after; count a regression only when the ranking URL for an ICBC or generic term switches to a WorkSafe page.
+*   **SE Ranking (secondary, after Q-8 approval and renewal decision):** the keyword set from research/07 §7 (about 121 pairs) in project 12903890 under a "WorkSafe" group with target URLs; ICBC and generic guardrail terms unchanged; 10 WorkSafe AI prompts.
+*   **Baseline:** 14 days of tracking before launch (goal G-1's 0 of 9 is not yet measured).
 *   **Cadence:** baseline before launch; day 7 technical and events; day 30 indexing, first rankings, cannibalization check; day 60 trends and conversion; day 90 goal review and Wave 2/3 decision.
 
 ### 10. WordPress delivery
@@ -282,11 +296,32 @@ Jane links: plain `https://synergyrehab.janeapp.com/locations/<jane-slug>/book#/
 *   **Cons**: Contract status is unverified for all 19; clinic-only facts do not exist yet; the ICBC precedent shows URL rotation across near-identical pages.
 *   **Reason for Rejection**: Gated waves with a 30-day pilot review.
 
+### Alternative E: WordPress-native rendering (JetEngine listings or a plugin shortcode) instead of reviewed static fragments
+
+*   **Pros**: Clinic data edited once in WordPress; gates checked at render time; no paste step.
+*   **Cons**: Needs WordPress access this project does not have; moves claim checks into PHP; more build work before the pilot proves value.
+*   **Decision**: Pilot (pillar, 3 pages, 2 articles) ships as reviewed static fragments from the gated build. Decide native rendering before Wave 2, when the page count makes paste-and-drift costly.
+
+--------------------------------------------------------------------------------
+
+## Risks and Mitigations
+
+| Risk | Trigger / detection | Mitigation | Owner | Time to act |
+|---|---|---|---|---|
+| A clinic's contract lapses or is not renewed after its page is live | Ops notice; quarterly G1 re-check | Set the page to draft, remove from finder (rebuild pillar) | Ops + marketing | 1 business day |
+| WorkSafeBC changes rules or rates | New physiotherapy bulletin; `expires_on` (2027-03-31) or 180-day check age | Re-verify rows; rebuild fails until re-checked | Clinical reviewer | 2 weeks |
+| Rank tracking stops (SE Ranking Data API ends 2026-11-06) | Renewal decision missing | Primary measures are Search Console and Jane counts; renew or replace SE Ranking before launch | Marketing | Before launch |
+| WordPress copy drifts from the build after paste | Manual edits | Edit only in the repo and re-paste; live-page audit once network access exists | Marketing | Each release |
+| New pages split rankings with existing pages | Alternating URLs on 5 of 14 days (§2 rule 5) | Owner table decides; narrow copy or strengthen links | Marketing | 2 weeks |
+| Ad or session-replay tags fire on WorkSafe pages | GTM preview on each WorkSafe URL | G6 gate; publish blocked | Marketing + privacy officer | Before launch |
+| Theme defects (double canonical, double meta, heavy JS, poor INP) hurt the new pages | Rendered-HTML check after drafting | Disable one SEO emitter before launch; INP reported, not promised | Web developer | Before launch |
+| Collector and public repo expose practitioner names; Jane terms | Repo visibility; Jane terms | Make repo private or remove names; confirm Jane permission (Q-12) | Owner | Immediately |
+
 --------------------------------------------------------------------------------
 
 ## Non-Functional Requirements
 
-*   **Security and privacy:** No patient data on pages, in URLs, in events or in build files. Practitioner names appear only with written staff consent. Photos only with consent. Reviews are linked, not copied.
+*   **Security and privacy:** No patient data on pages, in URLs, in events or in build files. Practitioner names appear only with written staff consent (with a withdrawal path and a quarterly roster check). Photos only with consent. Reviews are linked, not copied. G6 keeps ad pixels, remarketing, session replay and chat off WorkSafe URLs, because a visit to these pages can suggest a work injury.
 *   **Performance:** Each page adds 0 JavaScript files and one stylesheet of about 8 KB min+gzip. Hero image under 120 KB WebP with width and height set. Targets: LCP under 2.5 s, CLS under 0.1 on mobile lab tests of the fragment; INP depends on the theme's JavaScript and is reported, not promised.
 *   **Accessibility:** WCAG 2.2 AA per design-system §10: brand green is never used for small text; CTA labels are navy on green; 48 px tap targets; visible focus rings.
 *   **Rollout and rollback:** Pages are drafted in WordPress, previewed, then published per wave. Rollback for a location page: set to draft and remove the finder link; no redirects are created in this project. Pillar rollback: restore the previous WordPress revision.
@@ -308,31 +343,34 @@ Jane links: plain `https://synergyrehab.janeapp.com/locations/<jane-slug>/book#/
 
 ## Detailed Implementation Plan
 
-### Step 1: Data
+Current state (commit on `claude/nice-dijkstra-9zwtkw`) plus remaining work. Paths are under `worksafe-seo/`.
 
-1.  `build/merge_locations.py` writes `data/worksafe-locations.json` (done 2026-11-02): 19 clinics with NAP from the client-filled Yelp list, Jane slug and WCB types from the collector's public data branch, nearby clinics from the ICBC page data, GBP fields where known, `nap_conflicts`, `eligibility_risk`, empty `staff_facts`, and five `publish_gates` (G4 true, others false).
-2.  Add `data/claims-signoff.json`: `{ "checked_as_of": null, "reviewer": null, "signed": { "<claim_id>": {"by": "", "date": ""} } }`.
-3.  Add `data/staff-questionnaire.csv`: one row per clinic with the Q-6 and Q-7 fields, for clinic managers to fill.
+### Step 1: Data (done)
 
-### Step 2: Content source files
+1.  `build/merge_locations.py <availability.json>` writes `data/worksafe-locations.json` (machine data only). It fails if any nearby clinic name does not resolve.
+2.  `data/clinic-signoff.csv`: human-owned, one row per clinic. Columns: wave, contract fields (G1), NAP sign-off (G2), url_plan_done_on (G4), tracking_added_on (G5), wcb_initial_treatment_id (default 442), clinic facts (getting_here, parking, accessibility, check_in, languages, team_json), photo URLs and consent, service confirmations, notes.
+3.  `data/claims-register.csv` gains `checked_by`, `checked_on`, `quote_matches`, `expires_on`. `data/claims-additions.csv` holds rows added while drafting the articles.
+4.  `data/review.json`: reviewer, live pages (pillar, guide, rtw), pillar photos and consent, G6.
 
-1.  `pages/src/pillar.html`: hand-written pillar body using design-system components, with `data-claim` on every WorkSafeBC fact and `{{finder}}` placeholder.
-2.  `pages/src/location.template.html`: location body with `{{...}}` slots for every field in §6.2 and conditional blocks for massage, acupuncture, team and staff facts.
-3.  `pages/src/coverage-guide.html` and `pages/src/return-to-work.html`: article bodies.
+### Step 2: Templates (done)
 
-### Step 3: Build script `build/build_pages.mjs` (Node 22, no dependencies)
+ES modules in `pages/src/`: `shared.mjs` (helpers, sources, hours summary), `pillar.mjs` (`pillarMeta`, `pillarFaq(ctx)`, `pillar(ctx)`), `location.mjs` (`locationMeta(x)`, `locationFaq(x, ctx)`, `location(x, ctx)`), `guide.mjs` and `rtw.mjs` (`meta`, `render(ctx)`). The ctx API: `claim`, `contractClaim`, `service`, `serviceClaim`, `slot`, `photo`, `pillarPhoto`, `team`, `asof`, `link`, `listInFinder`, `nearbyWcb`, `clinicCard`, `clinicAnchor`, `finderCompact`, `bookUrl`. The code is authoritative for titles and H1s; §6 mirrors it.
 
-1.  Reads `worksafe-locations.json`, `claims-register.csv`, `claims-signoff.json` and the source files.
-2.  Modes: `--mode preview` renders every page, shows pending claims and empty staff slots as visible "STAFF TO CONFIRM" boxes; `--mode publish` renders only clinics with all gates true and fails on any `DO_NOT_PUBLISH` claim, any unsigned `STAFF_CONFIRM` claim, any empty required slot or any em dash.
-3.  Writes for each page: `pages/dist/<page>/fragment.html` (paste into WordPress), `pages/dist/<page>/schema.json`, `pages/dist/<page>/meta.json` (title, meta description, canonical, H1), and `pages/dist/<page>/preview.html` (standalone preview with the stylesheet and a mock header).
-4.  Writes `pages/dist/qa-report.json`: per page title length, meta length, H1, word count, claim ids used and their status, links (internal, Jane), unique-text ratio versus the other location pages.
+### Step 3: Build (done)
 
-### Step 4: Previews and QA
+1.  `node build/build_pages.mjs --mode preview` writes `pages/dist/<page>/preview.html`, `meta.json`, `schema.json` and `qa-report.json`. Preview output is never pasted.
+2.  `node build/build_pages.mjs --mode publish` writes `pages/publish/<page>/fragment.html` (paste source), `schema.json`, `meta.json`, `preview.html`, only for pages whose gates and claims pass; exit code 1 lists every blocker.
+3.  Lints: em/en dashes, ICBC mentions, "approved" wording, title (62) and meta (160) length, one H1, "19+ locations", unknown Jane slugs, leftover placeholders; warnings for visit counts and untagged coverage wording.
+4.  Tests: `node --test build/test/build_pages.test.mjs` (12 cases on temporary fixtures).
 
-1.  `build/screenshot.mjs` (Playwright, pre-installed Chromium) captures each preview at 390 px and 1280 px into `previews/`.
-2.  QA checks: no horizontal scroll at 320/390/768/1280; every Jane link matches the clinic's `jane.slug`; every `tel:` matches the clinic phone; JSON-LD parses; no em dashes; "19+ locations" wording; unique-text ratio of location pages reported.
+### Step 4: Previews and QA (done for pillar and Wave 1)
 
-### Step 5: Hand-off package
+`node build/screenshot.mjs [dir] <page>...` captures 390x664 and 1280x900 screenshots into `previews/` and reports horizontal overflow, small tap targets and whether Book and Call are inside the first screen.
 
-1.  `worksafe-seo/RUNBOOK.md`: WordPress steps (create pages as drafts, paste fragment, add JSON-LD, set title/meta in the SEO plugin, enqueue CSS on WorkSafe pages, GTM triggers), existing-URL changes from §3, and the post-publish checks (live URL 200, canonical, rendered meta, schema validation, events firing in GA4 DebugView, sitemap inclusion, GSC URL Inspection).
-2.  `worksafe-seo/REPORT.md`: executive summary, deliverables list, 10 next actions.
+### Step 5: Rollout (staff)
+
+1.  Week 1: site cleanup (§3), G6 in GTM, theme canonical/meta fix, Q-11 access, SE Ranking decision and 14-day baseline.
+2.  Staff fill `clinic-signoff.csv` for Wave 1 and record claim checks in the register.
+3.  Publish the coverage guide refresh, then set `live_pages.rtw` and publish the RTW article.
+4.  Run publish mode; paste Wave 1 location pages; then rebuild and paste the pillar so the finder links to them.
+5.  Post-publish checks from `RUNBOOK.md`; day-7, 30, 60, 90 reviews.
