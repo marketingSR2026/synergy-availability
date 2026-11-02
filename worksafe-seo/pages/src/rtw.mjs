@@ -3,7 +3,8 @@
 // Every WorkSafeBC or Synergy-specific fact is wrapped in ctx.claim(id, html). RTW-* and SYN-RTW-* rows live in data/claims-additions.csv.
 // Content rule: WorkSafeBC's own return-to-work programs are separate WorkSafeBC services. Synergy does not deliver them (RTW-19).
 // No visit or week counts, no timeline or outcome promises. Clinical sign-off required before publish (spec 6.3); the
-// warning-signs wording is gated by SYN-RTW-01 so publish mode blocks until a Synergy clinical lead signs it off.
+// warning-signs wording is gated by SYN-RTW-01 and the job-focused physio wording by SYN-RTW-02, so publish mode blocks until a
+// Synergy clinical lead signs both off.
 import { esc, icon, ev, SOURCES, PILLAR_PATH, RTW_PATH } from './shared.mjs';
 
 const PAGE_TYPE = 'article';
@@ -53,7 +54,7 @@ export function rtwFaq(ctx) {
     ['Do I need my doctor or physio to sign off before I go back to work?',
       `${c('RTW-06', 'Not for WorkSafeBC. WorkSafeBC does not require medical approval for you to return to work. A written return-to-work plan can help keep your physio or doctor up to date, if needed.')} ${c('RTW-11', 'Your physio can still help you see which tasks fit what you can safely do now.')} If you are unsure about a task, bring it to your next visit.`],
     ['Can I say no to modified duties?',
-      `${c('RTW-02', 'Under the duty to cooperate, you should not turn down suitable work without a good reason. WorkSafeBC can reduce or suspend wage-loss benefits if it finds you did not cooperate and had no good reason.')} If a task in the offer seems beyond what you can do right now, say so. Talk it through with your employer and your physio, ${c('RTW-15', 'and call your WorkSafeBC case manager, who is your main contact for your claim.')}`],
+      `${c('RTW-02', 'Under the duty to cooperate, you must not turn down suitable work without a good reason. WorkSafeBC can reduce or suspend wage-loss benefits if it finds you did not cooperate and had no good reason.')} If a task in the offer seems beyond what you can do right now, say so. Talk it through with your employer and your physio, ${c('RTW-15', 'and call your WorkSafeBC case manager, who is your main contact for your claim.')}`],
     ['Will my wage-loss benefits stop if I go back part time?',
       `${c('RTW-14', 'Not always. Wage-loss benefits can continue when you go back on fewer hours or different duties. WorkSafeBC takes what you earn into account and may pay part of the difference.')} ${c('RTW-15', 'Your case manager can tell you how this works on your claim.')}`],
     ['Does my employer have to keep my job for me?',
@@ -61,11 +62,11 @@ export function rtwFaq(ctx) {
     ['How long does a gradual return to work take?',
       `How long it takes depends on your injury, your job and how your body responds. ${c('RTW-08', 'Each version of your return-to-work plan is based on what you can safely do at the time, and a new one is made as you can do more.')} Ask your physio how your progress looks at each visit.`],
     ['Can I keep going to physio after I go back to work?',
-      `It depends on your claim. ${c('WSBC-23', 'On an accepted claim, care related to your claim is billed to WorkSafeBC and you should not have to pay fees.')} ${c('WSBC-25', 'Treatment for a body area that is not part of your accepted claim can be billed to you.')} ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')} ${c('SYN-JANE', 'You can book WCB physio visits online at each of our 19 clinics.')}`],
+      `It depends on your claim. ${c('WSBC-23', 'WorkSafeBC says that once it accepts your claim, your health care provider should bill it for care related to your claim, and you should not have to pay fees.')} ${c('WSBC-28', 'If your claim is still pending, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Treatment for a body area that is not part of your accepted claim can be billed to you.')} ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')} ${c('SYN-JANE', 'You can book WCB physio visits online.')}`],
     ['What is a return-to-work plan?',
       `${c('RTW-07', 'It is a written plan you and your employer make together. It sets out what you can do, your tasks and your hours. A WorkSafeBC team member, your health care provider or a union representative may also help with it.')} ${c('RTW-08', 'It changes as you are able to do more.')}`],
     ['I have not reported my injury yet. What should I do first?',
-      `${c('WSBC-42', 'Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work.')} ${c('WSBC-43', 'Then report it to WorkSafeBC online at any time, or by phone through Teleclaim')} ${c('WSBC-44', 'at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time.')} ${c('WSBC-12', 'Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval.')} ${c('WSBC-11', 'The clinic bills WorkSafeBC directly for that assessment.')} ${c('WSBC-17', 'Treatment visits paid by WorkSafeBC start once the claim is accepted.')} ${c('WSBC-28', 'Before then, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')}`],
+      `${c('WSBC-42', 'Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work.')} ${c('WSBC-43', 'Then report it to WorkSafeBC online at any time, or by phone through Teleclaim')} ${c('WSBC-44', 'at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time.')} ${c('WSBC-12', 'Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval.')} ${c('WSBC-11', 'The clinic bills WorkSafeBC directly for that assessment.')} ${c('WSBC-17', 'Treatment visits paid by WorkSafeBC start once the claim is accepted.')} ${c('WSBC-28', 'Before then, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Care for a body area that is not part of your claim can be billed to you.')}`],
   ];
 }
 
@@ -85,11 +86,11 @@ export function render(ctx) {
 
   const demands = [
     ['back', 'Lifting and carrying', 'Lifting from the floor, waist and shoulder height, carrying loads, and working toward the weight your job needs.'],
-    ['knee', 'Standing, walking and climbing', 'Standing for a full shift, stairs and ladders, kneeling and squatting, and walking on uneven ground.'],
+    ['knee', 'Standing, walking and climbing', 'Standing for longer, stairs, kneeling and squatting, and the walking your job needs.'],
     ['shoulder', 'Reaching and overhead work', 'Shoulder strength and stamina for reaching, pushing, pulling and working with your arms up.'],
     ['hand', 'Gripping and tools', 'Grip strength and control for tools, keyboards, steering wheels and tasks you repeat all day.'],
     ['neck', 'Sitting, driving and screen work', 'Neck and back stamina for long sitting, plus a routine of movement breaks that fits your shift.'],
-    ['fall', 'Balance and footing', 'Balance and confidence for surfaces like wet floors, ramps and steps, practised in the clinic.'],
+    ['fall', 'Balance and footing', 'Balance and confidence for the floors, ramps and steps you deal with at work.'],
   ];
 
   return `<div class="sr-ws-page">
@@ -101,18 +102,18 @@ export function render(ctx) {
       <div class="sr-ws-hero__content">
         <p class="sr-ws-eyebrow">Back to work after a WCB claim</p>
         <h1 class="sr-ws-h1" id="sr-ws-h1">Gradual return to work after a <span class="sr-ws-accent">workplace injury</span></h1>
-        <p class="sr-ws-lede">A gradual return to work means going back in steps, often on modified duties, while you keep healing. Here is how it works with WorkSafeBC, who decides what, and how physiotherapy can help you prepare for the physical demands of your job.</p>
+        <p class="sr-ws-lede">Going back in steps, often on modified duties. Who decides what, and how physio can help you get ready.</p>
         <div class="sr-ws-hero__ctas">
           <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--knob" href="${find}" ${ev('worksafe_location_select', 'all', 'hero', PAGE_TYPE)}>Find your clinic<span class="sr-ws-btn__knob" aria-hidden="true">&#8594;</span></a>
           <a class="sr-ws-btn sr-ws-btn--secondary" href="#who-decides">Who decides what</a>
         </div>
-        <ul class="sr-ws-proof" role="list"><li>${c('SYN-JANE', 'WCB physio booking online at all 19 clinics')}</li><li>Physio goals can be set around your job tasks</li></ul>
+        <ul class="sr-ws-proof" role="list"><li>${c('SYN-JANE', 'Book WCB physio online')}</li><li>${c('SYN-RTW-02', 'Physio goals can be set around your job tasks')}</li></ul>
       </div>
       <figure class="sr-ws-hero__media">
         ${ctx.pillarPhoto('rtw_hero', 'Physiotherapist coaching a patient through a lifting exercise at a Synergy Rehab clinic', 800, 1000, true)}
         <ul class="sr-ws-hero__floats" role="list">
           <li class="sr-ws-minicard sr-ws-minicard--tl"><span class="sr-ws-minicard__icon">${icon('pin')}</span><span><span class="sr-ws-minicard__value">19+</span><span class="sr-ws-minicard__label">locations</span></span></li>
-          <li class="sr-ws-minicard sr-ws-minicard--br"><span class="sr-ws-minicard__icon">${icon('check')}</span><span><span class="sr-ws-minicard__value">Your job tasks</span><span class="sr-ws-minicard__label">shape your treatment goals</span></span></li>
+          <li class="sr-ws-minicard sr-ws-minicard--br"><span class="sr-ws-minicard__icon">${icon('check')}</span>${c('SYN-JANE', '<span class="sr-ws-minicard__value">Book online</span><span class="sr-ws-minicard__label">WCB physio visits</span>')}</li>
         </ul>
       </figure>
     </div>
@@ -127,13 +128,13 @@ export function render(ctx) {
     <ol class="sr-ws-steps" role="list">
       <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--blue sr-ws-step__when">To start</span>
         <h3 class="sr-ws-step__title">Begin with what you can do safely</h3>
-        <p class="sr-ws-step__body">Fewer hours or days, lighter tasks and more breaks. Your physio can keep working on your strength while you build up your shifts.</p></li>
-      <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--blue sr-ws-step__when">As you get stronger</span>
+        <p class="sr-ws-step__body">${c('RTW-13', 'Changed days or hours, some tasks taken out or reordered, and stretch breaks and rest periods.')} ${c('SYN-RTW-02', 'Your physio can keep working on your strength while you build up your shifts.')}</p></li>
+      <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--blue sr-ws-step__when">As you can do more</span>
         <h3 class="sr-ws-step__title">Add hours, days and tasks a little at a time</h3>
         <p class="sr-ws-step__body">${c('RTW-08', 'As you can do more, a new version of the plan is made.')} ${c('RTW-09', 'If the planned duties are not working out, the plan can be changed.')}</p></li>
       <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--blue sr-ws-step__when">The goal</span>
-        <h3 class="sr-ws-step__title">Back to your usual job and hours</h3>
-        <p class="sr-ws-step__body">Your full duties and your normal shift. Your physio can work on the hardest parts of your job before that last step.</p></li>
+        <h3 class="sr-ws-step__title">Working toward your usual job and hours</h3>
+        <p class="sr-ws-step__body">Your full duties and your normal shift, when you can safely do them. ${c('SYN-RTW-02', 'Your physio can work on the hardest parts of your job before that last step.')}</p></li>
     </ol>
     <div class="sr-ws-note"><p>How long it takes depends on your injury, your job and how your body responds, so every plan looks a little different.</p></div>
   </div>
@@ -142,7 +143,7 @@ export function render(ctx) {
 <section class="sr-ws-band sr-ws-band--soft" id="modified" aria-labelledby="sr-ws-modified-h">
   <div class="sr-ws-container">
     ${head('Modified duties', 'sr-ws-modified-h', 'What are modified duties?',
-      `Modified duties are changes to your job so you can keep working, or get back to work, while you heal. ${c('RTW-12', 'WorkSafeBC says returning to work might mean doing other tasks, working a different schedule or doing things a little differently.')} ${c('RTW-04', 'The work your employer offers must be safe, useful to the business, within what you can do now, and a fit for your skills.')}`)}
+      `Modified duties are changes to your job so you can keep working, or get back to work, while your injury still limits what you can do. ${c('RTW-12', 'WorkSafeBC says returning to work might mean doing other tasks, working a different schedule or doing things a little differently.')} ${c('RTW-04', 'The work your employer offers must be safe, useful to the business, within what you can do now, and a fit for your skills.')}`)}
     <ul class="sr-ws-grid sr-ws-grid--2 sr-ws-list-reset" role="list">
       <li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">What can change</h3>
         <p class="sr-ws-card__text">${c('RTW-13', 'WorkSafeBC suggests employers think about changes like these:')}</p>
@@ -195,7 +196,7 @@ export function render(ctx) {
       <li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">Your physio and doctor</h3>
         ${checklist([
           c('RTW-11', 'Help you see how what you can do links to safe, suitable tasks at work.'),
-          c('RTW-06', 'Do not have to approve your return. A written plan can help keep them up to date.'),
+          c('RTW-06', 'WorkSafeBC does not require their approval for your return. A written plan can help keep them up to date, if needed.'),
           c('RTW-07', 'May be part of making your return-to-work plan.'),
           c('WSBC-21', 'Your physiotherapist can ask WorkSafeBC for more treatment if you need it, and WorkSafeBC decides.'),
         ])}</li>
@@ -206,14 +207,14 @@ export function render(ctx) {
 <section class="sr-ws-band sr-ws-band--white" id="physio" aria-labelledby="sr-ws-physio-h">
   <div class="sr-ws-container">
     ${head('How physio helps', 'sr-ws-physio-h', 'How can physiotherapy help me prepare for my job?',
-      'Your physio can look at what your job asks of your body and set treatment goals around those tasks, adding weight, time or reps a little at a time as you cope.')}
+      c('SYN-RTW-02', 'Your physio can look at what your job asks of your body and set treatment goals around those tasks, adding weight, time or reps a little at a time as you cope.'))}
     <h3 class="sr-ws-h3">Parts of your job your physio can work on in the clinic</h3>
     <ul class="sr-ws-grid sr-ws-grid--3 sr-ws-list-reset" role="list">
       ${demands.map(([i, t, d]) => `<li class="sr-ws-card sr-ws-card--soft sr-ws-notch sr-ws-condition">
           <span class="sr-ws-notch__tab"><span class="sr-ws-icon-badge">${icon(i)}</span></span>
-          <h4 class="sr-ws-h4 sr-ws-card__title">${t}</h4><p class="sr-ws-card__text">${d}</p></li>`).join('\n      ')}
+          <h4 class="sr-ws-h4 sr-ws-card__title">${t}</h4><p class="sr-ws-card__text">${c('SYN-RTW-02', d)}</p></li>`).join('\n      ')}
     </ul>
-    <div class="sr-ws-note"><p>Your physio may give you exercises to keep up at home and at work between visits. ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it. WorkSafeBC decides.')} <a class="sr-ws-link sr-ws-link--arrow" href="${pillar}#eligibility">How WCB physio works at each claim stage</a></p></div>
+    <div class="sr-ws-note"><p>${c('SYN-RTW-02', 'Your physio may give you exercises to keep up at home between visits.')} ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it. WorkSafeBC decides.')} <a class="sr-ws-link sr-ws-link--arrow" href="${pillar}#eligibility">How WCB physio works at each claim stage</a></p></div>
   </div>
 </section>
 
@@ -226,7 +227,7 @@ export function render(ctx) {
 <section class="sr-ws-band sr-ws-band--white" id="tell-your-physio" aria-labelledby="sr-ws-tell-h">
   <div class="sr-ws-container">
     ${head('Your first visit', 'sr-ws-tell-h', 'What should I tell my physio about my job?',
-      `Tell your physio what a normal shift really asks of you. Name the heaviest thing you lift and how often, how long you stand, sit or drive, and how much you reach, bend, kneel or climb. Mention your tools and your shift length. Say if your employer has offered modified duties. ${c('WSBC-42', 'Also tell us the injury happened at work.')} Real detail helps your physio plan treatment around your job.`)}
+      `Tell your physio what a normal shift really asks of you. Name the heaviest thing you lift and how often, how long you stand, sit or drive, and how much you reach, bend, kneel or climb. Mention your tools and your shift length. Say if your employer has offered modified duties. ${c('WSBC-42', 'Also tell us the injury happened at work.')} ${c('SYN-RTW-02', 'Real detail helps your physio plan treatment around your job.')}`)}
     <div class="sr-ws-box"><p class="sr-ws-box__head">Before your visit, note down <span class="sr-ws-pill sr-ws-pill--blue">Checklist</span></p>
       <div class="sr-ws-box__body">${checklist([
         'Your job title and your main tasks',
@@ -247,7 +248,7 @@ export function render(ctx) {
 <section class="sr-ws-band sr-ws-band--soft sr-ws-band--dotted" id="warning-signs" aria-labelledby="sr-ws-warn-h">
   <div class="sr-ws-container">
     ${head('Warning signs', 'sr-ws-warn-h', 'What warning signs should I tell my physio about?',
-      `${clin('Some extra soreness is common when you add hours or tasks, and it often settles with rest by the next day. Tell your physio soon if pain keeps building from shift to shift, spreads, or comes with numbness, tingling or weakness. Speak up, too, if you are changing how you move just to get through the day.')} ${c('RTW-09', 'If the planned duties are not working out, the plan can be changed.')}`)}
+      `${clin('Some extra soreness is common when you add hours or tasks, and it often settles with rest by the next day. Tell your physio soon if pain keeps building from shift to shift, or comes with numbness, tingling or weakness. Speak up, too, if you are changing how you move just to get through the day.')} ${c('RTW-09', 'If the planned duties are not working out, the plan can be changed.')}`)}
     <div class="sr-ws-grid sr-ws-grid--2">
       <article class="sr-ws-card" aria-labelledby="sr-ws-warn-list-h">
         <h3 class="sr-ws-h3 sr-ws-card__title" id="sr-ws-warn-list-h">Tell your physio if you notice</h3>
@@ -255,11 +256,11 @@ export function render(ctx) {
           clin('Pain that is getting worse from week to week, not better'),
           clin('Pain that has not settled by the morning after a shift'),
           clin('New numbness, tingling or pins and needles'),
-          clin('Weakness, or a joint that gives way, catches or locks'),
+          clin('Weakness, or a joint that gives way'),
           clin('Pain that wakes you at night or is there even when you rest'),
           clin('New swelling, redness or heat around the injury'),
-          clin('Limping, guarding or leaning on your other side to get through a shift'),
-          clin('A task in your plan that is harder than expected, or not what was agreed'),
+          clin('Limping or guarding to get through a shift'),
+          clin('A task in your plan that is harder than expected'),
         ])}
       </article>
       <div>
@@ -309,7 +310,7 @@ export function render(ctx) {
   <div class="sr-ws-container">
     <div class="sr-ws-head sr-ws-head--center"><h2 class="sr-ws-h2" id="sr-ws-cta-h">Getting ready to go back? Start with an assessment.</h2>
       <p class="sr-ws-lede">${c('SYN-JANE', 'Book a WCB physio visit online at the clinic nearest home or work.')} Bring your job details and any return-to-work plan.</p>
-      <p class="sr-ws-small" id="costs">${c('WSBC-23', 'Accepted claim: care related to your claim is billed to WorkSafeBC and you should not have to pay fees.')} ${c('WSBC-28', 'Pending claim: a clinic may ask you to pay for treatment.')} ${c('SYN-PEND', 'Ask us how we handle visits while your claim is pending.')} ${c('WSBC-25', 'Care for a body area that is not part of your claim can be billed to you.')}</p></div>
+      <p class="sr-ws-small" id="costs">${c('WSBC-23', 'WorkSafeBC says that once it accepts your claim, your health care provider should bill it for care related to your claim, and you should not have to pay fees.')} ${c('WSBC-14', 'If you start treatment more than 60 days after your injury, WorkSafeBC must approve it first.')} ${c('WSBC-28', 'If your claim is still pending, a clinic may ask you to pay for treatment.')} ${c('SYN-PEND', 'Ask us how we handle visits while your claim is pending.')} ${c('WSBC-25', 'Care for a body area that is not part of your claim can be billed to you.')}</p></div>
     <a class="sr-ws-bigpill sr-ws-hide-below-desktop" href="${find}" ${ev('worksafe_location_select', 'all', 'final', PAGE_TYPE)}>Find your clinic</a>
     <div class="sr-ws-linkcols">
       <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford. synergyrehab.ca</p></div>

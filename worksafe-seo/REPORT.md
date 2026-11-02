@@ -17,7 +17,7 @@ Synergy Rehabilitation, 2026-11-02. Scope: WorkSafe only.
 | Research | 9 specialist agents plus a completeness critic: site inventory, ICBC reverse-engineering, Drive reports, GBP/local, WorkSafeBC 2026 rules, keywords, rank baseline, competitors, design system | `research/01` to `09` |
 | Architecture (Elephant) | Pillar + gated location pages + coverage guide + return-to-work article; keyword ownership; existing-URL decisions | `spec/design_draft.md` |
 | Goldfish review | 14 fresh reviewers, EGM stages 5 to 9 plus 5 domain lenses: 32 Blockers (14 distinct), all resolved | `egm/goldfish_review_report.md` |
-| Build | Claim-tagged templates, gated build, 12 automated tests, previews for pillar and all 19 clinics | `pages/`, `build/` |
+| Build | Claim-tagged templates for the pillar, 19 clinic pages, the coverage guide and the return-to-work article; gated build; 12 automated tests; phone and desktop previews (fold check passes on all 6 key pages) | `pages/`, `build/`, `previews/` |
 | Data | Keyword map (508 rows, URL targets), 19-location matrix, claims register (70+ rows), clinic sign-off sheet | `data/` |
 
 Tools that worked: SE Ranking (projects, keyword, SERP, local, audits), Google Drive, WebSearch. Not available: Ahrefs (plan), Semrush (no API units), Google Keyword Planner and Trends (no connector), Search Console page level and GA4 (no access), WordPress (not connected), and direct access to synergyrehabilitation.ca, worksafebc.com and threads.com (network policy). Nothing was invented to fill these gaps.

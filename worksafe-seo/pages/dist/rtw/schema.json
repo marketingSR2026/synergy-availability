@@ -1,0 +1,42 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/#webpage",
+   "url": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/",
+   "name": "Gradual Return to Work & Modified Duties | Synergy Rehab",
+   "description": "Going back to work on a WorkSafeBC claim? How a gradual return works, what modified duties are, who decides what, and how physio can help you prepare.",
+   "inLanguage": "en-CA",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Gradual return to work after a workplace injury",
+     "item": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/"
+    }
+   ]
+  }
+ ]
+}

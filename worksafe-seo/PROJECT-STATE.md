@@ -34,7 +34,7 @@ Build the most useful, trustworthy and measurable WorkSafeBC physiotherapy searc
 - [x] EGM Goldfish review stages 5-9 + 5 domain lenses; 14 distinct blockers resolved (egm/goldfish_review_report.md)
 - [x] Gated build, templates, 12 tests, previews (pillar + 19 clinics)
 - [x] Keyword map URL targets, 19-location matrix, RUNBOOK, REPORT
-- [ ] Coverage guide + RTW article modules (pages/src/guide.mjs, rtw.mjs): drafting
+- [x] Coverage guide + RTW article modules: drafted, 3 Goldfish rounds, claim-tagged (pages/src/guide.mjs, rtw.mjs); new rows in data/claims-additions.csv
 - [ ] Staff sign-offs (clinic-signoff.csv, claim checks, review.json) -> publish mode
 - [ ] WordPress paste + post-publish checks (no WordPress access in this environment)
 

@@ -1554,6 +1554,497 @@
    "warnings": [],
    "max_similarity": 0.526,
    "most_similar_to": "langley"
+  },
+  {
+   "page": "guide",
+   "kind": "article",
+   "path": "/worksafebc-physiotherapy-what-is-covered/",
+   "title": "What Does WorkSafeBC Cover for Physiotherapy? Claims & Costs",
+   "title_len": 60,
+   "description_len": 150,
+   "words": 2836,
+   "claims": {
+    "WSBC-23": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-12": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-28": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-30": {
+     "rule": "STAFF_CONFIRM",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-25": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-26": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-42": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-21": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-35": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-13": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-45": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-47": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "GUIDE-02": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-14": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "GEN-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-01": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-49": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-48": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "SYN-PEND": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "verified": false
+    },
+    "WSBC-29": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "GUIDE-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "GUIDE-03": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-24": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "SYN-GUIDE-02": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "verified": false
+    },
+    "WSBC-33": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-34": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "SYN-05": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-36": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "SYN-GUIDE-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "SYN-08": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "SYN-09": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    }
+   },
+   "unverified_claims": [
+    "WSBC-23",
+    "WSBC-11",
+    "WSBC-12",
+    "WSBC-28",
+    "WSBC-30",
+    "WSBC-25",
+    "WSBC-26",
+    "WSBC-42",
+    "WSBC-43",
+    "WSBC-46",
+    "WSBC-17",
+    "WSBC-21",
+    "WSBC-10",
+    "WSBC-35",
+    "WSBC-13",
+    "WSBC-44",
+    "WSBC-45",
+    "WSBC-47",
+    "GUIDE-02",
+    "WSBC-14",
+    "GEN-01",
+    "WSBC-01",
+    "WSBC-49",
+    "WSBC-48",
+    "SYN-PEND",
+    "WSBC-29",
+    "GUIDE-01",
+    "GUIDE-03",
+    "WSBC-24",
+    "SYN-GUIDE-02",
+    "WSBC-33",
+    "WSBC-34",
+    "SYN-05",
+    "WSBC-36",
+    "SYN-GUIDE-01",
+    "SYN-08",
+    "SYN-09"
+   ],
+   "missing": [],
+   "jane_links": 14,
+   "issues": [],
+   "warnings": [
+    "untagged coverage wording: \"Home WorkSafeBC physiotherapy What WorkSafeBC covers Claims and costs guide Hurt at work in BC?\"",
+    "untagged coverage wording: \"What does WorkSafeBC cover for physiotherapy?\"",
+    "untagged coverage wording: \"Find your clinic Jump to your question At a glance Claim number Reporting Pending claims Denied claims After 60 days Fee\"",
+    "untagged coverage wording: \"Form 6 page on worksafebc.com Form 6A page on worksafebc.com Pending claims Can I start physio while my claim is pending\"",
+    "untagged coverage wording: \"Fees Will I pay anything once my claim is accepted?\"",
+    "untagged coverage wording: \"Metro Vancouver provider list Fraser Valley provider list Extensions How much physio does WorkSafeBC cover, and can I ge\"",
+    "untagged coverage wording: \"Other care on a claim Does WorkSafeBC cover massage therapy or acupuncture?\"",
+    "untagged coverage wording: \"Do I pay for physio on a WorkSafeBC claim?\"",
+    "untagged coverage wording: \"Do I need a doctor s referral for WorkSafeBC physio?\"",
+    "untagged coverage wording: \"Health care benefits (workers) (worksafebc.com) How workers report a workplace injury or illness (worksafebc.com) Making\""
+   ]
+  },
+  {
+   "page": "rtw",
+   "kind": "article",
+   "path": "/return-to-work-after-a-workplace-injury/",
+   "title": "Gradual Return to Work & Modified Duties | Synergy Rehab",
+   "title_len": 56,
+   "description_len": 150,
+   "words": 2843,
+   "claims": {
+    "RTW-06": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-02": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "RTW-15": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "RTW-14": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "RTW-05": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-04": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-08": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-23": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-28": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "SYN-PEND": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "verified": false
+    },
+    "WSBC-25": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-21": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "SYN-JANE": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-07": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-42": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-43": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-44": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-12": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-11": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "SYN-RTW-02": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "verified": false
+    },
+    "RTW-13": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-09": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "RTW-12": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-01": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-10": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-03": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "RTW-16": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-46": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-20": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "SYN-RTW-01": {
+     "rule": "STAFF_CONFIRM",
+     "status": "UNVERIFIED",
+     "verified": false
+    },
+    "RTW-17": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "RTW-18": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "RTW-19": {
+     "rule": "STAFF_CONFIRM",
+     "status": "PARTIAL",
+     "verified": false
+    },
+    "WSBC-34": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
+    "WSBC-14": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    }
+   },
+   "unverified_claims": [
+    "RTW-06",
+    "RTW-11",
+    "RTW-02",
+    "RTW-15",
+    "RTW-14",
+    "RTW-05",
+    "RTW-04",
+    "RTW-08",
+    "WSBC-23",
+    "WSBC-28",
+    "SYN-PEND",
+    "WSBC-25",
+    "WSBC-21",
+    "SYN-JANE",
+    "RTW-07",
+    "WSBC-42",
+    "WSBC-43",
+    "WSBC-44",
+    "WSBC-12",
+    "WSBC-11",
+    "WSBC-17",
+    "SYN-RTW-02",
+    "RTW-13",
+    "RTW-09",
+    "RTW-12",
+    "RTW-01",
+    "RTW-10",
+    "RTW-03",
+    "RTW-16",
+    "WSBC-46",
+    "RTW-20",
+    "SYN-RTW-01",
+    "RTW-17",
+    "RTW-18",
+    "RTW-19",
+    "WSBC-34",
+    "WSBC-14"
+   ],
+   "missing": [
+    "photo:rtw_hero"
+   ],
+   "jane_links": 14,
+   "issues": [],
+   "warnings": []
   }
  ],
  "skipped": [],
