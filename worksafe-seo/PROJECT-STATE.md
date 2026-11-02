@@ -5,6 +5,12 @@ Last updated: 2026-11-02 (session 1)
 ## Goal
 Build the most useful, trustworthy and measurable WorkSafeBC physiotherapy search presence across Synergy's verified, eligible clinics, without doorway pages and without hurting ICBC or generic physiotherapy rankings.
 
+## Scope rule (user, 2026-11-02): WORKSAFE ONLY
+- Every page, keyword target, CTA, FAQ and schema item is about WorkSafeBC / WCB workplace-injury care only.
+- No ICBC, private-pay or extended-health content, offers or CTAs on these pages. ICBC pages are an internal design and structure reference only.
+- Keyword map targets WorkSafe / WCB / work-injury intent only. Generic physiotherapy and ICBC volumes are context, never page targets.
+- Cross-links go only to WorkSafe pages, WorkSafe-relevant service pages and official WorkSafeBC resources.
+
 ## Environment (verified 2026-11-02)
 - Screenshot #1 tool: claude-seo (AgriciDaniel/claude-seo). Already installed as plugin `claude-seo@synced` v2.4.0. Verified loaded.
 - Elephant-Goldfish Model: `claude plugin marketplace add google/elephant-goldfish-model` + `claude plugin install egm@egm` run 2026-11-02. Verified: `egm@egm` v0.1.0 enabled. Skills load as `/egm:*` in the NEXT session. This session runs the EGM review protocol by reading the installed plugin's own reviewer persona files into fresh subagents.
