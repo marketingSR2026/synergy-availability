@@ -1,0 +1,20 @@
+page_slug,clinic_name,wave,contract_2026_confirmed,legal_entity,vendor_number,contract_confirmed_by,contract_confirmed_on,worksafebc_list_matches,nap_signed_by,nap_signed_on,url_plan_done_on,tracking_added_on,wcb_initial_treatment_id,getting_here,parking,accessibility,check_in,languages,team_json,photo_hero_url,photo_inside_url,photo_consent_by,wcb_massage_confirmed_by,wcb_massage_confirmed_on,wcb_acupuncture_confirmed_by,wcb_acupuncture_confirmed_on,notes
+vancouver,Vancouver,2,,,,,,,,,,,442,,,,,,,,,,,,,,LOW: cached list phone 236.885.8280 differs
+burnaby,Burnaby,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+new-westminster,New Westminster,1,,,,,,,,,,,442,,,,,,,,,,,,,,LOW: on cached list but unit 202 vs 405
+richmond,Richmond,1,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+delta,Delta,2,,,,,,,,,,,442,,,,,,,,,,,,,,MEDIUM: Medimap lists another entity (Salius Rehab Inc.) at this unit; older EAPP row carries King George phone
+nordel-surrey,Nordel,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+cedar-hills-surrey,Cedar Hills,3,,,,,,,,,,,442,,,,,,,,,,,,,,HIGH: not found on cached WorkSafeBC MSK physio list; Medimap lists private pay only (SYN-16)
+central-city-surrey,Central City,2,,,,,,,,,,,442,,,,,,,,,,,,,,LOW: cached list names it King George Hub with a different phone
+king-george-surrey,King George,1b,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+strawberry-hill-surrey,Strawberry Hill,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+newton-surrey,Newton,1b,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+fleetwood-surrey,Fleetwood,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+sullivan-heights-surrey,Sullivan Heights,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+south-surrey,South Surrey,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+cloverdale-surrey,Cloverdale,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+clayton-heights-surrey,Clayton Heights,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+clayton-corners-surrey,Clayton Corners,3,,,,,,,,,,,442,,,,,,,,,,,,,,HIGH: not found on any cached WorkSafeBC list
+langley,Langley,2,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)
+abbotsford,Abbotsford,1,,,,,,,,,,,442,,,,,,,,,,,,,,NORMAL: on cached WorkSafeBC list (pre-April 2026)

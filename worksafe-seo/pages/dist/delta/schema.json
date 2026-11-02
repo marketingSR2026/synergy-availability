@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/",
    "name": "WCB & WorkSafeBC Physio in Delta | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Delta, 10757 Delsom Crescent. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Delta, 10757 Delsom Crescent. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-delta"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-delta",
    "name": "Synergy Rehab Delta",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/",
+   "url": "https://synergyrehabilitation.ca/physiotherapy-delta-chiropractor/",
    "telephone": "+16045168505",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "10757 Delsom Crescent, Unit 103",
+    "streetAddress": "Unit 103, 10757 Delsom Crescent",
     "addressLocality": "Delta",
     "addressRegion": "BC",
     "postalCode": "V4C 0A8",

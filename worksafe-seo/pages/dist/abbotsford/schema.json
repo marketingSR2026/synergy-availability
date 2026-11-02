@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/abbotsford/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/abbotsford/",
    "name": "WCB & WorkSafeBC Physio in Abbotsford | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Abbotsford, 3720 Townline Rd. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Abbotsford, 3720 Townline Rd. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/abbotsford/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-abbotsford"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/abbotsford/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-abbotsford",
    "name": "Synergy Rehab Abbotsford",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/abbotsford/",
+   "url": "https://synergyrehabilitation.ca/physiotherapy-abbotsford-chiropractor/",
    "telephone": "+16047765700",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "3720 Townline Rd, Suite 100",
+    "streetAddress": "Suite 100, 3720 Townline Rd",
     "addressLocality": "Abbotsford",
     "addressRegion": "BC",
     "postalCode": "V2T 0G6",

@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/richmond/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/richmond/",
    "name": "WCB & WorkSafeBC Physio in Richmond | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Richmond, 11688 Steveston Hwy. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Richmond, 11688 Steveston Hwy. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/richmond/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-richmond"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/richmond/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-richmond",
    "name": "Synergy Rehab Richmond",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/richmond/",
+   "url": "https://synergyrehabilitation.ca/richmond-physiotherapy/",
    "telephone": "+16042845113",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "11688 Steveston Hwy, Unit 8060",
+    "streetAddress": "Unit 8060, 11688 Steveston Hwy",
     "addressLocality": "Richmond",
     "addressRegion": "BC",
     "postalCode": "V7A 5J3",

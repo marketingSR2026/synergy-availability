@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/",
    "name": "WCB & WorkSafeBC Physio in Clayton Corners | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Corners, 18811 72 Ave. Open Mon to Tue 12 PM to 8 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Corners, 18811 72 Ave. Open Mon to Fri until 8 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-clayton-corners-188-st"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-clayton-corners-188-st",
    "name": "Synergy Rehab Clayton Corners",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/",
    "telephone": "+16044160580",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "18811 72 Ave, Suite 110",
+    "streetAddress": "Suite 110, 18811 72 Ave",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V4N 6W7",

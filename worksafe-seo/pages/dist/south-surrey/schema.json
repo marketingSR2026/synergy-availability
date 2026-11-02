@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/south-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/south-surrey/",
    "name": "WCB & WorkSafeBC Physio in South Surrey | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab South Surrey, 2388 156 St. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab South Surrey, 2388 156 St. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/south-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-south-surrey"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/south-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-south-surrey",
    "name": "Synergy Rehab South Surrey",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/south-surrey/",
+   "url": "https://synergyrehabilitation.ca/south-surrey-chiropractic-care/",
    "telephone": "+16043855855",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "2388 156 St, Unit 106",
+    "streetAddress": "Unit 106, 2388 156 St",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V4A 4V4",

@@ -2,7 +2,8 @@
  "id": "clayton-corners-surrey",
  "path": "/worksafe-physiotherapy/clayton-corners-surrey/",
  "title": "WCB & WorkSafeBC Physio in Clayton Corners | Synergy Rehab",
- "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Corners, 18811 72 Ave. Open Mon to Tue 12 PM to 8 PM. Bring your claim number.",
+ "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Corners, 18811 72 Ave. Open Mon to Fri until 8 PM. Your claim can be pending.",
  "h1": "WorkSafeBC physiotherapy in East Clayton, Surrey",
- "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/"
+ "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/",
+ "robots": "index,follow"
 }

@@ -5,14 +5,14 @@
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/",
-   "name": "WCB & WorkSafeBC Physio in Newton, Surrey | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Newton, 14468 72 Ave. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "name": "WCB & WorkSafeBC Physio in Newton | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Newton, 14468 72 Ave. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-newton-72nd"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-newton-72nd",
    "name": "Synergy Rehab Newton",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/",
+   "url": "https://synergyrehabilitation.ca/physiotherapy-amson-chiropractor/",
    "telephone": "+16045473761",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "14468 72 Ave, Unit 101",
+    "streetAddress": "Unit 101, 14468 72 Ave",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V3S 2E6",

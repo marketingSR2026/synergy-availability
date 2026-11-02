@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/",
    "name": "WCB & WorkSafeBC Physio in Langley | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Langley, 8045 204 St. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Langley, 8045 204 St. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-langley"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-langley",
    "name": "Synergy Rehab Langley",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/",
+   "url": "https://synergyrehabilitation.ca/langley-physio/",
    "telephone": "+16043711988",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "8045 204 St, Unit A130",
+    "streetAddress": "Unit A130, 8045 204 St",
     "addressLocality": "Langley",
     "addressRegion": "BC",
     "postalCode": "V2Y 5K1",

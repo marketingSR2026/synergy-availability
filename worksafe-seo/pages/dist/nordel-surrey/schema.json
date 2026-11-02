@@ -5,14 +5,14 @@
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/",
-   "name": "WCB & WorkSafeBC Physio in Nordel, Surrey | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Nordel, 12565 88 Avenue. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "name": "WCB & WorkSafeBC Physio in Nordel | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Nordel, 12565 88 Avenue. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-nordel-88-ave"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-nordel-88-ave",
    "name": "Synergy Rehab Nordel",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/",
+   "url": "https://synergyrehabilitation.ca/surrey-nordel-physio/",
    "telephone": "+16045031688",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "12565 88 Avenue, Unit 116",
+    "streetAddress": "Unit 116, 12565 88 Avenue",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V3W 3J7",

@@ -73,3 +73,14 @@ export const AREAS = [
   ['Surrey', ['nordel-surrey', 'cedar-hills-surrey', 'central-city-surrey', 'king-george-surrey', 'strawberry-hill-surrey', 'newton-surrey', 'fleetwood-surrey', 'sullivan-heights-surrey', 'south-surrey', 'cloverdale-surrey', 'clayton-heights-surrey', 'clayton-corners-surrey']],
   ['Langley and Abbotsford', ['langley', 'abbotsford']],
 ];
+
+// "Open 7 days until 8:30 PM" / "Open Mon to Fri until 8 PM" / "Open Mon to Fri and Sun until 8:30 PM"
+export function hoursSummary(hours) {
+  const open = DAYS.filter((d) => hours.some((h) => h.day === d));
+  const close = hoursText(`1AM-${latestClose(hours)}`).split(' to ')[1];
+  if (open.length === 7) return `Open 7 days until ${close}`;
+  const runs = []; let start = null, prev = -2;
+  for (const d of open) { const i = DAYS.indexOf(d); if (i !== prev + 1) { if (start) runs.push([start, DAYS[prev]]); start = d; } prev = i; }
+  if (start) runs.push([start, DAYS[prev]]);
+  return `Open ${runs.map(([a, b]) => (a === b ? a : `${a} to ${b}`)).join(' and ')} until ${close}`;
+}

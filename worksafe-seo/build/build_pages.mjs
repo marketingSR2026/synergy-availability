@@ -1,25 +1,30 @@
 #!/usr/bin/env node
 // Build WorkSafe pages from data + templates. Node 22, no dependencies.
-// Usage: node build/build_pages.mjs [--mode preview|publish] [--markers on|off] [--link all|wave1|published]
-// preview: renders all pages; pending claims and empty staff slots are visible (dashed) when --markers on.
-// publish: renders only pages whose gates and claims pass; exits 1 with a list of blockers otherwise.
+//
+//   node build/build_pages.mjs --mode preview   -> pages/dist/<page>/preview.html (+ meta.json, schema.json). NEVER paste these.
+//   node build/build_pages.mjs --mode publish   -> pages/publish/<page>/fragment.html (+ schema.json, meta.json, preview.html)
+//                                                  only for pages whose gates and claims pass; exit 1 lists every blocker.
+// Options: --data <dir> (default worksafe-seo/data), --out <dir>, --today YYYY-MM-DD, --markers on|off.
+//
+// Sources of truth
+//   data/worksafe-locations.json  machine data (merge_locations.py): NAP from the client-filled list, Jane slugs/types, nearby clinics
+//   data/clinic-signoff.csv       human-owned, per clinic: contract (G1), NAP sign-off (G2), clinic facts (G3), URL plan (G4),
+//                                 tracking (G5), confirmed WCB services, photos with consent. merge never writes it.
+//   data/claims-register.csv      every WorkSafeBC/Synergy fact; publishable only after checked_by/checked_on/quote_matches
+//   data/claims-additions.csv     extra rows from article drafting (same columns), merged at load
+//   data/review.json              site-level: clinical reviewer, live pages, pillar photos, privacy gate G6
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 import { pillar, pillarMeta, pillarFaq } from '../pages/src/pillar.mjs';
 import { location, locationMeta } from '../pages/src/location.mjs';
-import { SITE, PILLAR_PATH, esc, openingSpec } from '../pages/src/shared.mjs';
+import { SITE, PILLAR_PATH, GUIDE_PATH, RTW_PATH, esc, ev, openingSpec, addressLine } from '../pages/src/shared.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i > 0 ? process.argv[i + 1] : d; };
-const MODE = arg('mode', 'preview');
-const MARKERS = arg('markers', MODE === 'preview' ? 'on' : 'off') === 'on';
-const LINK = arg('link', MODE === 'preview' ? 'wave1' : 'published');
-const OUT = path.join(ROOT, 'pages', MODE === 'publish' ? 'publish' : 'dist');
-const WAVE1 = new Set(['new-westminster', 'richmond', 'abbotsford']);
+const ISO = /^\d{4}-\d{2}-\d{2}$/;
+const words = (s) => (String(s || '').trim().match(/\S+/g) || []).length;
 
-// ---------- data ----------
-function parseCSV(text) {
+export function parseCSV(text) {
   const rows = []; let row = [], f = '', q = false;
   for (let i = 0; i < text.length; i++) {
     const ch = text[i];
@@ -30,200 +35,311 @@ function parseCSV(text) {
   }
   if (f || row.length) { row.push(f); rows.push(row); }
   const [h, ...rest] = rows.filter((r) => r.length > 1);
-  return rest.map((r) => Object.fromEntries(h.map((k, i) => [k, r[i] ?? ''])));
+  return rest.map((r) => Object.fromEntries(h.map((k, i) => [k, (r[i] ?? '').trim()])));
 }
-const clinics = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/worksafe-locations.json'), 'utf8'));
-const claims = Object.fromEntries(parseCSV(fs.readFileSync(path.join(ROOT, 'data/claims-register.csv'), 'utf8')).map((r) => [r.claim_id, r]));
-const signoff = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/claims-signoff.json'), 'utf8'));
-const photos = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/photos.json'), 'utf8'));
-const bySlug = Object.fromEntries(clinics.map((x) => [x.page_slug, x]));
-const gatesPass = (x) => Object.values(x.publish_gates).every(Boolean);
-const G3_FIELDS = ['getting_here', 'parking', 'accessibility', 'languages', 'wcb_team_with_consent', 'photo_with_consent', 'nearby_workplaces'];
-const janeIso = clinics.map((x) => x.wcb_data_checked_at).sort().pop();
-const janeDate = new Date(janeIso).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'America/Vancouver' });
 
-// ---------- per-page context ----------
-function makeCtx(page) {
-  const used = new Map(); const blockers = []; const missing = [];
-  const pendingAttr = (why) => (MARKERS ? ` data-claim-status="pending" title="${esc(why)}"` : '');
-  const ctx = {
-    clinics, bySlug, janeDate,
-    linked: (slug) => (LINK === 'all' ? true : LINK === 'wave1' ? WAVE1.has(slug) || gatesPass(bySlug[slug]) : gatesPass(bySlug[slug])),
-    href: (x) => `${PILLAR_PATH}${x.page_slug}/`,
-    claim(id, html, tag = 'span', clinic = null) {
-      const r = claims[id];
-      if (!r) { blockers.push(`unknown claim id ${id}`); return html; }
-      const rule = r.publish_rule;
-      let pending = null;
-      if (rule === 'DO_NOT_PUBLISH') blockers.push(`${id} is DO_NOT_PUBLISH`);
-      if (rule === 'STAFF_CONFIRM' && !signoff.signed?.[id]) pending = `${id}: staff sign-off needed`;
-      if ((id === 'SYN-01' || id === 'SYN-08') && clinic && !clinic.publish_gates.G1_contract) pending = `${id}: 2026 contract not confirmed for ${clinic.name} (gate G1)`;
-      used.set(id, { rule, status: r.status, pending: Boolean(pending) });
-      if (pending && MODE === 'publish') blockers.push(pending);
-      return `<${tag} data-claim="${id}"${pending ? pendingAttr(pending) : ''}>${html}</${tag}>`;
-    },
-    slot(x, field, label) {
-      const v = x.staff_facts?.[field];
-      if (v) return esc(v);
-      missing.push(field);
-      return MODE === 'publish' ? '' : `<span class="sr-ws-staff-slot">Staff to confirm: ${esc(label)}</span>`;
-    },
-    photo(key, alt, w, h, hero = false, x = null) {
-      const src = photos[key];
-      const attrs = hero ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"';
-      if (src) return `<img class="${hero ? 'sr-ws-hero__img' : ''}" src="${esc(src)}" width="${w}" height="${h}" alt="${alt}" ${attrs}>`;
-      missing.push(`photo:${key}`);
-      if (MODE === 'publish') { if (hero) blockers.push(`hero photo missing (${key})`); return ''; }
-      return `<div class="${hero ? 'sr-ws-hero__img ' : ''}sr-ws-photo-slot" role="img" aria-label="Photo placeholder" style="aspect-ratio:${w}/${h}"><span>Clinic photo<br>staff to supply<br>(consent required)</span></div>`;
-    },
-    team(x) {
-      const team = x.staff_facts?.wcb_team_with_consent;
-      if (Array.isArray(team) && team.length) {
-        return `<section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-team-h"><div class="sr-ws-container">
-          <div class="sr-ws-head"><p class="sr-ws-eyebrow">Your team</p><h2 class="sr-ws-h2" id="sr-ws-team-h">WCB physiotherapists at ${esc(x.name)}</h2></div>
-          <ul class="sr-ws-team" role="list">${team.map((p) => `<li class="sr-ws-person"><article class="sr-ws-card">
-            <div class="sr-ws-person__top"><span class="sr-ws-person__mono" aria-hidden="true">${esc(p.name.split(' ').map((s) => s[0]).join('').slice(0, 2))}</span>
-            <div><h3 class="sr-ws-h3 sr-ws-person__name">${esc(p.name)}</h3><p class="sr-ws-person__role">${esc(p.credential)}</p></div></div>
-            <p class="sr-ws-person__text">${esc(p.focus || '')}</p>
-            <ul class="sr-ws-chips" role="list">${(p.languages || []).map((l) => `<li><span class="sr-ws-pill sr-ws-pill--blue">${esc(l)}</span></li>`).join('')}</ul>
-          </article><a class="sr-ws-person__foot" href="${x.jane.wcb_initial_url}">Book WCB physio at ${esc(x.name)}</a></li>`).join('')}</ul></div></section>`;
-      }
-      missing.push('wcb_team_with_consent');
-      if (MODE === 'publish') return '';
-      return `<section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-team-h"><div class="sr-ws-container">
-        <div class="sr-ws-head"><p class="sr-ws-eyebrow">Your team</p><h2 class="sr-ws-h2" id="sr-ws-team-h">WCB physiotherapists at ${esc(x.name)}</h2></div>
-        <p><span class="sr-ws-staff-slot">Staff to confirm: physiotherapists who treat WCB claims here and consent to a profile card (name, registration, languages, focus). This band is left out until consent is on file. Jane currently shows ${x.wcb_physios_with_openings} physiotherapist(s) with WCB openings this week.</span></p>
-      </div></section>`;
-    },
-    asof() {
-      if (signoff.checked_as_of && signoff.reviewer) return `Facts checked against worksafebc.com on ${esc(signoff.checked_as_of)}. Reviewed by ${esc(signoff.reviewer)}.`;
-      if (MODE === 'publish') blockers.push('claims-signoff.json has no checked_as_of / reviewer');
-      return `Sources researched November 2, 2026. <span class="sr-ws-staff-slot">Staff to confirm: date checked on worksafebc.com and reviewing physiotherapist</span>`;
-    },
+export function loadData(dataDir) {
+  const read = (f) => fs.readFileSync(path.join(dataDir, f), 'utf8');
+  const clinics = JSON.parse(read('worksafe-locations.json'));
+  const signoff = Object.fromEntries(parseCSV(read('clinic-signoff.csv')).map((r) => [r.page_slug, r]));
+  const claimRows = parseCSV(read('claims-register.csv'));
+  if (fs.existsSync(path.join(dataDir, 'claims-additions.csv'))) claimRows.push(...parseCSV(read('claims-additions.csv')));
+  const claims = Object.fromEntries(claimRows.map((r) => [r.claim_id, r]));
+  const review = JSON.parse(read('review.json'));
+  for (const x of clinics) x.signoff = signoff[x.page_slug] || {};
+  return { clinics, claims, review };
+}
+
+// ---------- gates ----------
+export function clinicGates(x) {
+  const s = x.signoff;
+  const team = s.team_json ? JSON.parse(s.team_json) : [];
+  const facts = ['getting_here', 'accessibility', 'check_in', 'parking'];
+  const factWords = facts.reduce((n, f) => n + words(s[f]), 0) + words(s.languages) + team.reduce((n, p) => n + words(p.focus), 0);
+  return {
+    G1_contract: s.contract_2026_confirmed === 'yes' && Boolean(s.vendor_number && s.contract_confirmed_by) && ISO.test(s.contract_confirmed_on || '') && ['yes', 'correction_filed'].includes(s.worksafebc_list_matches),
+    G2_nap: Boolean(s.nap_signed_by) && ISO.test(s.nap_signed_on || ''),
+    G3_facts: facts.every((f) => words(s[f]) >= 8) && Boolean(s.languages) && (team.length > 0 || Boolean(s.photo_hero_url && s.photo_consent_by)) && factWords >= 120,
+    G4_url_plan: ISO.test(s.url_plan_done_on || ''),
+    G5_tracking: ISO.test(s.tracking_added_on || ''),
   };
-  return { ctx, used, blockers, missing };
 }
+const serviceConfirmed = (x, kind) => Boolean(x.signoff[`wcb_${kind}_confirmed_by`]) && ISO.test(x.signoff[`wcb_${kind}_confirmed_on`] || '');
 
-// ---------- schema ----------
-const ORG = { '@type': 'MedicalOrganization', '@id': `${SITE}/#organization`, name: 'Synergy Rehabilitation', url: `${SITE}/` };
-function crumbs(items) {
-  return { '@type': 'BreadcrumbList', itemListElement: items.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${SITE}${p}` })) };
-}
-function pillarSchema(meta, ctx) {
-  const url = `${SITE}${meta.path}`;
-  const plain = (h) => h.replace(/<[^>]+>/g, '').replace(/&#8217;/g, '’').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
-  return { '@context': 'https://schema.org', '@graph': [
-    ORG,
-    { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'Synergy Rehabilitation', publisher: { '@id': `${SITE}/#organization` } },
-    { '@type': 'MedicalWebPage', '@id': `${url}#webpage`, url, name: meta.title, description: meta.description, inLanguage: 'en-CA', isPartOf: { '@id': `${SITE}/#website` }, about: { '@id': `${SITE}/#organization` }, publisher: { '@id': `${SITE}/#organization` } },
-    crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', meta.path]]),
-    { '@type': 'FAQPage', '@id': `${url}#faq`, mainEntity: pillarFaq(ctx).map(([q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(a) } })) },
-  ] };
-}
-function clinicSchema(x, meta) {
-  const url = `${SITE}${meta.path}`;
-  const clinic = {
-    '@type': ['MedicalClinic', 'Physiotherapy'], '@id': `${url}#clinic`, name: `Synergy Rehab ${x.name}`, url,
-    telephone: x.phone_e164,
-    address: { '@type': 'PostalAddress', streetAddress: [x.address.street, x.address.unit].filter(Boolean).join(', '), addressLocality: x.address.city, addressRegion: 'BC', postalCode: x.address.postal, addressCountry: 'CA' },
-    openingHoursSpecification: openingSpec(x.hours),
-    medicalSpecialty: 'https://schema.org/Physiotherapy',
-    availableService: { '@type': 'MedicalTherapy', name: 'WorkSafeBC (WCB) physiotherapy' },
-    parentOrganization: { '@id': `${SITE}/#organization` },
-  };
-  if (x.gbp.lat && x.gbp.lng) clinic.geo = { '@type': 'GeoCoordinates', latitude: +x.gbp.lat, longitude: +x.gbp.lng };
-  return { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'MedicalWebPage', '@id': `${url}#webpage`, url, name: meta.title, description: meta.description, inLanguage: 'en-CA', about: { '@id': `${url}#clinic` }, isPartOf: { '@id': `${SITE}/#website` } },
-    clinic,
-    crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [x.name, meta.path]]),
-  ] };
-}
-
-// ---------- QA helpers ----------
-const text = (html) => html.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
-const shingles = (t, n = 5) => { const w = t.toLowerCase().split(' '); const s = new Set(); for (let i = 0; i + n <= w.length; i++) s.add(w.slice(i, i + n).join(' ')); return s; };
-const jaccard = (a, b) => { let i = 0; for (const x of a) if (b.has(x)) i++; return i / (a.size + b.size - i || 1); };
-
-// ---------- preview shell ----------
-const PREVIEW_CSS = `body{margin:0;background:#fff;font-family:Inter,system-ui,sans-serif}
-.pv-header{position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:12px 16px;background:#fff;border-bottom:1px solid #d9e0ee;font:600 14px/1.2 Montserrat,system-ui,sans-serif;color:#16233d}
-.pv-header small{font:400 12px Inter,system-ui,sans-serif;color:#4d5b73}
-.pv-banner{padding:10px 16px;background:#fff8e6;color:#5a3d00;font:400 13px/1.4 Inter,system-ui,sans-serif;border-bottom:1px solid #f0d9a8}
-[data-claim-status="pending"]{outline:2px dashed #c77700;outline-offset:2px;border-radius:3px}
-.sr-ws-staff-slot{display:inline-block;border:2px dashed #c77700;background:#fff8e6;color:#5a3d00;padding:8px 10px;border-radius:10px;font-size:14px;line-height:1.4}
-.sr-ws-photo-slot{display:flex;align-items:center;justify-content:center;width:100%;height:auto;border-radius:20px;background:repeating-linear-gradient(135deg,#e3e9f4 0 12px,#f5f7fa 12px 24px);color:#4d5b73;font:600 14px/1.4 Inter,system-ui,sans-serif;text-align:center}
-.sr-ws-finder-group + .sr-ws-finder-group{margin-top:32px}`;
-const ASSET_CSS = fs.readFileSync(path.join(ROOT, 'pages/assets/worksafe.css'), 'utf8');
-function previewHtml(meta, fragment, schema) {
-  const local = fragment
-    .replace(/href="\/worksafe-physiotherapy\/([a-z-]+)\/"/g, 'href="../$1/preview.html"')
-    .replace(/href="\/worksafe-physiotherapy\/(#[a-z]+)?"/g, (_, h) => `href="../pillar/preview.html${h || ''}"`)
-    .replace(/href="\/worksafe-physiotherapy\/#/g, 'href="../pillar/preview.html#');
-  return `<!doctype html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><link rel="canonical" href="${SITE}${meta.path}">
-<meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-<style>${ASSET_CSS}</style><style>${PREVIEW_CSS}</style>
-<script type="application/ld+json">${JSON.stringify(schema)}</script></head><body>
-<div class="pv-header"><span>Synergy Rehabilitation <small>(site header from the WordPress theme goes here)</small></span><small>${esc(meta.path)}</small></div>
-${MARKERS ? '<div class="pv-banner">Preview. Dashed outlines mark facts waiting for staff sign-off or clinic facts staff must supply. They do not appear on the live page.</div>' : ''}
-${local}
-</body></html>`;
+export function claimVerified(r, today) {
+  if (!r || r.publish_rule === 'DO_NOT_PUBLISH') return false;
+  if (!r.checked_by || !ISO.test(r.checked_on || '') || r.quote_matches !== 'yes') return false;
+  if (r.expires_on && r.expires_on <= today) return false;
+  const age = (Date.parse(today) - Date.parse(r.checked_on)) / 864e5;
+  return age >= 0 && age <= 180;
 }
 
 // ---------- build ----------
-fs.rmSync(OUT, { recursive: true, force: true });
-const report = { mode: MODE, built: [], skipped: [], errors: [], generated_note: 'run build/build_pages.mjs' };
-const locTexts = {};
-function write(meta, html, schema, used, missing, blockers, kind) {
-  const dir = path.join(OUT, meta.id); fs.mkdirSync(dir, { recursive: true });
-  const issues = [...blockers];
-  if (/[—–]/.test(html + meta.title + meta.description)) issues.push('em or en dash found');
-  if (meta.title.length > 65) issues.push(`title ${meta.title.length} chars`);
-  if (meta.description.length > 165) issues.push(`meta description ${meta.description.length} chars`);
-  if ((html.match(/<h1[\s>]/g) || []).length !== 1) issues.push('H1 count is not 1');
-  if (!/19\+ locations/.test(html)) issues.push('missing "19+ locations"');
-  const janeLinks = [...html.matchAll(/https:\/\/synergyrehab\.janeapp\.com\/locations\/([a-z0-9-]+)\/book[^"]*/g)].map((m) => m[1]);
-  const badJane = janeLinks.filter((s) => !clinics.some((c) => c.jane.slug === s));
-  if (badJane.length) issues.push(`unknown Jane slugs: ${badJane.join(',')}`);
-  if (MODE === 'publish' && issues.length) { report.skipped.push({ page: meta.id, issues }); return; }
-  fs.writeFileSync(path.join(dir, 'fragment.html'), html);
-  fs.writeFileSync(path.join(dir, 'schema.json'), JSON.stringify(schema, null, 1));
-  fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ ...meta, canonical: `${SITE}${meta.path}` }, null, 1));
-  fs.writeFileSync(path.join(dir, 'preview.html'), previewHtml(meta, html, schema));
-  const t = text(html);
-  if (kind === 'location') locTexts[meta.id] = t;
-  report.built.push({ page: meta.id, path: meta.path, title: meta.title, title_len: meta.title.length, description_len: meta.description.length, words: t.split(' ').length,
-    claims: Object.fromEntries(used), pending_claims: [...used].filter(([, v]) => v.pending).map(([k]) => k), missing_staff_facts: [...new Set(missing)], jane_links: janeLinks.length, issues });
+export async function build(opts = {}) {
+  const MODE = opts.mode || 'preview';
+  const dataDir = opts.dataDir || path.join(ROOT, 'data');
+  const OUT = opts.outDir || path.join(ROOT, 'pages', MODE === 'publish' ? 'publish' : 'dist');
+  const today = opts.today || new Date().toISOString().slice(0, 10);
+  const MARKERS = opts.markers ?? (MODE === 'preview');
+  const write = opts.write !== false;
+  const { clinics, claims, review } = loadData(dataDir);
+  const bySlug = Object.fromEntries(clinics.map((x) => [x.page_slug, x]));
+  for (const x of clinics) x.gates = clinicGates(x);
+  const pub = MODE === 'publish';
+  const gatesPass = (x) => Object.values(x.gates).every(Boolean);
+  const G6 = Boolean(review.privacy_gate_G6?.confirmed_by) && ISO.test(review.privacy_gate_G6?.confirmed_on || '');
+  const reviewerOk = Boolean(review.reviewer?.name && review.reviewer?.credential);
+  const wcbOk = (x) => x.gates.G1_contract;
+  const janeIso = clinics.map((x) => x.wcb_data_checked_at).sort().pop();
+
+  function makeCtx(pageId) {
+    const used = new Map(); const blockers = []; const missing = []; const pendingMarks = [];
+    const mark = (kind, why) => { pendingMarks.push(why); return MARKERS ? ` data-claim-status="${kind}" title="${esc(why)}"` : ''; };
+    const linked = (t) => (pub ? gatesPass(t) : ['1', '1b'].includes(t.signoff.wave) || gatesPass(t));
+    const ctx = {
+      clinics, bySlug,
+      listInFinder: (x) => (pub ? wcbOk(x) : true),
+      link: (key) => (key === 'pillar' ? PILLAR_PATH : review.live_pages?.[key] ? (key === 'guide' ? GUIDE_PATH : RTW_PATH) : null),
+      bookUrl: (x) => `https://synergyrehab.janeapp.com/locations/${x.jane.slug}/book#/discipline/3/treatment/${x.signoff.wcb_initial_treatment_id || 442}`,
+      claim(id, html, tag = 'span') {
+        const r = claims[id];
+        if (!r) { blockers.push(`unknown claim id ${id}`); return html; }
+        if (r.publish_rule === 'DO_NOT_PUBLISH') blockers.push(`${id} is DO_NOT_PUBLISH`);
+        const ok = claimVerified(r, today);
+        used.set(id, { rule: r.publish_rule, status: r.status, verified: ok });
+        let attr = '';
+        if (!ok) {
+          const why = r.publish_rule === 'OK_TO_PUBLISH' ? `${id}: open the official page and record checked_by/checked_on/quote_matches` : `${id} (${r.publish_rule}): needs staff decision and verification`;
+          if (pub) blockers.push(why);
+          attr = mark(r.publish_rule === 'OK_TO_PUBLISH' ? 'unchecked' : 'pending', why);
+        }
+        return `<${tag} data-claim="${id}"${attr}>${html}</${tag}>`;
+      },
+      contractClaim(x, html, id = 'SYN-01') {
+        const why = `${id}: 2026 WorkSafeBC contract not confirmed for ${x.name} (gate G1)`;
+        if (!wcbOk(x)) { if (pub) blockers.push(why); }
+        if (id !== 'SYN-01') ctx.claim(id, '');
+        return `<span data-claim="${id}"${wcbOk(x) ? '' : mark('pending', why)}>${html}</span>`;
+      },
+      service: (x, kind) => (pub ? serviceConfirmed(x, kind) : x[`wcb_${kind}_bookable`] || serviceConfirmed(x, kind)),
+      serviceClaim(x, kind, html) {
+        const ok = serviceConfirmed(x, kind);
+        const why = `WCB ${kind} at ${x.name}: Jane shows it bookable; ops must confirm the clinic bills WorkSafeBC for it`;
+        if (!ok && pub) blockers.push(why);
+        return `<span data-claim="SVC-${kind}"${ok ? '' : mark('pending', why)}>${html}</span>`;
+      },
+      nearbyWcb: (x) => x.nearby.map((n) => ({ ...n, clinic: bySlug[n.slug] })).filter((n) => n.clinic && ctx.listInFinder(n.clinic)),
+      clinicAnchor(t, placement, pageType) {
+        const own = linked(t);
+        const href = own ? `${PILLAR_PATH}${t.page_slug}/` : ctx.bookUrl(t);
+        return `<a href="${esc(href)}" ${ev(own ? 'worksafe_location_select' : 'worksafe_book_click', t.page_slug, placement, pageType)}>${esc(t.name)}</a>`;
+      },
+      clinicCard(t, sub, placement, pageType) {
+        const own = linked(t);
+        const href = own ? `${PILLAR_PATH}${t.page_slug}/` : ctx.bookUrl(t);
+        const cta = own ? `WorkSafe physio at ${esc(t.name)}` : `Book WCB physio at ${esc(t.name)}`;
+        const flag = wcbOk(t) ? '' : mark('pending', `${t.name}: hidden on the live page until its 2026 contract is confirmed (G1)`);
+        return `<li class="sr-ws-card sr-ws-card--soft sr-ws-card--interactive sr-ws-loccard"${flag}>
+          <h4 class="sr-ws-h4 sr-ws-card__title"><a class="sr-ws-card__link" href="${esc(href)}" ${ev(own ? 'worksafe_location_select' : 'worksafe_book_click', t.page_slug, placement, pageType)}>Synergy Rehab ${esc(t.name)}</a></h4>
+          <p class="sr-ws-loccard__area">${sub}</p><span class="sr-ws-loccard__cta">${cta}</span></li>`;
+      },
+      finderCompact() {
+        const list = clinics.filter((x) => ctx.listInFinder(x));
+        return `<ul class="sr-ws-chips" role="list" aria-label="WCB physio clinics">${list.map((x) => `<li>${ctx.clinicAnchor(x, 'finder', pageId === 'guide' || pageId === 'rtw' ? 'article' : 'pillar').replace('<a ', '<a class="sr-ws-chip" ')}</li>`).join('')}</ul>`;
+      },
+      slot(x, field, label) {
+        const v = x.signoff?.[field];
+        if (v) return esc(v);
+        missing.push(field);
+        return pub ? '' : `<span class="sr-ws-staff-slot">Staff to confirm: ${esc(label)}</span>`;
+      },
+      photo(x, which, alt, w, h, hero = false) {
+        const src = x.signoff?.[`photo_${which}_url`];
+        const consent = x.signoff?.photo_consent_by;
+        return ctx._img(src && consent ? src : null, `${x.page_slug}_${which}`, alt, w, h, hero);
+      },
+      pillarPhoto(key, alt, w, h, hero = false) {
+        const src = review.pillar_photos?.[key];
+        return ctx._img(src && review.pillar_photos?.consent_by ? src : null, key, alt, w, h, hero);
+      },
+      _img(src, key, alt, w, h, hero) {
+        const attrs = hero ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"';
+        if (src) return `<img class="${hero ? 'sr-ws-hero__img' : ''}" src="${esc(src)}" width="${w}" height="${h}" alt="${alt}" ${attrs}>`;
+        missing.push(`photo:${key}`);
+        if (pub) return '';
+        return `<div class="${hero ? 'sr-ws-hero__img ' : ''}sr-ws-photo-slot" role="img" aria-label="Photo placeholder" style="aspect-ratio:${w}/${h}"><span>Clinic photo<br>staff to supply<br>(consent required)</span></div>`;
+      },
+      team(x) {
+        const team = x.signoff?.team_json ? JSON.parse(x.signoff.team_json) : [];
+        if (team.length) {
+          return `<section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-team-h"><div class="sr-ws-container">
+            <div class="sr-ws-head"><p class="sr-ws-eyebrow">Your team</p><h2 class="sr-ws-h2" id="sr-ws-team-h">Physiotherapists at ${esc(x.name)}</h2></div>
+            <ul class="sr-ws-team" role="list">${team.map((p) => `<li class="sr-ws-person"><article class="sr-ws-card">
+              <div class="sr-ws-person__top"><span class="sr-ws-person__mono" aria-hidden="true">${esc(p.name.split(' ').map((s) => s[0]).join('').slice(0, 2))}</span>
+              <div><h3 class="sr-ws-h3 sr-ws-person__name">${esc(p.name)}</h3><p class="sr-ws-person__role">${esc(p.credential)}</p></div></div>
+              ${p.focus ? `<p class="sr-ws-person__text">${esc(p.focus)}</p>` : ''}
+              <ul class="sr-ws-chips" role="list">${(p.languages || []).map((l) => `<li><span class="sr-ws-pill sr-ws-pill--blue">${esc(l)}</span></li>`).join('')}</ul>
+            </article><a class="sr-ws-person__foot" href="${ctx.bookUrl(x)}">Book WCB physio at ${esc(x.name)}</a></li>`).join('')}</ul></div></section>`;
+        }
+        missing.push('team_json');
+        if (pub) return '';
+        return `<section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-team-h"><div class="sr-ws-container">
+          <div class="sr-ws-head"><p class="sr-ws-eyebrow">Your team</p><h2 class="sr-ws-h2" id="sr-ws-team-h">Physiotherapists at ${esc(x.name)}</h2></div>
+          <p><span class="sr-ws-staff-slot">Staff to confirm: physiotherapists who see WCB claims here and have signed written consent for a profile card (name, CHCPBC registration checked, languages). Left out until consent is on file.</span></p>
+        </div></section>`;
+      },
+      asof: () => '%%ASOF%%',
+    };
+    const finish = (html) => {
+      const dates = [...used.keys()].map((k) => claims[k]?.checked_on).filter((d) => ISO.test(d || '')).sort();
+      let line;
+      if (reviewerOk && dates.length && ![...used.values()].some((v) => !v.verified)) {
+        line = `Facts checked against worksafebc.com between ${dates[0]} and ${dates[dates.length - 1]}. Reviewed by ${esc(review.reviewer.name)}, ${esc(review.reviewer.credential)}.`;
+      } else {
+        if (pub) blockers.push('reviewer or claim check dates missing for the as-of line');
+        line = `Sources researched November 2, 2026. <span class="sr-ws-staff-slot">Staff to confirm: date each fact was checked on worksafebc.com and the reviewing physiotherapist</span>`;
+      }
+      return html.split('%%ASOF%%').join(line);
+    };
+    return { ctx, used, blockers, missing, pendingMarks, finish };
+  }
+
+  // ---------- schema ----------
+  const ORG = { '@type': 'MedicalOrganization', '@id': `${SITE}/#organization`, name: 'Synergy Rehabilitation', url: `${SITE}/` };
+  const crumbs = (items) => ({ '@type': 'BreadcrumbList', itemListElement: items.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${SITE}${p}` })) });
+  const plain = (h) => h.replace(/<[^>]+>/g, '').replace(/&#8217;/g, '’').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+  const page = (meta, about, extra = {}) => ({ '@type': 'MedicalWebPage', '@id': `${SITE}${meta.path}#webpage`, url: `${SITE}${meta.path}`, name: meta.title, description: meta.description, inLanguage: 'en-CA', isPartOf: { '@id': `${SITE}/#website` }, about, ...extra });
+  const clinicNode = (x) => {
+    const node = {
+      '@type': ['MedicalClinic', 'Physiotherapy'], '@id': `${SITE}/#clinic-${x.jane.slug}`, name: `Synergy Rehab ${x.name}`,
+      url: x.existing_pages.clinic || `${SITE}${PILLAR_PATH}${x.page_slug}/`, telephone: x.phone_e164,
+      address: { '@type': 'PostalAddress', streetAddress: [x.address.unit, x.address.street].filter(Boolean).join(', '), addressLocality: x.address.city, addressRegion: 'BC', postalCode: x.address.postal, addressCountry: 'CA' },
+      openingHoursSpecification: openingSpec(x.hours), medicalSpecialty: 'https://schema.org/Physiotherapy',
+      availableService: { '@type': 'MedicalTherapy', name: 'WorkSafeBC (WCB) physiotherapy' }, parentOrganization: { '@id': `${SITE}/#organization` },
+    };
+    if (x.gbp.lat && x.gbp.lng) node.geo = { '@type': 'GeoCoordinates', latitude: +x.gbp.lat, longitude: +x.gbp.lng };
+    return node;
+  };
+
+  // ---------- QA ----------
+  const text = (html) => html.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').replace(/\s+/g, ' ').trim();
+  const shingles = (t, n = 5) => { const w = t.toLowerCase().split(' '); const s = new Set(); for (let i = 0; i + n <= w.length; i++) s.add(w.slice(i, i + n).join(' ')); return s; };
+  const jaccard = (a, b) => { let i = 0; for (const x of a) if (b.has(x)) i++; return i / (a.size + b.size - i || 1); };
+  function lint(meta, html) {
+    const issues = [], warnings = [];
+    const all = html + meta.title + meta.description;
+    if (/[—–]/.test(all)) issues.push('em or en dash found');
+    if (/\bicbc\b/i.test(text(html) + meta.title)) issues.push('ICBC mentioned (WorkSafe-only scope)');
+    if (/(worksafebc|wcb)[\s-]+approved|approved\s+(physio|provider|clinic|physiotherapist)/i.test(text(html) + meta.title)) issues.push('"approved" wording (WorkSafeBC contracts providers)');
+    if (meta.title.length > 62) issues.push(`title ${meta.title.length} chars`);
+    if (meta.description.length > 160) issues.push(`meta description ${meta.description.length} chars`);
+    if ((html.match(/<h1[\s>]/g) || []).length !== 1) issues.push('H1 count is not 1');
+    if (!/19\+ locations/.test(html)) issues.push('missing "19+ locations"');
+    if (/\b\d+\s+(physio(therapy)?\s+)?(visits|sessions|treatments)\b/i.test(text(html).replace(/up to 6 treatments/g, ''))) warnings.push('a visit or session count appears; check it is cleared (WSBC-18)');
+    const janeSlugs = [...html.matchAll(/https:\/\/synergyrehab\.janeapp\.com\/locations\/([a-z0-9-]+)\/book[^"]*/g)].map((m) => m[1]);
+    const bad = janeSlugs.filter((s) => !clinics.some((c) => c.jane.slug === s));
+    if (bad.length) issues.push(`unknown Jane slugs: ${[...new Set(bad)].join(',')}`);
+    if (/Staff to confirm|data-claim-status/.test(html) && pub) issues.push('preview placeholder left in publish output');
+    const untagged = text(html.replace(/<span data-claim="[^"]*"[^>]*>[\s\S]*?<\/span>/g, ' ')).split(/(?<=[.?!])\s+/)
+      .filter((s) => /\b(pay|fees?|bill(s|ed)?|covers?|covered|referral|reimburse\w*|pre-approval|approve)\b/i.test(s)).slice(0, 10);
+    if (untagged.length) warnings.push(...untagged.map((s) => `untagged coverage wording: "${s.slice(0, 120)}"`));
+    return { issues, warnings, janeLinks: janeSlugs.length };
+  }
+
+  // ---------- preview shell ----------
+  const PREVIEW_CSS = `body{margin:0;background:#fff}
+.pv-header{position:sticky;top:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;gap:12px;height:56px;padding:0 16px;background:#fff;border-bottom:1px solid #d9e0ee;font:600 15px/1.2 Montserrat,system-ui,sans-serif;color:#16233d;box-sizing:border-box}
+.pv-header small{font:400 12px Montserrat,system-ui,sans-serif;color:#4d5b73;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pv-banner{padding:8px 16px;background:#fff8e6;color:#5a3d00;font:400 13px/1.4 Montserrat,system-ui,sans-serif;border-bottom:1px solid #f0d9a8}
+[data-claim-status="pending"]{outline:2px dashed #c77700;outline-offset:2px;border-radius:3px}
+[data-claim-status="unchecked"]{outline:1px dotted #77849f;outline-offset:2px;border-radius:3px}
+.sr-ws-staff-slot{display:inline-block;border:2px dashed #c77700;background:#fff8e6;color:#5a3d00;padding:8px 10px;border-radius:10px;font-size:14px;line-height:1.4}
+.sr-ws-photo-slot{display:flex;align-items:center;justify-content:center;width:100%;height:auto;border-radius:20px;background:repeating-linear-gradient(135deg,#e3e9f4 0 12px,#f5f7fa 12px 24px);color:#4d5b73;font:600 14px/1.4 Montserrat,system-ui,sans-serif;text-align:center}`;
+  const ASSET_CSS = fs.readFileSync(path.join(ROOT, 'pages/assets/worksafe.css'), 'utf8');
+  function previewHtml(meta, fragment, schema) {
+    const local = fragment
+      .replace(/href="\/worksafe-physiotherapy\/([a-z-]+)\/"/g, 'href="../$1/preview.html"')
+      .replace(/href="\/worksafe-physiotherapy\/(#[a-z-]+)?"/g, (_, h) => `href="../pillar/preview.html${h || ''}"`)
+      .replace(/href="\/worksafebc-physiotherapy-what-is-covered\/"/g, 'href="../guide/preview.html"')
+      .replace(/href="\/return-to-work-after-a-workplace-injury\/"/g, 'href="../rtw/preview.html"');
+    return `<!doctype html><html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(meta.title)}</title><meta name="description" content="${esc(meta.description)}"><link rel="canonical" href="${SITE}${meta.path}"><meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>${ASSET_CSS}</style><style>${PREVIEW_CSS}</style>
+<script type="application/ld+json">${JSON.stringify(schema)}</script></head><body>
+<div class="pv-header"><span>Synergy Rehabilitation</span><small>theme header &middot; ${esc(meta.path)}</small></div>
+${MARKERS ? '<div class="pv-banner">Preview only. Amber dashes: waiting for a staff decision or clinic fact. Grey dots: official source not yet opened and recorded. Neither appears on the live page.</div>' : ''}
+${local}
+</body></html>`;
+  }
+
+  // ---------- render ----------
+  const report = { mode: MODE, today, built: [], skipped: [], site_gates: { G6_privacy: G6, reviewer: reviewerOk } };
+  const outputs = [];
+  function emit(meta, rawHtml, schema, r, kind, extraBlockers = []) {
+    const html = r.finish(rawHtml);
+    const { issues, warnings, janeLinks } = lint(meta, html);
+    const blockers = [...new Set([...r.blockers, ...extraBlockers, ...(pub ? issues : [])])];
+    const entry = { page: meta.id, kind, path: meta.path, title: meta.title, title_len: meta.title.length, description_len: meta.description.length,
+      words: text(html).split(' ').length, claims: Object.fromEntries(r.used), unverified_claims: [...r.used].filter(([, v]) => !v.verified).map(([k]) => k),
+      missing: [...new Set(r.missing)], jane_links: janeLinks, issues, warnings };
+    if (pub && blockers.length) { report.skipped.push({ page: meta.id, blockers }); return; }
+    outputs.push({ meta, html, schema, kind, entry });
+  }
+  { const r = makeCtx('pillar'); const html = pillar(r.ctx);
+    const extra = pub ? [...(G6 ? [] : ['G6 privacy gate not confirmed (review.json)']), ...(clinics.some(wcbOk) ? [] : ['no clinic has G1 (contract) confirmed'])] : [];
+    emit(pillarMeta, html, { '@context': 'https://schema.org', '@graph': [ORG, { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'Synergy Rehabilitation', publisher: { '@id': `${SITE}/#organization` } },
+      page(pillarMeta, { '@id': `${SITE}/#organization` }), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH]]),
+      { '@type': 'FAQPage', '@id': `${SITE}${PILLAR_PATH}#faq`, mainEntity: pillarFaq(r.ctx).map(([q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(r.finish(a)) } })) }] }, r, 'pillar', extra); }
+  for (const x of clinics) {
+    if (pub && !gatesPass(x)) { report.skipped.push({ page: x.page_slug, blockers: Object.entries(x.gates).filter(([, v]) => !v).map(([k]) => `gate ${k} not met`) }); continue; }
+    const r = makeCtx(x.page_slug);
+    let html = location(x, r.ctx);
+    if (pub) html = html.replace(/<div><dt>[^<]+<\/dt><dd><\/dd><\/div>/g, '').replace(/<details class="sr-ws-faq__item"><summary class="sr-ws-faq__q">[^<]*<\/summary><div class="sr-ws-faq__a"><p><\/p><\/div><\/details>/g, '');
+    const meta = locationMeta(x);
+    emit(meta, html, { '@context': 'https://schema.org', '@graph': [page(meta, { '@id': `${SITE}/#clinic-${x.jane.slug}` }), clinicNode(x), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [x.name, meta.path]])] }, r, 'location', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
+  }
+  for (const mod of ['guide', 'rtw']) {
+    const file = path.join(ROOT, 'pages/src', `${mod}.mjs`);
+    if (!fs.existsSync(file)) continue;
+    const m = await import(pathToFileURL(file).href);
+    const r = makeCtx(mod);
+    emit(m.meta, m.render(r.ctx), { '@context': 'https://schema.org', '@graph': [page(m.meta, { '@id': `${SITE}/#organization` }, { '@type': 'MedicalWebPage' }), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [m.meta.h1, m.meta.path]])] }, r, 'article', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
+  }
+  // uniqueness across location pages in this run
+  const locs = outputs.filter((o) => o.kind === 'location'); const sh = new Map(locs.map((o) => [o.meta.id, shingles(text(o.html))]));
+  for (const o of locs) {
+    let max = 0, w = null;
+    for (const [k, s] of sh) if (k !== o.meta.id) { const j = jaccard(sh.get(o.meta.id), s); if (j > max) { max = j; w = k; } }
+    o.entry.max_similarity = +max.toFixed(3); o.entry.most_similar_to = w;
+  }
+  const final = [];
+  for (const o of outputs) {
+    if (pub && o.kind === 'location' && o.entry.max_similarity > 0.4) { report.skipped.push({ page: o.meta.id, blockers: [`too similar to ${o.entry.most_similar_to} (${o.entry.max_similarity} > 0.40)`] }); continue; }
+    final.push(o); report.built.push(o.entry);
+  }
+  if (write) {
+    fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
+    for (const o of final) {
+      const dir = path.join(OUT, o.meta.id); fs.mkdirSync(dir, { recursive: true });
+      if (pub) fs.writeFileSync(path.join(dir, 'fragment.html'), o.html);
+      fs.writeFileSync(path.join(dir, 'schema.json'), JSON.stringify(o.schema, null, 1));
+      fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ ...o.meta, canonical: `${SITE}${o.meta.path}`, robots: 'index,follow' }, null, 1));
+      fs.writeFileSync(path.join(dir, 'preview.html'), previewHtml(o.meta, o.html, o.schema));
+    }
+    fs.writeFileSync(path.join(OUT, 'qa-report.json'), JSON.stringify(report, null, 1));
+  }
+  return { report, outputs: final };
 }
 
-{ // pillar
-  const { ctx, used, blockers, missing } = makeCtx('pillar');
-  const html = pillar(ctx);
-  write(pillarMeta, html, pillarSchema(pillarMeta, ctx), used, missing, blockers, 'pillar');
+// ---------- CLI ----------
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  const arg = (k, d) => { const i = process.argv.indexOf(`--${k}`); return i > 0 ? process.argv[i + 1] : d; };
+  const mode = arg('mode', 'preview');
+  const { report } = await build({ mode, dataDir: arg('data'), outDir: arg('out'), today: arg('today'), markers: arg('markers') ? arg('markers') === 'on' : undefined });
+  console.log(`mode=${mode} today=${report.today} built=${report.built.length} skipped=${report.skipped.length} G6=${report.site_gates.G6_privacy} reviewer=${report.site_gates.reviewer}`);
+  for (const b of report.built) console.log(`  ${b.page.padEnd(24)} words=${String(b.words).padStart(4)} title=${b.title_len} desc=${b.description_len} unverified=${b.unverified_claims.length} missing=${b.missing.length} sim=${b.max_similarity ?? '-'}${b.issues.length ? ' ISSUES: ' + b.issues.join('; ') : ''}${b.warnings.length ? ` warnings=${b.warnings.length}` : ''}`);
+  for (const s of report.skipped) console.log(`  SKIP ${s.page}: ${s.blockers.slice(0, 4).join('; ')}${s.blockers.length > 4 ? ` (+${s.blockers.length - 4} more)` : ''}`);
+  if (mode === 'publish' && report.skipped.length) process.exitCode = 1;
 }
-for (const x of clinics) {
-  if (MODE === 'publish' && !gatesPass(x)) { report.skipped.push({ page: x.page_slug, issues: Object.entries(x.publish_gates).filter(([, v]) => !v).map(([k]) => `gate ${k} false`) }); continue; }
-  const { ctx, used, blockers, missing } = makeCtx(x.page_slug);
-  let html = location(x, ctx);
-  const filled = G3_FIELDS.filter((f) => x.staff_facts?.[f]).length;
-  if (MODE === 'publish' && filled < 4) blockers.push(`G3: only ${filled} of 7 clinic facts filled (need 4)`);
-  if (MODE === 'publish') html = html.replace(/<div><dt>[^<]+<\/dt><dd><\/dd><\/div>/g, '').replace(/<details class="sr-ws-faq__item"><summary class="sr-ws-faq__q">[^<]*<\/summary><div class="sr-ws-faq__a"><p><\/p><\/div><\/details>/g, '').replace(/<p><strong>When you arrive:<\/strong> <\/p>/g, '');
-  const meta = locationMeta(x);
-  write(meta, html, clinicSchema(x, meta), used, missing, blockers, 'location');
-}
-// uniqueness: max 5-word-shingle Jaccard similarity of each location page to any other
-const ids = Object.keys(locTexts); const sh = Object.fromEntries(ids.map((k) => [k, shingles(locTexts[k])]));
-for (const b of report.built) {
-  if (!sh[b.page]) continue;
-  let max = 0, with_ = null;
-  for (const k of ids) if (k !== b.page) { const j = jaccard(sh[b.page], sh[k]); if (j > max) { max = j; with_ = k; } }
-  b.max_similarity = +max.toFixed(3); b.most_similar_to = with_;
-}
-fs.mkdirSync(OUT, { recursive: true });
-fs.writeFileSync(path.join(OUT, 'qa-report.json'), JSON.stringify(report, null, 1));
-console.log(`mode=${MODE} markers=${MARKERS} link=${LINK} built=${report.built.length} skipped=${report.skipped.length}`);
-for (const b of report.built) console.log(`  ${b.page.padEnd(24)} words=${String(b.words).padStart(4)} title=${b.title_len} desc=${b.description_len} pending=${b.pending_claims.length} missing=${b.missing_staff_facts.length} sim=${b.max_similarity ?? '-'} ${b.issues.length ? 'ISSUES: ' + b.issues.join('; ') : ''}`);
-for (const s of report.skipped) console.log(`  SKIP ${s.page}: ${s.issues.join('; ')}`);
-if (MODE === 'publish' && report.skipped.length) process.exitCode = 1;

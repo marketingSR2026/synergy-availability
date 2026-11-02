@@ -2,7 +2,8 @@
  "id": "central-city-surrey",
  "path": "/worksafe-physiotherapy/central-city-surrey/",
  "title": "WCB & WorkSafeBC Physio in Central City | Synergy Rehab",
- "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Central City, 13655 Fraser Hwy. Open Mon to Fri 7:30 AM to 8 PM. Bring your claim number.",
+ "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Central City, 13655 Fraser Hwy. Open 7 days until 8 PM. Your claim can be pending.",
  "h1": "WorkSafeBC physiotherapy in Surrey City Centre",
- "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/central-city-surrey/"
+ "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/central-city-surrey/",
+ "robots": "index,follow"
 }

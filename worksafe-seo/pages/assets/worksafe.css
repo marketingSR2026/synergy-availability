@@ -45,7 +45,7 @@
 
   /* ---- 1. Primitives: type ---- */
   --sr-ws-font-heading:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  --sr-ws-font-body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --sr-ws-font-body:var(--e-global-typography-text-font-family,"Montserrat"),system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --sr-ws-fs-h1:clamp(1.875rem,1.35rem + 2.25vw,3rem);       /* 30 -> 48 */
   --sr-ws-fs-h2:clamp(1.5rem,1.2rem + 1.3vw,2.25rem);        /* 24 -> 36 */
   --sr-ws-fs-h3:clamp(1.25rem,1.15rem + .45vw,1.5rem);       /* 20 -> 24 */

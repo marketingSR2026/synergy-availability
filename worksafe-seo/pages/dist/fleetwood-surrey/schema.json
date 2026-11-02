@@ -5,14 +5,14 @@
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/fleetwood-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/fleetwood-surrey/",
-   "name": "WCB & WorkSafeBC Physio in Fleetwood, Surrey | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Fleetwood, 8585 160th St. Open Mon to Fri 7 AM to 8:30 PM. Bring your claim number.",
+   "name": "WCB & WorkSafeBC Physio in Fleetwood | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Fleetwood, 8585 160th St. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/fleetwood-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-fleetwood"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/fleetwood-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-fleetwood",
    "name": "Synergy Rehab Fleetwood",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/fleetwood-surrey/",
+   "url": "https://synergyrehabilitation.ca/fleetwood-physiotherapy-treatment-clinic/",
    "telephone": "+16045034799",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "8585 160th St, Unit 103",
+    "streetAddress": "Unit 103, 8585 160th St",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V4N 1G4",

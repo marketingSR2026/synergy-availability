@@ -5,14 +5,14 @@
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cloverdale-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cloverdale-surrey/",
-   "name": "WCB & WorkSafeBC Physio in Cloverdale, Surrey | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Cloverdale, 5645 177b St. Open Mon to Wed 7:30 AM to 8:30 PM. Bring your claim number.",
+   "name": "WCB & WorkSafeBC Physio in Cloverdale | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Cloverdale, 5645 177b St. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cloverdale-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-cloverdale-hwy-10"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cloverdale-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-cloverdale-hwy-10",
    "name": "Synergy Rehab Cloverdale",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cloverdale-surrey/",
+   "url": "https://synergyrehabilitation.ca/physiotherapy-cloverdale-chiropractor/",
    "telephone": "+16045791367",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "5645 177b St, Unit 102",
+    "streetAddress": "Unit 102, 5645 177b St",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V3S 4H9",

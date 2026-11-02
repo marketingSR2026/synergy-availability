@@ -1,69 +1,62 @@
-// Pillar: /worksafe-physiotherapy/ . WorkSafe only. Every WorkSafeBC fact is wrapped in ctx.claim(id, html).
-import { esc, icon, ev, SOURCES, PILLAR_PATH, GUIDE_PATH, RTW_PATH, AREAS, addressLine } from './shared.mjs';
+// Pillar: /worksafe-physiotherapy/ . WorkSafe only. Owner of the head terms and of multi-clinic city queries (Surrey).
+// Every WorkSafeBC fact is wrapped in ctx.claim(id, html). Clinics appear with WCB wording only when ctx.wcbOk(clinic) (gate G1).
+import { esc, icon, ev, SOURCES, PILLAR_PATH, AREAS, addressLine } from './shared.mjs';
 
 export const pillarMeta = {
   id: 'pillar',
   path: PILLAR_PATH,
-  title: 'WorkSafeBC Physiotherapy (WCB) at 19+ Clinics | Synergy Rehab',
-  description: 'Hurt at work in BC? Book a WCB physiotherapy assessment at one of 19+ Synergy Rehab clinics from Vancouver to Abbotsford. How claims, visits and costs work.',
+  title: 'WorkSafeBC & WCB Physiotherapy in BC | Synergy Rehab',
+  description: 'Hurt at work in BC? See how WorkSafeBC (WCB) physiotherapy works at each claim stage, what you may pay, and book an assessment at a Synergy Rehab clinic.',
   h1: 'WorkSafeBC physiotherapy for work injuries',
 };
+
+const areaId = (a) => `area-${a.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-+$/, '')}`;
 
 export function pillarFaq(ctx) {
   const c = ctx.claim;
   return [
     ['Is WCB the same as WorkSafeBC?',
-      `${c('GEN-01', 'Yes. WorkSafeBC is the Workers&#8217; Compensation Board of British Columbia, which is why many people still call it WCB.')} You will see both names on our booking pages.`],
+      `${c('GEN-01', 'Yes. WorkSafeBC is the Workers&#8217; Compensation Board of British Columbia, which is why many people still call it WCB.')}`],
     ['Do I need a claim number before I book?',
-      `No. ${c('WSBC-11', 'At a WorkSafeBC-contracted physiotherapist you can have your initial assessment before WorkSafeBC accepts your claim.')} ${c('WSBC-13', 'You do need to report the injury to WorkSafeBC so there is a claim to bill, even if it is still pending.')} ${c('WSBC-46', 'WorkSafeBC mails you an 8-digit claim number once it gets your report.')} Bring it to a later visit if you do not have it yet.`],
+      `No. ${c('WSBC-11', 'At a WorkSafeBC-contracted physiotherapist you can have your initial assessment before WorkSafeBC accepts your claim.')} ${c('WSBC-13', 'You do need to report the injury to WorkSafeBC so there is a claim, even if it is still pending.')} ${c('WSBC-46', 'WorkSafeBC mails you an 8-digit claim number once it gets your report.')}`],
     ['Do I need a doctor&#8217;s referral for WorkSafeBC physio?',
-      `${c('WSBC-16', 'No. WorkSafeBC&#8217;s guidance for workers is to visit a contracted physiotherapist and explain that the injury is work-related. A doctor&#8217;s referral is not one of the steps.')} ${c('WSBC-35', 'Massage therapy is different: it needs a doctor&#8217;s referral and an accepted claim.')}`],
+      `${c('WSBC-10', 'WorkSafeBC tells workers who need physiotherapy to visit a contracted physiotherapist and explain that the injury is work-related.')} ${c('WSBC-16', 'Its guidance for physiotherapy does not list a doctor&#8217;s referral as a step.')} ${c('WSBC-35', 'Massage therapy is different: it needs a doctor&#8217;s referral and an accepted claim.')}`],
     ['Will I have to pay anything?',
-      `${c('WSBC-23', 'Once WorkSafeBC accepts your claim, your provider bills WorkSafeBC for care related to your claim and you should not have to pay any fees.')} ${c('WSBC-28', 'If you have treatment before your claim is accepted, a clinic may ask you to pay, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending before you book follow-up visits.')}`],
+      `It depends on where your claim is. ${c('WSBC-23', 'Accepted: your provider bills WorkSafeBC for care related to your claim and you should not have to pay fees.')} ${c('WSBC-28', 'Pending: a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Treatment for a body area that is not part of your accepted claim can be billed to you.')}`],
     ['What happens if my claim is denied?',
       `${c('WSBC-29', 'If your claim was pending at your first visit, WorkSafeBC still pays the contracted clinic for that initial assessment, even if the claim is later denied.')} ${c('WSBC-30', 'WorkSafeBC does not pay for treatment visits given while the claim was pending if it is denied.')}`],
     ['It has been more than 60 days since my injury. Can I still get physio?',
-      `${c('WSBC-14', 'Yes, but WorkSafeBC has to approve treatment first when it starts more than 60 days after the injury. It is not refused automatically.')} Call the clinic and we will tell you what we need to ask WorkSafeBC.`],
+      `${c('WSBC-14', 'Yes, but WorkSafeBC has to approve treatment first when it starts more than 60 days after the injury. It is not refused automatically.')}`],
     ['How many physio visits does WorkSafeBC cover?',
-      `WorkSafeBC sets the length of each treatment period for your claim. ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')} ${c('SYN-05', 'We explain what is approved for your claim at each stage.')}`],
+      `WorkSafeBC sets the treatment period for your claim. ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')}`],
     ['What if I go to a physio who is not contracted with WorkSafeBC?',
       `${c('WSBC-26', 'You pay for each visit yourself and ask WorkSafeBC to reimburse you at its set rate, which is $95 per visit from April 1, 2026. You pay any difference.')}`],
-    ['Can I get massage therapy on my WorkSafeBC claim?',
-      `${c('WSBC-35', 'Yes, with a doctor&#8217;s referral and an accepted claim. WorkSafeBC covers an assessment and up to 6 massage treatments in the first 8 weeks after the injury without pre-approval. More needs approval.')} See the clinic list below for clinics that book WCB massage online.`],
     ['How do I report a workplace injury to WorkSafeBC?',
       `${c('WSBC-42', 'Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work.')} ${c('WSBC-43', 'Then report it to WorkSafeBC online at any time, or by phone through Teleclaim.')} ${c('WSBC-44', 'Teleclaim is 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m.')} ${c('WSBC-45', 'You have up to one year to report, but report right away.')}`],
   ];
 }
 
-const quick = (q, a) => `<li class="sr-ws-card sr-ws-card--soft"><h3 class="sr-ws-h4 sr-ws-card__title">${q}</h3><p class="sr-ws-card__text">${a}</p></li>`;
-
 function finder(ctx) {
-  const bySlug = Object.fromEntries(ctx.clinics.map((x) => [x.page_slug, x]));
+  const bySlug = ctx.bySlug;
   return AREAS.map(([area, slugs]) => {
-    const cards = slugs.map((s) => bySlug[s]).filter(Boolean).map((x) => {
-      const own = ctx.linked(x.page_slug);
-      const href = own ? ctx.href(x) : x.jane.wcb_initial_url;
-      const cta = own ? `WorkSafe physio at ${esc(x.name)}` : `Book WCB physio at ${esc(x.name)}`;
-      const evt = own ? ev('worksafe_location_select', x.page_slug, 'finder', 'pillar') : ev('worksafe_book_click', x.page_slug, 'finder', 'pillar');
-      return `<li class="sr-ws-card sr-ws-card--soft sr-ws-card--interactive sr-ws-loccard">
-          <h4 class="sr-ws-h4 sr-ws-card__title"><a class="sr-ws-card__link" href="${esc(href)}" ${evt}>Synergy Rehab ${esc(x.name)}</a></h4>
-          <p class="sr-ws-loccard__area">${esc(x.area_label)}<br>${esc(addressLine(x.address))}<br>${esc(x.phone)}</p>
-          <span class="sr-ws-loccard__cta">${cta}</span>
-        </li>`;
-    }).join('\n');
-    const n = slugs.length;
-    return `<div class="sr-ws-finder-group">
-      <h3 class="sr-ws-h3">${esc(area)} <span class="sr-ws-muted sr-ws-small">${n} ${n === 1 ? 'clinic' : 'clinics'}</span></h3>
-      <ul class="sr-ws-grid sr-ws-grid--3 sr-ws-list-reset" role="list">${cards}</ul>
+    const list = slugs.map((s) => bySlug[s]).filter((x) => x && ctx.listInFinder(x));
+    if (!list.length) return '';
+    const heading = area === 'Surrey' ? 'WorkSafeBC physiotherapy in Surrey' : esc(area);
+    return `<div class="sr-ws-finder-group" id="${areaId(area)}">
+      <h3 class="sr-ws-h3">${heading} <span class="sr-ws-muted sr-ws-small">${list.length} ${list.length === 1 ? 'clinic' : 'clinics'}</span></h3>
+      <ul class="sr-ws-grid sr-ws-grid--3 sr-ws-list-reset" role="list">${list.map((x) => ctx.clinicCard(x, `${esc(x.area_label)}<br>${esc(addressLine(x.address))}<br>${esc(x.phone)}`, 'finder', 'pillar')).join('\n')}</ul>
     </div>`;
   }).join('\n');
 }
 
 export function pillar(ctx) {
   const c = ctx.claim;
-  const massage = ctx.clinics.filter((x) => x.wcb_massage_bookable).map((x) => esc(x.name));
-  const acu = ctx.clinics.filter((x) => x.wcb_acupuncture_bookable).map((x) => esc(x.name));
   const faq = pillarFaq(ctx);
+  const n = ctx.clinics.filter((x) => ctx.listInFinder(x)).length;
+  const massage = ctx.clinics.filter((x) => ctx.service(x, 'massage'));
+  const acu = ctx.clinics.filter((x) => ctx.service(x, 'acupuncture'));
+  const rtw = ctx.link('rtw'); const guide = ctx.link('guide');
+  const chips = AREAS.filter(([, s]) => s.some((k) => ctx.bySlug[k] && ctx.listInFinder(ctx.bySlug[k]))).map(([a]) => `<li><a class="sr-ws-chip" href="#${areaId(a)}">${esc(a)}</a></li>`).join('');
   return `<div class="sr-ws-page">
 <section class="sr-ws-band sr-ws-band--white sr-ws-hero" aria-labelledby="sr-ws-h1">
   <div class="sr-ws-container">
@@ -73,78 +66,71 @@ export function pillar(ctx) {
       <div class="sr-ws-hero__content">
         <p class="sr-ws-eyebrow">Hurt at work in BC?</p>
         <h1 class="sr-ws-h1" id="sr-ws-h1">WorkSafeBC physiotherapy for <span class="sr-ws-accent">work injuries</span></h1>
-        <p class="sr-ws-lede">${c('WSBC-10', 'WorkSafeBC asks injured workers to see a contracted physiotherapist and say the injury is work-related.')} Book a WCB physio assessment online at any of our 19+ locations from Vancouver to Abbotsford.</p>
+        <p class="sr-ws-lede">${c('WSBC-11', 'You can start with an assessment before your claim is accepted.')} Pick a clinic and book a WCB physio visit online.</p>
         <div class="sr-ws-hero__ctas">
           <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--knob" href="#clinics" ${ev('worksafe_location_select', 'all', 'hero', 'pillar')}>Find your clinic<span class="sr-ws-btn__knob" aria-hidden="true">&#8594;</span></a>
-          <a class="sr-ws-btn sr-ws-btn--secondary" href="#steps">How WCB physio works</a>
+          <a class="sr-ws-btn sr-ws-btn--secondary" href="#steps">How it works</a>
         </div>
-        <ul class="sr-ws-proof" role="list"><li>${c('SYN-JANE', 'WCB physio booking online at every clinic')}</li><li>Evening and weekend hours at most clinics</li><li>19+ locations</li></ul>
+        <ul class="sr-ws-chips" role="list" aria-label="Jump to clinics by area">${chips}</ul>
       </div>
       <figure class="sr-ws-hero__media">
-        ${ctx.photo('pillar_hero', 'Inside a Synergy Rehab clinic: physiotherapist assessing a patient&#8217;s shoulder', 800, 1000, true)}
+        ${ctx.pillarPhoto('pillar_hero', 'Physiotherapist assessing a patient&#8217;s shoulder at a Synergy Rehab clinic', 800, 1000, true)}
         <ul class="sr-ws-hero__floats" role="list">
           <li class="sr-ws-minicard sr-ws-minicard--tl"><span class="sr-ws-minicard__icon">${icon('pin')}</span><span><span class="sr-ws-minicard__value">19+</span><span class="sr-ws-minicard__label">locations</span></span></li>
-          <li class="sr-ws-minicard sr-ws-minicard--br"><span class="sr-ws-minicard__icon">${icon('calendar')}</span><span><span class="sr-ws-minicard__value">7 days</span><span class="sr-ws-minicard__label">at most clinics</span></span></li>
-          <li class="sr-ws-minicard sr-ws-minicard--bl sr-ws-only-sm"><span class="sr-ws-minicard__icon">${icon('clock')}</span><span><span class="sr-ws-minicard__value">Evenings</span><span class="sr-ws-minicard__label">weekdays</span></span></li>
+          <li class="sr-ws-minicard sr-ws-minicard--br"><span class="sr-ws-minicard__icon">${icon('calendar')}</span><span><span class="sr-ws-minicard__value">Evenings</span><span class="sr-ws-minicard__label">and weekends at most clinics</span></span></li>
         </ul>
       </figure>
     </div>
   </div>
 </section>
 
-<section class="sr-ws-band sr-ws-band--white sr-ws-band--flush-top" aria-labelledby="sr-ws-quick-h">
-  <div class="sr-ws-container">
-    <ul class="sr-ws-jumpnav" aria-label="On this page"><li><a href="#steps">How it works</a></li><li><a href="#eligibility">Is this for you?</a></li><li><a href="#clinics">Clinics</a></li><li><a href="#faq">FAQ</a></li></ul>
-    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Quick answers</p><h2 class="sr-ws-h2" id="sr-ws-quick-h">What injured workers ask us first</h2></div>
-    <ul class="sr-ws-grid sr-ws-grid--2 sr-ws-list-reset" role="list">
-      ${quick('Can I start before my claim is accepted?', `${c('WSBC-12', 'Yes, for the first visit. A contracted physiotherapist can do your initial assessment on a pending claim, without prior approval, if it is within 60 days of your injury.')}`)}
-      ${quick('Will I pay anything?', `${c('WSBC-23', 'Once WorkSafeBC accepts your claim, care related to your claim is billed to WorkSafeBC and you should not have to pay fees.')}`)}
-      ${quick('Do I need a doctor&#8217;s referral?', `${c('WSBC-16', 'Not for physiotherapy. WorkSafeBC tells workers to go to a contracted physiotherapist and say the injury is work-related.')}`)}
-      ${quick('Is WCB the same as WorkSafeBC?', `${c('GEN-01', 'Yes. WorkSafeBC is the Workers&#8217; Compensation Board of BC, so many people call it WCB.')}`)}
-    </ul>
-  </div>
-</section>
-
 <section class="sr-ws-band sr-ws-band--blue" id="steps" aria-labelledby="sr-ws-steps-h">
   <div class="sr-ws-container">
-    <div class="sr-ws-head"><p class="sr-ws-eyebrow">How it works</p><h2 class="sr-ws-h2" id="sr-ws-steps-h">Three steps to WCB physio. <span class="sr-ws-accent">That&#8217;s it.</span></h2>
-      <p class="sr-ws-lede">You can book before you have a claim number.</p></div>
+    <div class="sr-ws-head"><p class="sr-ws-eyebrow">How it works</p><h2 class="sr-ws-h2" id="sr-ws-steps-h">Three steps to WCB physio</h2>
+      <p class="sr-ws-lede">You can book before your claim number arrives.</p></div>
     <ol class="sr-ws-steps sr-ws-steps--h" role="list" style="--sr-ws-steps:3">
       <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--on-blue sr-ws-step__when">Right away</span>
         <h3 class="sr-ws-step__title">Report the injury</h3>
         <p class="sr-ws-step__body">${c('WSBC-42', 'Tell your employer as soon as it is safe.')} ${c('WSBC-43', 'Report to WorkSafeBC online any time, or call Teleclaim')} ${c('WSBC-44', 'at 1.888.967.5377 (604.231.8888 in the Lower Mainland), weekdays 8 a.m. to 6 p.m.')}</p></li>
       <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--on-blue sr-ws-step__when">Next</span>
         <h3 class="sr-ws-step__title">Book your assessment</h3>
-        <p class="sr-ws-step__body">Pick the clinic nearest home or work and book a <strong>WCB Physio Initial Session</strong> online. ${c('WSBC-10', 'Tell us the injury happened at work.')}</p></li>
+        <p class="sr-ws-step__body">Pick the clinic nearest home or work and book a <strong>WCB Physio Initial Session</strong>. ${c('WSBC-10', 'Tell us the injury happened at work.')}</p></li>
       <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--on-blue sr-ws-step__when">At your visit</span>
         <h3 class="sr-ws-step__title">Bring your claim number</h3>
-        <p class="sr-ws-step__body">${c('WSBC-46', 'WorkSafeBC mails an 8-digit claim number.')} Bring it if you have it. ${c('SYN-08', 'We bill WorkSafeBC for your care.')}</p></li>
+        <p class="sr-ws-step__body">${c('WSBC-46', 'WorkSafeBC mails an 8-digit claim number.')} Bring it if it has arrived. ${c('WSBC-11', 'Contracted physiotherapists bill WorkSafeBC directly for the assessment.')}</p></li>
     </ol>
+  </div>
+</section>
+
+<section class="sr-ws-band sr-ws-band--white" id="clinics" aria-labelledby="sr-ws-clinics-h">
+  <div class="sr-ws-container">
+    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Find your clinic</p><h2 class="sr-ws-h2" id="sr-ws-clinics-h">Book WCB physio near home or work</h2>
+      <p class="sr-ws-lede">${n} Synergy ${n === 1 ? 'clinic books' : 'clinics book'} WCB physio assessments online. Pick the one nearest you.</p></div>
+    ${finder(ctx)}
   </div>
 </section>
 
 <section class="sr-ws-band sr-ws-band--soft sr-ws-band--dotted" id="eligibility"><div class="sr-ws-container">
   <article class="sr-ws-card sr-ws-elig" aria-labelledby="sr-ws-elig-h">
     <div class="sr-ws-elig__head"><span class="sr-ws-icon-well">${icon('shield')}</span>
-      <div><p class="sr-ws-eyebrow">Before you book</p><h2 class="sr-ws-h2" id="sr-ws-elig-h">Is WCB physio for you?</h2><p>It depends on where your claim is. Here is how each stage works.</p></div></div>
+      <div><p class="sr-ws-eyebrow">Before you book</p><h2 class="sr-ws-h2" id="sr-ws-elig-h">How WCB physio works at each claim stage</h2></div></div>
     <div class="sr-ws-callout"><span class="sr-ws-label">Who this is for</span><p>${c('WSBC-13', 'Workers in BC who were hurt at work and have reported the injury to WorkSafeBC, or are reporting it now. The claim can still be pending.')}</p></div>
-    <h3 class="sr-ws-h4">Where is your claim?</h3>
     <ol class="sr-ws-numlist" role="list">
-      <li><strong>Accepted.</strong> ${c('WSBC-23', 'Care related to your claim is billed to WorkSafeBC and you should not have to pay fees.')}</li>
-      <li><strong>Pending.</strong> ${c('WSBC-12', 'Your first assessment can go ahead without prior approval within 60 days of your injury.')} ${c('WSBC-29', 'WorkSafeBC pays for that assessment even if the claim is later denied.')} ${c('WSBC-17', 'Funded treatment visits start once the claim is accepted.')}</li>
+      <li><strong>Claim accepted.</strong> ${c('WSBC-23', 'Care related to your claim is billed to WorkSafeBC and you should not have to pay fees.')}</li>
+      <li><strong>Claim pending.</strong> ${c('WSBC-12', 'Your first assessment can go ahead without prior approval within 60 days of your injury.')} ${c('WSBC-29', 'WorkSafeBC pays for that assessment even if the claim is later denied.')} ${c('WSBC-17', 'Funded treatment visits start once the claim is accepted.')} ${c('WSBC-28', 'Until then, a clinic may ask you to pay for treatment.')}</li>
       <li><strong>More than 60 days since the injury.</strong> ${c('WSBC-14', 'WorkSafeBC must approve treatment before it starts. It is not refused automatically.')}</li>
     </ol>
-    <div class="sr-ws-box"><p class="sr-ws-box__head">Have these ready <span class="sr-ws-pill sr-ws-pill--blue">Checklist</span></p>
+    <div class="sr-ws-box"><p class="sr-ws-box__head">For your first visit <span class="sr-ws-pill sr-ws-pill--blue">Checklist</span></p>
       <div class="sr-ws-box__body"><ul class="sr-ws-checklist" role="list">
         <li>${c('WSBC-46', 'Your 8-digit claim number, if it has arrived')}</li>
-        <li>${c('WSBC-49', 'Your employer&#8217;s name and contact details')}</li>
-        <li>${c('WSBC-49', 'When and how the injury happened')}</li>
-        <li>${c('WSBC-49', 'Your Personal Health Number')}</li>
+        <li>Your employer&#8217;s name</li>
+        <li>The date and how the injury happened</li>
+        <li>Clothes you can move in</li>
       </ul></div></div>
     <p class="sr-ws-tip"><span class="sr-ws-tip__label">Tip</span><span>Booking online? Choose <strong>WCB Physio Initial Session</strong> so your first visit is set up as a WorkSafeBC claim.</span></p>
     <div class="sr-ws-actions">
-      <a class="sr-ws-btn sr-ws-btn--secondary sr-ws-btn--sm" href="${SOURCES.report.url}">WorkSafeBC: report an injury &#8599;</a>
-      <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--sm" href="#clinics">Next: find your clinic &#8594;</a>
+      <a class="sr-ws-btn sr-ws-btn--secondary sr-ws-btn--sm" href="${SOURCES.report.url}">Reporting? What WorkSafeBC asks for &#8599;</a>
+      <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--sm" href="#clinics">Find your clinic &#8594;</a>
     </div>
     <p class="sr-ws-asof">${ctx.asof()}</p>
   </article>
@@ -161,7 +147,7 @@ export function pillar(ctx) {
         ['hand', 'Repetitive strain', 'Wrist, elbow or forearm pain from repeated tasks, tools or keyboard work.'],
         ['neck', 'Neck strain', 'Neck pain and stiffness after a strain, a long shift at a screen or a sudden movement.'],
         ['fall', 'Slips, trips and falls', 'Sprains, strains and bruising after a fall on stairs, ladders, ice or wet floors.'],
-        ['knee', 'Knee and ankle injuries', 'Twists and sprains from climbing, kneeling, uneven ground or jumping down.'],
+        ['knee', 'Knee and ankle injuries', 'Twists and sprains from climbing, kneeling, uneven ground or stepping down.'],
       ].map(([i, t, d]) => `<li class="sr-ws-card sr-ws-card--soft sr-ws-notch sr-ws-condition">
           <span class="sr-ws-notch__tab"><span class="sr-ws-icon-badge">${icon(i)}</span></span>
           <h3 class="sr-ws-h3 sr-ws-card__title">${t}</h3><p class="sr-ws-card__text">${d}</p></li>`).join('\n')}
@@ -172,7 +158,7 @@ export function pillar(ctx) {
 <section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-first-h">
   <div class="sr-ws-container">
     <div class="sr-ws-split">
-      <figure class="sr-ws-split__media">${ctx.photo('pillar_first_visit', 'Treatment room at a Synergy Rehab clinic', 800, 600)}</figure>
+      <figure class="sr-ws-split__media">${ctx.pillarPhoto('pillar_first_visit', 'Treatment room at a Synergy Rehab clinic', 800, 600)}</figure>
       <div class="sr-ws-split__body">
         <p class="sr-ws-eyebrow">Your first visit</p><h2 class="sr-ws-h2" id="sr-ws-first-h">What happens at your WCB physio assessment</h2>
         <ul class="sr-ws-checklist" role="list">
@@ -181,7 +167,6 @@ export function pillar(ctx) {
           <li>You get a plan with goals tied to the tasks you need to get back to.</li>
           <li>You leave with things you can do at home and at work while you recover.</li>
         </ul>
-        <p class="sr-ws-split__foot">Bring your claim number if you have it, and wear clothes you can move in.</p>
       </div>
     </div>
   </div>
@@ -196,30 +181,22 @@ export function pillar(ctx) {
       <li class="sr-ws-card sr-ws-phase"><span class="sr-ws-pill sr-ws-pill--blue">Phase 3</span><h3 class="sr-ws-h3 sr-ws-card__title">Build</h3><p class="sr-ws-card__text">Graded exercise that works up to the lifting, standing or reaching your job needs.</p></li>
       <li class="sr-ws-card sr-ws-phase"><span class="sr-ws-pill sr-ws-pill--blue">Phase 4</span><h3 class="sr-ws-h3 sr-ws-card__title">Return</h3><p class="sr-ws-card__text">Back to work, sometimes on modified duties first, with a plan for the rest.</p></li>
     </ol>
-    <div class="sr-ws-note"><p>${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it. WorkSafeBC decides.')} Read more: <a class="sr-ws-link sr-ws-link--arrow" href="${RTW_PATH}">Returning to work after a workplace injury</a></p></div>
+    <div class="sr-ws-note"><p>${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it. WorkSafeBC decides.')}${rtw ? ` Read more: <a class="sr-ws-link sr-ws-link--arrow" href="${rtw}">Returning to work after a workplace injury</a>` : ''}</p></div>
   </div>
 </section>
 
-<section class="sr-ws-band sr-ws-band--white" id="clinics" aria-labelledby="sr-ws-clinics-h">
-  <div class="sr-ws-container">
-    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Find your clinic</p><h2 class="sr-ws-h2" id="sr-ws-clinics-h">WCB physiotherapy at 19+ locations</h2>
-      <p class="sr-ws-lede">Every clinic below books WCB physio assessments online. Pick the one nearest home or work.</p></div>
-    ${finder(ctx)}
-  </div>
-</section>
-
-<section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-more-h">
+${massage.length || acu.length ? `<section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-more-h">
   <div class="sr-ws-container">
     <div class="sr-ws-head"><p class="sr-ws-eyebrow">More WorkSafeBC care</p><h2 class="sr-ws-h2" id="sr-ws-more-h">Massage therapy and acupuncture on a WCB claim</h2></div>
     <ul class="sr-ws-grid sr-ws-grid--2 sr-ws-list-reset" role="list">
-      <li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">WCB massage therapy</h3>
+      ${massage.length ? `<li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">WCB massage therapy</h3>
         <p class="sr-ws-card__text">${c('WSBC-35', 'Needs a doctor&#8217;s referral and an accepted claim. WorkSafeBC covers an assessment and up to 6 treatments in the first 8 weeks after the injury without pre-approval.')}</p>
-        <p class="sr-ws-card__text">${c('SYN-JANE', `WCB massage follow-up visits are bookable online at ${massage.join(', ')}.`)}</p></li>
-      <li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">WCB acupuncture</h3>
-        <p class="sr-ws-card__text">${c('SYN-JANE', `WCB acupuncture visits are bookable online at ${acu.join(', ')}.`)} ${c('WSBC-36', 'WorkSafeBC acupuncture needs an accepted claim and no referral.')}</p></li>
+        <p class="sr-ws-card__text">Offered at ${massage.map((x) => ctx.serviceClaim(x, 'massage', esc(x.name))).join(', ')}.</p></li>` : ''}
+      ${acu.length ? `<li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">WCB acupuncture</h3>
+        <p class="sr-ws-card__text">${c('WSBC-36', 'WorkSafeBC acupuncture needs an accepted claim.')} Offered at ${acu.map((x) => ctx.serviceClaim(x, 'acupuncture', esc(x.name))).join(', ')}.</p></li>` : ''}
     </ul>
   </div>
-</section>
+</section>` : ''}
 
 <section class="sr-ws-band sr-ws-band--white" id="faq" aria-labelledby="sr-ws-faq-h">
   <div class="sr-ws-container">
@@ -227,14 +204,14 @@ export function pillar(ctx) {
     <div class="sr-ws-faq sr-ws-faq--center">
       ${faq.map(([q, a]) => `<details class="sr-ws-faq__item"><summary class="sr-ws-faq__q">${q}</summary><div class="sr-ws-faq__a"><p>${a}</p></div></details>`).join('\n')}
     </div>
-    <p class="sr-ws-center"><a class="sr-ws-link sr-ws-link--arrow" href="${GUIDE_PATH}">Claims, costs and coverage in detail</a></p>
+    ${guide ? `<p class="sr-ws-center"><a class="sr-ws-link sr-ws-link--arrow" href="${guide}">Claims, costs and coverage in detail</a></p>` : ''}
   </div>
 </section>
 
 <section class="sr-ws-band sr-ws-band--soft sr-ws-band--tight" aria-labelledby="sr-ws-src-h">
   <div class="sr-ws-container">
     <h2 class="sr-ws-h4" id="sr-ws-src-h">Sources</h2>
-    <ol class="sr-ws-sources">${Object.values(SOURCES).map((s) => `<li><a href="${s.url}">${esc(s.title)}</a> (worksafebc.com)</li>`).join('')}</ol>
+    <ol class="sr-ws-sources">${[SOURCES.benefits, SOURCES.report, SOURCES.manual, SOURCES.massage].map((s) => `<li><a href="${s.url}">${esc(s.title)}</a> (worksafebc.com)</li>`).join('')}</ol>
     <p class="sr-ws-asof">${ctx.asof()}</p>
   </div>
 </section>
@@ -246,8 +223,8 @@ export function pillar(ctx) {
     <a class="sr-ws-bigpill sr-ws-hide-below-desktop" href="#clinics" ${ev('worksafe_location_select', 'all', 'final', 'pillar')}>Find your clinic</a>
     <div class="sr-ws-linkcols">
       <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford. synergyrehab.ca</p></div>
-      <div><p class="sr-ws-linkcols__title">WorkSafe</p><ul><li><a href="${GUIDE_PATH}">What WorkSafeBC covers</a></li><li><a href="${RTW_PATH}">Return to work</a></li><li><a href="#faq">FAQ</a></li></ul></div>
-      <div><p class="sr-ws-linkcols__title">Clinics</p><ul><li><a href="#clinics">Surrey (12)</a></li><li><a href="#clinics">Vancouver, Burnaby, New West</a></li><li><a href="#clinics">Richmond, Delta, Langley, Abbotsford</a></li></ul></div>
+      <div><p class="sr-ws-linkcols__title">WorkSafe</p><ul>${guide ? `<li><a href="${guide}">What WorkSafeBC covers</a></li>` : ''}${rtw ? `<li><a href="${rtw}">Return to work</a></li>` : ''}<li><a href="#faq">FAQ</a></li></ul></div>
+      <div><p class="sr-ws-linkcols__title">Clinics</p><ul>${AREAS.map(([a]) => `<li><a href="#${areaId(a)}">${esc(a)}</a></li>`).join('')}</ul></div>
       <div><p class="sr-ws-linkcols__title">WorkSafeBC</p><ul><li><a href="${SOURCES.report.url}">Report an injury</a></li><li><a href="tel:+18889675377">Teleclaim 1.888.967.5377</a></li></ul></div>
     </div>
   </div>

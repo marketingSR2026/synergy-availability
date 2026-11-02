@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/",
    "name": "WCB & WorkSafeBC Physio in New Westminster | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab New Westminster, 301 East Columbia St. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab New Westminster, 301 East Columbia St. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-new-westminster"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-new-westminster",
    "name": "Synergy Rehab New Westminster",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/",
+   "url": "https://synergyrehabilitation.ca/physiotherapy-new-westminster/",
    "telephone": "+16045533303",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "301 East Columbia St, Unit 405",
+    "streetAddress": "Unit 405, 301 East Columbia St",
     "addressLocality": "New Westminster",
     "addressRegion": "BC",
     "postalCode": "V3L 3W5",

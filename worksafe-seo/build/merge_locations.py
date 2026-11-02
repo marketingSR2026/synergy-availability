@@ -1,4 +1,4 @@
-"""Merge verified clinic facts into data/worksafe-locations.json (one source of truth for page builds).
+"""Merge machine-sourced clinic facts into data/worksafe-locations.json (one source of truth for page builds).
 Sources: data/yelp-nap.csv (client-filled NAP), research/02-icbc-location-pages.csv (nearby clinics, ICBC URL),
 data/locations-master.csv (Jane ids, GBP data, conflicts), origin/data availability.json (WCB appointment types).
 Run: python3 -I build/merge_locations.py <availability.json path>"""
@@ -50,9 +50,12 @@ for r in avail:
     checked = max(checked, r.get('checked_at', ''))
 
 def km_list(txt):
+    """ICBC 'Nearby clinics' component: entries joined by ' ; ', each '0N <Clinic> About <km> km · <address>'."""
     res = []
-    for m in re.finditer(r'0\d (.+?) About ([\d.]+) km', txt or ''):
-        res.append({'name': m.group(1).strip(), 'km': float(m.group(2))})
+    for entry in (txt or '').split(' ; '):
+        m = re.match(r'^\s*0\d (.+?) About ([\d.]+) km', entry)
+        if m:
+            res.append({'name': m.group(1).strip(), 'km': float(m.group(2))})
     return res
 
 name_to_slug = {n: s for s, n, _ in CLINICS}
@@ -86,14 +89,13 @@ for slug, name, jane in CLINICS:
               'lng': m.get('lng') if (m.get('lng') or '')[:1] in '-0123456789' and (m.get('lng') or '')[:2] != 'No' else None},
       'nap_source': 'Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off',
       'nap_conflicts': m.get('discrepancies', ''),
-      'contract_2026': 'UNVERIFIED',  # SYN-01: staff must confirm signed April 1, 2026 agreement per clinic
       'eligibility_risk': RISK.get(jane, 'NORMAL: on cached WorkSafeBC list (pre-April 2026)'),
-      'staff_facts': {'getting_here': None, 'parking': None, 'accessibility': None, 'languages': None,
-                      'wcb_team_with_consent': None, 'photo_with_consent': None, 'nearby_workplaces': None},
-      'publish_gates': {'G1_contract': False, 'G2_nap_signed_off': False, 'G3_distinct_facts': False,
-                        'G4_url_plan': True, 'G5_tracking': False},
     }
     out.append(rec)
+bad = [(r['page_slug'], n['name']) for r in out for n in r['nearby'] if not n['slug']]
+if bad:
+    sys.exit(f'Unresolved nearby clinic names: {bad}')
+# Human-owned facts (contract, NAP sign-off, staff facts, services) live in data/clinic-signoff.csv and are joined by the build.
 json.dump(out, open(ROOT/'data/worksafe-locations.json', 'w'), indent=1, ensure_ascii=False)
 print(len(out), 'clinics written; WCB data checked', checked)
 for r in out: print(r['page_slug'], r['phone'], r['address']['postal'], r['wcb_physios_with_openings'], r['wcb_massage_bookable'], r['wcb_acupuncture_bookable'], len(r['nearby']), r['area_label'])

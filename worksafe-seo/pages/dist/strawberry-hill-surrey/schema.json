@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/",
    "name": "WCB & WorkSafeBC Physio in Strawberry Hill | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Strawberry Hill, 12422 72 Ave. Open Mon to Fri 8 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Strawberry Hill, 12422 72 Ave. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-strawberry-hill-72nd"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-strawberry-hill-72nd",
    "name": "Synergy Rehab Strawberry Hill",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/strawberry-hill-surrey/",
+   "url": "https://synergyrehabilitation.ca/strawberry-hill-physio/",
    "telephone": "+16045470670",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "12422 72 Ave, Unit 206",
+    "streetAddress": "Unit 206, 12422 72 Ave",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V3W 2M5",

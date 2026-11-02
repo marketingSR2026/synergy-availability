@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/",
    "name": "WCB & WorkSafeBC Physio in Burnaby | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Burnaby, 4695 Canada Way. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Burnaby, 4695 Canada Way. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-burnaby"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-burnaby",
    "name": "Synergy Rehab Burnaby",
-   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/",
+   "url": "https://synergyrehabilitation.ca/burnaby-physiotherapy-treatment-services/",
    "telephone": "+16045588873",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "4695 Canada Way, Unit 201",
+    "streetAddress": "Unit 201, 4695 Canada Way",
     "addressLocality": "Burnaby",
     "addressRegion": "BC",
     "postalCode": "V5G 1K8",

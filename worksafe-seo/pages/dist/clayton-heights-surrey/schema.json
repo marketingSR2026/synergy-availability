@@ -6,13 +6,13 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/",
    "name": "WCB & WorkSafeBC Physio in Clayton Heights | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Heights, 19161 Fraser Hwy. Open Mon to Fri 7:30 AM to 8:30 PM. Bring your claim number.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Heights, 19161 Fraser Hwy. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
-   "about": {
-    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/#clinic"
-   },
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-clayton-heights"
    }
   },
   {
@@ -20,13 +20,13 @@
     "MedicalClinic",
     "Physiotherapy"
    ],
-   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/#clinic",
+   "@id": "https://synergyrehabilitation.ca/#clinic-clayton-heights",
    "name": "Synergy Rehab Clayton Heights",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/",
    "telephone": "+16045472860",
    "address": {
     "@type": "PostalAddress",
-    "streetAddress": "19161 Fraser Hwy, Unit 105B",
+    "streetAddress": "Unit 105B, 19161 Fraser Hwy",
     "addressLocality": "Surrey",
     "addressRegion": "BC",
     "postalCode": "V3S 8E7",
