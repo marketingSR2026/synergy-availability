@@ -78,9 +78,17 @@ export function claimVerified(r, today) {
 export async function build(opts = {}) {
   const MODE = opts.mode || 'preview';
   const dataDir = opts.dataDir || path.join(ROOT, 'data');
-  const OUT = opts.outDir || path.join(ROOT, 'pages', MODE === 'publish' ? 'publish' : 'dist');
+  const OUT = opts.outDir || path.join(ROOT, 'pages', MODE === 'publish' ? 'publish' : MODE === 'draft' ? 'draft' : 'dist');
   const today = opts.today || new Date().toISOString().slice(0, 10);
-  const MARKERS = opts.markers ?? (MODE === 'preview');
+  const MARKERS = opts.markers ?? (MODE !== 'publish');
+  const DRAFT = MODE === 'draft';
+  // Draft mode: same gating as preview, but writes a WordPress-pasteable fragment.html that carries a visible
+  // "DRAFT, do not publish" banner and its own marker styles, for saving as a WordPress Draft (never Published).
+  const DRAFT_BANNER = `<style>.sr-ws-draft-banner{position:sticky;top:0;z-index:950;padding:12px 16px;background:#fff8e6;color:#5a3d00;border:2px dashed #c77700;font:600 15px/1.4 Montserrat,system-ui,sans-serif;text-align:center}
+[data-claim-status="pending"]{outline:2px dashed #c77700;outline-offset:2px;border-radius:3px}[data-claim-status="unchecked"]{outline:1px dotted #77849f;outline-offset:2px;border-radius:3px}
+.sr-ws-staff-slot{display:inline-block;border:2px dashed #c77700;background:#fff8e6;color:#5a3d00;padding:8px 10px;border-radius:10px;font-size:14px;line-height:1.4}
+.sr-ws-photo-slot{display:flex;align-items:center;justify-content:center;width:100%;border-radius:20px;background:repeating-linear-gradient(135deg,#e3e9f4 0 12px,#f5f7fa 12px 24px);color:#4d5b73;font:600 14px/1.4 Montserrat,system-ui,sans-serif;text-align:center}</style>
+<div class="sr-ws-draft-banner" role="note">DRAFT. Do not publish. Save as Draft in WordPress only. Dashed items still need staff sign-off.</div>`;
   const write = opts.write !== false;
   const { clinics, claims, review } = loadData(dataDir);
   const bySlug = Object.fromEntries(clinics.map((x) => [x.page_slug, x]));
@@ -324,9 +332,10 @@ ${local}
     for (const o of final) {
       const dir = path.join(OUT, o.meta.id); fs.mkdirSync(dir, { recursive: true });
       if (pub) fs.writeFileSync(path.join(dir, 'fragment.html'), o.html);
+      if (DRAFT) fs.writeFileSync(path.join(dir, 'fragment.html'), DRAFT_BANNER + '\n' + o.html);
       fs.writeFileSync(path.join(dir, 'schema.json'), JSON.stringify(o.schema, null, 1));
-      fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ ...o.meta, canonical: `${SITE}${o.meta.path}`, robots: 'index,follow' }, null, 1));
-      fs.writeFileSync(path.join(dir, 'preview.html'), previewHtml(o.meta, o.html, o.schema));
+      fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ ...o.meta, canonical: `${SITE}${o.meta.path}`, robots: DRAFT ? 'noindex,nofollow (draft)' : 'index,follow', ...(DRAFT ? { wordpress_status: 'draft (do not publish)' } : {}) }, null, 1));
+      fs.writeFileSync(path.join(dir, 'preview.html'), previewHtml(o.meta, DRAFT ? DRAFT_BANNER + '\n' + o.html : o.html, o.schema));
     }
     fs.writeFileSync(path.join(OUT, 'qa-report.json'), JSON.stringify(report, null, 1));
   }

@@ -1,0 +1,42 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/",
+   "name": "What Does WorkSafeBC Cover for Physiotherapy? Claims & Costs",
+   "description": "Claim numbers, pending and denied claims, fees and the 60-day rule. Plain answers on what WorkSafeBC pays for at physio, with links to official pages.",
+   "inLanguage": "en-CA",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "What does WorkSafeBC cover for physiotherapy?",
+     "item": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/"
+    }
+   ]
+  }
+ ]
+}

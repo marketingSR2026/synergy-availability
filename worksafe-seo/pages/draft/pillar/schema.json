@@ -1,0 +1,129 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalOrganization",
+   "@id": "https://synergyrehabilitation.ca/#organization",
+   "name": "Synergy Rehabilitation",
+   "url": "https://synergyrehabilitation.ca/"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://synergyrehabilitation.ca/#website",
+   "url": "https://synergyrehabilitation.ca/",
+   "name": "Synergy Rehabilitation",
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/",
+   "name": "WorkSafeBC & WCB Physiotherapy in BC | Synergy Rehab",
+   "description": "Hurt at work in BC? See how WorkSafeBC (WCB) physiotherapy works at each claim stage, what you may pay, and book an assessment at a Synergy Rehab clinic.",
+   "inLanguage": "en-CA",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is WCB the same as WorkSafeBC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. WorkSafeBC is the Workers’ Compensation Board of British Columbia, which is why many people still call it WCB."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a claim number before I book?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No. At a WorkSafeBC-contracted physiotherapist you can have your initial assessment before WorkSafeBC accepts your claim. You do need to report the injury to WorkSafeBC so there is a claim, even if it is still pending. WorkSafeBC mails you an 8-digit claim number once it gets your report."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a doctor’s referral for WorkSafeBC physio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "WorkSafeBC tells workers who need physiotherapy to visit a contracted physiotherapist and explain that the injury is work-related. Its guidance for physiotherapy does not list a doctor’s referral as a step. Massage therapy is different: it needs a doctor’s referral and an accepted claim."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will I have to pay anything?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on where your claim is. Accepted: your provider bills WorkSafeBC for care related to your claim and you should not have to pay fees. Pending: a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later. Ask the clinic how it handles visits while your claim is pending. Treatment for a body area that is not part of your accepted claim can be billed to you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What happens if my claim is denied?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "If your claim was pending at your first visit, WorkSafeBC still pays the contracted clinic for that initial assessment, even if the claim is later denied. WorkSafeBC does not pay for treatment visits given while the claim was pending if it is denied."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "It has been more than 60 days since my injury. Can I still get physio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes, but WorkSafeBC has to approve treatment first when it starts more than 60 days after the injury. It is not refused automatically."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How many physio visits does WorkSafeBC cover?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "WorkSafeBC sets the treatment period for your claim. If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if I go to a physio who is not contracted with WorkSafeBC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "You pay for each visit yourself and ask WorkSafeBC to reimburse you at its set rate, which is $95 per visit from April 1, 2026. You pay any difference."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do I report a workplace injury to WorkSafeBC?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work. Then report it to WorkSafeBC online at any time, or by phone through Teleclaim. Teleclaim is 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. You have up to one year to report, but report right away."
+     }
+    }
+   ]
+  }
+ ]
+}

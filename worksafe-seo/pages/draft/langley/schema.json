@@ -1,0 +1,112 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/",
+   "name": "WCB & WorkSafeBC Physio in Langley | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Langley, 8045 204 St. Open 7 days until 8:30 PM. Your claim can be pending.",
+   "inLanguage": "en-CA",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-langley"
+   }
+  },
+  {
+   "@type": [
+    "MedicalClinic",
+    "Physiotherapy"
+   ],
+   "@id": "https://synergyrehabilitation.ca/#clinic-langley",
+   "name": "Synergy Rehab Langley",
+   "url": "https://synergyrehabilitation.ca/langley-physio/",
+   "telephone": "+16043711988",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit A130, 8045 204 St",
+    "addressLocality": "Langley",
+    "addressRegion": "BC",
+    "postalCode": "V2Y 5K1",
+    "addressCountry": "CA"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Monday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Tuesday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Wednesday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Thursday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Friday",
+     "opens": "08:00",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Saturday",
+     "opens": "09:00",
+     "closes": "16:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Sunday",
+     "opens": "08:00",
+     "closes": "16:00"
+    }
+   ],
+   "medicalSpecialty": "https://schema.org/Physiotherapy",
+   "availableService": {
+    "@type": "MedicalTherapy",
+    "name": "WorkSafeBC (WCB) physiotherapy"
+   },
+   "parentOrganization": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Langley",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/"
+    }
+   ]
+  }
+ ]
+}

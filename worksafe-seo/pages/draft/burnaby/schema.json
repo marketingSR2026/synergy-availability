@@ -1,0 +1,112 @@
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "MedicalWebPage",
+   "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/#webpage",
+   "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/",
+   "name": "WCB & WorkSafeBC Physio in Burnaby | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Burnaby, 4695 Canada Way. Open 7 days until 8:30 PM. Your claim can be pending.",
+   "inLanguage": "en-CA",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/#website"
+   },
+   "about": {
+    "@id": "https://synergyrehabilitation.ca/#clinic-burnaby"
+   }
+  },
+  {
+   "@type": [
+    "MedicalClinic",
+    "Physiotherapy"
+   ],
+   "@id": "https://synergyrehabilitation.ca/#clinic-burnaby",
+   "name": "Synergy Rehab Burnaby",
+   "url": "https://synergyrehabilitation.ca/burnaby-physiotherapy-treatment-services/",
+   "telephone": "+16045588873",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Unit 201, 4695 Canada Way",
+    "addressLocality": "Burnaby",
+    "addressRegion": "BC",
+    "postalCode": "V5G 1K8",
+    "addressCountry": "CA"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Monday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Tuesday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Wednesday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Thursday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Friday",
+     "opens": "07:30",
+     "closes": "20:30"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Saturday",
+     "opens": "08:00",
+     "closes": "17:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "https://schema.org/Sunday",
+     "opens": "09:00",
+     "closes": "15:00"
+    }
+   ],
+   "medicalSpecialty": "https://schema.org/Physiotherapy",
+   "availableService": {
+    "@type": "MedicalTherapy",
+    "name": "WorkSafeBC (WCB) physiotherapy"
+   },
+   "parentOrganization": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Home",
+     "item": "https://synergyrehabilitation.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "WorkSafeBC physiotherapy",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Burnaby",
+     "item": "https://synergyrehabilitation.ca/worksafe-physiotherapy/burnaby/"
+    }
+   ]
+  }
+ ]
+}

@@ -129,3 +129,13 @@ test('location pages with filled facts stay under the similarity limit', async (
   assert.ok(r, 'richmond built');
   assert.ok(r.max_similarity <= 0.4, `similarity ${r.max_similarity}`);
 });
+
+test('draft mode writes a fragment that carries the do-not-publish banner', async () => {
+  const dir = fixture({ verifyAll: false });
+  const out = fs.mkdtempSync(path.join(os.tmpdir(), 'ws-out-'));
+  const { report } = await build({ mode: 'draft', dataDir: dir, outDir: out, today: TODAY });
+  assert.ok(report.built.length >= 20);
+  const frag = fs.readFileSync(path.join(out, 'pillar', 'fragment.html'), 'utf8');
+  assert.match(frag, /DRAFT\. Do not publish/);
+  assert.match(fs.readFileSync(path.join(out, 'pillar', 'meta.json'), 'utf8'), /noindex/);
+});
