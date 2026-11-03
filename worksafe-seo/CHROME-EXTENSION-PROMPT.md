@@ -87,7 +87,7 @@ Open the draft's Preview. Then run this in the preview tab and record the result
     jane_wcb_type_442: q('a[href*="janeapp.com/locations/"]').every((a) => !a.href.includes('/treatment/') || a.href.includes('/treatment/442')),
     tel_links: [...new Set(q('a[href^="tel:"]').map((a) => a.getAttribute('href')))],
     horizontal_scroll: document.documentElement.scrollWidth > window.innerWidth,
-    dashes: /[—–]/.test(page ? page.textContent : ''), icbc_mentions: /icbc/i.test(page ? page.textContent : '') }; })();
+    dashes: /[\u2014\u2013]/.test(page ? page.textContent : ''), icbc_mentions: /icbc/i.test(page ? page.textContent : '') }; })();
 
 Pass rules:
 - banner true, css_loaded true, our_schema true, horizontal_scroll false, dashes false, icbc_mentions false.
