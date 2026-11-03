@@ -375,12 +375,33 @@ ${local}
     for (const o of final) {
       const dir = path.join(OUT, o.meta.id); fs.mkdirSync(dir, { recursive: true });
       if (pub) fs.writeFileSync(path.join(dir, 'fragment.html'), o.html);
-      if (DRAFT) fs.writeFileSync(path.join(dir, 'fragment.html'), DRAFT_BANNER + '\n' + o.html);
+      if (DRAFT) {
+        fs.writeFileSync(path.join(dir, 'fragment.html'), DRAFT_BANNER + '\n' + o.html);
+        // One-paste WordPress content: Custom HTML block with scoped CSS, the page, and its JSON-LD.
+        fs.writeFileSync(path.join(dir, 'wp-content.html'), `<!-- wp:html -->\n<style>${ASSET_CSS}</style>\n${DRAFT_BANNER}\n${o.html}\n<script type="application/ld+json">${JSON.stringify(o.schema)}</script>\n<!-- /wp:html -->\n`);
+      }
       fs.writeFileSync(path.join(dir, 'schema.json'), JSON.stringify(o.schema, null, 1));
       fs.writeFileSync(path.join(dir, 'meta.json'), JSON.stringify({ ...o.meta, canonical: `${SITE}${o.meta.path}`, robots: DRAFT ? 'noindex,nofollow (draft)' : 'index,follow', ...(DRAFT ? { wordpress_status: 'draft (do not publish)' } : {}) }, null, 1));
       fs.writeFileSync(path.join(dir, 'preview.html'), previewHtml(o.meta, DRAFT ? DRAFT_BANNER + '\n' + o.html : o.html, o.schema));
     }
     fs.writeFileSync(path.join(OUT, 'qa-report.json'), JSON.stringify(report, null, 1));
+    if (DRAFT) {
+      const RAW = 'https://raw.githubusercontent.com/marketingSR2026/synergy-availability/refs/heads/claude/nice-dijkstra-9zwtkw/worksafe-seo/pages/draft';
+      const order = ['pillar', 'guide', 'rtw', 'new-westminster', 'richmond', 'abbotsford'];
+      const live = { pillar: '/worksafe-physiotherapy/', guide: '/worksafebc-physiotherapy-what-is-covered/' };
+      const manifest = final.map((o) => {
+        const kind = o.kind; const id = o.meta.id;
+        const priority = order.includes(id) ? order.indexOf(id) + 1 : 100;
+        const slug = live[id] ? `${live[id].replace(/\//g, '')}-2026-draft` : o.meta.path.split('/').filter(Boolean).pop();
+        return { id, kind, priority, wave: kind === 'location' ? (bySlug[id]?.signoff?.wave || '2') : 'core',
+          wp_title: live[id] ? `${o.meta.h1} (2026 draft)` : o.meta.h1, draft_slug: slug,
+          parent: kind === 'location' ? 'live page with slug worksafe-physiotherapy' : 'none',
+          replaces_live_url: live[id] || null, final_path: o.meta.path,
+          seo_title: o.meta.title, seo_description: o.meta.description,
+          wp_content_url: `${RAW}/${id}/wp-content.html`, schema_url: `${RAW}/${id}/schema.json`, meta_url: `${RAW}/${id}/meta.json` };
+      }).sort((a, b) => a.priority - b.priority || a.id.localeCompare(b.id));
+      fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));
+    }
   }
   return { report, outputs: final };
 }
