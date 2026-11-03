@@ -153,7 +153,7 @@ export async function build(opts = {}) {
       },
       finderCompact() {
         const list = clinics.filter((x) => ctx.listInFinder(x));
-        return `<ul class="sr-ws-chips" role="list" aria-label="WCB physio clinics">${list.map((x) => `<li>${ctx.clinicAnchor(x, 'finder', pageId === 'guide' || pageId === 'rtw' ? 'article' : 'pillar').replace('<a ', '<a class="sr-ws-chip" ')}</li>`).join('')}</ul>`;
+        return `<p class="sr-ws-h4" id="sr-ws-finder-h">${ctx.claim('SYN-JANE', 'Book WCB physio online at a Synergy Rehab clinic near home or work')}</p><ul class="sr-ws-chips" role="list" aria-labelledby="sr-ws-finder-h">${list.map((x) => `<li>${ctx.clinicAnchor(x, 'finder', pageId === 'guide' || pageId === 'rtw' ? 'article' : 'pillar').replace('<a ', '<a class="sr-ws-chip" ')}</li>`).join('')}</ul>`;
       },
       slot(x, field, label) {
         const v = x.signoff?.[field];
@@ -213,19 +213,31 @@ export async function build(opts = {}) {
   }
 
   // ---------- schema ----------
-  const ORG = { '@type': 'MedicalOrganization', '@id': `${SITE}/#organization`, name: 'Synergy Rehabilitation', url: `${SITE}/` };
+  const ORG = { '@type': 'MedicalOrganization', '@id': `${SITE}/#organization`, name: 'Synergy Rehabilitation', alternateName: 'Synergy Rehab', url: `${SITE}/`,
+    ...(review.org_logo_url ? { logo: { '@type': 'ImageObject', url: review.org_logo_url } } : {}) };
+  // WorkSafeBC as a referenced entity: name and official domain only. Its WCB names appear only once GEN-01 is verified.
+  const WSBC = { '@type': 'Organization', name: 'WorkSafeBC', url: 'https://www.worksafebc.com/',
+    ...(claimVerified(claims['GEN-01'], today) ? { alternateName: ['WCB', "Workers' Compensation Board of British Columbia"] } : {}) };
   const crumbs = (items) => ({ '@type': 'BreadcrumbList', itemListElement: items.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${SITE}${p}` })) });
   const plain = (h) => h.replace(/<[^>]+>/g, '').replace(/&#8217;/g, '’').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
-  const page = (meta, about, extra = {}) => ({ '@type': 'MedicalWebPage', '@id': `${SITE}${meta.path}#webpage`, url: `${SITE}${meta.path}`, name: meta.title, description: meta.description, inLanguage: 'en-CA', isPartOf: { '@id': `${SITE}/#website` }, about, ...extra });
+  // reviewedBy uses the same review.json reviewer as the visible as-of line (publish builds only when every claim is verified).
+  const page = (meta, about, extra = {}) => ({ '@type': 'MedicalWebPage', '@id': `${SITE}${meta.path}#webpage`, url: `${SITE}${meta.path}`, name: meta.title, description: meta.description, inLanguage: 'en-CA', dateModified: today,
+    isPartOf: { '@id': `${SITE}/#website` }, publisher: { '@id': `${SITE}/#organization` }, about, ...(about === WSBC ? {} : { mentions: WSBC }),
+    ...(reviewerOk ? { reviewedBy: { '@type': 'Person', name: review.reviewer.name, jobTitle: review.reviewer.credential } } : {}), ...extra });
   const clinicNode = (x) => {
     const node = {
       '@type': ['MedicalClinic', 'Physiotherapy'], '@id': `${SITE}/#clinic-${x.jane.slug}`, name: `Synergy Rehab ${x.name}`,
       url: x.existing_pages.clinic || `${SITE}${PILLAR_PATH}${x.page_slug}/`, telephone: x.phone_e164,
       address: { '@type': 'PostalAddress', streetAddress: [x.address.unit, x.address.street].filter(Boolean).join(', '), addressLocality: x.address.city, addressRegion: 'BC', postalCode: x.address.postal, addressCountry: 'CA' },
       openingHoursSpecification: openingSpec(x.hours), medicalSpecialty: 'https://schema.org/Physiotherapy',
-      availableService: { '@type': 'MedicalTherapy', name: 'WorkSafeBC (WCB) physiotherapy' }, parentOrganization: { '@id': `${SITE}/#organization` },
+      parentOrganization: { '@id': `${SITE}/#organization` },
     };
+    // WCB services in schema read the clinic's G1 and the ops-confirmed services, exactly like the visible page.
+    if (wcbOk(x)) node.availableService = [{ '@type': 'PhysicalTherapy', name: 'WorkSafeBC (WCB) physiotherapy' },
+      ...['massage', 'acupuncture'].filter((k) => serviceConfirmed(x, k)).map((k) => ({ '@type': 'MedicalTherapy', name: k === 'massage' ? 'WorkSafeBC (WCB) massage therapy' : 'WorkSafeBC (WCB) acupuncture' }))];
     if (x.gbp.lat && x.gbp.lng) node.geo = { '@type': 'GeoCoordinates', latitude: +x.gbp.lat, longitude: +x.gbp.lng };
+    if (x.gbp.maps_url) { node.hasMap = x.gbp.maps_url; node.sameAs = [x.gbp.maps_url]; }
+    if (x.signoff.photo_hero_url && x.signoff.photo_consent_by) node.image = x.signoff.photo_hero_url;
     return node;
   };
 
@@ -286,7 +298,13 @@ ${local}
   const report = { mode: MODE, today, built: [], skipped: [], site_gates: { G6_privacy: G6, reviewer: reviewerOk } };
   const outputs = [];
   function emit(meta, rawHtml, schema, r, kind, extraBlockers = []) {
+    for (const id of meta.claims || []) r.ctx.claim(id, ''); // facts stated in the title or meta description go through the same checks
     const html = r.finish(rawHtml);
+    // citation mirrors the visible Sources list exactly (same URLs and titles, nothing added).
+    const wp = schema['@graph'].find((n) => n['@id'] === `${SITE}${meta.path}#webpage`);
+    const cites = [...html.matchAll(/<ol class="sr-ws-sources">([\s\S]*?)<\/ol>/g)].flatMap((o) => [...o[1].matchAll(/<a href="([^"]+)">([^<]+)<\/a>/g)])
+      .map(([, u, t]) => ({ '@type': 'WebPage', name: t.replace(/&amp;/g, '&'), url: u.replace(/&amp;/g, '&') }));
+    if (wp && cites.length) wp.citation = cites;
     const { issues, warnings, janeLinks } = lint(meta, html);
     const blockers = [...new Set([...r.blockers, ...extraBlockers, ...(pub ? issues : [])])];
     const entry = { page: meta.id, kind, path: meta.path, title: meta.title, title_len: meta.title.length, description_len: meta.description.length,
@@ -299,10 +317,14 @@ ${local}
     const extra = pub ? [...(G6 ? [] : ['G6 privacy gate not confirmed (review.json)']), ...(clinics.some(wcbOk) ? [] : ['no clinic has G1 (contract) confirmed'])] : [];
     emit(pillarMeta, html, { '@context': 'https://schema.org', '@graph': [ORG, { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'Synergy Rehabilitation', publisher: { '@id': `${SITE}/#organization` } },
       page(pillarMeta, { '@id': `${SITE}/#organization` }), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH]]),
-      { '@type': 'FAQPage', '@id': `${SITE}${PILLAR_PATH}#faq`, mainEntity: pillarFaq(r.ctx).map(([q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(r.finish(a)) } })) }] }, r, 'pillar', extra); }
+      { '@type': 'ItemList', '@id': `${SITE}${PILLAR_PATH}#clinics`, name: 'Synergy Rehab clinics for WorkSafeBC physiotherapy',
+        itemListElement: clinics.filter((x) => r.ctx.listInFinder(x)).map((x, i) => ({ '@type': 'ListItem', position: i + 1, item: (({ openingHoursSpecification, ...n }) => n)(clinicNode(x)) })) },
+      { '@type': 'FAQPage', '@id': `${SITE}${PILLAR_PATH}#faq`, isPartOf: { '@id': `${SITE}${PILLAR_PATH}#webpage` }, mainEntity: pillarFaq(r.ctx).map(([q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(r.finish(a)) } })) }] }, r, 'pillar', extra); }
   for (const x of clinics) {
     if (pub && !gatesPass(x)) { report.skipped.push({ page: x.page_slug, blockers: Object.entries(x.gates).filter(([, v]) => !v).map(([k]) => `gate ${k} not met`) }); continue; }
     const r = makeCtx(x.page_slug);
+    // NAP check against the KNOWN Google Business Profile postal code (merge_locations.py): flag it for the G2 signer, never auto-fix.
+    if (x.gbp.postal && x.gbp.postal !== x.address.postal) r.missing.push(`nap:postalCode ${x.address.postal} differs from GBP ${x.gbp.postal}; resolve at G2 (fix the page data or the GBP) before publishing`);
     let html = location(x, r.ctx);
     if (pub) html = html.replace(/<div><dt>[^<]+<\/dt><dd><\/dd><\/div>/g, '').replace(/<details class="sr-ws-faq__item"><summary class="sr-ws-faq__q">[^<]*<\/summary><div class="sr-ws-faq__a"><p><\/p><\/div><\/details>/g, '');
     const meta = locationMeta(x);
@@ -313,7 +335,11 @@ ${local}
     if (!fs.existsSync(file)) continue;
     const m = await import(pathToFileURL(file).href);
     const r = makeCtx(mod);
-    emit(m.meta, m.render(r.ctx), { '@context': 'https://schema.org', '@graph': [page(m.meta, { '@id': `${SITE}/#organization` }, { '@type': 'MedicalWebPage' }), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [m.meta.h1, m.meta.path]])] }, r, 'article', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
+    const raw = m.render(r.ctx);
+    const crumbName = plain((raw.match(/<span aria-current="page">([^<]+)<\/span>/) || [null, m.meta.h1])[1]);
+    const faqFn = m.guideFaq || m.rtwFaq;
+    emit(m.meta, raw, { '@context': 'https://schema.org', '@graph': [page(m.meta, WSBC), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [crumbName, m.meta.path]]),
+      ...(faqFn ? [{ '@type': 'FAQPage', '@id': `${SITE}${m.meta.path}#faq`, isPartOf: { '@id': `${SITE}${m.meta.path}#webpage` }, mainEntity: faqFn(r.ctx).map(([q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(r.finish(a)) } })) }] : [])] }, r, 'article', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
   }
   // uniqueness across location pages in this run
   const locs = outputs.filter((o) => o.kind === 'location'); const sh = new Map(locs.map((o) => [o.meta.id, shingles(text(o.html))]));
@@ -326,6 +352,13 @@ ${local}
   for (const o of outputs) {
     if (pub && o.kind === 'location' && o.entry.max_similarity > 0.4) { report.skipped.push({ page: o.meta.id, blockers: [`too similar to ${o.entry.most_similar_to} (${o.entry.max_similarity} > 0.40)`] }); continue; }
     final.push(o); report.built.push(o.entry);
+  }
+  // Orphan check: every built page except the pillar (sitewide "Worksafe" menu) needs a link from another page built in this run.
+  for (const o of final) {
+    if (o.kind === 'pillar') continue;
+    const p = o.meta.path;
+    o.entry.inbound_from = final.filter((f) => f !== o && (f.html.includes(`href="${p}"`) || f.html.includes(`href="${p}#`))).map((f) => f.meta.id);
+    if (!o.entry.inbound_from.length) o.entry.warnings.push(`orphan: no other built page links to ${p}; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages`);
   }
   if (write) {
     fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });

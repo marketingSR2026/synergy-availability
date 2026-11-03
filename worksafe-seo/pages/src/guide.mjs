@@ -53,7 +53,7 @@ const head = (eyebrow, id, q) => `<div class="sr-ws-head"><p class="sr-ws-eyebro
 export function guideFaq(ctx) {
   const c = ctx.claim;
   return [
-    ['Do I pay for physio on a WorkSafeBC claim?',
+    ['Is physio free on a WorkSafeBC claim?',
       `${c('WSBC-23', 'On an accepted claim, care related to your claim is billed to WorkSafeBC, and you should not have to pay any fees.')} ${c('WSBC-11', 'A contracted clinic also bills WorkSafeBC directly for your first assessment, even before the claim is accepted,')} ${c('WSBC-12', 'if it is within 60 days of your injury.')} ${c('WSBC-28', 'Treatment visits before acceptance are different: a clinic may ask you to pay, and you can ask for a refund if the claim is accepted later.')} ${c('WSBC-30', 'If the claim is denied, WorkSafeBC does not pay for treatment visits given while it was pending.')} ${c('WSBC-25', 'Care for a body area that is not part of your accepted claim can be billed to you.')} ${c('WSBC-26', 'At a physio who is not contracted with WorkSafeBC, you pay and WorkSafeBC repays only its set rate.')}`],
     ['How do WorkSafeBC claims work for physio?',
       `Here is the usual order. ${c('WSBC-42', 'Tell your employer.')} ${c('WSBC-43', 'Report the injury to WorkSafeBC online or by phone.')} ${c('WSBC-11', 'Book a first assessment with a contracted physio, even while the claim is pending,')} ${c('WSBC-12', 'if it is within 60 days of your injury.')} ${c('WSBC-46', 'Your 8-digit claim number comes by mail.')} ${c('WSBC-17', 'Treatment visits paid by WorkSafeBC can start only after the claim is accepted.')} ${c('WSBC-21', 'If you need more treatment later, your physio can ask WorkSafeBC for it. WorkSafeBC decides.')}`],
@@ -89,7 +89,7 @@ export function render(ctx) {
       <div class="sr-ws-hero__content">
         <p class="sr-ws-eyebrow">Hurt at work in BC?</p>
         <h1 class="sr-ws-h1" id="sr-ws-h1">What does WorkSafeBC <span class="sr-ws-accent">cover</span> for physiotherapy?</h1>
-        <p class="sr-ws-lede">Plain answers on claims, costs and what WorkSafeBC decides, with links to WorkSafeBC&#8217;s own pages.</p>
+        <p class="sr-ws-lede">${c('WSBC-23', 'On an accepted claim, your physio should bill WorkSafeBC for claim-related care, and you should not have to pay fees.')}</p>
         <div class="sr-ws-hero__ctas">
           <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--knob" href="${clinics}" ${ev('worksafe_location_select', 'all', 'hero', PT)}>Find your clinic<span class="sr-ws-btn__knob" aria-hidden="true">&#8594;</span></a>
           <a class="sr-ws-btn sr-ws-btn--secondary" href="#questions">Jump to your question</a>
@@ -124,6 +124,8 @@ export function render(ctx) {
     <div class="sr-ws-prose">
       ${shortAnswer(`${c('WSBC-13', 'You need to have reported the injury to WorkSafeBC, but your claim can still be pending.')} ${c('WSBC-11', 'At a contracted physiotherapist, you can have your first assessment before WorkSafeBC accepts your claim')} ${c('WSBC-12', 'if it is within 60 days of your injury.')} ${c('WSBC-46', 'WorkSafeBC mails you an 8-digit claim number once it gets your report.')} Ask the clinic what to bring if your claim number has not arrived yet.`)}
       <p>When you book, tell the clinic the injury happened at work. ${c('WSBC-42', 'WorkSafeBC asks you to tell anyone who treats you that the injury happened at work.')}</p>
+      <h3 class="sr-ws-h3">Where do I find my WorkSafeBC claim number?</h3>
+      <p>${c('WSBC-46', 'It comes by mail, in the letter WorkSafeBC sends once it gets your report.')} ${c('SYN-SEO-01', 'If you cannot find it, call WorkSafeBC&#8217;s Claims Call Centre at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m.')}</p>
       <p class="sr-ws-tip"><span class="sr-ws-tip__label">Tip</span><span>When the letter with your claim number comes, take a photo of it. Then you will always have the number on your phone.</span></p>
     </div>
   </div>
@@ -213,7 +215,7 @@ export function render(ctx) {
   <div class="sr-ws-container">
     ${head('Choosing a physio', 'sr-ws-nc-h', 'Can I use a physio who is not contracted with WorkSafeBC?')}
     <div class="sr-ws-prose">
-      ${shortAnswer(`${c('WSBC-26', 'You can, but you pay the clinic yourself and WorkSafeBC repays only its set rate.')} ${c('WSBC-10', 'WorkSafeBC asks workers who need physiotherapy to visit a physiotherapist who has a contract with WorkSafeBC in their region.')} ${c('WSBC-26', 'If you choose one who is not contracted, you pay for each visit and then ask WorkSafeBC to pay you back. WorkSafeBC repays at its set rate, $95 per visit from April 1, 2026, and you pay any difference.')} ${c('WSBC-30', 'If your claim is denied, WorkSafeBC does not pay for treatment given while it was pending,')} ${c('WSBC-25', 'and care for a body area that is not part of your accepted claim can be billed to you.')}`)}
+      ${shortAnswer(`${c('WSBC-26', 'Yes, but you pay for each visit yourself and then ask WorkSafeBC to pay you back. WorkSafeBC repays at its set rate, $95 per visit from April 1, 2026, and you pay any difference.')} ${c('WSBC-10', 'WorkSafeBC asks workers who need physiotherapy to visit a physiotherapist who has a contract with WorkSafeBC in their region.')}`)}
       <p>${c('WSBC-24', 'That &#8220;you pay the difference&#8221; rule is for physios without a contract. A contracted clinic cannot charge you extra for services under its WorkSafeBC contract, except where the contract allows it.')}</p>
       <h3 class="sr-ws-h3">How to check if a clinic is contracted</h3>
       <p>${c('WSBC-33', 'WorkSafeBC publishes regional lists of physiotherapy clinics contracted for musculoskeletal care, for example Metro Vancouver and the Fraser Valley.')} ${c('WSBC-34', 'It keeps separate lists for other programs, so being on one list does not mean a clinic is on another.')} You can also simply ask the clinic when you call.</p>
@@ -316,7 +318,7 @@ export function render(ctx) {
       <p class="sr-ws-lede">${c('WSBC-11', 'At a WorkSafeBC-contracted clinic, you can have your first assessment while your claim is pending')} ${c('WSBC-12', 'if it is within 60 days of your injury.')} Pick the clinic nearest home or work.</p></div>
     <a class="sr-ws-bigpill sr-ws-hide-below-desktop" href="${clinics}" ${ev('worksafe_location_select', 'all', 'final', PT)}>Find your clinic</a>
     <div class="sr-ws-linkcols">
-      <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford.</p></div>
+      <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford. synergyrehab.ca</p></div>
       <div><p class="sr-ws-linkcols__title">WorkSafe</p><ul><li><a href="${pillar}">WorkSafeBC physiotherapy</a></li>${rtw ? `<li><a href="${rtw}">Return to work</a></li>` : ''}<li><a href="#faq">Coverage FAQ</a></li></ul></div>
       <div><p class="sr-ws-linkcols__title">Clinics</p><ul>${AREAS.map(([a]) => `<li><a href="${PILLAR_PATH}#${areaId(a)}">${esc(a)}</a></li>`).join('')}</ul></div>
       <div><p class="sr-ws-linkcols__title">WorkSafeBC</p><ul><li><a href="${SRC.report.url}">Report an injury</a></li><li><a href="tel:+18889675377">${c('WSBC-44', 'Teleclaim 1.888.967.5377')}</a></li><li><a href="${SRC.review.url}">Ask for a review</a></li></ul></div>

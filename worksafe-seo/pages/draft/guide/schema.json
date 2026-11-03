@@ -8,12 +8,130 @@
    "name": "What Does WorkSafeBC Cover for Physiotherapy? Claims & Costs",
    "description": "Claim numbers, pending and denied claims, fees and the 60-day rule. Plain answers on what WorkSafeBC pays for at physio, with links to official pages.",
    "inLanguage": "en-CA",
+   "dateModified": "2026-11-03",
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
    },
-   "about": {
+   "publisher": {
     "@id": "https://synergyrehabilitation.ca/#organization"
-   }
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "WorkSafeBC",
+    "url": "https://www.worksafebc.com/"
+   },
+   "citation": [
+    {
+     "@type": "WebPage",
+     "name": "Health care benefits (workers)",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services/health-care-benefits"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How workers report a workplace injury or illness",
+     "url": "https://www.worksafebc.com/en/claims/report-workplace-injury-illness/how-workers-report-workplace-injury-illness"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Making a WorkSafeBC claim (information sheet)",
+     "url": "https://www.worksafebc.com/resources/claims/information-sheet/making-worksafebc-claim?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Contact WorkSafeBC (Claims Call Centre hours)",
+     "url": "https://contactus.online.worksafebc.com/"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How employers report a workplace injury or disease",
+     "url": "https://www.worksafebc.com/en/claims/report-workplace-injury-illness/how-employers-report-workplace-injury-illness"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Form 6: Application for Compensation and Report of Injury or Occupational Disease",
+     "url": "https://www.worksafebc.com/en/resources/claims/forms/application-for-compensation-and-report-of-injury-or-occupational-disease-form-6"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Form 6A: Worker's Notice to Employer of Injury or Occupational Disease",
+     "url": "https://www.worksafebc.com/en/resources/claims/forms/workers-report-of-injury-or-occupational-disease-to-employer-form-6a?lang=en"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Musculoskeletal physiotherapy services",
+     "url": "https://www.worksafebc.com/en/health-care-providers/provider-types/physiotherapists/musculoskeletal-physiotherapy-services"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Reference Manual",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-services-reference-manual?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Agreement",
+     "url": "https://www.worksafebc.com/en/resources/health-care-providers/guides/physiotherapy-services-agreement"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Bulletin 2026-28: new Physiotherapy Services Agreement resources",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/bulletins/2026-28-new-physiotherapy-services-agreement-resources-now-available?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Contracted physiotherapy providers: Metro Vancouver",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-provider-list/metro-vancouver?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Contracted physiotherapy providers: Fraser Valley",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-provider-list/fraser-valley?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Early Access to Physiotherapy Program (EAPP) providers: Metro Vancouver",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/eapp-provider-list/metro-vancouver?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Return to Work Support Services: service providers",
+     "url": "https://www.worksafebc.com/en/health-care-providers/rehabilitation/return-work-support/service-providers"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Massage therapists: WorkSafeBC services",
+     "url": "https://www.worksafebc.com/en/health-care-providers/provider-types/massage-therapists"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How-to guide for massage therapists",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/how-to-guide-for-massage-therapists?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Acupuncturists: WorkSafeBC services",
+     "url": "https://www.worksafebc.com/en/health-care-providers/provider-types/acupuncturists"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Acupuncture fee schedule",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/acupuncture-fee-schedule?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Submitting a request for review",
+     "url": "https://www.worksafebc.com/en/review-appeal/submit-request"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Claims review and appeal guide for workers and dependants",
+     "url": "https://www.worksafebc.com/en/resources/about-us/guides/claims-review-and-appeal-guide-for-workers-and-dependants?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "About WorkSafeBC",
+     "url": "https://www.worksafebc.com/en/about-us"
+    }
+   ]
   },
   {
    "@type": "BreadcrumbList",
@@ -33,8 +151,65 @@
     {
      "@type": "ListItem",
      "position": 3,
-     "name": "What does WorkSafeBC cover for physiotherapy?",
+     "name": "What WorkSafeBC covers",
      "item": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/#faq",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/#webpage"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Is physio free on a WorkSafeBC claim?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "On an accepted claim, care related to your claim is billed to WorkSafeBC, and you should not have to pay any fees. A contracted clinic also bills WorkSafeBC directly for your first assessment, even before the claim is accepted, if it is within 60 days of your injury. Treatment visits before acceptance are different: a clinic may ask you to pay, and you can ask for a refund if the claim is accepted later. If the claim is denied, WorkSafeBC does not pay for treatment visits given while it was pending. Care for a body area that is not part of your accepted claim can be billed to you. At a physio who is not contracted with WorkSafeBC, you pay and WorkSafeBC repays only its set rate."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How do WorkSafeBC claims work for physio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Here is the usual order. Tell your employer. Report the injury to WorkSafeBC online or by phone. Book a first assessment with a contracted physio, even while the claim is pending, if it is within 60 days of your injury. Your 8-digit claim number comes by mail. Treatment visits paid by WorkSafeBC can start only after the claim is accepted. If you need more treatment later, your physio can ask WorkSafeBC for it. WorkSafeBC decides."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I need a doctor’s referral for WorkSafeBC physio?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "WorkSafeBC’s advice is simple: if you need physiotherapy, go to a physiotherapist who has a contract with WorkSafeBC and explain that your injury is work-related. WorkSafeBC massage therapy has its own rules: it needs a doctor’s referral and an accepted claim."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What if I have not reported my injury yet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Report it now. There needs to be a WorkSafeBC claim, even a pending one, for the clinic to bill WorkSafeBC. You can report online at any time, or call Teleclaim at 1.888.967.5377, Monday to Friday, 8 a.m. to 6 p.m. Pacific time. You have up to one year from the injury, but sooner is better."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do I have to tell my employer?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. WorkSafeBC asks you to tell your employer about the injury as soon as it is safe to do so. Your employer must report it to WorkSafeBC within 72 hours if you missed work or needed medical care beyond first aid. Your employer may also ask you to fill in Form 6A, which goes to them, not to WorkSafeBC."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "I had surgery for my work injury. Can I start physio after it?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. A contracted physio can do a post-surgery assessment on your claim without asking WorkSafeBC first, as long as it is within 60 days of the surgery related to your claim. Bring any notes or exercise sheets your surgeon gave you to your first visit."
+     }
     }
    ]
   }

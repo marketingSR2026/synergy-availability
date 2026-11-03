@@ -4,13 +4,21 @@
 import { esc, icon, ev, SOURCES, PILLAR_PATH, groupHours, opensWeekends, hoursSummary, addressLine, mapsUrl } from './shared.mjs';
 
 export function locationMeta(x) {
-  const title = `WCB & WorkSafeBC Physio in ${x.name} | Synergy Rehab`;
-  const base = `Hurt at work? Book a WCB physio assessment at Synergy Rehab ${x.name}, ${x.address.street}. ${hoursSummary(x.hours)}.`;
+  // Spec 2 rules 2 and 3: the title uses the page's own area label (Surrey after the neighbourhood) when it fits in 60 characters.
+  const inCity = x.name.includes(x.address.city);
+  const t = (place) => `WCB & WorkSafeBC Physio in ${place} | Synergy Rehab`;
+  const title = [x.area_label, inCity ? x.name : `${x.name}, ${x.address.city}`].map(t).find((s) => s.length <= 60) || t(x.name);
+  // Meta: add the city after the street when the name does not contain it; the pending-claim hook (WSBC-11) wins if both do not fit.
+  const base = (city) => `Hurt at work? Book a WCB physio assessment at Synergy Rehab ${x.name}, ${x.address.street}${city}. ${hoursSummary(x.hours)}.`;
+  const city = inCity ? '' : `, ${x.address.city}`;
+  const tail = ' Your claim can be pending.';
+  const description = [base(city) + tail, base('') + tail, base(city)].find((d) => d.length <= 155) || base('');
   return {
     id: x.page_slug,
     path: `${PILLAR_PATH}${x.page_slug}/`,
     title,
-    description: base.length + 30 <= 155 ? `${base} Your claim can be pending.` : base,
+    description,
+    claims: description.endsWith(tail) ? ['WSBC-11'] : [],
     h1: `WorkSafeBC physiotherapy in ${x.area_label}`,
   };
 }
@@ -24,16 +32,19 @@ function hoursTable(x) {
 export function locationFaq(x, ctx) {
   const c = ctx.claim;
   const qa = [];
-  qa.push([`Where do I park at ${esc(x.name)}?`, ctx.slot(x, 'parking', 'Parking: where to park, cost, time limits, closest transit stop')]);
-  qa.push([`Which languages do the ${esc(x.name)} physiotherapists speak?`, ctx.slot(x, 'languages', 'Languages spoken by the physiotherapists who see WCB claims here')]);
+  const nm = `Synergy Rehab ${esc(x.name)}`;
+  qa.push([`Is there a WorkSafeBC physiotherapy clinic in ${esc(x.area_label)}?`,
+    `${ctx.contractClaim(x, `Yes. ${nm}, at ${esc(addressLine(x.address))}, ${esc(x.address.city)}, is a WorkSafeBC-contracted physiotherapy clinic.`)} ${c('SYN-JANE', 'You can book a WCB Physio Initial Session online')} or call ${esc(x.phone)}.`]);
+  qa.push([`Where do I park at ${nm}?`, ctx.slot(x, 'parking', 'Parking: where to park, cost, time limits, closest transit stop')]);
+  qa.push([`Which languages do the physiotherapists at ${nm} speak?`, ctx.slot(x, 'languages', 'Languages spoken by the physiotherapists who see WCB claims here')]);
   if (ctx.service(x, 'massage')) {
-    qa.push([`Can I get WCB massage therapy at ${esc(x.name)}?`,
-      `${ctx.serviceClaim(x, 'massage', `Yes. ${esc(x.name)} offers massage therapy on WorkSafeBC claims.`)} ${c('WSBC-35', 'WorkSafeBC massage needs a doctor&#8217;s referral and an accepted claim.')}`]);
+    qa.push([`Can I get WCB massage therapy at ${nm}?`,
+      `${ctx.serviceClaim(x, 'massage', `Yes. ${nm} offers massage therapy on WorkSafeBC claims.`)} ${c('WSBC-35', 'WorkSafeBC massage needs a doctor&#8217;s referral and an accepted claim.')}`]);
   }
   const alts = ctx.nearbyWcb(x).slice(0, 2);
   if (alts.length) {
-    qa.push([`What if ${esc(x.name)} has no time that works for me?`,
-      `Try our nearest clinics: ${alts.map((n) => `${ctx.clinicAnchor(n.clinic, 'faq', 'location')} (about ${n.km} km)`).join(' and ')}. Every clinic on our <a href="${PILLAR_PATH}#clinics">WorkSafeBC physiotherapy page</a> books WCB physio online.`]);
+    qa.push([`What if ${nm} has no time that works for me?`,
+      `Try our nearest clinics: ${alts.map((n) => `${ctx.clinicAnchor(n.clinic, 'faq', 'location')} (about ${n.km} km)`).join(' and ')}. ${c('SYN-JANE', `Every clinic on our <a href="${PILLAR_PATH}#clinics">WorkSafeBC physiotherapy page</a> books WCB physio online.`)}`]);
   }
   return qa;
 }
@@ -142,16 +153,17 @@ ${ctx.team(x)}
     <div class="sr-ws-faq sr-ws-faq--center">
       ${faq.map(([q, a]) => `<details class="sr-ws-faq__item"><summary class="sr-ws-faq__q">${q}</summary><div class="sr-ws-faq__a"><p>${a}</p></div></details>`).join('\n')}
     </div>
-    <p class="sr-ws-center"><a class="sr-ws-link sr-ws-link--arrow" href="${PILLAR_PATH}#faq">Claims, referrals and costs: all WorkSafeBC questions</a></p>
+    <p class="sr-ws-center"><a class="sr-ws-link sr-ws-link--arrow" href="${PILLAR_PATH}#faq">More WorkSafeBC physiotherapy questions</a>${ctx.link('guide') ? `<br><a class="sr-ws-link sr-ws-link--arrow" href="${ctx.link('guide')}">Claims, pending claims and costs: the WorkSafeBC coverage guide</a>` : ''}</p>
   </div>
 </section>
 
 <section class="sr-ws-band sr-ws-band--soft" aria-labelledby="sr-ws-near-h">
   <div class="sr-ws-container">
-    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Nearby</p><h2 class="sr-ws-h2" id="sr-ws-near-h">Other Synergy clinics near ${esc(x.name)}</h2></div>
-    ${nearby.length ? `<ul class="sr-ws-grid sr-ws-grid--2 sr-ws-list-reset" role="list">${nearby.map((n) => ctx.clinicCard(n.clinic, `About ${n.km} km away`, 'nearby', 'location')).join('\n')}</ul>` : ''}
-    <p><a class="sr-ws-link sr-ws-link--arrow" href="${PILLAR_PATH}#clinics">See all 19+ locations</a></p>
-    <ol class="sr-ws-sources">${[SOURCES.benefits, SOURCES.report, SOURCES.manual].map((s) => `<li><a href="${s.url}">${esc(s.title)}</a> (worksafebc.com)</li>`).join('')}</ol>
+    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Nearby</p><h2 class="sr-ws-h2" id="sr-ws-near-h">${!nearby.length ? 'More Synergy Rehab clinics' : nearby[0].km > 15 ? `Next closest Synergy clinics to ${esc(x.name)}` : `Other Synergy clinics near ${esc(x.name)}`}</h2></div>
+    ${nearby.length ? `<ul class="sr-ws-grid sr-ws-grid--2 sr-ws-list-reset" role="list">${nearby.map((n) => ctx.clinicCard(n.clinic, `${esc(n.clinic.address.street)}<br>About ${n.km} km away`, 'nearby', 'location').replace(/<(\/?)h4\b/g, '<$1h3')).join('\n')}</ul>` : ''}
+    <p><a class="sr-ws-link sr-ws-link--arrow" href="${PILLAR_PATH}#clinics">Find another clinic for WCB physio</a></p>
+    <h3 class="sr-ws-h4">Sources</h3>
+    <ol class="sr-ws-sources">${[SOURCES.benefits, SOURCES.report, SOURCES.manual, ...(ctx.service(x, 'massage') ? [SOURCES.massage] : [])].map((s) => `<li><a href="${s.url}">${esc(s.title)}</a> (worksafebc.com)</li>`).join('')}</ol>
     <p class="sr-ws-asof">${ctx.asof()}</p>
   </div>
 </section>
@@ -163,7 +175,7 @@ ${ctx.team(x)}
     <a class="sr-ws-bigpill sr-ws-hide-below-desktop" href="${book}" ${ev('worksafe_book_click', x.page_slug, 'final', 'location')}>Book a WCB assessment</a>
     <div class="sr-ws-linkcols">
       <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford. synergyrehab.ca</p></div>
-      <div><p class="sr-ws-linkcols__title">WorkSafe</p><ul><li><a href="${PILLAR_PATH}">WorkSafeBC physiotherapy</a></li><li><a href="${PILLAR_PATH}#eligibility">Claim stages</a></li><li><a href="${PILLAR_PATH}#faq">FAQ</a></li></ul></div>
+      <div><p class="sr-ws-linkcols__title">WorkSafe</p><ul><li><a href="${PILLAR_PATH}">WorkSafeBC physiotherapy</a></li><li><a href="${PILLAR_PATH}#eligibility">Claim stages</a></li>${ctx.link('guide') ? `<li><a href="${ctx.link('guide')}">Claims and costs guide</a></li>` : ''}${ctx.link('rtw') ? `<li><a href="${ctx.link('rtw')}">Return to work</a></li>` : ''}<li><a href="${PILLAR_PATH}#faq">WorkSafeBC questions</a></li></ul></div>
       <div><p class="sr-ws-linkcols__title">This clinic</p><ul><li><a href="${tel}" ${ev('worksafe_phone_click', x.page_slug, 'final', 'location')}>${esc(x.phone)}</a></li><li><a href="${mapsUrl(x)}" ${ev('worksafe_directions_click', x.page_slug, 'final', 'location')}>Directions</a></li></ul></div>
       <div><p class="sr-ws-linkcols__title">WorkSafeBC</p><ul><li><a href="${SOURCES.report.url}">Report an injury</a></li><li><a href="tel:+18889675377">Teleclaim 1.888.967.5377</a></li></ul></div>
     </div>

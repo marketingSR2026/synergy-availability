@@ -6,14 +6,45 @@
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cedar-hills-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/cedar-hills-surrey/",
    "name": "WCB & WorkSafeBC Physio in Cedar Hills | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Cedar Hills, 12852 96 Ave. Open 7 days until 8:30 PM. Your claim can be pending.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Cedar Hills, 12852 96 Ave, Surrey. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
+   "dateModified": "2026-11-03",
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
    },
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   },
    "about": {
     "@id": "https://synergyrehabilitation.ca/#clinic-cedar-hills"
-   }
+   },
+   "mentions": {
+    "@type": "Organization",
+    "name": "WorkSafeBC",
+    "url": "https://www.worksafebc.com/"
+   },
+   "citation": [
+    {
+     "@type": "WebPage",
+     "name": "Health care benefits (workers)",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services/health-care-benefits"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How workers report a workplace injury or illness",
+     "url": "https://www.worksafebc.com/en/claims/report-workplace-injury-illness/how-workers-report-workplace-injury-illness"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Reference Manual",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-services-reference-manual?lang=en"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Massage therapists: WorkSafeBC services",
+     "url": "https://www.worksafebc.com/en/health-care-providers/provider-types/massage-therapists"
+    }
+   ]
   },
   {
    "@type": [
@@ -77,10 +108,6 @@
     }
    ],
    "medicalSpecialty": "https://schema.org/Physiotherapy",
-   "availableService": {
-    "@type": "MedicalTherapy",
-    "name": "WorkSafeBC (WCB) physiotherapy"
-   },
    "parentOrganization": {
     "@id": "https://synergyrehabilitation.ca/#organization"
    }

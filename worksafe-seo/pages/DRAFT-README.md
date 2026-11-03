@@ -17,7 +17,7 @@ Rebuild: `node build/build_pages.mjs --mode draft` (from `worksafe-seo/`).
 
 | Page | Folder | Existing URL? |
 |---|---|---|
-| WorkSafeBC physiotherapy (main page) | `pillar` | Yes, `/worksafe-physiotherapy/` is live with old copy. Do not paste over the live page. Create a new draft page (or a WordPress revision draft) and leave the live page as is |
+| WorkSafeBC physiotherapy (main page) | `pillar` | Yes, `/worksafe-physiotherapy/` is live with old copy. Do not paste over the live page. Create a new draft page and leave the live page as is. Do not use a revision draft or Elementor "Save as Draft" on the live page: SEO plugin settings are stored on the page itself, not on the revision, so the noindex in step 5 could noindex the live URL |
 | What WorkSafeBC covers (guide) | `guide` | Yes, `/worksafebc-physiotherapy-what-is-covered/` is live. Same rule: new draft, live page untouched |
 | Return to work article | `rtw` | No, new draft |
 | Clinic pages, Wave 1 | `new-westminster`, `richmond`, `abbotsford` | No, new drafts |

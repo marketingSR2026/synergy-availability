@@ -3,6 +3,9 @@
  "path": "/worksafe-physiotherapy/clayton-heights-surrey/",
  "title": "WCB & WorkSafeBC Physio in Clayton Heights | Synergy Rehab",
  "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Heights, 19161 Fraser Hwy. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in Clayton Heights, Surrey",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-heights-surrey/",
  "robots": "index,follow"

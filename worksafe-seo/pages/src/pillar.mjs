@@ -18,17 +18,17 @@ export function pillarFaq(ctx) {
     ['Is WCB the same as WorkSafeBC?',
       `${c('GEN-01', 'Yes. WorkSafeBC is the Workers&#8217; Compensation Board of British Columbia, which is why many people still call it WCB.')}`],
     ['Do I need a claim number before I book?',
-      `No. ${c('WSBC-11', 'At a WorkSafeBC-contracted physiotherapist you can have your initial assessment before WorkSafeBC accepts your claim.')} ${c('WSBC-13', 'You do need to report the injury to WorkSafeBC so there is a claim, even if it is still pending.')} ${c('WSBC-46', 'WorkSafeBC mails you an 8-digit claim number once it gets your report.')}`],
+      `No. ${c('WSBC-11', 'At a WorkSafeBC-contracted physiotherapist you can have your initial assessment before WorkSafeBC accepts your claim,')} ${c('WSBC-12', 'if it is within 60 days of your injury.')} ${c('WSBC-13', 'You do need to report the injury to WorkSafeBC so there is a claim, even if it is still pending.')} ${c('WSBC-46', 'WorkSafeBC mails you an 8-digit claim number once it gets your report.')}`],
     ['Do I need a doctor&#8217;s referral for WorkSafeBC physio?',
-      `${c('WSBC-10', 'WorkSafeBC tells workers who need physiotherapy to visit a contracted physiotherapist and explain that the injury is work-related.')} ${c('WSBC-16', 'Its guidance for physiotherapy does not list a doctor&#8217;s referral as a step.')} ${c('WSBC-35', 'Massage therapy is different: it needs a doctor&#8217;s referral and an accepted claim.')}`],
-    ['Will I have to pay anything?',
-      `It depends on where your claim is. ${c('WSBC-23', 'Accepted: your provider bills WorkSafeBC for care related to your claim and you should not have to pay fees.')} ${c('WSBC-28', 'Pending: a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Treatment for a body area that is not part of your accepted claim can be billed to you.')}`],
+      `${c('WSBC-10', 'WorkSafeBC tells workers who need physiotherapy to visit a contracted physiotherapist and explain that the injury is work-related.')} ${c('WSBC-16', 'Its guidance for physiotherapy does not list a doctor&#8217;s referral as a step.')} ${c('WSBC-14', 'If treatment starts more than 60 days after your injury, WorkSafeBC has to approve it first.')} ${c('WSBC-35', 'Massage therapy is different: it needs a doctor&#8217;s referral and an accepted claim.')}`],
+    ['Will WCB pay for my physio, or will I have to pay?',
+      `${c('WSBC-23', 'Once your claim is accepted, yes. Your provider bills WorkSafeBC for care related to your claim, and you should not have to pay fees.')} ${c('WSBC-28', 'While your claim is pending, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Treatment for a body area that is not part of your accepted claim can be billed to you.')}`],
     ['What happens if my claim is denied?',
       `${c('WSBC-29', 'If your claim was pending at your first visit, WorkSafeBC still pays the contracted clinic for that initial assessment, even if the claim is later denied.')} ${c('WSBC-30', 'WorkSafeBC does not pay for treatment visits given while the claim was pending if it is denied.')}`],
     ['It has been more than 60 days since my injury. Can I still get physio?',
       `${c('WSBC-14', 'Yes, but WorkSafeBC has to approve treatment first when it starts more than 60 days after the injury. It is not refused automatically.')}`],
     ['How many physio visits does WorkSafeBC cover?',
-      `WorkSafeBC sets the treatment period for your claim. ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')}`],
+      `${c('WSBC-17', 'Treatment visits paid by WorkSafeBC start once your claim is accepted.')} ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')} ${c('WSBC-01', 'WorkSafeBC&#8217;s new physiotherapy services agreement took effect on April 1, 2026.')} If another page gives you a visit number, check it against WorkSafeBC&#8217;s own site, and ask your physiotherapist where your treatment stands on your claim.`],
     ['What if I go to a physio who is not contracted with WorkSafeBC?',
       `${c('WSBC-26', 'You pay for each visit yourself and ask WorkSafeBC to reimburse you at its set rate, which is $95 per visit from April 1, 2026. You pay any difference.')}`],
     ['How do I report a workplace injury to WorkSafeBC?',
@@ -66,7 +66,7 @@ export function pillar(ctx) {
       <div class="sr-ws-hero__content">
         <p class="sr-ws-eyebrow">Hurt at work in BC?</p>
         <h1 class="sr-ws-h1" id="sr-ws-h1">WorkSafeBC physiotherapy for <span class="sr-ws-accent">work injuries</span></h1>
-        <p class="sr-ws-lede">${c('WSBC-11', 'You can start with an assessment before your claim is accepted.')} Pick a clinic and book a WCB physio visit online.</p>
+        <p class="sr-ws-lede">${c('WSBC-12', 'Within 60 days of your injury,')} ${c('WSBC-11', 'you can start WCB physiotherapy with an assessment before your claim is accepted.')} ${c('SYN-JANE', 'Book online.')}</p>
         <div class="sr-ws-hero__ctas">
           <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--knob" href="#clinics" ${ev('worksafe_location_select', 'all', 'hero', 'pillar')}>Find your clinic<span class="sr-ws-btn__knob" aria-hidden="true">&#8594;</span></a>
           <a class="sr-ws-btn sr-ws-btn--secondary" href="#steps">How it works</a>
@@ -86,8 +86,8 @@ export function pillar(ctx) {
 
 <section class="sr-ws-band sr-ws-band--blue" id="steps" aria-labelledby="sr-ws-steps-h">
   <div class="sr-ws-container">
-    <div class="sr-ws-head"><p class="sr-ws-eyebrow">How it works</p><h2 class="sr-ws-h2" id="sr-ws-steps-h">Three steps to WCB physio</h2>
-      <p class="sr-ws-lede">You can book before your claim number arrives.</p></div>
+    <div class="sr-ws-head"><p class="sr-ws-eyebrow">How it works</p><h2 class="sr-ws-h2" id="sr-ws-steps-h">Injured at work in BC? Three steps to WCB physiotherapy</h2>
+      <p class="sr-ws-lede">${c('WSBC-11', 'You can book before your claim number arrives.')}</p></div>
     <ol class="sr-ws-steps sr-ws-steps--h" role="list" style="--sr-ws-steps:3">
       <li class="sr-ws-step"><span class="sr-ws-pill sr-ws-pill--on-blue sr-ws-step__when">Right away</span>
         <h3 class="sr-ws-step__title">Report the injury</h3>
@@ -105,7 +105,7 @@ export function pillar(ctx) {
 <section class="sr-ws-band sr-ws-band--white" id="clinics" aria-labelledby="sr-ws-clinics-h">
   <div class="sr-ws-container">
     <div class="sr-ws-head"><p class="sr-ws-eyebrow">Find your clinic</p><h2 class="sr-ws-h2" id="sr-ws-clinics-h">Book WCB physio near home or work</h2>
-      <p class="sr-ws-lede">${n} Synergy ${n === 1 ? 'clinic books' : 'clinics book'} WCB physio assessments online. Pick the one nearest you.</p></div>
+      <p class="sr-ws-lede">${c('SYN-JANE', 'Every clinic below books WCB physiotherapy assessments online.')} Pick the one nearest home or work.</p></div>
     ${finder(ctx)}
   </div>
 </section>
@@ -190,7 +190,7 @@ ${massage.length || acu.length ? `<section class="sr-ws-band sr-ws-band--soft" a
     <div class="sr-ws-head"><p class="sr-ws-eyebrow">More WorkSafeBC care</p><h2 class="sr-ws-h2" id="sr-ws-more-h">Massage therapy and acupuncture on a WCB claim</h2></div>
     <ul class="sr-ws-grid sr-ws-grid--2 sr-ws-list-reset" role="list">
       ${massage.length ? `<li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">WCB massage therapy</h3>
-        <p class="sr-ws-card__text">${c('WSBC-35', 'Needs a doctor&#8217;s referral and an accepted claim. WorkSafeBC covers an assessment and up to 6 treatments in the first 8 weeks after the injury without pre-approval.')}</p>
+        <p class="sr-ws-card__text">${c('WSBC-35', 'WorkSafeBC massage therapy needs a doctor&#8217;s referral and an accepted claim. More treatment after the first set needs WorkSafeBC approval.')}</p>
         <p class="sr-ws-card__text">Offered at ${massage.map((x) => ctx.serviceClaim(x, 'massage', esc(x.name))).join(', ')}.</p></li>` : ''}
       ${acu.length ? `<li class="sr-ws-card"><h3 class="sr-ws-h3 sr-ws-card__title">WCB acupuncture</h3>
         <p class="sr-ws-card__text">${c('WSBC-36', 'WorkSafeBC acupuncture needs an accepted claim.')} Offered at ${acu.map((x) => ctx.serviceClaim(x, 'acupuncture', esc(x.name))).join(', ')}.</p></li>` : ''}

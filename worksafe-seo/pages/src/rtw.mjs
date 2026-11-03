@@ -310,7 +310,7 @@ export function render(ctx) {
   <div class="sr-ws-container">
     <div class="sr-ws-head sr-ws-head--center"><h2 class="sr-ws-h2" id="sr-ws-cta-h">Getting ready to go back? Start with an assessment.</h2>
       <p class="sr-ws-lede">${c('SYN-JANE', 'Book a WCB physio visit online at the clinic nearest home or work.')} Bring your job details and any return-to-work plan.</p>
-      <p class="sr-ws-small" id="costs">${c('WSBC-23', 'WorkSafeBC says that once it accepts your claim, your health care provider should bill it for care related to your claim, and you should not have to pay fees.')} ${c('WSBC-14', 'If you start treatment more than 60 days after your injury, WorkSafeBC must approve it first.')} ${c('WSBC-28', 'If your claim is still pending, a clinic may ask you to pay for treatment.')} ${c('SYN-PEND', 'Ask us how we handle visits while your claim is pending.')} ${c('WSBC-25', 'Care for a body area that is not part of your claim can be billed to you.')}</p></div>
+      <p class="sr-ws-small" id="costs">${c('WSBC-23', 'On an accepted claim, you should not have to pay fees for care related to your claim.')} <a class="sr-ws-link sr-ws-link--arrow" href="${guide ? `${guide}#fees` : `${pillar}#eligibility`}">Costs at each claim stage</a></p></div>
     <a class="sr-ws-bigpill sr-ws-hide-below-desktop" href="${find}" ${ev('worksafe_location_select', 'all', 'final', PAGE_TYPE)}>Find your clinic</a>
     <div class="sr-ws-linkcols">
       <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford. synergyrehab.ca</p></div>

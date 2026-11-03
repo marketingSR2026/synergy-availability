@@ -8,12 +8,155 @@
    "name": "Gradual Return to Work & Modified Duties | Synergy Rehab",
    "description": "Going back to work on a WorkSafeBC claim? How a gradual return works, what modified duties are, who decides what, and how physio can help you prepare.",
    "inLanguage": "en-CA",
+   "dateModified": "2026-11-03",
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
    },
-   "about": {
+   "publisher": {
     "@id": "https://synergyrehabilitation.ca/#organization"
-   }
+   },
+   "about": {
+    "@type": "Organization",
+    "name": "WorkSafeBC",
+    "url": "https://www.worksafebc.com/"
+   },
+   "citation": [
+    {
+     "@type": "WebPage",
+     "name": "Return to work",
+     "url": "https://www.worksafebc.com/en/claims/return-to-work"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Workers: Return-to-work information",
+     "url": "https://www.worksafebc.com/en/claims/return-to-work/workers-return-to-work-information"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Workers: Duty to cooperate and duty to maintain employment",
+     "url": "https://www.worksafebc.com/en/law-policy/workers-compensation-law/amendments/bill-41-amendments-to-the-workers-compensation-act/workers-duty-to-cooperate-duty-to-maintain-employment"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Worker duty to cooperate (fact sheet)",
+     "url": "https://www.worksafebc.com/en/resources/claims/guides/worker-duty-to-cooperate?lang=en"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Employer duty to cooperate (fact sheet)",
+     "url": "https://www.worksafebc.com/resources/claims/guides/employer-duty-to-cooperate?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Workers Compensation Act, Part 4: Compensation to injured workers and their dependants",
+     "url": "https://www.worksafebc.com/en/law-policy/occupational-health-safety/searchable-ohs-regulation/workers-compensation-act/part-4-compensation-to-injured-workers-and-their-dependants"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Employers: Return-to-work information",
+     "url": "https://www.worksafebc.com/en/claims/return-to-work/employers-return-to-work-information"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Managing a Safe Return to Work (guide)",
+     "url": "https://www.worksafebc.com/resources/claims/guides/managing-safe-return-to-work?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Health care providers: Return-to-work information",
+     "url": "https://www.worksafebc.com/en/claims/return-to-work/health-care-providers-return-to-work-information"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Return-to-Work (RTW) Plan: Template for Employers",
+     "url": "https://www.worksafebc.com/resources/claims/templates/rtw-plan-template-employers?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Functional Abilities Assessment: Template for Employers",
+     "url": "https://www.worksafebc.com/en/resources/claims/templates/functional-abilities-assessment-employers?lang=en"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Benefits and services",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Wage-loss benefits",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services/wage-loss-benefits"
+    },
+    {
+     "@type": "WebPage",
+     "name": "About your WorkSafeBC claim: A guide for workers",
+     "url": "https://www.worksafebc.com/resources/about-us/guides/about-your-worksafebc-claim-a-guide-for-workers?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Vocational rehabilitation guide: Returning to work",
+     "url": "https://www.worksafebc.com/resources/claims/guides/vocational-rehabilitation-guide-returning-work?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Customized Recovery and Return-to-Work Program",
+     "url": "https://www.worksafebc.com/en/health-care-providers/rehabilitation/customized-recovery-rtw-program"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Customized Recovery and Return-to-Work Program: Service providers",
+     "url": "https://www.worksafebc.com/en/health-care-providers/rehabilitation/customized-recovery-rtw-program/service-providers"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Return to Work Support Services",
+     "url": "https://www.worksafebc.com/en/health-care-providers/rehabilitation/return-work-support"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Return to Work Support Services: Service providers",
+     "url": "https://www.worksafebc.com/en/health-care-providers/rehabilitation/return-work-support/service-providers"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How workers report a workplace injury or illness",
+     "url": "https://www.worksafebc.com/en/claims/report-workplace-injury-illness/how-workers-report-workplace-injury-illness"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Making a WorkSafeBC claim (information sheet)",
+     "url": "https://www.worksafebc.com/resources/claims/information-sheet/making-worksafebc-claim?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Contact WorkSafeBC",
+     "url": "https://contactus.online.worksafebc.com/"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Health care benefits (workers)",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services/health-care-benefits"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Musculoskeletal physiotherapy services",
+     "url": "https://www.worksafebc.com/en/health-care-providers/provider-types/physiotherapists/musculoskeletal-physiotherapy-services"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Reference Manual",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-services-reference-manual?lang=en&direct="
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Agreement",
+     "url": "https://www.worksafebc.com/en/resources/health-care-providers/guides/physiotherapy-services-agreement"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How-to guide for massage therapists",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/how-to-guide-for-massage-therapists?lang=en&direct="
+    }
+   ]
   },
   {
    "@type": "BreadcrumbList",
@@ -33,8 +176,81 @@
     {
      "@type": "ListItem",
      "position": 3,
-     "name": "Gradual return to work after a workplace injury",
+     "name": "Return to work",
      "item": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/"
+    }
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/#faq",
+   "isPartOf": {
+    "@id": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/#webpage"
+   },
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do I need my doctor or physio to sign off before I go back to work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not for WorkSafeBC. WorkSafeBC does not require medical approval for you to return to work. A written return-to-work plan can help keep your physio or doctor up to date, if needed. Your physio can still help you see which tasks fit what you can safely do now. If you are unsure about a task, bring it to your next visit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I say no to modified duties?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Under the duty to cooperate, you must not turn down suitable work without a good reason. WorkSafeBC can reduce or suspend wage-loss benefits if it finds you did not cooperate and had no good reason. If a task in the offer seems beyond what you can do right now, say so. Talk it through with your employer and your physio, and call your WorkSafeBC case manager, who is your main contact for your claim."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Will my wage-loss benefits stop if I go back part time?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Not always. Wage-loss benefits can continue when you go back on fewer hours or different duties. WorkSafeBC takes what you earn into account and may pay part of the difference. Your case manager can tell you how this works on your claim."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Does my employer have to keep my job for me?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It may. If your employer regularly has 20 or more workers and you worked there for at least a year before your injury, it has a duty to keep you employed. That means offering your old job or a similar one if you are fit for it, or else the first suitable work that comes up. Under the duty to cooperate, your employer must also find and offer suitable work for you."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How long does a gradual return to work take?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "How long it takes depends on your injury, your job and how your body responds. Each version of your return-to-work plan is based on what you can safely do at the time, and a new one is made as you can do more. Ask your physio how your progress looks at each visit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can I keep going to physio after I go back to work?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It depends on your claim. WorkSafeBC says that once it accepts your claim, your health care provider should bill it for care related to your claim, and you should not have to pay fees. If your claim is still pending, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later. Ask the clinic how it handles visits while your claim is pending. Treatment for a body area that is not part of your accepted claim can be billed to you. If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides. You can book WCB physio visits online."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "What is a return-to-work plan?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It is a written plan you and your employer make together. It sets out what you can do, your tasks and your hours. A WorkSafeBC team member, your health care provider or a union representative may also help with it. It changes as you are able to do more."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "I have not reported my injury yet. What should I do first?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work. Then report it to WorkSafeBC online at any time, or by phone through Teleclaim at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time. Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval. The clinic bills WorkSafeBC directly for that assessment. Treatment visits paid by WorkSafeBC start once the claim is accepted. Before then, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later. Ask the clinic how it handles visits while your claim is pending. Care for a body area that is not part of your claim can be billed to you."
+     }
     }
    ]
   }

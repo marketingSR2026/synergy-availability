@@ -3,6 +3,9 @@
  "path": "/worksafe-physiotherapy/king-george-surrey/",
  "title": "WCB & WorkSafeBC Physio in King George | Synergy Rehab",
  "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab King George, 8056 King George Blvd. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in King George Blvd, Surrey",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/king-george-surrey/",
  "robots": "noindex,nofollow (draft)",

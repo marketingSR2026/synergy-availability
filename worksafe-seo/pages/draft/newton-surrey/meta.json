@@ -1,8 +1,11 @@
 {
  "id": "newton-surrey",
  "path": "/worksafe-physiotherapy/newton-surrey/",
- "title": "WCB & WorkSafeBC Physio in Newton | Synergy Rehab",
- "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Newton, 14468 72 Ave. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "title": "WCB & WorkSafeBC Physio in Newton, Surrey | Synergy Rehab",
+ "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Newton, 14468 72 Ave, Surrey. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in Newton, Surrey",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/",
  "robots": "noindex,nofollow (draft)",

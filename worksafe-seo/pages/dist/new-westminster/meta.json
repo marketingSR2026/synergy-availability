@@ -3,6 +3,9 @@
  "path": "/worksafe-physiotherapy/new-westminster/",
  "title": "WCB & WorkSafeBC Physio in New Westminster | Synergy Rehab",
  "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab New Westminster, 301 East Columbia St. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in New Westminster",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/new-westminster/",
  "robots": "index,follow"

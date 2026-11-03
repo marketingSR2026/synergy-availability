@@ -5,15 +5,41 @@
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/",
-   "name": "WCB & WorkSafeBC Physio in Delta | Synergy Rehab",
+   "name": "WCB & WorkSafeBC Physio in North Delta | Synergy Rehab",
    "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Delta, 10757 Delsom Crescent. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
+   "dateModified": "2026-11-03",
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
    },
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   },
    "about": {
     "@id": "https://synergyrehabilitation.ca/#clinic-delta"
-   }
+   },
+   "mentions": {
+    "@type": "Organization",
+    "name": "WorkSafeBC",
+    "url": "https://www.worksafebc.com/"
+   },
+   "citation": [
+    {
+     "@type": "WebPage",
+     "name": "Health care benefits (workers)",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services/health-care-benefits"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How workers report a workplace injury or illness",
+     "url": "https://www.worksafebc.com/en/claims/report-workplace-injury-illness/how-workers-report-workplace-injury-illness"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Reference Manual",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-services-reference-manual?lang=en"
+    }
+   ]
   },
   {
    "@type": [
@@ -77,10 +103,6 @@
     }
    ],
    "medicalSpecialty": "https://schema.org/Physiotherapy",
-   "availableService": {
-    "@type": "MedicalTherapy",
-    "name": "WorkSafeBC (WCB) physiotherapy"
-   },
    "parentOrganization": {
     "@id": "https://synergyrehabilitation.ca/#organization"
    }

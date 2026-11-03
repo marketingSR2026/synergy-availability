@@ -44,7 +44,7 @@ If publish prints `SKIP`, the line says exactly which gate, claim or check is mi
 
 ## 4. After publishing (same day)
 
-*   Each URL returns 200, has one canonical (self) and one meta description, and is in the XML sitemap.
+*   Each URL returns 200, has one canonical (self) and one meta description, and is in the XML sitemap. View source and confirm `<meta name="robots">` allows indexing: turn off the noindex set while the page was a draft (`pages/DRAFT-README.md` step 5) before you click Publish, then check that URL Inspection reports "Indexing allowed".
 *   Schema validates in the Rich Results Test and Schema.org validator; no duplicate clinic entities from the SEO plugin.
 *   Every Book link opens the right clinic and the WCB Physio Initial Session in Jane. Every Call link dials the clinic.
 *   GA4 DebugView shows `worksafe_book_click`, `worksafe_phone_click`, `worksafe_directions_click`, `worksafe_location_select` with `clinic_slug`, `placement`, `page_type` only. No ad pixel fires (GTM preview).

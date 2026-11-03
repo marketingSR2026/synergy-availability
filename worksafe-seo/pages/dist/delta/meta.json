@@ -1,8 +1,11 @@
 {
  "id": "delta",
  "path": "/worksafe-physiotherapy/delta/",
- "title": "WCB & WorkSafeBC Physio in Delta | Synergy Rehab",
+ "title": "WCB & WorkSafeBC Physio in North Delta | Synergy Rehab",
  "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Delta, 10757 Delsom Crescent. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in North Delta",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/delta/",
  "robots": "index,follow"

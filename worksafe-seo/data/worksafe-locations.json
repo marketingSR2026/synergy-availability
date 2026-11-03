@@ -86,7 +86,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Phone conflicts across 3 site pages (LIKELY). Smallest physio team in Jane openings (2 physiotherapists, KNOWN). Jane also lists a \"No Direct Billing Physiotherapy\" discipline here (KNOWN, run log).",
@@ -183,7 +185,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Site homepage <title> appears as \"Physiotherapy Clinic in Burnaby, BC\" in WebSearch titles, and several non-Burnaby location pages (Newton/amson, Cloverdale, King George) reuse that Burnaby title (KNOWN from crawl 2026-09-25).",
@@ -280,7 +284,9 @@
    "rating": "4.88",
    "reviews": "546",
    "lat": "49.22582",
-   "lng": "-122.89324"
+   "lng": "-122.89324",
+   "maps_url": "https://maps.google.com/maps?cid=13663810117809319107",
+   "postal": "V3L 3W5"
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "GBP website points to the HOMEPAGE, not the New Westminster location page (KNOWN). Address format differs: GBP \"405 - 301 East Columbia Street\" vs repo \"301 E Columbia Street, #405\" (KNOWN); SE audit flags postal-address mismatch on Google Maps, Yelp, Waze, WhereTo. Second phone (604) 239-3210 on one site page (LIKELY). No GBP service area set; 0 GBP attributes; 5 negative reviews without reply (audit).",
@@ -378,7 +384,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Postal code conflict V7A 1N6 vs V7A 5J3 across site pages (LIKELY). Duplicate general pages /richmond-physiotherapy/ and /richmond-physiotherapy-2/ (KNOWN, crawl).",
@@ -474,7 +482,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "WORKSAFE FLAG RESOLVED TO SERVICE LEVEL: the \"not covered by extended health, ICBC or WorkSafe BC\" text on the Delta Jane page refers to the Non-Registered Massage (Bodyworker) service, not the clinic (LIKELY, WebSearch x3). Postal V4C 0A5 (site) vs V4C 0A8 (Medimap). Medimap also lists \"Salius Rehab Inc.\" at #103-10757 Delsom Cres (UNKNOWN, possibly stale). Site labels it \"North Delta\" (ICBC H1) while repo city = \"Delta\". Sun Life directory lists only chiro/massage services here (LIKELY stale).",
@@ -574,7 +584,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Clinic phone equals the corporate main line +1-604-503-1688 (LIKELY). City ambiguity: repo/ICBC = Surrey, site taxonomy \"Nordel (North Delta)\" (KNOWN, crawl).",
@@ -671,7 +683,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "None found beyond missing GBP data.",
@@ -768,7 +782,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Postal code and phone conflicts across site pages (LIKELY). Name variants City Central / Central City / Surrey City Centre (KNOWN).",
@@ -865,7 +881,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "General page <title> \"Physiotherapy Clinic in Burnaby, BC\" on a King George page (KNOWN, crawl 2026-09-25). WebSearch summary says the King George postal code also appears on a Clayton Corners listing (UNKNOWN; verify).",
@@ -961,7 +979,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Newton GBP search terms include \"synergy rehab strawberry hill ...\" strings (0 reported impressions), i.e. some Strawberry Hill searches surface the Newton profile (KNOWN, low volume).",
@@ -1057,7 +1077,9 @@
    "rating": "4.83",
    "reviews": "634",
    "lat": "49.13351",
-   "lng": "-122.82191"
+   "lng": "-122.82191",
+   "maps_url": "https://maps.google.com/maps?cid=298216086905119071",
+   "postal": "V3S 2E7"
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "GBP website clicks collapsed: 212-357/month Nov 2025-Jul 2026 -> 100 (Aug), 14 (Sep), 89 (Oct 2026) while calls stayed 645-758/month (KNOWN, getGbpMetrics). Audit 2026-10-23 flags website errors on google_maps, waze, where_to, hotfrog (KNOWN); cause UNKNOWN. GBP landing page /physiotherapy-amson-chiropractor/ had <title> \"Physiotherapy Clinic in Burnaby, BC\" with Newton H1 at crawl 2026-09-25 (KNOWN). Legacy \"Amson 72nd\" Jane slug still indexed (LIKELY). GBP description mentions ICBC but not WCB/WorkSafe (KNOWN). GBP service area lists 15 places incl. Delta, Langley, New Westminster, Fleetwood, Cloverdale, South Surrey that overlap other Synergy clinics (KNOWN). Search-term strings show postal variants V3S 2E6 / V3S 0B6 (UNKNOWN significance).",
@@ -1153,7 +1175,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Kinesiology/Active Rehab discipline is bookable (run log) but had no openings 2026-11-02..08 (KNOWN). Jane also offers Non-Registered Massage (Bodyworker) here (KNOWN, run log).",
@@ -1250,7 +1274,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Jane page header \"WorkSafeBC Accepted\" and bodyworker-not-covered note (LIKELY, WebSearch). Jane also lists an \"Orthopaedic Surgeon\" discipline and no Chiropractor here (KNOWN, run log). Repo main-branch data/availability.json (2026-10-02) still shows a \"Kinesiology/Active Rehab (Mobile)\" discipline that current collect.js skips, i.e. the main-branch file is stale (KNOWN).",
@@ -1346,7 +1372,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Only general location page found is chiropractic-titled (\"South Surrey Chiropractic Care\") (KNOWN, crawl).",
@@ -1442,7 +1470,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Phone conflict (LIKELY). General page <title> \"Physiotherapy Clinic in Burnaby, BC\" (KNOWN, crawl 2026-09-25). ICBC meta description gives only \"Unit 102\" with no street (KNOWN).",
@@ -1538,7 +1568,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "/clayton-heights-thank-you/ H1 reads \"South Surrey Facility\" (KNOWN, crawl). /extp-location/clayton-heights-synergy-rehab/ returns 404 (KNOWN, crawl).",
@@ -1626,7 +1658,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Site pages mix Clayton Corners (18811 72 Ave) and Clayton Heights (19161 Fraser Hwy) under \"Clayton\" (LIKELY). Legacy Jane slug \"clayton-corners\" still indexed (LIKELY). ICBC H1 calls it \"East Clayton\". Narrowest Jane service mix: no Kinesiology/Active Rehab discipline at all; Jane lists \"No Direct Billing Physiotherapy\" (KNOWN, run log).",
@@ -1722,7 +1756,9 @@
    "rating": null,
    "reviews": null,
    "lat": null,
-   "lng": null
+   "lng": null,
+   "maps_url": null,
+   "postal": null
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "Site locations page labels it \"Yorkson Village\" (LIKELY); repo city \"Langley Township\" vs GBP-style \"Langley\" UNKNOWN.",
@@ -1818,7 +1854,9 @@
    "rating": "4.9",
    "reviews": "325",
    "lat": "49.0695354",
-   "lng": "-122.3588299"
+   "lng": "-122.3588299",
+   "maps_url": "https://maps.google.com/maps?cid=14441931768404812645",
+   "postal": "V2T 5W8"
   },
   "nap_source": "Client-filled Yelp Location List (Drive 1z3KpbC5G8Gk_157f70Af2a31cniK9JtVaXSRXFnbQzc), pending GBP sign-off",
   "nap_conflicts": "No WorkSafe/WCB keyword in Maps rank tracking (KNOWN). Audit 2026-10-30: name + postal-address errors on HERE and TomTom, website error on HERE; not listed on Yelp, Facebook, Apple Maps (KNOWN). GBP search-term strings show postal variant V2T 0G6 (UNKNOWN significance). GBP attribute \"Appointment required\" = false while Newton = true (KNOWN).",

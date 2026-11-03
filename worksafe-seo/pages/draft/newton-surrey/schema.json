@@ -5,15 +5,41 @@
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/newton-surrey/",
-   "name": "WCB & WorkSafeBC Physio in Newton | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Newton, 14468 72 Ave. Open 7 days until 8:30 PM. Your claim can be pending.",
+   "name": "WCB & WorkSafeBC Physio in Newton, Surrey | Synergy Rehab",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Newton, 14468 72 Ave, Surrey. Open 7 days until 8:30 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
+   "dateModified": "2026-11-03",
    "isPartOf": {
     "@id": "https://synergyrehabilitation.ca/#website"
    },
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   },
    "about": {
     "@id": "https://synergyrehabilitation.ca/#clinic-newton-72nd"
-   }
+   },
+   "mentions": {
+    "@type": "Organization",
+    "name": "WorkSafeBC",
+    "url": "https://www.worksafebc.com/"
+   },
+   "citation": [
+    {
+     "@type": "WebPage",
+     "name": "Health care benefits (workers)",
+     "url": "https://www.worksafebc.com/en/claims/benefits-services/health-care-benefits"
+    },
+    {
+     "@type": "WebPage",
+     "name": "How workers report a workplace injury or illness",
+     "url": "https://www.worksafebc.com/en/claims/report-workplace-injury-illness/how-workers-report-workplace-injury-illness"
+    },
+    {
+     "@type": "WebPage",
+     "name": "Physiotherapy Services Reference Manual",
+     "url": "https://www.worksafebc.com/resources/health-care-providers/guides/physiotherapy-services-reference-manual?lang=en"
+    }
+   ]
   },
   {
    "@type": [
@@ -77,10 +103,6 @@
     }
    ],
    "medicalSpecialty": "https://schema.org/Physiotherapy",
-   "availableService": {
-    "@type": "MedicalTherapy",
-    "name": "WorkSafeBC (WCB) physiotherapy"
-   },
    "parentOrganization": {
     "@id": "https://synergyrehabilitation.ca/#organization"
    },
@@ -88,7 +110,11 @@
     "@type": "GeoCoordinates",
     "latitude": 49.13351,
     "longitude": -122.82191
-   }
+   },
+   "hasMap": "https://maps.google.com/maps?cid=298216086905119071",
+   "sameAs": [
+    "https://maps.google.com/maps?cid=298216086905119071"
+   ]
   },
   {
    "@type": "BreadcrumbList",

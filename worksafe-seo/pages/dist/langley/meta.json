@@ -3,6 +3,9 @@
  "path": "/worksafe-physiotherapy/langley/",
  "title": "WCB & WorkSafeBC Physio in Langley | Synergy Rehab",
  "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Langley, 8045 204 St. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in Langley",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/langley/",
  "robots": "index,follow"

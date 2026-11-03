@@ -1,8 +1,11 @@
 {
  "id": "nordel-surrey",
  "path": "/worksafe-physiotherapy/nordel-surrey/",
- "title": "WCB & WorkSafeBC Physio in Nordel | Synergy Rehab",
- "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Nordel, 12565 88 Avenue. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "title": "WCB & WorkSafeBC Physio in Nordel, Surrey | Synergy Rehab",
+ "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Nordel, 12565 88 Avenue, Surrey. Open 7 days until 8:30 PM. Your claim can be pending.",
+ "claims": [
+  "WSBC-11"
+ ],
  "h1": "WorkSafeBC physiotherapy in Nordel, Surrey",
  "canonical": "https://synergyrehabilitation.ca/worksafe-physiotherapy/nordel-surrey/",
  "robots": "index,follow"
