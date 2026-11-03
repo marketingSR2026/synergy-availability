@@ -1,4 +1,4 @@
-# One prompt for Claude in Chrome: install the WorkSafe pages as WordPress drafts
+# One prompt for Claude in Chrome: install all 22 WorkSafe pages as WordPress drafts
 
 Before you paste it: open Chrome, sign in to https://synergyrehabilitation.ca/wp-admin as an Administrator, and keep that tab open.
 
@@ -16,7 +16,7 @@ ABSOLUTE RULES
 SOURCE FILES (public, read them with fetch or by opening the URL)
 Manifest: https://raw.githubusercontent.com/marketingSR2026/synergy-availability/refs/heads/claude/nice-dijkstra-9zwtkw/worksafe-seo/pages/draft/manifest.json
 Each manifest entry has: id, kind, priority, wp_title, draft_slug, parent, replaces_live_url, final_path, seo_title, seo_description, wp_content_url (one Custom HTML block holding the page's CSS, the page itself and its JSON-LD schema), schema_url, meta_url.
-Install only priority 1 to 6 (pillar, guide, rtw, new-westminster, richmond, abbotsford). Do not install the other 16 clinic pages unless I ask.
+Install ALL 22 entries: the pillar, the coverage guide, the return-to-work article and all 19 clinic pages. They are drafts, so none of them is public.
 
 PHASE 0: CHECKS (read-only)
 a. Open https://synergyrehabilitation.ca/wp-admin/post-new.php?post_type=page and confirm the block editor loads. If the Classic Editor or only Elementor is available, tell me and continue only if the REST API call in Phase 1 works.
@@ -24,11 +24,11 @@ b. Note which SEO plugin is active (Yoast, Rank Math, All in One SEO, SEOPress o
 c. Note whether a live page exists at /worksafe-physiotherapy/ (it should) and /worksafebc-physiotherapy-what-is-covered/ (it should). Do not open their editors.
 
 PHASE 1: CREATE THE DRAFTS
-Stay on the wp-admin "Add New Page" tab. Do not type anything into the editor. Run this script in the page with the javascript tool. First run it as is (DRY_RUN true, ONLY pillar) and show me the result. Then set DRY_RUN false and run it for pillar only. After Phase 2 and 3 pass for the pillar, run it again with ONLY set to ['guide','rtw','new-westminster','richmond','abbotsford'].
+Stay on the wp-admin "Add New Page" tab. Do not type anything into the editor. Run this script in the page with the javascript tool. First run it as is (DRY_RUN true, ONLY pillar) and show me the result. Then set DRY_RUN false and run it for pillar only. After Phase 2 and 3 pass for the pillar, run it again with ONLY = 'ALL' (it skips anything already created), which creates the guide, the article and all 19 clinic drafts.
 
 (async () => {
   const MANIFEST = 'https://raw.githubusercontent.com/marketingSR2026/synergy-availability/refs/heads/claude/nice-dijkstra-9zwtkw/worksafe-seo/pages/draft/manifest.json';
-  const ONLY = ['pillar'];
+  const ONLY = ['pillar']; // second run: const ONLY = 'ALL';
   const DRY_RUN = true;
   let nonce = window.wpApiSettings && window.wpApiSettings.nonce;
   if (!nonce) nonce = (await (await fetch('/wp-admin/admin-ajax.php?action=rest-nonce', { credentials: 'same-origin' })).text()).trim();
@@ -41,7 +41,7 @@ Stay on the wp-admin "Add New Page" tab. Do not type anything into the editor. R
   const manifest = await (await fetch(MANIFEST)).json();
   const live = (await api('pages?slug=worksafe-physiotherapy&status=publish&_fields=id,link'))[0];
   const out = [];
-  for (const p of manifest.filter((x) => ONLY.includes(x.id))) {
+  for (const p of manifest.filter((x) => ONLY === 'ALL' || ONLY.includes(x.id))) {
     const parent = p.kind === 'location' && live ? live.id : 0;
     const existing = await api('pages?slug=' + p.draft_slug + '&status=draft,pending,private,publish&context=edit&_fields=id,status,parent,link');
     const dup = existing.find((e) => e.parent === parent);
@@ -64,7 +64,7 @@ Stay on the wp-admin "Add New Page" tab. Do not type anything into the editor. R
 
 If kept_style or kept_schema is false, WordPress stripped code (missing unfiltered_html). Stop and tell me.
 
-PHASE 2: SEO PLUGIN FIELDS (each new draft)
+PHASE 2: SEO PLUGIN FIELDS (every one of the 22 drafts; work in batches of 5 and log each)
 Open each draft's edit link (block editor). In the SEO plugin panel:
 - SEO title = seo_title from the manifest. Meta description = seo_description.
 - Robots: set noindex and nofollow while it is a draft.
@@ -73,8 +73,8 @@ Open each draft's edit link (block editor). In the SEO plugin panel:
 - Page Attributes: confirm Template is "Elementor Full Width" (or the theme's full-width option) and, for clinic pages, Parent is the live "WorkSafeBC physiotherapy" page.
 - Click Save draft. Never Publish.
 
-PHASE 3: VERIFY EACH DRAFT
-Open the draft's Preview. Then run this in the preview tab and record the result:
+PHASE 3: VERIFY EACH DRAFT (all 22)
+Open each draft's Preview. Then run this in the preview tab and record the result:
 
 (() => { const q = (s) => [...document.querySelectorAll(s)];
   const page = document.querySelector('.sr-ws-page');
@@ -94,11 +94,11 @@ Pass rules:
 - Exactly one H1. If there are two (the theme title plus the page H1), report it; do not change theme settings.
 - canonical_tags and meta_descriptions should each be 1. The site is known to output 2 of each; report the numbers.
 - jsonld_blocks: report how many there are, and which come from the SEO plugin.
-- Clinic pages: jane_locations must contain the clinic's own Jane slug (new-westminster, richmond, abbotsford). tel_links must include that clinic's phone.
-- Click the main "Book a WCB assessment" button once on each clinic draft and confirm Jane opens the WCB Physio Initial Session for that clinic. Do not book anything; close the tab.
+- Clinic pages: jane_locations must contain that clinic's own Jane slug (listed in the manifest's wp_content as /locations/<slug>/book). tel_links must include that clinic's phone.
+- Click the main "Book a WCB assessment" button once on every clinic draft (19) and confirm Jane opens the WCB Physio Initial Session at that same clinic. Do not book anything; close the tab.
 - Also look at the preview on a narrow window (about 390 px wide, or Chrome's device toolbar if you can) and confirm the Book and Call buttons are visible without scrolling.
 
-Schema check (each of the 6 pages):
+Schema check (pillar, guide, rtw and 2 clinic pages: new-westminster and newton-surrey; all 19 clinic pages share one schema template):
 - Open the page's schema_url, copy the JSON, and paste it into https://validator.schema.org (Code snippet), then into https://search.google.com/test/rich-results (Code tab).
 - Record errors and warnings. Expect info notes only; FAQ rich results are not shown for most sites.
 
@@ -119,7 +119,7 @@ PHASE 5: CHANGES I MUST APPROVE (do not do them, just list them with exact steps
 - Noindex /tag/worksafebc/ 14 days after the Richmond page goes live.
 
 PHASE 6: FINAL REPORT (in chat)
-1. A table with one row per draft: page id, WordPress ID, title, status (must be Draft), edit link, preview link, SEO fields set (yes/no), Phase 3 results (pass/fail with the failing item), schema errors.
+1. A table with one row per draft (22 rows): page id, WordPress ID, title, status (must be Draft), edit link, preview link, SEO fields set (yes/no), Phase 3 results (pass/fail with the failing item), schema errors.
 2. The Phase 4 findings.
 3. The Phase 5 list, ready for my approval.
 4. Anything you could not do and why.
