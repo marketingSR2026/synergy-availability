@@ -18,7 +18,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { pillar, pillarMeta, pillarFaq } from '../pages/src/pillar.mjs';
 import { location, locationMeta } from '../pages/src/location.mjs';
-import { SITE, PILLAR_PATH, GUIDE_PATH, RTW_PATH, esc, ev, openingSpec, addressLine } from '../pages/src/shared.mjs';
+import { SITE, PILLAR_PATH, GUIDE_PATH, RTW_PATH, AREAS, esc, ev, openingSpec, addressLine } from '../pages/src/shared.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const ISO = /^\d{4}-\d{2}-\d{2}$/;
@@ -137,10 +137,10 @@ export async function build(opts = {}) {
         return `<span data-claim="SVC-${kind}"${ok ? '' : mark('pending', why)}>${html}</span>`;
       },
       nearbyWcb: (x) => x.nearby.map((n) => ({ ...n, clinic: bySlug[n.slug] })).filter((n) => n.clinic && ctx.listInFinder(n.clinic)),
-      clinicAnchor(t, placement, pageType) {
+      clinicAnchor(t, placement, pageType, label = t.name) {
         const own = linked(t);
         const href = own ? `${PILLAR_PATH}${t.page_slug}/` : ctx.bookUrl(t);
-        return `<a href="${esc(href)}" ${ev(own ? 'worksafe_location_select' : 'worksafe_book_click', t.page_slug, placement, pageType)}>${esc(t.name)}</a>`;
+        return `<a href="${esc(href)}" ${ev(own ? 'worksafe_location_select' : 'worksafe_book_click', t.page_slug, placement, pageType)}>${esc(label)}</a>`;
       },
       clinicCard(t, sub, placement, pageType) {
         const own = linked(t);
@@ -151,9 +151,15 @@ export async function build(opts = {}) {
           <h4 class="sr-ws-h4 sr-ws-card__title"><a class="sr-ws-card__link" href="${esc(href)}" ${ev(own ? 'worksafe_location_select' : 'worksafe_book_click', t.page_slug, placement, pageType)}>Synergy Rehab ${esc(t.name)}</a></h4>
           <p class="sr-ws-loccard__area">${sub}</p><span class="sr-ws-loccard__cta">${cta}</span></li>`;
       },
+      // Compact finder (guide, rtw): chips grouped by the AREAS groups, west to east, each with a small visible area label.
+      // Surrey neighbourhood chips read "<Name>, Surrey" when the clinic's own area_label already says Surrey.
       finderCompact() {
-        const list = clinics.filter((x) => ctx.listInFinder(x));
-        return `<p class="sr-ws-h4" id="sr-ws-finder-h">${ctx.claim('SYN-JANE', 'Book WCB physio online at a Synergy Rehab clinic near home or work')}</p><ul class="sr-ws-chips" role="list" aria-labelledby="sr-ws-finder-h">${list.map((x) => `<li>${ctx.clinicAnchor(x, 'finder', pageId === 'guide' || pageId === 'rtw' ? 'article' : 'pillar').replace('<a ', '<a class="sr-ws-chip" ')}</li>`).join('')}</ul>`;
+        const pt = pageId === 'guide' || pageId === 'rtw' ? 'article' : 'pillar';
+        const chip = (x) => (/\bSurrey\b/.test(x.area_label) && !/\bSurrey\b/.test(x.name) ? `${x.name}, Surrey` : x.name);
+        const groups = AREAS.map(([area, slugs]) => [area, slugs.map((s) => bySlug[s]).filter((x) => x && ctx.listInFinder(x))]).filter(([, l]) => l.length);
+        return `<p class="sr-ws-h4" id="sr-ws-finder-h">${ctx.claim('SYN-JANE', 'Book WCB physio online at a Synergy Rehab clinic near home or work')}</p>
+    <div class="sr-ws-finder-areas">${groups.map(([area, list]) => { const id = `sr-ws-finder-${area.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-+$/, '')}`;
+      return `<div class="sr-ws-finder-area"><p class="sr-ws-label" id="${id}">${esc(area)}</p><ul class="sr-ws-chips" role="list" aria-labelledby="${id}">${list.map((x) => `<li>${ctx.clinicAnchor(x, 'finder', pt, chip(x)).replace('<a ', '<a class="sr-ws-chip" ')}</li>`).join('')}</ul></div>`; }).join('')}</div>`;
       },
       slot(x, field, label) {
         const v = x.signoff?.[field];
@@ -213,15 +219,19 @@ export async function build(opts = {}) {
   }
 
   // ---------- schema ----------
+  // ORG and WEBSITE are declared in every page graph (pillar, clinics, articles) so @id references resolve on each page.
   const ORG = { '@type': 'MedicalOrganization', '@id': `${SITE}/#organization`, name: 'Synergy Rehabilitation', alternateName: 'Synergy Rehab', url: `${SITE}/`,
     ...(review.org_logo_url ? { logo: { '@type': 'ImageObject', url: review.org_logo_url } } : {}) };
+  const WEBSITE = { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'Synergy Rehabilitation', publisher: { '@id': `${SITE}/#organization` } };
+  // dateModified is the content date a human sets in review.json (content_updated_on), never the build date; omitted when unset.
+  const contentUpdated = ISO.test(review.content_updated_on || '') ? review.content_updated_on : null;
   // WorkSafeBC as a referenced entity: name and official domain only. Its WCB names appear only once GEN-01 is verified.
   const WSBC = { '@type': 'Organization', name: 'WorkSafeBC', url: 'https://www.worksafebc.com/',
     ...(claimVerified(claims['GEN-01'], today) ? { alternateName: ['WCB', "Workers' Compensation Board of British Columbia"] } : {}) };
   const crumbs = (items) => ({ '@type': 'BreadcrumbList', itemListElement: items.map(([name, p], i) => ({ '@type': 'ListItem', position: i + 1, name, item: `${SITE}${p}` })) });
   const plain = (h) => h.replace(/<[^>]+>/g, '').replace(/&#8217;/g, '’').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
   // reviewedBy uses the same review.json reviewer as the visible as-of line (publish builds only when every claim is verified).
-  const page = (meta, about, extra = {}) => ({ '@type': 'MedicalWebPage', '@id': `${SITE}${meta.path}#webpage`, url: `${SITE}${meta.path}`, name: meta.title, description: meta.description, inLanguage: 'en-CA', dateModified: today,
+  const page = (meta, about, extra = {}) => ({ '@type': 'MedicalWebPage', '@id': `${SITE}${meta.path}#webpage`, url: `${SITE}${meta.path}`, name: meta.title, description: meta.description, inLanguage: 'en-CA', ...(contentUpdated ? { dateModified: contentUpdated } : {}),
     isPartOf: { '@id': `${SITE}/#website` }, publisher: { '@id': `${SITE}/#organization` }, about, ...(about === WSBC ? {} : { mentions: WSBC }),
     ...(reviewerOk ? { reviewedBy: { '@type': 'Person', name: review.reviewer.name, jobTitle: review.reviewer.credential } } : {}), ...extra });
   const clinicNode = (x) => {
@@ -315,7 +325,7 @@ ${local}
   }
   { const r = makeCtx('pillar'); const html = pillar(r.ctx);
     const extra = pub ? [...(G6 ? [] : ['G6 privacy gate not confirmed (review.json)']), ...(clinics.some(wcbOk) ? [] : ['no clinic has G1 (contract) confirmed'])] : [];
-    emit(pillarMeta, html, { '@context': 'https://schema.org', '@graph': [ORG, { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'Synergy Rehabilitation', publisher: { '@id': `${SITE}/#organization` } },
+    emit(pillarMeta, html, { '@context': 'https://schema.org', '@graph': [ORG, WEBSITE,
       page(pillarMeta, { '@id': `${SITE}/#organization` }), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH]]),
       { '@type': 'ItemList', '@id': `${SITE}${PILLAR_PATH}#clinics`, name: 'Synergy Rehab clinics for WorkSafeBC physiotherapy',
         itemListElement: clinics.filter((x) => r.ctx.listInFinder(x)).map((x, i) => ({ '@type': 'ListItem', position: i + 1, item: (({ openingHoursSpecification, ...n }) => n)(clinicNode(x)) })) },
@@ -328,7 +338,7 @@ ${local}
     let html = location(x, r.ctx);
     if (pub) html = html.replace(/<div><dt>[^<]+<\/dt><dd><\/dd><\/div>/g, '').replace(/<details class="sr-ws-faq__item"><summary class="sr-ws-faq__q">[^<]*<\/summary><div class="sr-ws-faq__a"><p><\/p><\/div><\/details>/g, '');
     const meta = locationMeta(x);
-    emit(meta, html, { '@context': 'https://schema.org', '@graph': [page(meta, { '@id': `${SITE}/#clinic-${x.jane.slug}` }), clinicNode(x), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [x.name, meta.path]])] }, r, 'location', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
+    emit(meta, html, { '@context': 'https://schema.org', '@graph': [ORG, WEBSITE, page(meta, { '@id': `${SITE}/#clinic-${x.jane.slug}` }), clinicNode(x), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [x.name, meta.path]])] }, r, 'location', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
   }
   for (const mod of ['guide', 'rtw']) {
     const file = path.join(ROOT, 'pages/src', `${mod}.mjs`);
@@ -338,7 +348,7 @@ ${local}
     const raw = m.render(r.ctx);
     const crumbName = plain((raw.match(/<span aria-current="page">([^<]+)<\/span>/) || [null, m.meta.h1])[1]);
     const faqFn = m.guideFaq || m.rtwFaq;
-    emit(m.meta, raw, { '@context': 'https://schema.org', '@graph': [page(m.meta, WSBC), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [crumbName, m.meta.path]]),
+    emit(m.meta, raw, { '@context': 'https://schema.org', '@graph': [ORG, WEBSITE, page(m.meta, WSBC), crumbs([['Home', '/'], ['WorkSafeBC physiotherapy', PILLAR_PATH], [crumbName, m.meta.path]]),
       ...(faqFn ? [{ '@type': 'FAQPage', '@id': `${SITE}${m.meta.path}#faq`, isPartOf: { '@id': `${SITE}${m.meta.path}#webpage` }, mainEntity: faqFn(r.ctx).map(([q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(r.finish(a)) } })) }] : [])] }, r, 'article', pub && !G6 ? ['G6 privacy gate not confirmed (review.json)'] : []);
   }
   // uniqueness across location pages in this run

@@ -74,13 +74,23 @@ export const AREAS = [
   ['Langley and Abbotsford', ['langley', 'abbotsford']],
 ];
 
-// "Open 7 days until 8:30 PM" / "Open Mon to Fri until 8 PM" / "Open Mon to Fri and Sun until 8:30 PM"
-export function hoursSummary(hours) {
+// Hours summary parts. The closing time is the latest WEEKDAY close (weekends usually close earlier), so nothing
+// claims evening hours on a day that does not have them. days: "7 days" / "Mon to Fri and Sun" / "Mon to Fri".
+// until: "weekdays until 8:30 PM" when the clinic also opens on a weekend day, else "until 8 PM".
+const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+export function hoursParts(hours) {
   const open = DAYS.filter((d) => hours.some((h) => h.day === d));
-  const close = hoursText(`1AM-${latestClose(hours)}`).split(' to ')[1];
-  if (open.length === 7) return `Open 7 days until ${close}`;
+  const wk = hours.filter((h) => WEEKDAYS.includes(h.day));
+  const close = t12(latestClose(wk.length ? wk : hours));
+  const weekend = open.some((d) => !WEEKDAYS.includes(d));
   const runs = []; let start = null, prev = -2;
   for (const d of open) { const i = DAYS.indexOf(d); if (i !== prev + 1) { if (start) runs.push([start, DAYS[prev]]); start = d; } prev = i; }
   if (start) runs.push([start, DAYS[prev]]);
-  return `Open ${runs.map(([a, b]) => (a === b ? a : `${a} to ${b}`)).join(' and ')} until ${close}`;
+  const days = open.length === 7 ? '7 days' : runs.map(([a, b]) => (a === b ? a : `${a} to ${b}`)).join(' and ');
+  return { days, close, weekend, until: weekend && wk.length ? `weekdays until ${close}` : `until ${close}` };
+}
+// "Open 7 days, weekdays until 8:30 PM" / "Open Mon to Fri and Sun, weekdays until 8:30 PM" / "Open Mon to Fri, until 8 PM"
+export function hoursSummary(hours) {
+  const p = hoursParts(hours);
+  return `Open ${p.days}, ${p.until}`;
 }

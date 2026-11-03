@@ -7,7 +7,7 @@ export const pillarMeta = {
   path: PILLAR_PATH,
   title: 'WorkSafeBC & WCB Physiotherapy in BC | Synergy Rehab',
   description: 'Hurt at work in BC? See how WorkSafeBC (WCB) physiotherapy works at each claim stage, what you may pay, and book an assessment at a Synergy Rehab clinic.',
-  h1: 'WorkSafeBC physiotherapy for work injuries',
+  h1: 'WorkSafeBC (WCB) physiotherapy for work injuries',
 };
 
 const areaId = (a) => `area-${a.toLowerCase().replace(/[^a-z]+/g, '-').replace(/-+$/, '')}`;
@@ -16,7 +16,7 @@ export function pillarFaq(ctx) {
   const c = ctx.claim;
   return [
     ['Is WCB the same as WorkSafeBC?',
-      `${c('GEN-01', 'Yes. WorkSafeBC is the Workers&#8217; Compensation Board of British Columbia, which is why many people still call it WCB.')}`],
+      `${c('GEN-01', 'Yes. WorkSafeBC is the Workers&#8217; Compensation Board of British Columbia, which is why many people still call it WCB. You may also see it written as WSBC.')}`],
     ['Do I need a claim number before I book?',
       `No. ${c('WSBC-11', 'At a WorkSafeBC-contracted physiotherapist you can have your initial assessment before WorkSafeBC accepts your claim,')} ${c('WSBC-12', 'if it is within 60 days of your injury.')} ${c('WSBC-13', 'You do need to report the injury to WorkSafeBC so there is a claim, even if it is still pending.')} ${c('WSBC-46', 'WorkSafeBC mails you an 8-digit claim number once it gets your report.')}`],
     ['Do I need a doctor&#8217;s referral for WorkSafeBC physio?',
@@ -65,7 +65,7 @@ export function pillar(ctx) {
       <div class="sr-ws-notch__tab sr-ws-hero__badge"><span class="sr-ws-pill">WCB booking online</span></div>
       <div class="sr-ws-hero__content">
         <p class="sr-ws-eyebrow">Hurt at work in BC?</p>
-        <h1 class="sr-ws-h1" id="sr-ws-h1">WorkSafeBC physiotherapy for <span class="sr-ws-accent">work injuries</span></h1>
+        <h1 class="sr-ws-h1" id="sr-ws-h1">WorkSafeBC (WCB) physiotherapy for <span class="sr-ws-accent">work injuries</span></h1>
         <p class="sr-ws-lede">${c('WSBC-12', 'Within 60 days of your injury,')} ${c('WSBC-11', 'you can start WCB physiotherapy with an assessment before your claim is accepted.')} ${c('SYN-JANE', 'Book online.')}</p>
         <div class="sr-ws-hero__ctas">
           <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--knob" href="#clinics" ${ev('worksafe_location_select', 'all', 'hero', 'pillar')}>Find your clinic<span class="sr-ws-btn__knob" aria-hidden="true">&#8594;</span></a>
@@ -104,7 +104,7 @@ export function pillar(ctx) {
 
 <section class="sr-ws-band sr-ws-band--white" id="clinics" aria-labelledby="sr-ws-clinics-h">
   <div class="sr-ws-container">
-    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Find your clinic</p><h2 class="sr-ws-h2" id="sr-ws-clinics-h">Book WCB physio near home or work</h2>
+    <div class="sr-ws-head"><p class="sr-ws-eyebrow">Find your clinic</p><h2 class="sr-ws-h2" id="sr-ws-clinics-h">Find WCB physiotherapy near you</h2>
       <p class="sr-ws-lede">${c('SYN-JANE', 'Every clinic below books WCB physiotherapy assessments online.')} Pick the one nearest home or work.</p></div>
     ${finder(ctx)}
   </div>
@@ -181,7 +181,7 @@ export function pillar(ctx) {
       <li class="sr-ws-card sr-ws-phase"><span class="sr-ws-pill sr-ws-pill--blue">Phase 3</span><h3 class="sr-ws-h3 sr-ws-card__title">Build</h3><p class="sr-ws-card__text">Graded exercise that works up to the lifting, standing or reaching your job needs.</p></li>
       <li class="sr-ws-card sr-ws-phase"><span class="sr-ws-pill sr-ws-pill--blue">Phase 4</span><h3 class="sr-ws-h3 sr-ws-card__title">Return</h3><p class="sr-ws-card__text">Back to work, sometimes on modified duties first, with a plan for the rest.</p></li>
     </ol>
-    <div class="sr-ws-note"><p>${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it. WorkSafeBC decides.')}${rtw ? ` Read more: <a class="sr-ws-link sr-ws-link--arrow" href="${rtw}">Returning to work after a workplace injury</a>` : ''}</p></div>
+    <div class="sr-ws-note"><p>${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it. WorkSafeBC decides.')}${rtw ? ` Read more: <a class="sr-ws-link sr-ws-link--arrow" href="${rtw}">Gradual return to work and modified duties</a>` : ''}</p></div>
   </div>
 </section>
 

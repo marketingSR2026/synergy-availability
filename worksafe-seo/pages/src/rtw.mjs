@@ -12,9 +12,9 @@ const PAGE_TYPE = 'article';
 export const meta = {
   id: 'rtw',
   path: RTW_PATH,
-  title: 'Gradual Return to Work & Modified Duties | Synergy Rehab',
-  description: 'Going back to work on a WorkSafeBC claim? How a gradual return works, what modified duties are, who decides what, and how physio can help you prepare.',
-  h1: 'Gradual return to work after a workplace injury',
+  title: 'Gradual Return to Work in BC: Modified Duties | Synergy Rehab',
+  description: 'Going back to work on a WorkSafeBC claim? How a gradual return to work and modified duties work, who decides what, and how physio helps you prepare.',
+  h1: 'Gradual return to work and modified duties',
 };
 
 // Official worksafebc.com pages cited on this page. URLs copied exactly from claims-register.csv or claims-additions.csv.
@@ -50,6 +50,8 @@ const SRC = {
 
 export function rtwFaq(ctx) {
   const c = ctx.claim;
+  const guide = ctx.link('guide');
+  const costs = guide ? `${guide}#costs` : `${PILLAR_PATH}#eligibility`;
   return [
     ['Do I need my doctor or physio to sign off before I go back to work?',
       `${c('RTW-06', 'Not for WorkSafeBC. WorkSafeBC does not require medical approval for you to return to work. A written return-to-work plan can help keep your physio or doctor up to date, if needed.')} ${c('RTW-11', 'Your physio can still help you see which tasks fit what you can safely do now.')} If you are unsure about a task, bring it to your next visit.`],
@@ -62,11 +64,11 @@ export function rtwFaq(ctx) {
     ['How long does a gradual return to work take?',
       `How long it takes depends on your injury, your job and how your body responds. ${c('RTW-08', 'Each version of your return-to-work plan is based on what you can safely do at the time, and a new one is made as you can do more.')} Ask your physio how your progress looks at each visit.`],
     ['Can I keep going to physio after I go back to work?',
-      `It depends on your claim. ${c('WSBC-23', 'WorkSafeBC says that once it accepts your claim, your health care provider should bill it for care related to your claim, and you should not have to pay fees.')} ${c('WSBC-28', 'If your claim is still pending, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Treatment for a body area that is not part of your accepted claim can be billed to you.')} ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')} ${c('SYN-JANE', 'You can book WCB physio visits online.')}`],
+      `${c('SYN-RTW-02', 'Yes. Physio can continue alongside a gradual return to work when it is part of your treatment, so your physio can keep working on your strength while you build up your shifts.')} ${c('WSBC-21', 'If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides.')} ${c('SYN-JANE', 'You can book WCB physio visits online.')} Costs depend on your claim stage. <a class="sr-ws-link sr-ws-link--arrow" href="${costs}">See costs at each claim stage</a>.`],
     ['What is a return-to-work plan?',
       `${c('RTW-07', 'It is a written plan you and your employer make together. It sets out what you can do, your tasks and your hours. A WorkSafeBC team member, your health care provider or a union representative may also help with it.')} ${c('RTW-08', 'It changes as you are able to do more.')}`],
     ['I have not reported my injury yet. What should I do first?',
-      `${c('WSBC-42', 'Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work.')} ${c('WSBC-43', 'Then report it to WorkSafeBC online at any time, or by phone through Teleclaim')} ${c('WSBC-44', 'at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time.')} ${c('WSBC-12', 'Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval.')} ${c('WSBC-11', 'The clinic bills WorkSafeBC directly for that assessment.')} ${c('WSBC-17', 'Treatment visits paid by WorkSafeBC start once the claim is accepted.')} ${c('WSBC-28', 'Before then, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later.')} ${c('SYN-PEND', 'Ask the clinic how it handles visits while your claim is pending.')} ${c('WSBC-25', 'Care for a body area that is not part of your claim can be billed to you.')}`],
+      `${c('WSBC-42', 'Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work.')} ${c('WSBC-43', 'Then report it to WorkSafeBC online at any time, or by phone through Teleclaim')} ${c('WSBC-44', 'at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time.')} ${c('WSBC-12', 'Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval.')}`],
   ];
 }
 
@@ -101,8 +103,8 @@ export function render(ctx) {
       <div class="sr-ws-notch__tab sr-ws-hero__badge"><span class="sr-ws-pill">Return to work</span></div>
       <div class="sr-ws-hero__content">
         <p class="sr-ws-eyebrow">Back to work after a WCB claim</p>
-        <h1 class="sr-ws-h1" id="sr-ws-h1">Gradual return to work after a <span class="sr-ws-accent">workplace injury</span></h1>
-        <p class="sr-ws-lede">Going back in steps, often on modified duties. Who decides what, and how physio can help you get ready.</p>
+        <h1 class="sr-ws-h1" id="sr-ws-h1">Gradual return to work and <span class="sr-ws-accent">modified duties</span></h1>
+        <p class="sr-ws-lede">A gradual return to work means going back in planned steps, often on modified duties, while your injury still limits what you can do.</p>
         <div class="sr-ws-hero__ctas">
           <a class="sr-ws-btn sr-ws-btn--primary sr-ws-btn--knob" href="${find}" ${ev('worksafe_location_select', 'all', 'hero', PAGE_TYPE)}>Find your clinic<span class="sr-ws-btn__knob" aria-hidden="true">&#8594;</span></a>
           <a class="sr-ws-btn sr-ws-btn--secondary" href="#who-decides">Who decides what</a>
@@ -310,7 +312,7 @@ export function render(ctx) {
   <div class="sr-ws-container">
     <div class="sr-ws-head sr-ws-head--center"><h2 class="sr-ws-h2" id="sr-ws-cta-h">Getting ready to go back? Start with an assessment.</h2>
       <p class="sr-ws-lede">${c('SYN-JANE', 'Book a WCB physio visit online at the clinic nearest home or work.')} Bring your job details and any return-to-work plan.</p>
-      <p class="sr-ws-small" id="costs">${c('WSBC-23', 'On an accepted claim, you should not have to pay fees for care related to your claim.')} <a class="sr-ws-link sr-ws-link--arrow" href="${guide ? `${guide}#fees` : `${pillar}#eligibility`}">Costs at each claim stage</a></p></div>
+      <p class="sr-ws-small" id="costs">${c('WSBC-23', 'On an accepted claim, you should not have to pay fees for care related to your claim.')} <a class="sr-ws-link sr-ws-link--arrow" href="${guide ? `${guide}#costs` : `${pillar}#eligibility`}">Costs at each claim stage</a></p></div>
     <a class="sr-ws-bigpill sr-ws-hide-below-desktop" href="${find}" ${ev('worksafe_location_select', 'all', 'final', PAGE_TYPE)}>Find your clinic</a>
     <div class="sr-ws-linkcols">
       <div><p class="sr-ws-linkcols__title">Synergy Rehabilitation</p><p class="sr-ws-small">19+ locations from Vancouver to Abbotsford. synergyrehab.ca</p></div>

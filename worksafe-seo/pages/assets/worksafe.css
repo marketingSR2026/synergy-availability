@@ -498,6 +498,14 @@
 .sr-ws-page .sr-ws-hours th{width:40%;padding-right:var(--sr-ws-space-3);font-weight:600;color:var(--sr-ws-c-ink)}
 .sr-ws-page .sr-ws-hours tr:last-child th,.sr-ws-page .sr-ws-hours tr:last-child td{border-bottom:0}
 .sr-ws-page .sr-ws-hours caption{caption-side:top;padding:0 0 6px;text-align:left;font-size:var(--sr-ws-fs-label);color:var(--sr-ws-c-muted)}
+/* Claim-stage cost table (guide): reuses .sr-ws-hours; three fixed columns that wrap on phones instead of overflowing */
+.sr-ws-page .sr-ws-hours--stages{max-width:880px;table-layout:fixed;font-size:var(--sr-ws-fs-label);line-height:1.45;font-variant-numeric:normal}
+.sr-ws-page .sr-ws-hours--stages th,.sr-ws-page .sr-ws-hours--stages td{width:auto;padding:10px 8px 10px 0;overflow-wrap:break-word}
+.sr-ws-page .sr-ws-hours--stages thead th{font-family:var(--sr-ws-font-heading);color:var(--sr-ws-c-muted);border-bottom-width:2px}
+.sr-ws-page .sr-ws-hours--stages thead th:first-child{width:32%}
+@media (min-width:600px){.sr-ws-page .sr-ws-hours--stages{font-size:var(--sr-ws-fs-small)}.sr-ws-page .sr-ws-hours--stages th,.sr-ws-page .sr-ws-hours--stages td{padding-right:16px}.sr-ws-page .sr-ws-hours--stages thead th:first-child{width:26%}}
+.sr-ws-page .sr-ws-finder-area{margin:0 0 var(--sr-ws-space-4)}
+.sr-ws-page .sr-ws-finder-area:last-child{margin-bottom:0}
 .sr-ws-page .sr-ws-map{border-radius:var(--sr-ws-radius-md);border:1px solid var(--sr-ws-c-rule);background:var(--sr-ws-gray-50);overflow:hidden}
 .sr-ws-page .sr-ws-map > summary{display:flex;align-items:center;justify-content:space-between;gap:var(--sr-ws-space-3);min-height:var(--sr-ws-tap);padding:12px var(--sr-ws-space-4);font-weight:600;color:var(--sr-ws-blue-700);cursor:pointer;list-style:none}
 .sr-ws-page .sr-ws-map > summary::-webkit-details-marker{display:none}

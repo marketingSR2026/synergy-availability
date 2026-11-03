@@ -2,11 +2,27 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "MedicalOrganization",
+   "@id": "https://synergyrehabilitation.ca/#organization",
+   "name": "Synergy Rehabilitation",
+   "alternateName": "Synergy Rehab",
+   "url": "https://synergyrehabilitation.ca/"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://synergyrehabilitation.ca/#website",
+   "url": "https://synergyrehabilitation.ca/",
+   "name": "Synergy Rehabilitation",
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/#webpage",
    "url": "https://synergyrehabilitation.ca/return-to-work-after-a-workplace-injury/",
-   "name": "Gradual Return to Work & Modified Duties | Synergy Rehab",
-   "description": "Going back to work on a WorkSafeBC claim? How a gradual return works, what modified duties are, who decides what, and how physio can help you prepare.",
+   "name": "Gradual Return to Work in BC: Modified Duties | Synergy Rehab",
+   "description": "Going back to work on a WorkSafeBC claim? How a gradual return to work and modified duties work, who decides what, and how physio helps you prepare.",
    "inLanguage": "en-CA",
    "dateModified": "2026-11-03",
    "isPartOf": {
@@ -233,7 +249,7 @@
      "name": "Can I keep going to physio after I go back to work?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "It depends on your claim. WorkSafeBC says that once it accepts your claim, your health care provider should bill it for care related to your claim, and you should not have to pay fees. If your claim is still pending, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later. Ask the clinic how it handles visits while your claim is pending. Treatment for a body area that is not part of your accepted claim can be billed to you. If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides. You can book WCB physio visits online."
+      "text": "Yes. Physio can continue alongside a gradual return to work when it is part of your treatment, so your physio can keep working on your strength while you build up your shifts. If you need more treatment, your physiotherapist can ask WorkSafeBC for it, and WorkSafeBC decides. You can book WCB physio visits online. Costs depend on your claim stage. See costs at each claim stage."
      }
     },
     {
@@ -249,7 +265,7 @@
      "name": "I have not reported my injury yet. What should I do first?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work. Then report it to WorkSafeBC online at any time, or by phone through Teleclaim at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time. Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval. The clinic bills WorkSafeBC directly for that assessment. Treatment visits paid by WorkSafeBC start once the claim is accepted. Before then, a clinic may ask you to pay for treatment, and you can ask for a refund if the claim is accepted later. Ask the clinic how it handles visits while your claim is pending. Care for a body area that is not part of your claim can be billed to you."
+      "text": "Tell your employer as soon as it is safe, and tell anyone who treats you that it happened at work. Then report it to WorkSafeBC online at any time, or by phone through Teleclaim at 1.888.967.5377 toll-free or 604.231.8888 in the Lower Mainland, Monday to Friday, 8 a.m. to 6 p.m. Pacific time. Within 60 days of your injury, a WorkSafeBC-contracted physiotherapist can do your first assessment while your claim is pending, without prior approval."
      }
     }
    ]

@@ -2,11 +2,27 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "MedicalOrganization",
+   "@id": "https://synergyrehabilitation.ca/#organization",
+   "name": "Synergy Rehabilitation",
+   "alternateName": "Synergy Rehab",
+   "url": "https://synergyrehabilitation.ca/"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://synergyrehabilitation.ca/#website",
+   "url": "https://synergyrehabilitation.ca/",
+   "name": "Synergy Rehabilitation",
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafebc-physiotherapy-what-is-covered/",
-   "name": "What Does WorkSafeBC Cover for Physiotherapy? Claims & Costs",
-   "description": "Claim numbers, pending and denied claims, fees and the 60-day rule. Plain answers on what WorkSafeBC pays for at physio, with links to official pages.",
+   "name": "WorkSafeBC Physio Coverage, WCB Claim Number & Form 6",
+   "description": "What WorkSafeBC covers for physio, where to find your WCB claim number, and Form 6 vs Form 6A. Costs at each claim stage, with official links.",
    "inLanguage": "en-CA",
    "dateModified": "2026-11-03",
    "isPartOf": {

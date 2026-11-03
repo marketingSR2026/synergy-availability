@@ -9,7 +9,7 @@
    "title": "WorkSafeBC & WCB Physiotherapy in BC | Synergy Rehab",
    "title_len": 52,
    "description_len": 153,
-   "words": 1782,
+   "words": 1789,
    "claims": {
     "GEN-01": {
      "rule": "STAFF_CONFIRM",
@@ -183,8 +183,8 @@
    "path": "/worksafe-physiotherapy/vancouver/",
    "title": "WCB & WorkSafeBC Physio in Vancouver | Synergy Rehab",
    "title_len": 52,
-   "description_len": 153,
-   "words": 724,
+   "description_len": 149,
+   "words": 739,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -258,7 +258,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/vancouver/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.48,
+   "max_similarity": 0.487,
    "most_similar_to": "richmond",
    "inbound_from": []
   },
@@ -268,8 +268,8 @@
    "path": "/worksafe-physiotherapy/burnaby/",
    "title": "WCB & WorkSafeBC Physio in Burnaby | Synergy Rehab",
    "title_len": 50,
-   "description_len": 139,
-   "words": 709,
+   "description_len": 149,
+   "words": 721,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -343,7 +343,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/burnaby/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.527,
+   "max_similarity": 0.537,
    "most_similar_to": "richmond",
    "inbound_from": []
   },
@@ -353,8 +353,8 @@
    "path": "/worksafe-physiotherapy/new-westminster/",
    "title": "WCB & WorkSafeBC Physio in New Westminster | Synergy Rehab",
    "title_len": 58,
-   "description_len": 152,
-   "words": 737,
+   "description_len": 148,
+   "words": 749,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -426,7 +426,7 @@
    "jane_links": 10,
    "issues": [],
    "warnings": [],
-   "max_similarity": 0.509,
+   "max_similarity": 0.517,
    "most_similar_to": "nordel-surrey",
    "inbound_from": [
     "pillar",
@@ -442,8 +442,8 @@
    "path": "/worksafe-physiotherapy/richmond/",
    "title": "WCB & WorkSafeBC Physio in Richmond | Synergy Rehab",
    "title_len": 51,
-   "description_len": 144,
-   "words": 707,
+   "description_len": 154,
+   "words": 719,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -515,7 +515,7 @@
    "jane_links": 10,
    "issues": [],
    "warnings": [],
-   "max_similarity": 0.527,
+   "max_similarity": 0.537,
    "most_similar_to": "burnaby",
    "inbound_from": [
     "pillar",
@@ -530,8 +530,8 @@
    "path": "/worksafe-physiotherapy/delta/",
    "title": "WCB & WorkSafeBC Physio in North Delta | Synergy Rehab",
    "title_len": 54,
-   "description_len": 143,
-   "words": 655,
+   "description_len": 153,
+   "words": 664,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -599,7 +599,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/delta/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.517,
+   "max_similarity": 0.525,
    "most_similar_to": "newton-surrey",
    "inbound_from": []
   },
@@ -609,8 +609,8 @@
    "path": "/worksafe-physiotherapy/nordel-surrey/",
    "title": "WCB & WorkSafeBC Physio in Nordel, Surrey | Synergy Rehab",
    "title_len": 57,
-   "description_len": 146,
-   "words": 727,
+   "description_len": 148,
+   "words": 741,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -690,7 +690,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/nordel-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.535,
+   "max_similarity": 0.542,
    "most_similar_to": "cedar-hills-surrey",
    "inbound_from": []
   },
@@ -700,8 +700,8 @@
    "path": "/worksafe-physiotherapy/cedar-hills-surrey/",
    "title": "WCB & WorkSafeBC Physio in Cedar Hills | Synergy Rehab",
    "title_len": 54,
-   "description_len": 148,
-   "words": 733,
+   "description_len": 150,
+   "words": 745,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -775,7 +775,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/cedar-hills-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.535,
+   "max_similarity": 0.542,
    "most_similar_to": "nordel-surrey",
    "inbound_from": []
   },
@@ -785,8 +785,8 @@
    "path": "/worksafe-physiotherapy/central-city-surrey/",
    "title": "WCB & WorkSafeBC Physio in Central City | Synergy Rehab",
    "title_len": 55,
-   "description_len": 150,
-   "words": 731,
+   "description_len": 152,
+   "words": 743,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -860,7 +860,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/central-city-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.506,
+   "max_similarity": 0.512,
    "most_similar_to": "cedar-hills-surrey",
    "inbound_from": []
   },
@@ -870,8 +870,8 @@
    "path": "/worksafe-physiotherapy/king-george-surrey/",
    "title": "WCB & WorkSafeBC Physio in King George | Synergy Rehab",
    "title_len": 54,
-   "description_len": 149,
-   "words": 735,
+   "description_len": 153,
+   "words": 747,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -943,7 +943,7 @@
    "jane_links": 8,
    "issues": [],
    "warnings": [],
-   "max_similarity": 0.517,
+   "max_similarity": 0.525,
    "most_similar_to": "nordel-surrey",
    "inbound_from": [
     "pillar",
@@ -965,8 +965,8 @@
    "path": "/worksafe-physiotherapy/strawberry-hill-surrey/",
    "title": "WCB & WorkSafeBC Physio in Strawberry Hill | Synergy Rehab",
    "title_len": 58,
-   "description_len": 152,
-   "words": 668,
+   "description_len": 154,
+   "words": 677,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1034,7 +1034,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/strawberry-hill-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.517,
+   "max_similarity": 0.525,
    "most_similar_to": "delta",
    "inbound_from": []
   },
@@ -1044,8 +1044,8 @@
    "path": "/worksafe-physiotherapy/newton-surrey/",
    "title": "WCB & WorkSafeBC Physio in Newton, Surrey | Synergy Rehab",
    "title_len": 57,
-   "description_len": 143,
-   "words": 660,
+   "description_len": 153,
+   "words": 669,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1112,7 +1112,7 @@
    "jane_links": 8,
    "issues": [],
    "warnings": [],
-   "max_similarity": 0.527,
+   "max_similarity": 0.535,
    "most_similar_to": "fleetwood-surrey",
    "inbound_from": [
     "pillar",
@@ -1131,8 +1131,8 @@
    "path": "/worksafe-physiotherapy/fleetwood-surrey/",
    "title": "WCB & WorkSafeBC Physio in Fleetwood, Surrey | Synergy Rehab",
    "title_len": 60,
-   "description_len": 147,
-   "words": 658,
+   "description_len": 149,
+   "words": 667,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1200,7 +1200,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/fleetwood-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.527,
+   "max_similarity": 0.535,
    "most_similar_to": "newton-surrey",
    "inbound_from": []
   },
@@ -1210,8 +1210,8 @@
    "path": "/worksafe-physiotherapy/sullivan-heights-surrey/",
    "title": "WCB & WorkSafeBC Physio in Sullivan Heights | Synergy Rehab",
    "title_len": 59,
-   "description_len": 155,
-   "words": 727,
+   "description_len": 151,
+   "words": 739,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1285,7 +1285,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/sullivan-heights-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.506,
+   "max_similarity": 0.515,
    "most_similar_to": "cedar-hills-surrey",
    "inbound_from": []
   },
@@ -1295,8 +1295,8 @@
    "path": "/worksafe-physiotherapy/south-surrey/",
    "title": "WCB & WorkSafeBC Physio in South Surrey | Synergy Rehab",
    "title_len": 55,
-   "description_len": 140,
-   "words": 668,
+   "description_len": 150,
+   "words": 677,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1364,7 +1364,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/south-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.502,
+   "max_similarity": 0.51,
    "most_similar_to": "cloverdale-surrey",
    "inbound_from": []
   },
@@ -1374,8 +1374,8 @@
    "path": "/worksafe-physiotherapy/cloverdale-surrey/",
    "title": "WCB & WorkSafeBC Physio in Cloverdale | Synergy Rehab",
    "title_len": 53,
-   "description_len": 147,
-   "words": 668,
+   "description_len": 149,
+   "words": 677,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1443,7 +1443,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/cloverdale-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.523,
+   "max_similarity": 0.531,
    "most_similar_to": "langley",
    "inbound_from": []
   },
@@ -1453,8 +1453,8 @@
    "path": "/worksafe-physiotherapy/clayton-heights-surrey/",
    "title": "WCB & WorkSafeBC Physio in Clayton Heights | Synergy Rehab",
    "title_len": 58,
-   "description_len": 148,
-   "words": 673,
+   "description_len": 152,
+   "words": 682,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1522,7 +1522,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/clayton-heights-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.522,
+   "max_similarity": 0.53,
    "most_similar_to": "langley",
    "inbound_from": []
   },
@@ -1532,8 +1532,8 @@
    "path": "/worksafe-physiotherapy/clayton-corners-surrey/",
    "title": "WCB & WorkSafeBC Physio in Clayton Corners | Synergy Rehab",
    "title_len": 58,
-   "description_len": 153,
-   "words": 682,
+   "description_len": 154,
+   "words": 690,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1601,7 +1601,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/clayton-corners-surrey/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.485,
+   "max_similarity": 0.489,
    "most_similar_to": "clayton-heights-surrey",
    "inbound_from": []
   },
@@ -1611,8 +1611,8 @@
    "path": "/worksafe-physiotherapy/langley/",
    "title": "WCB & WorkSafeBC Physio in Langley | Synergy Rehab",
    "title_len": 50,
-   "description_len": 135,
-   "words": 656,
+   "description_len": 145,
+   "words": 665,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1680,7 +1680,7 @@
    "warnings": [
     "orphan: no other built page links to /worksafe-physiotherapy/langley/; set live_pages in data/review.json or finish the clinic gates, then rebuild and re-paste the linking pages"
    ],
-   "max_similarity": 0.523,
+   "max_similarity": 0.531,
    "most_similar_to": "cloverdale-surrey",
    "inbound_from": []
   },
@@ -1690,8 +1690,8 @@
    "path": "/worksafe-physiotherapy/abbotsford/",
    "title": "WCB & WorkSafeBC Physio in Abbotsford | Synergy Rehab",
    "title_len": 53,
-   "description_len": 143,
-   "words": 656,
+   "description_len": 153,
+   "words": 665,
    "claims": {
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
@@ -1758,7 +1758,7 @@
    "jane_links": 10,
    "issues": [],
    "warnings": [],
-   "max_similarity": 0.516,
+   "max_similarity": 0.525,
    "most_similar_to": "langley",
    "inbound_from": [
     "pillar",
@@ -1770,10 +1770,10 @@
    "page": "guide",
    "kind": "article",
    "path": "/worksafebc-physiotherapy-what-is-covered/",
-   "title": "What Does WorkSafeBC Cover for Physiotherapy? Claims & Costs",
-   "title_len": 60,
-   "description_len": 150,
-   "words": 2847,
+   "title": "WorkSafeBC Physio Coverage, WCB Claim Number & Form 6",
+   "title_len": 53,
+   "description_len": 142,
+   "words": 3158,
    "claims": {
     "WSBC-23": {
      "rule": "OK_TO_PUBLISH",
@@ -1870,6 +1870,11 @@
      "status": "PARTIAL",
      "verified": false
     },
+    "WSBC-29": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
+    },
     "WSBC-14": {
      "rule": "OK_TO_PUBLISH",
      "status": "VERIFIED",
@@ -1906,11 +1911,6 @@
      "verified": false
     },
     "SYN-JANE": {
-     "rule": "OK_TO_PUBLISH",
-     "status": "VERIFIED",
-     "verified": false
-    },
-    "WSBC-29": {
      "rule": "OK_TO_PUBLISH",
      "status": "VERIFIED",
      "verified": false
@@ -1991,6 +1991,7 @@
     "WSBC-45",
     "WSBC-47",
     "GUIDE-02",
+    "WSBC-29",
     "WSBC-14",
     "GEN-01",
     "WSBC-01",
@@ -1999,7 +2000,6 @@
     "WSBC-48",
     "SYN-PEND",
     "SYN-JANE",
-    "WSBC-29",
     "GUIDE-01",
     "GUIDE-03",
     "WSBC-24",
@@ -2018,13 +2018,14 @@
    "warnings": [
     "untagged coverage wording: \"Home WorkSafeBC physiotherapy What WorkSafeBC covers Claims and costs guide Hurt at work in BC?\"",
     "untagged coverage wording: \"What does WorkSafeBC cover for physiotherapy?\"",
-    "untagged coverage wording: \"Find your clinic Jump to your question At a glance Claim number Reporting Pending claims Denied claims After 60 days Fee\"",
+    "untagged coverage wording: \"Find your clinic Jump to your question At a glance Costs by claim stage Claim number Reporting Pending claims Denied cla\"",
+    "untagged coverage wording: \"Costs WorkSafeBC physio costs by claim stage What WorkSafeBC pays and what you may pay at each claim stage Claim stage W\"",
+    "untagged coverage wording: \"More on fees Claim number Do I need a WorkSafeBC claim number before I book physio?\"",
     "untagged coverage wording: \"Form 6 page on worksafebc.com Form 6A page on worksafebc.com Pending claims Can I start physio while my claim is pending\"",
+    "untagged coverage wording: \"You may read online that after 60 days you need a doctor s referral for WorkSafeBC physio.\"",
     "untagged coverage wording: \"Fees Will I pay anything once my claim is accepted?\"",
     "untagged coverage wording: \"Metro Vancouver provider list Fraser Valley provider list Extensions How much physio does WorkSafeBC cover, and can I ge\"",
-    "untagged coverage wording: \"Other care on a claim Does WorkSafeBC cover massage therapy or acupuncture?\"",
-    "untagged coverage wording: \"Do I need a doctor s referral for WorkSafeBC physio?\"",
-    "untagged coverage wording: \"Health care benefits (workers) (worksafebc.com) How workers report a workplace injury or illness (worksafebc.com) Making\""
+    "untagged coverage wording: \"Other care on a claim Does WorkSafeBC cover massage therapy or acupuncture?\""
    ],
    "inbound_from": [
     "pillar",
@@ -2054,10 +2055,10 @@
    "page": "rtw",
    "kind": "article",
    "path": "/return-to-work-after-a-workplace-injury/",
-   "title": "Gradual Return to Work & Modified Duties | Synergy Rehab",
-   "title_len": 56,
-   "description_len": 150,
-   "words": 2790,
+   "title": "Gradual Return to Work in BC: Modified Duties | Synergy Rehab",
+   "title_len": 61,
+   "description_len": 148,
+   "words": 2698,
    "claims": {
     "RTW-06": {
      "rule": "OK_TO_PUBLISH",
@@ -2099,24 +2100,9 @@
      "status": "VERIFIED",
      "verified": false
     },
-    "WSBC-23": {
-     "rule": "OK_TO_PUBLISH",
-     "status": "VERIFIED",
-     "verified": false
-    },
-    "WSBC-28": {
-     "rule": "OK_TO_PUBLISH",
-     "status": "VERIFIED",
-     "verified": false
-    },
-    "SYN-PEND": {
+    "SYN-RTW-02": {
      "rule": "STAFF_CONFIRM",
      "status": "UNVERIFIED",
-     "verified": false
-    },
-    "WSBC-25": {
-     "rule": "STAFF_CONFIRM",
-     "status": "PARTIAL",
      "verified": false
     },
     "WSBC-21": {
@@ -2152,21 +2138,6 @@
     "WSBC-12": {
      "rule": "OK_TO_PUBLISH",
      "status": "VERIFIED",
-     "verified": false
-    },
-    "WSBC-11": {
-     "rule": "OK_TO_PUBLISH",
-     "status": "VERIFIED",
-     "verified": false
-    },
-    "WSBC-17": {
-     "rule": "OK_TO_PUBLISH",
-     "status": "VERIFIED",
-     "verified": false
-    },
-    "SYN-RTW-02": {
-     "rule": "STAFF_CONFIRM",
-     "status": "UNVERIFIED",
      "verified": false
     },
     "RTW-13": {
@@ -2238,6 +2209,11 @@
      "rule": "OK_TO_PUBLISH",
      "status": "VERIFIED",
      "verified": false
+    },
+    "WSBC-23": {
+     "rule": "OK_TO_PUBLISH",
+     "status": "VERIFIED",
+     "verified": false
     }
    },
    "unverified_claims": [
@@ -2249,10 +2225,7 @@
     "RTW-05",
     "RTW-04",
     "RTW-08",
-    "WSBC-23",
-    "WSBC-28",
-    "SYN-PEND",
-    "WSBC-25",
+    "SYN-RTW-02",
     "WSBC-21",
     "SYN-JANE",
     "RTW-07",
@@ -2260,9 +2233,6 @@
     "WSBC-43",
     "WSBC-44",
     "WSBC-12",
-    "WSBC-11",
-    "WSBC-17",
-    "SYN-RTW-02",
     "RTW-13",
     "RTW-09",
     "RTW-12",
@@ -2276,7 +2246,8 @@
     "RTW-17",
     "RTW-18",
     "RTW-19",
-    "WSBC-34"
+    "WSBC-34",
+    "WSBC-23"
    ],
    "missing": [
     "photo:rtw_hero"

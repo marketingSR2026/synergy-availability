@@ -2,11 +2,27 @@
  "@context": "https://schema.org",
  "@graph": [
   {
+   "@type": "MedicalOrganization",
+   "@id": "https://synergyrehabilitation.ca/#organization",
+   "name": "Synergy Rehabilitation",
+   "alternateName": "Synergy Rehab",
+   "url": "https://synergyrehabilitation.ca/"
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://synergyrehabilitation.ca/#website",
+   "url": "https://synergyrehabilitation.ca/",
+   "name": "Synergy Rehabilitation",
+   "publisher": {
+    "@id": "https://synergyrehabilitation.ca/#organization"
+   }
+  },
+  {
    "@type": "MedicalWebPage",
    "@id": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/#webpage",
    "url": "https://synergyrehabilitation.ca/worksafe-physiotherapy/clayton-corners-surrey/",
    "name": "WCB & WorkSafeBC Physio in Clayton Corners | Synergy Rehab",
-   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Corners, 18811 72 Ave, Surrey. Open Mon to Fri until 8 PM. Your claim can be pending.",
+   "description": "Hurt at work? Book a WCB physio assessment at Synergy Rehab Clayton Corners, 18811 72 Ave, Surrey. Open Mon to Fri, until 8 PM. Your claim can be pending.",
    "inLanguage": "en-CA",
    "dateModified": "2026-11-03",
    "isPartOf": {

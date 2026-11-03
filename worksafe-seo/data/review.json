@@ -1,5 +1,5 @@
 {
- "_how_to_use": "Site-level sign-offs. reviewer: registered physiotherapist who reviews WorkSafeBC wording. live_pages: set true once the URL is published, so other pages may link to it. privacy_gate_G6: GTM excludes Meta pixels, ad/remarketing tags, session replay (CrazyEgg, Contentsquare) and chat on /worksafe-physiotherapy/* and the guide/article URLs; Google signals off for these pages.",
+ "_how_to_use": "Site-level sign-offs. reviewer: registered physiotherapist who reviews WorkSafeBC wording. live_pages: set true once the URL is published, so other pages may link to it. privacy_gate_G6: GTM excludes Meta pixels, ad/remarketing tags, session replay (CrazyEgg, Contentsquare) and chat on /worksafe-physiotherapy/* and the guide/article URLs; Google signals off for these pages. content_updated_on: YYYY-MM-DD of the last real content change; used as schema dateModified (omitted when unset).",
  "reviewer": {
   "name": null,
   "credential": null,
@@ -18,5 +18,6 @@
  "privacy_gate_G6": {
   "confirmed_by": null,
   "confirmed_on": null
- }
+ },
+ "content_updated_on": "2026-11-03"
 }
